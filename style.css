@@ -1,24 +1,25 @@
-/* 明耀之星 Companion - 移动优先响应式样式 */
+/* 明耀之星 Companion v2 - 移动优先响应式样式 */
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; background:#1a1a2e; color:#eee; min-height:100vh; padding-bottom:60px; }
 h2 { font-size:1.3rem; margin:12px 16px 4px; }
+h3 { font-size:1.1rem; margin:16px 0 8px; }
 .hint { font-size:.85rem; color:#999; margin:0 16px 12px; }
 
-/* Tab 导航 */
+/* ===== Tab 导航 ===== */
 .tab-bar { position:fixed; bottom:0; left:0; right:0; display:flex; background:#16213e; border-top:1px solid #333; z-index:100; }
 .tab-btn { flex:1; padding:14px 0; background:none; border:none; color:#888; font-size:.9rem; cursor:pointer; transition:color .2s; }
 .tab-btn.active { color:#e94560; font-weight:600; }
 
-/* Tab 内容 */
+/* ===== Tab 内容 ===== */
 .tab-content { display:none; padding-bottom:20px; }
 .tab-content.active { display:block; }
 
-/* 属性网格 */
+/* ===== 属性网格 ===== */
 .type-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(75px,1fr)); gap:8px; padding:0 12px; }
 .type-btn { padding:12px 4px; border:none; border-radius:8px; color:#fff; font-size:.8rem; font-weight:600; cursor:pointer; text-shadow:0 1px 2px rgba(0,0,0,.5); transition:transform .1s; }
 .type-btn:active { transform:scale(.95); }
 
-/* 属性克制结果 */
+/* ===== 属性克制结果 ===== */
 .type-result { padding:16px; }
 .effect-group { margin-bottom:12px; }
 .effect-label { display:block; font-size:.85rem; margin-bottom:6px; }
@@ -29,35 +30,107 @@ h2 { font-size:1.3rem; margin:12px 16px 4px; }
 .type-tag { padding:4px 10px; border-radius:4px; color:#fff; font-size:.8rem; font-weight:500; text-shadow:0 1px 1px rgba(0,0,0,.4); }
 .type-tag.sm { font-size:.7rem; padding:2px 6px; }
 
-/* 过滤栏 */
+/* ===== 过滤栏 ===== */
 .filter-bar { display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; align-items:center; }
-.filter-bar select { background:#16213e; color:#eee; border:1px solid #333; border-radius:6px; padding:6px 8px; font-size:.85rem; }
-.filter-bar select:focus { outline:none; border-color:#e94560; }
+.filter-bar select, .picker-filters select, .picker-filters input { background:#16213e; color:#eee; border:1px solid #333; border-radius:6px; padding:6px 8px; font-size:.85rem; }
+.filter-bar select:focus, .picker-filters input:focus { outline:none; border-color:#e94560; }
 .owned-only { display:flex; align-items:center; gap:4px; font-size:.85rem; color:#ccc; }
 .owned-only input { width:18px; height:18px; accent-color:#e94560; }
 
-/* 统计 */
+/* ===== 统计 ===== */
 .stats-bar { padding:0 16px 8px; font-size:.9rem; color:#aaa; }
 .stats-bar strong { color:#e94560; }
 
-/* 卡牌网格 */
+/* ===== 卡牌网格 ===== */
 .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; padding:0 12px; }
 .card { background:#16213e; border-radius:10px; overflow:hidden; border:1px solid #2a2a4a; transition:border-color .2s; position:relative; }
 .card.owned { border-color:#e94560; }
-.card-img { height:140px; background:linear-gradient(135deg,#0f3460,#16213e); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
-.card-img img { width:100%; height:100%; object-fit:contain; }
-.card-img.no-img { height:80px; }
-.rarity-badge { position:absolute; top:4px; left:4px; font-size:.9rem; color:#e94560; text-shadow:0 0 4px rgba(0,0,0,.8); background:rgba(0,0,0,.4); padding:1px 4px; border-radius:3px; }
+
+/* 卡牌图片 - 横竖版自适应 */
+.card-img { background:linear-gradient(135deg,#0f3460,#16213e); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+.card-img img { width:100%; object-fit:contain; image-rendering:auto; }
+.card-img.portrait { height:300px; }
+.card-img.portrait img { height:300px; width:auto; max-width:100%; }
+.card-img.landscape { height:160px; }
+.card-img.landscape img { height:160px; width:100%; }
+.card-img.no-img { height:60px; }
+
+.rarity-badge { position:absolute; top:4px; left:4px; font-size:.9rem; color:#e94560; text-shadow:0 0 4px rgba(0,0,0,.8); background:rgba(0,0,0,.4); padding:1px 4px; border-radius:3px; z-index:2; }
+
 .card-info { padding:8px; }
 .card-name { font-size:.9rem; font-weight:600; margin-bottom:4px; }
 .card-types { display:flex; gap:4px; margin-bottom:4px; }
 .card-code { font-size:.7rem; color:#666; }
-.own-btn { position:absolute; top:6px; right:6px; width:28px; height:28px; border-radius:50%; border:none; background:rgba(0,0,0,.5); color:#fff; font-size:1.1rem; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.card-special { margin-bottom:4px; }
+.special-badge { display:inline-block; font-size:.65rem; padding:1px 6px; border-radius:3px; background:linear-gradient(135deg,#e94560,#0f3460); color:#fff; margin-right:2px; }
+
+.own-btn { position:absolute; top:6px; right:6px; width:28px; height:28px; border-radius:50%; border:none; background:rgba(0,0,0,.5); color:#fff; font-size:1.1rem; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center; z-index:3; }
 .own-btn.checked { background:#e94560; }
 .error { color:#e94560; padding:16px; text-align:center; }
 
-/* 响应式 */
+/* ===== 对战推荐页 ===== */
+.battle-section { padding:0 0 20px; }
+
+/* 敌方槽位 */
+.enemy-slots { display:flex; gap:8px; padding:0 12px; margin-bottom:16px; }
+.enemy-slot { flex:1; min-height:100px; border-radius:10px; border:2px dashed #333; display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer; transition:border-color .2s; position:relative; overflow:hidden; background:#16213e; }
+.enemy-slot.empty:hover { border-color:#e94560; }
+.enemy-slot.filled { border:2px solid #e94560; padding:8px; flex-direction:row; align-items:center; gap:6px; text-align:left; }
+.enemy-slot .slot-plus { font-size:1.5rem; color:#555; }
+.enemy-slot .slot-label { font-size:.7rem; color:#666; margin-top:4px; }
+.enemy-slot .slot-img { width:50px; height:50px; object-fit:contain; border-radius:4px; flex-shrink:0; }
+.enemy-slot .slot-info { flex:1; min-width:0; }
+.enemy-slot .slot-stars { font-size:.7rem; color:#e94560; }
+.enemy-slot .slot-name { font-size:.8rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.enemy-slot .slot-types { display:flex; gap:2px; margin-top:2px; }
+.slot-remove { position:absolute; top:2px; right:2px; width:20px; height:20px; border-radius:50%; border:none; background:rgba(0,0,0,.6); color:#fff; font-size:.8rem; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+
+/* 敌方选择面板 */
+.enemy-picker { background:#16213e; border-radius:12px; margin:0 12px; overflow:hidden; border:1px solid #333; }
+.enemy-picker.hidden { display:none; }
+.picker-header { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid #2a2a4a; font-weight:600; }
+.picker-close { background:none; border:none; color:#999; font-size:1.2rem; cursor:pointer; }
+.picker-filters { display:flex; gap:8px; padding:8px 16px; }
+.picker-filters input { flex:1; }
+.picker-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(110px,1fr)); gap:8px; padding:8px 16px 16px; max-height:50vh; overflow-y:auto; }
+.picker-card { background:#0f3460; border-radius:8px; overflow:hidden; cursor:pointer; border:1px solid transparent; transition:border-color .2s; }
+.picker-card:hover { border-color:#e94560; }
+.picker-card .card-img { height:80px; }
+.picker-card .card-img.portrait { height:120px; }
+.picker-card .card-img.portrait img { height:120px; }
+.picker-card .card-img.landscape img { height:80px; }
+.picker-card-info { padding:4px 6px; }
+.picker-card-info .card-name { font-size:.8rem; }
+
+/* 推荐结果 */
+.recommend-result { padding:0 12px; }
+.recommend-empty { text-align:center; padding:24px 16px; background:#16213e; border-radius:10px; }
+.recommend-empty p { color:#999; margin-bottom:8px; }
+.enemy-summary { margin-top:16px; text-align:left; }
+.enemy-analysis { display:flex; align-items:center; gap:8px; padding:6px 0; border-bottom:1px solid #2a2a4a; }
+.analysis-name { font-size:.85rem; white-space:nowrap; }
+
+/* 推荐阵容 */
+.recommend-team { margin-top:8px; }
+.team-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:10px; }
+.team-card { background:#16213e; border-radius:10px; overflow:hidden; border:1px solid #2a2a4a; position:relative; }
+.team-card.support { opacity:.85; border-color:#333; }
+.team-rank { position:absolute; top:4px; right:4px; background:#e94560; color:#fff; font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:4px; z-index:3; }
+.team-card .card-img { height:100px; }
+.team-card .card-img.portrait { height:180px; }
+.team-card .card-img.portrait img { height:180px; }
+.team-card .card-img.landscape img { height:100px; }
+.team-card .card-name { padding:4px 8px 0; font-size:.85rem; }
+.team-card .card-types { padding:2px 8px 4px; display:flex; gap:4px; }
+.team-card .card-special { padding:0 8px 4px; }
+.team-card .card-atk-info { padding:4px 8px 8px; font-size:.7rem; color:#aaa; line-height:1.6; }
+.atk-strong { color:#e94560; font-weight:600; }
+.atk-weak { color:#f0a500; }
+.special-notice { margin-top:12px; padding:8px 12px; background:rgba(233,69,96,.1); border-radius:6px; font-size:.8rem; color:#e94560; }
+
+/* ===== 响应式 ===== */
 @media(min-width:768px){
   .type-grid { grid-template-columns:repeat(6,1fr); max-width:600px; }
   .card-grid { grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); max-width:900px; margin:0 auto; }
+  .enemy-slots { max-width:700px; margin-left:auto; margin-right:auto; }
 }

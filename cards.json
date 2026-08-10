@@ -2,6 +2,821 @@
   "schema_version": 1,
   "series": [
     {
+      "id": "g1",
+      "name": "银河第1弹",
+      "cards": [
+        {
+          "code": "2-1-001 SC",
+          "name": "轰擂金刚猩",
+          "rarity": 6,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/HP_1_01.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-002 SC",
+          "name": "闪焰王牌",
+          "rarity": 6,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/HP_1_02.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-003 SC",
+          "name": "千面避役",
+          "rarity": 6,
+          "types": [
+            "水"
+          ],
+          "img": "img/g1/HP_1_03.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-004 SC",
+          "name": "皮卡丘",
+          "rarity": 6,
+          "types": [
+            "电"
+          ],
+          "img": "img/g1/HP_1_04.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-005 SC",
+          "name": "雷公",
+          "rarity": 6,
+          "types": [
+            "电"
+          ],
+          "img": "img/g1/HP_1_05.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-006 SC",
+          "name": "炎帝",
+          "rarity": 6,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/HP_1_06.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-007 SC",
+          "name": "水君",
+          "rarity": 6,
+          "types": [
+            "水"
+          ],
+          "img": "img/g1/HP_1_07.jpg",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-008 SC",
+          "name": "超梦",
+          "rarity": 6,
+          "types": [
+            "超能力"
+          ],
+          "img": "img/g1/HP_1_08.jpg",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-009 SC",
+          "name": "阿尔宙斯",
+          "rarity": 6,
+          "types": [
+            "一般"
+          ],
+          "img": "img/g1/35bc5e7359cd46449581720675c82e7e.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-010 SC",
+          "name": "洗翠索罗亚克",
+          "rarity": 6,
+          "types": [
+            "一般",
+            "幽灵"
+          ],
+          "img": "img/g1/d0b9f923bae24003b0744dbf8fc11f53.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "2-1-011 SC",
+          "name": "凯罗斯",
+          "rarity": 5,
+          "types": [
+            "虫"
+          ],
+          "img": "img/g1/4961017886d648e595a3047ec0e60474.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-012 SC",
+          "name": "赫拉克罗斯",
+          "rarity": 5,
+          "types": [
+            "虫",
+            "格斗"
+          ],
+          "img": "img/g1/207b3019b2854b4bab3b1b56ac757ffa.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-013 SC",
+          "name": "凯路迪欧",
+          "rarity": 5,
+          "types": [
+            "水",
+            "格斗"
+          ],
+          "img": "img/g1/9ee9c5e376864951a15fde78c56460a0.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-014 SC",
+          "name": "玛狃拉",
+          "rarity": 5,
+          "types": [
+            "恶",
+            "冰"
+          ],
+          "img": "img/g1/edecb1a6a0ba4cc980eea54140fa18f4.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-015 SC",
+          "name": "葱游兵",
+          "rarity": 5,
+          "types": [
+            "格斗"
+          ],
+          "img": "img/g1/4fd9f55e7a114f328f96d9003c91a967.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-016 SC",
+          "name": "尼多王",
+          "rarity": 5,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/343119a4cb244103a964e6125f1027c0.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-018 SC",
+          "name": "鳃鱼海兽",
+          "rarity": 5,
+          "types": [
+            "水",
+            "岩石"
+          ],
+          "img": "img/g1/944fb41e39a84a5ab679c581033e19e4.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-019 SC",
+          "name": "电击魔兽",
+          "rarity": 5,
+          "types": [
+            "电"
+          ],
+          "img": "img/g1/41e0e4b58b3847a58b6dd4379f4bd371.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-020 SC",
+          "name": "鸭嘴炎兽",
+          "rarity": 5,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/a5038a02033b4302865cb02116651ee3.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-021 SC",
+          "name": "颤弦蝾螈",
+          "rarity": 5,
+          "types": [
+            "电",
+            "毒"
+          ],
+          "img": "img/g1/60d1bd3c478245418b3650a80e83d775.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-022 SC",
+          "name": "颤弦蝾螈",
+          "rarity": 5,
+          "types": [
+            "电",
+            "龙"
+          ],
+          "img": "img/g1/7f4c9e3ba44b47fdacb931edd092f841.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-023 SC",
+          "name": "雄伟牙",
+          "rarity": 5,
+          "types": [
+            "地面"
+          ],
+          "img": "img/g1/530354934659498985e5f9cc6688cb39.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-024 SC",
+          "name": "锹农炮虫",
+          "rarity": 5,
+          "types": [
+            "虫",
+            "电"
+          ],
+          "img": "img/g1/626f4775e85b4f66a418e978a8377768.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-025 SC",
+          "name": "暴雪王",
+          "rarity": 5,
+          "types": [
+            "草",
+            "冰"
+          ],
+          "img": "img/g1/14c3eb5f16694ad48e04fd94c911dc40.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-034 SC",
+          "name": "轰擂金刚猩",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/0d25d5a1f1e24d8a9762c1f6a1b45592.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-037 SC",
+          "name": "闪焰王牌",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/3cc5c87a48854e5296f4c68ef3c4defa.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-040 SC",
+          "name": "千面避役",
+          "rarity": 4,
+          "types": [
+            "水"
+          ],
+          "img": "img/g1/c1f5909098dc4d43a3506568fbfc5c4b.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-042 SC",
+          "name": "暴雪王",
+          "rarity": 4,
+          "types": [
+            "草",
+            "冰"
+          ],
+          "img": "img/g1/e1617e4cfe6e4488969867bcb4e31f09.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-044 SC",
+          "name": "随风球",
+          "rarity": 4,
+          "types": [
+            "幽灵",
+            "飞行"
+          ],
+          "img": "img/g1/cb186f9ff3ba4da694e4215bb82ed094.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-046 SC",
+          "name": "洗翠索罗亚",
+          "rarity": 4,
+          "types": [
+            "一般",
+            "幽灵"
+          ],
+          "img": "img/g1/f69fae9972ae48658635a0f7f4e0a8ca.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-048 SC",
+          "name": "摇篮百合",
+          "rarity": 4,
+          "types": [
+            "岩石",
+            "草"
+          ],
+          "img": "img/g1/79494a0c66bb42a38eea5b162f33df80.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-050 SC",
+          "name": "葱游兵",
+          "rarity": 4,
+          "types": [
+            "格斗"
+          ],
+          "img": "img/g1/cb98e110f93748f890a2550a6ac32eb4.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-052 SC",
+          "name": "龙头地鼠",
+          "rarity": 4,
+          "types": [
+            "钢",
+            "地面"
+          ],
+          "img": "img/g1/52e45a2ce20c4cbea9d0ad024bbff9de.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-055 SC",
+          "name": "鸭嘴炎兽",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/83daa0cfad9748b880736047289a844e.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-057 SC",
+          "name": "风速狗",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/5f5ab244c9a64186900603861230631a.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-059 SC",
+          "name": "颤弦蝾螈",
+          "rarity": 4,
+          "types": [
+            "电",
+            "毒"
+          ],
+          "img": "img/g1/781aede1b2de40d39464463c95d0a89d.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-060 SC",
+          "name": "颤弦蝾螈",
+          "rarity": 4,
+          "types": [
+            "电",
+            "龙"
+          ],
+          "img": "img/g1/f69116459f4a43a4bcb976c59dc86670.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-062 SC",
+          "name": "白蓬蓬",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/1afd4f8bd35e467bb4bb43bba197d5d6.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-064 SC",
+          "name": "玛狃拉",
+          "rarity": 4,
+          "types": [
+            "恶",
+            "冰"
+          ],
+          "img": "img/g1/445ee52233d748f396cc841a995d392a.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-067 SC",
+          "name": "尼多后",
+          "rarity": 4,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/0cb7d40de4724e6e94d930d9c9ad5693.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-070 SC",
+          "name": "尼多王",
+          "rarity": 4,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/ae6f7474dc834b318f7bccda34d44c39.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-033 SC",
+          "name": "啪咚猴",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/75409969a1d948ea98070bd263ac73bc.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-036 SC",
+          "name": "腾蹴小将",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/4f0c24f1f40d45c5b315f1b15fbf1f31.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-039 SC",
+          "name": "变涩蜥",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "img/g1/87a4ed5e25e54fc380ca5b84f49517e3.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-041 SC",
+          "name": "雪笠怪",
+          "rarity": 3,
+          "types": [
+            "草",
+            "冰"
+          ],
+          "img": "img/g1/7dc8365c868c4159b9a94739cc61ac30.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-043 SC",
+          "name": "飘飘球",
+          "rarity": 3,
+          "types": [
+            "幽灵",
+            "飞行"
+          ],
+          "img": "img/g1/e4048693eddc44289eb17c9e4a3c701a.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-045 SC",
+          "name": "洗翠索罗亚",
+          "rarity": 3,
+          "types": [
+            "一般",
+            "幽灵"
+          ],
+          "img": "img/g1/f50a9d0db8634805a53b2c3b0fad7540.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-047 SC",
+          "name": "触手百合",
+          "rarity": 3,
+          "types": [
+            "岩石",
+            "草"
+          ],
+          "img": "img/g1/7637e5af65314320a90a3203eab4df27.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-051 SC",
+          "name": "螺钉地鼠",
+          "rarity": 3,
+          "types": [
+            "钢",
+            "地面"
+          ],
+          "img": "img/g1/bf2ea4177eee4aa7881d375570d180f0.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-054 SC",
+          "name": "鸭嘴火兽",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/5fc5a31c88e245728e5023a8938be6d9.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-056 SC",
+          "name": "卡蒂狗",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/7e4e5851da894f25a01ac682b9f537df.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-061 SC",
+          "name": "幼棉棉",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/97c7655fe66b4e3e84e2653492b66a82.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-063 SC",
+          "name": "狃拉",
+          "rarity": 3,
+          "types": [
+            "恶",
+            "冰"
+          ],
+          "img": "img/g1/3a414f501d1344b5968836bbaecfbaf8.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-066 SC",
+          "name": "尼多娜",
+          "rarity": 3,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/a5d8743076454ffd80edfb792680885c.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-069 SC",
+          "name": "尼多力诺",
+          "rarity": 3,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/d3aa0ede31af4746a47886f9721bf1bd.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-026 SC",
+          "name": "新叶喵",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/c05ac3d8929840f49365b84b7fd971d6.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-027 SC",
+          "name": "呆火鳄",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/c57d1559797840fc9649c40c29b2857a.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-028 SC",
+          "name": "润水鸭",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/g1/05d27d21ab054894a2c7160432edbf6e.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-029 SC",
+          "name": "炭小侍",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/a9b76063423746fab3fa3705965277a0.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-030 SC",
+          "name": "凉脊龙",
+          "rarity": 2,
+          "types": [
+            "冰"
+          ],
+          "img": "img/g1/3d3e8e17d60c4828911345b60e63ab29.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-031 SC",
+          "name": "布拨",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "img/g1/00df272330684cef8a4f4fc5d92a0095.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-032 SC",
+          "name": "敲音猴",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "img/g1/2bfc2a3417de4501847dcaeec87b09a0.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-035 SC",
+          "name": "炎兔儿",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/0a2902003bfb4f899d5b1d33351da1d9.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-038 SC",
+          "name": "泪眼蜥",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/g1/aabb3de9eae142a0800618127796f4fd.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-049 SC",
+          "name": "伽勒尔大葱鸭",
+          "rarity": 2,
+          "types": [
+            "格斗"
+          ],
+          "img": "img/g1/8eb748f064d143438f5487367802d61d.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-053 SC",
+          "name": "鸭嘴宝宝",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/g1/cb0f9e44c1c44e8da570be5d27c1a573.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-058 SC",
+          "name": "电音婴",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "img/g1/66b90e749c4d4abf9db4e33dc3641e96.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-065 SC",
+          "name": "尼多兰",
+          "rarity": 2,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/20fdd6628c424df58eed49f3db97ed0c.png",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "2-1-068 SC",
+          "name": "尼多朗",
+          "rarity": 2,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "img/g1/3b4b19f637f441f49b2dcabe3738a222.png",
+          "special": [],
+          "role": "main"
+        }
+      ]
+    },
+    {
       "id": "g2",
       "name": "银河第2弹",
       "cards": [
@@ -12,7 +827,11 @@
           "types": [
             "妖精"
           ],
-          "img": "img/g2/HP_01.png"
+          "img": "img/g2/HP_01.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-002 SC",
@@ -21,7 +840,11 @@
           "types": [
             "格斗"
           ],
-          "img": "img/g2/HP_02.png"
+          "img": "img/g2/HP_02.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-003 SC",
@@ -31,7 +854,11 @@
             "钢",
             "龙"
           ],
-          "img": "img/g2/HP_03.png"
+          "img": "img/g2/HP_03.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-004 SC",
@@ -41,7 +868,11 @@
             "火",
             "飞行"
           ],
-          "img": "img/g2/HP_04.png"
+          "img": "img/g2/HP_04.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-005 SC",
@@ -50,7 +881,11 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/HP_05.png"
+          "img": "img/g2/HP_05.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-006 SC",
@@ -60,7 +895,11 @@
             "格斗",
             "钢"
           ],
-          "img": "img/g2/HP_06.png"
+          "img": "img/g2/HP_06.png",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-007 SC",
@@ -70,7 +909,11 @@
             "龙",
             "飞行"
           ],
-          "img": "img/g2/HP_07.png"
+          "img": "img/g2/HP_07.png",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-008 SC",
@@ -80,7 +923,11 @@
             "龙",
             "超能力"
           ],
-          "img": "img/g2/HP_08.png"
+          "img": "img/g2/HP_08.png",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-009 SC",
@@ -90,7 +937,11 @@
             "龙",
             "超能力"
           ],
-          "img": "img/g2/HP_09.png"
+          "img": "img/g2/HP_09.png",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-010 SC",
@@ -100,7 +951,11 @@
             "龙",
             "恶"
           ],
-          "img": "img/g2/HP_10.png"
+          "img": "img/g2/HP_10.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
         },
         {
           "code": "2-2-011 SC",
@@ -110,7 +965,9 @@
             "钢",
             "超能力"
           ],
-          "img": "img/g2/e19fa6a44ccc42df8540e54cce8f3a46.png"
+          "img": "img/g2/e19fa6a44ccc42df8540e54cce8f3a46.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-012 SC",
@@ -119,7 +976,9 @@
           "types": [
             "龙"
           ],
-          "img": "img/g2/998b982e3b624971814bf30c7af82bf9.png"
+          "img": "img/g2/998b982e3b624971814bf30c7af82bf9.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-013 SC",
@@ -129,7 +988,9 @@
             "岩石",
             "飞行"
           ],
-          "img": "img/g2/ab62d46fa3524e33b302d6bc34af86e5.png"
+          "img": "img/g2/ab62d46fa3524e33b302d6bc34af86e5.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-014 SC",
@@ -139,7 +1000,9 @@
             "电",
             "龙"
           ],
-          "img": "img/g2/7496f62b67b74f08b34a9f6da2c76639.png"
+          "img": "img/g2/7496f62b67b74f08b34a9f6da2c76639.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-015 SC",
@@ -149,7 +1012,9 @@
             "水",
             "龙"
           ],
-          "img": "img/g2/2b0f1295b5864fd18193301aa220f31c.png"
+          "img": "img/g2/2b0f1295b5864fd18193301aa220f31c.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-016 SC",
@@ -158,7 +1023,9 @@
           "types": [
             "超能力"
           ],
-          "img": "img/g2/f63db176d41544108e05a0f71207a3b3.png"
+          "img": "img/g2/f63db176d41544108e05a0f71207a3b3.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-017 SC",
@@ -168,7 +1035,9 @@
             "电",
             "恶"
           ],
-          "img": "img/g2/9c701e4c229d4603980b224ba8de4bcc.png"
+          "img": "img/g2/9c701e4c229d4603980b224ba8de4bcc.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-018 SC",
@@ -178,7 +1047,9 @@
             "虫",
             "水"
           ],
-          "img": "img/g2/532aae5148a0488c96462373fabf4cc9.png"
+          "img": "img/g2/532aae5148a0488c96462373fabf4cc9.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-019 SC",
@@ -187,7 +1058,9 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/34421b36a9574671b15cf407c9059a0b.png"
+          "img": "img/g2/34421b36a9574671b15cf407c9059a0b.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-020 SC",
@@ -196,7 +1069,9 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/824f3e6c908e4216b7ae30ce00b5f71f.png"
+          "img": "img/g2/824f3e6c908e4216b7ae30ce00b5f71f.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-021 SC",
@@ -205,7 +1080,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/7d21b2e4993c4a27a29698ed17d7badb.png"
+          "img": "img/g2/7d21b2e4993c4a27a29698ed17d7badb.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-022 SC",
@@ -215,7 +1092,9 @@
             "地面",
             "钢"
           ],
-          "img": "img/g2/6b18c019d6354e02a82eb219b0e95364.png"
+          "img": "img/g2/6b18c019d6354e02a82eb219b0e95364.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-023 SC",
@@ -224,7 +1103,9 @@
           "types": [
             "毒"
           ],
-          "img": "img/g2/81cf147eceb64c8b9d4aa1bb7971404e.png"
+          "img": "img/g2/81cf147eceb64c8b9d4aa1bb7971404e.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-024 SC",
@@ -234,7 +1115,9 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/46c57e00c6da42faaa36370a8746bc52.png"
+          "img": "img/g2/46c57e00c6da42faaa36370a8746bc52.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-025 SC",
@@ -243,7 +1126,9 @@
           "types": [
             "恶"
           ],
-          "img": "img/g2/6683d3cba6ce4667afc92952a5d62924.png"
+          "img": "img/g2/6683d3cba6ce4667afc92952a5d62924.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-027 SC",
@@ -253,7 +1138,9 @@
             "草",
             "恶"
           ],
-          "img": "img/g2/e85fc10481a14267ae6c53d680399ba0.png"
+          "img": "img/g2/e85fc10481a14267ae6c53d680399ba0.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-029 SC",
@@ -263,7 +1150,9 @@
             "火",
             "幽灵"
           ],
-          "img": "img/g2/d332359298b6439db902d521d24beee2.png"
+          "img": "img/g2/d332359298b6439db902d521d24beee2.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-031 SC",
@@ -273,7 +1162,9 @@
             "水",
             "格斗"
           ],
-          "img": "img/g2/7b626e9b2a9f4d42bdc16a7180cc4200.png"
+          "img": "img/g2/7b626e9b2a9f4d42bdc16a7180cc4200.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-034 SC",
@@ -282,7 +1173,9 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/308002cd4eb242fcb386a416573f4f71.png"
+          "img": "img/g2/308002cd4eb242fcb386a416573f4f71.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-037 SC",
@@ -291,7 +1184,9 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/f2ab9c42bff54b328a1854774b46d2e8.png"
+          "img": "img/g2/f2ab9c42bff54b328a1854774b46d2e8.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-040 SC",
@@ -300,7 +1195,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/51622fa2dcc54bae9bc1dc6e33629744.png"
+          "img": "img/g2/51622fa2dcc54bae9bc1dc6e33629744.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-043 SC",
@@ -310,7 +1207,9 @@
             "水",
             "格斗"
           ],
-          "img": "img/g2/9082756bb9f84af2b033621704c1f75b.png"
+          "img": "img/g2/9082756bb9f84af2b033621704c1f75b.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-045 SC",
@@ -319,7 +1218,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/8172e77f27a943c4a949d81385b19c55.png"
+          "img": "img/g2/8172e77f27a943c4a949d81385b19c55.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-048 SC",
@@ -328,7 +1229,9 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/c5f0286e6b48483187cae1ada0759649.png"
+          "img": "img/g2/c5f0286e6b48483187cae1ada0759649.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-051 SC",
@@ -338,7 +1241,9 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/54c607f8e5c04d3bafb00ad97e7dcb86.png"
+          "img": "img/g2/54c607f8e5c04d3bafb00ad97e7dcb86.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-052 SC",
@@ -348,7 +1253,9 @@
             "超能力",
             "格斗"
           ],
-          "img": "img/g2/f93960d8e1f742a2b4d41a367db1c3b6.png"
+          "img": "img/g2/f93960d8e1f742a2b4d41a367db1c3b6.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-055 SC",
@@ -358,7 +1265,9 @@
             "虫",
             "毒"
           ],
-          "img": "img/g2/e2bd07a198f84c3fbd15040584746dd7.png"
+          "img": "img/g2/e2bd07a198f84c3fbd15040584746dd7.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-057 SC",
@@ -367,7 +1276,9 @@
           "types": [
             "一般"
           ],
-          "img": "img/g2/6e931fe9cd284d00876b8083c89c7814.png"
+          "img": "img/g2/6e931fe9cd284d00876b8083c89c7814.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-060 SC",
@@ -377,7 +1288,9 @@
             "冰",
             "水"
           ],
-          "img": "img/g2/c75fe4c3db4441db9a8f9db18272e20d.png"
+          "img": "img/g2/c75fe4c3db4441db9a8f9db18272e20d.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-063 SC",
@@ -387,7 +1300,9 @@
             "草",
             "毒"
           ],
-          "img": "img/g2/b844b33762564ed3bf891ca49773739e.png"
+          "img": "img/g2/b844b33762564ed3bf891ca49773739e.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-065 SC",
@@ -396,7 +1311,9 @@
           "types": [
             "妖精"
           ],
-          "img": "img/g2/7e4609b8c2ee4a81a981f16c57515561.png"
+          "img": "img/g2/7e4609b8c2ee4a81a981f16c57515561.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-068 SC",
@@ -405,7 +1322,9 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/551a153a4c194a94adaa7ebf470c32c5.png"
+          "img": "img/g2/551a153a4c194a94adaa7ebf470c32c5.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-026 SC",
@@ -414,7 +1333,9 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/0000efb3317d4708a420dc8f9fc3dcdb.png"
+          "img": "img/g2/0000efb3317d4708a420dc8f9fc3dcdb.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-028 SC",
@@ -423,7 +1344,9 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/a0aefcdd6a9a486081052d0fa48f1085.png"
+          "img": "img/g2/a0aefcdd6a9a486081052d0fa48f1085.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-030 SC",
@@ -432,7 +1355,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/cfcbae480f0e45f8a4bb4ad445a1c8fb.png"
+          "img": "img/g2/cfcbae480f0e45f8a4bb4ad445a1c8fb.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-033 SC",
@@ -441,7 +1366,9 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/8f0edc3d96024e5a9bb745a903af48a4.png"
+          "img": "img/g2/8f0edc3d96024e5a9bb745a903af48a4.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-036 SC",
@@ -451,7 +1378,9 @@
             "火",
             "格斗"
           ],
-          "img": "img/g2/c14a13e781464fe8b932bc67f284a721.png"
+          "img": "img/g2/c14a13e781464fe8b932bc67f284a721.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-039 SC",
@@ -460,7 +1389,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/f76c42546e704037b391fbc51a90cd45.png"
+          "img": "img/g2/f76c42546e704037b391fbc51a90cd45.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-042 SC",
@@ -469,7 +1400,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/9bbe6e98ed6b4b0f9ffb3a0535d11664.png"
+          "img": "img/g2/9bbe6e98ed6b4b0f9ffb3a0535d11664.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-047 SC",
@@ -478,7 +1411,9 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/2a8ac0e20afc49d0b56f0cb04aa193c0.png"
+          "img": "img/g2/2a8ac0e20afc49d0b56f0cb04aa193c0.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-050 SC",
@@ -488,7 +1423,9 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/1b46a80ac456496b91d211d7fed7a521.png"
+          "img": "img/g2/1b46a80ac456496b91d211d7fed7a521.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-054 SC",
@@ -498,7 +1435,9 @@
             "虫",
             "毒"
           ],
-          "img": "img/g2/6255f5e9205a48a38ce72825126b2bbd.png"
+          "img": "img/g2/6255f5e9205a48a38ce72825126b2bbd.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-059 SC",
@@ -508,7 +1447,9 @@
             "冰",
             "水"
           ],
-          "img": "img/g2/2332bdb71c0b46a299ef02c28c89a1d2.png"
+          "img": "img/g2/2332bdb71c0b46a299ef02c28c89a1d2.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-062 SC",
@@ -518,7 +1459,9 @@
             "草",
             "毒"
           ],
-          "img": "img/g2/7bde18dc29c448c6ba8eb9383dac61e1.png"
+          "img": "img/g2/7bde18dc29c448c6ba8eb9383dac61e1.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-067 SC",
@@ -527,7 +1470,9 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/d24afd98f07f4420905956ae00cfe5ec.png"
+          "img": "img/g2/d24afd98f07f4420905956ae00cfe5ec.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-070 SC",
@@ -536,7 +1481,9 @@
           "types": [
             "钢"
           ],
-          "img": "img/g2/af793655f33444f7add2619842771a92.png"
+          "img": "img/g2/af793655f33444f7add2619842771a92.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-032 SC",
@@ -545,7 +1492,9 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/b0be8ecf5eb14037be63d22dcac7fe52.png"
+          "img": "img/g2/b0be8ecf5eb14037be63d22dcac7fe52.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-035 SC",
@@ -554,7 +1503,9 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/fc61168fac2c4d3c9ceddaa933d05790.png"
+          "img": "img/g2/fc61168fac2c4d3c9ceddaa933d05790.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-038 SC",
@@ -563,7 +1514,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/8cdc51fd69064f2388c9f8071ef688c6.png"
+          "img": "img/g2/8cdc51fd69064f2388c9f8071ef688c6.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-041 SC",
@@ -572,7 +1525,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/077a34be362943feb37444726f19bce1.png"
+          "img": "img/g2/077a34be362943feb37444726f19bce1.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-044 SC",
@@ -581,7 +1536,9 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/31c784bb9e584ff1a0d6ee26107c2314.png"
+          "img": "img/g2/31c784bb9e584ff1a0d6ee26107c2314.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-046 SC",
@@ -590,7 +1547,9 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/c0f07045064e47cbbd2b973af62c1c07.png"
+          "img": "img/g2/c0f07045064e47cbbd2b973af62c1c07.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-049 SC",
@@ -600,7 +1559,9 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/f535e037de7c45648efb7f35f74bb6cc.png"
+          "img": "img/g2/f535e037de7c45648efb7f35f74bb6cc.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-053 SC",
@@ -610,7 +1571,9 @@
             "虫",
             "毒"
           ],
-          "img": "img/g2/6f36f85e9ce24109a74041c0e3ab0aed.png"
+          "img": "img/g2/6f36f85e9ce24109a74041c0e3ab0aed.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-056 SC",
@@ -619,7 +1582,9 @@
           "types": [
             "一般"
           ],
-          "img": "img/g2/ecc8faf1baf24256b4c7ca45603abd76.png"
+          "img": "img/g2/ecc8faf1baf24256b4c7ca45603abd76.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-058 SC",
@@ -629,7 +1594,9 @@
             "冰",
             "水"
           ],
-          "img": "img/g2/38a24e7c361c463f98606b7f554cbb6b.png"
+          "img": "img/g2/38a24e7c361c463f98606b7f554cbb6b.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-061 SC",
@@ -639,7 +1606,9 @@
             "草",
             "毒"
           ],
-          "img": "img/g2/d65e5af618b641cfb6755bfce90c41b8.png"
+          "img": "img/g2/d65e5af618b641cfb6755bfce90c41b8.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-064 SC",
@@ -648,7 +1617,9 @@
           "types": [
             "妖精"
           ],
-          "img": "img/g2/517e75d3d8884c2bbbe20447e1fdea79.png"
+          "img": "img/g2/517e75d3d8884c2bbbe20447e1fdea79.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-066 SC",
@@ -657,7 +1628,9 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/537e19aa10c9402083b7679823d572d1.png"
+          "img": "img/g2/537e19aa10c9402083b7679823d572d1.png",
+          "special": [],
+          "role": "main"
         },
         {
           "code": "2-2-069 SC",
@@ -666,7 +1639,9 @@
           "types": [
             "钢"
           ],
-          "img": "img/g2/3bc43bd1cee14b19b677827883ee7911.png"
+          "img": "img/g2/3bc43bd1cee14b19b677827883ee7911.png",
+          "special": [],
+          "role": "main"
         }
       ]
     }

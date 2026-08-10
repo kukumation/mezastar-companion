@@ -11,20 +11,61 @@
 <div id="app">
   <!-- 底部导航 -->
   <nav class="tab-bar">
-    <button class="tab-btn active" data-tab="type-chart">属性表</button>
-    <button class="tab-btn" data-tab="collection">我的收藏</button>
-    <button class="tab-btn" data-tab="recommend" style="display:none">推荐</button>
+    <button class="tab-btn" data-tab="collection">收藏</button>
+    <button class="tab-btn active" data-tab="battle">对战推荐</button>
+    <button class="tab-btn" data-tab="type-chart">属性表</button>
   </nav>
 
-  <!-- 属性克制表页 -->
-  <div id="tab-type-chart" class="tab-content active">
-    <h2>属性克制表</h2>
-    <p class="hint">点击你的宝可梦属性，查看对其他属性的攻击效果</p>
-    <div id="type-grid" class="type-grid"></div>
-    <div id="type-result" class="type-result"></div>
+  <!-- ===== 对战推荐页 ===== -->
+  <div id="tab-battle" class="tab-content active">
+    <div class="battle-section">
+      <h2>对战推荐</h2>
+      <p class="hint">选择对方宝可梦（最多3只），根据你的收藏推荐阵容</p>
+
+      <!-- 选中的敌方 -->
+      <div id="enemy-slots" class="enemy-slots">
+        <div class="enemy-slot empty" data-slot="0">
+          <span class="slot-plus">+</span>
+          <span class="slot-label">敌方1</span>
+        </div>
+        <div class="enemy-slot empty" data-slot="1">
+          <span class="slot-plus">+</span>
+          <span class="slot-label">敌方2</span>
+        </div>
+        <div class="enemy-slot empty" data-slot="2">
+          <span class="slot-plus">+</span>
+          <span class="slot-label">敌方3</span>
+        </div>
+      </div>
+
+      <!-- 敌方选择面板（弹出式） -->
+      <div id="enemy-picker" class="enemy-picker hidden">
+        <div class="picker-header">
+          <span>选择敌方宝可梦</span>
+          <button id="picker-close" class="picker-close">✕</button>
+        </div>
+        <div class="picker-filters">
+          <select id="picker-rarity">
+            <option value="all">全部星级</option>
+            <option value="6">★6</option>
+            <option value="5">★5</option>
+            <option value="4">★4</option>
+            <option value="3">★3</option>
+            <option value="2">★2</option>
+          </select>
+          <input type="text" id="picker-search" placeholder="搜索宝可梦名字...">
+        </div>
+        <div id="picker-grid" class="picker-grid"></div>
+      </div>
+
+      <!-- 推荐结果 -->
+      <div id="recommend-result" class="recommend-result">
+        <p class="hint">选择敌方宝可梦后，这里会显示推荐阵容</p>
+      </div>
+    </div>
   </div>
 
-  <!-- 收藏页 -->
+  <!-- ===== 收藏页 ===== -->
   <div id="tab-collection" class="tab-content">
     <div class="filter-bar">
       <select id="filter-series">
@@ -49,12 +90,12 @@
     <div id="card-grid" class="card-grid"></div>
   </div>
 
-  <!-- 推荐页（P1启用） -->
-  <div id="tab-recommend" class="tab-content">
-    <h2>对战推荐</h2>
-    <p class="hint">选择对方宝可梦的属性</p>
-    <div id="enemy-type-picker" class="type-grid"></div>
-    <div id="recommend-result"></div>
+  <!-- ===== 属性克制表页 ===== -->
+  <div id="tab-type-chart" class="tab-content">
+    <h2>属性克制表</h2>
+    <p class="hint">点击属性查看攻击效果</p>
+    <div id="type-grid" class="type-grid"></div>
+    <div id="type-result" class="type-result"></div>
   </div>
 </div>
 
