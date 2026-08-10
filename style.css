@@ -42,21 +42,17 @@ h3 { font-size:1.1rem; margin:16px 0 8px; }
 .stats-bar strong { color:#e94560; }
 
 /* ===== 卡牌网格 ===== */
-.card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(110px,1fr)); gap:8px; padding:0 12px; }
-.card { background:#16213e; border-radius:10px; overflow:hidden; border:1px solid #2a2a4a; transition:border-color .2s; position:relative; }
+.card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(100px,1fr)); gap:6px; padding:0 10px; }
+.card { background:#16213e; border-radius:8px; overflow:hidden; border:1px solid #2a2a4a; transition:border-color .2s; position:relative; }
 .card.owned { border-color:#e94560; }
 .card.support-card { border-color:#4caf50; background:#0a2e1a; }
 .card.support-card.owned { border-color:#66bb6a; }
-.support-move-info { font-size:.7rem; color:#81c784; margin-bottom:2px; }
+.support-move-info { font-size:.65rem; color:#81c784; margin-bottom:2px; }
 
-/* 卡牌图片 - 横竖版自适应 (object-fit:contain 确保不变形) */
-.card-img { background:linear-gradient(135deg,#0f3460,#16213e); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
-.card-img img { max-width:100%; max-height:100%; object-fit:contain; image-rendering:auto; }
-.card-img.portrait { height:200px; }
-.card-img.portrait img { height:200px; width:auto; max-width:100%; object-fit:contain; }
-.card-img.landscape { height:120px; }
-.card-img.landscape img { height:120px; width:100%; object-fit:contain; }
-.card-img.no-img { height:60px; }
+/* 卡牌图片 - 统一固定比例（Opus方案：不区分横竖版） */
+.card-img { aspect-ratio:3/4; background:linear-gradient(135deg,#0f3460,#16213e); position:relative; overflow:hidden; }
+.card-img img { width:100%; height:100%; object-fit:cover; object-position:center; }
+.card-img.no-img { aspect-ratio:auto; height:50px; }
 
 .rarity-badge { position:absolute; top:4px; left:4px; font-size:.9rem; color:#e94560; text-shadow:0 0 4px rgba(0,0,0,.8); background:rgba(0,0,0,.4); padding:1px 4px; border-radius:3px; z-index:2; }
 
@@ -113,16 +109,24 @@ h3 { font-size:1.1rem; margin:16px 0 8px; }
 .enemy-analysis { display:flex; align-items:center; gap:8px; padding:6px 0; border-bottom:1px solid #2a2a4a; }
 .analysis-name { font-size:.85rem; white-space:nowrap; }
 
-/* 推荐阵容 */
+/* 推荐阵容 - 1v1 配对模式 */
 .recommend-team { margin-top:8px; }
+.pairing-list { display:flex; flex-direction:column; gap:8px; }
+.pairing-item { background:#16213e; border-radius:8px; border:1px solid #2a2a4a; padding:10px; }
+.pairing-vs { display:flex; align-items:center; gap:8px; }
+.pairing-enemy { flex:1; }
+.pairing-mine { flex:1; text-align:center; }
+.pairing-arrow { color:#e94560; font-size:1.2rem; font-weight:700; }
+.pairing-label { font-size:.65rem; color:#666; }
+.pairing-name { font-size:.9rem; font-weight:600; margin:2px 0; }
+.pairing-stars { font-size:.7rem; color:#e94560; }
+.pairing-img { width:50px; height:50px; margin:0 auto 4px; border-radius:4px; overflow:hidden; }
+.pairing-img img { width:100%; height:100%; object-fit:cover; }
+.pairing-result { margin-top:6px; font-size:.8rem; display:flex; gap:12px; flex-wrap:wrap; }
 .team-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(100px,1fr)); gap:8px; }
-.team-card { background:#16213e; border-radius:10px; overflow:hidden; border:1px solid #2a2a4a; position:relative; }
+.team-card { background:#16213e; border-radius:8px; overflow:hidden; border:1px solid #2a2a4a; position:relative; }
 .team-card.support { opacity:.85; border-color:#333; }
-.team-rank { position:absolute; top:4px; right:4px; background:#e94560; color:#fff; font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:4px; z-index:3; }
-.team-card .card-img { height:100px; }
-.team-card .card-img.portrait { height:180px; }
-.team-card .card-img.portrait img { height:180px; }
-.team-card .card-img.landscape img { height:100px; }
+.team-card .card-img { aspect-ratio:3/4; }
 .team-card .card-name { padding:4px 8px 0; font-size:.85rem; }
 .team-card .card-types { padding:2px 8px 4px; display:flex; gap:4px; }
 .team-card .card-special { padding:0 8px 4px; }

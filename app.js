@@ -300,7 +300,7 @@ function renderEnemyPicker(){
   }).join('');
 }
 
-// 推荐阵容：3主力 + 1支援
+// 推荐：每只敌方各派1只上场（3场1v1），最优配对
 function recommendTeam(){
   const result = document.getElementById('recommend-result');
   const enemies = enemySlots.filter(e => e !== null);
@@ -310,7 +310,6 @@ function recommendTeam(){
     return;
   }
 
-  // 获取用户收藏的卡（区分主力卡和支援券）
   const myCards = allCards.filter(c => collection[c.code] && c.role !== 'support');
   const mySupports = allCards.filter(c => collection[c.code] && c.role === 'support');
 
@@ -328,106 +327,87 @@ function recommendTeam(){
     return;
   }
 
-  // 计算每张主力卡对所有敌方的综合得分
-  const scored = myCards.map(c => {
-    let atkScore = 0;
-    let defPenalty = 0;
-    let bestTarget = null;
-    let bestAtkMult = 0;
-    let worstDefMult = 0;
-    const perEnemy = [];
+  // 计算单张卡对单个敌方的 1v1 得分（log 空间）
+  function scoreVSE(enemy, card){
+    // 攻击：我打敌方
+    const atkMults = card.types.map(t => {
+      let m = 1;
+      for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
+      return {type: t, mult: m};
+    });
+    const bestAtk = atkMults.reduce((a,b) => a.mult > b.mult ? a : b);
 
-    for(const enemy of enemies){
-      // === 攻击：我打敌方几个属性 ===
-      const atkMults = c.types.map(t => {
-        let m = 1;
-        for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
-        return {type: t, mult: m};
-      });
-      const bestAtk = atkMults.reduce((a,b) => a.mult > b.mult ? a : b);
-      if(bestAtk.mult > bestAtkMult){
-        bestAtkMult = bestAtk.mult;
-        bestTarget = enemy;
-      }
-
-      // === 防御：敌方打我几个属性 ===
-      let enemyDefMult = 0;
-      let enemyBestType = '';
-      for(const et of enemy.types){
-        let m = 1;
-        for(const ct of c.types) m *= (TYPE_CHART[et]?.[ct] ?? 1);
-        if(m > enemyDefMult){
-          enemyDefMult = m;
-          enemyBestType = et;
-        }
-      }
-      worstDefMult = Math.max(worstDefMult, enemyDefMult);
-
-      perEnemy.push({
-        enemy: enemy.name,
-        bestAtk,               // {type, mult} 我打敌方最好的倍率
-        enemyDefMult,          // 敌方打我最坏的倍率
-        enemyBestType
-      });
-
-      atkScore += bestAtk.mult;
-      // 防御惩罚：被4x克制要重罚
-      if(enemyDefMult >= 4) defPenalty += 4;
-      else if(enemyDefMult >= 2) defPenalty += 2;
-      else if(enemyDefMult <= 0.5) defPenalty -= 0.5;
-      else if(enemyDefMult === 0) defPenalty -= 1; // 免疫=大优势
+    // 防御：敌方打我
+    let enemyDefMult = 0;
+    for(const et of enemy.types){
+      let m = 1;
+      for(const ct of card.types) m *= (TYPE_CHART[et]?.[ct] ?? 1);
+      if(m > enemyDefMult) enemyDefMult = m;
     }
 
-    let score = atkScore * 2 - defPenalty;
+    // log 评分（Opus 建议：攻击权重 > 防御）
+    const off = Math.log2(bestAtk.mult || 0.125);  // 0→-3
+    const def = -Math.log2(Math.max(enemyDefMult, 0.125));
+    let score = 1.0 * off + 0.6 * def;
 
-    // 特殊机制加成
-    const specials = c.special || [];
-    if(specials.length > 0) score += 1.5;
+    // 特殊机制和稀有度（压低权重避免盖过属性判断）
+    if(card.special?.length > 0) score += 0.5;
+    score += card.rarity * 0.15;
 
-    // 稀有度
-    score += c.rarity * 0.3;
+    return {bestAtk, enemyDefMult, score};
+  }
 
-    return {card: c, score, perEnemy, worstDefMult, bestTarget, bestAtkMult};
+  // 为每张卡预计算对每个敌方的得分
+  const matrix = myCards.map(card => {
+    const vs = {};
+    for(const e of enemies){
+      vs[e.code] = scoreVSE(e, card);
+    }
+    return {card, vs};
   });
 
-  scored.sort((a,b) => b.score - a.score);
+  // === 最优配对：每只敌方各派1只上场，总得分最高 ===
+  // 贪心 + 回溯（敌方≤3，收藏卡≤数百，足够快）
+  const usedCards = new Set();
+  const pairing = [];
 
-  // === 选 3 张主力，去重特殊机制 ===
-  const team = [];
-  const usedSpecials = new Set();
-  const usedTypes = new Set();
-
-  // 第一轮：优先选克制最佳+特殊机制不冲突的
-  for(const s of scored){
-    if(team.length >= 3) break;
-    const specials = s.card.special || [];
-    const hasConflict = specials.some(sp => usedSpecials.has(sp));
-    if(hasConflict) continue;
-    specials.forEach(sp => usedSpecials.add(sp));
-    s.card.types.forEach(t => usedTypes.add(t));
-    team.push(s);
-  }
-
-  // 第二轮：如果没满3张，放宽特殊机制限制（标注冲突）
-  if(team.length < 3){
-    for(const s of scored){
-      if(team.length >= 3) break;
-      if(team.includes(s)) continue;
-      s.card.types.forEach(t => usedTypes.add(t));
-      team.push(s);
+  for(const enemy of enemies){
+    let bestPick = null;
+    let bestScore = -999;
+    for(const m of matrix){
+      if(usedCards.has(m.card.code)) continue;
+      const s = m.vs[enemy.code];
+      if(s.score > bestScore){
+        bestScore = s.score;
+        bestPick = m;
+      }
+    }
+    if(bestPick){
+      usedCards.add(bestPick.card.code);
+      pairing.push({enemy, match: bestPick, detail: bestPick.vs[enemy.code]});
     }
   }
 
-  // === 支援券推荐：只从收藏的支援券里选 ===
+  // 特殊机制去重提示
+  const usedSpecials = new Set();
+  const specialConflicts = [];
+  for(const p of pairing){
+    const sp = p.match.card.special || [];
+    for(const s of sp){
+      if(usedSpecials.has(s)) specialConflicts.push(`${p.match.card.name} 的 ${s} 与已上场卡冲突`);
+      usedSpecials.add(s);
+    }
+  }
+
+  // === 支援券推荐 ===
   let supportPick = null;
   if(mySupports.length > 0){
-    // 选一张支援券：其支援招式属性对所有敌方综合克制最高的
     const supportScored = mySupports.map(s => {
       let supAtk = 0;
       const moveType = s.support_move_type || s.types[0];
       for(const enemy of enemies){
         let m = 1;
-        for(const et of enemy.types) m *= TYPE_CHART[moveType][et] || 1;
+        for(const et of enemy.types) m *= (TYPE_CHART[moveType]?.[et] ?? 1);
         supAtk += m;
       }
       return {card: s, supAtk, moveType};
@@ -439,39 +419,47 @@ function recommendTeam(){
   // === 渲染 ===
   result.innerHTML = `
     <div class="recommend-team">
-      <h3>推荐主力（3只上场）</h3>
-      <div class="team-cards">
-        ${team.map((t, i) => {
-          const c = t.card;
-          const stars = '★'.repeat(c.rarity);
-          const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
-          const specialBadges = (c.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
-          const orient = c.img ? getImgOrientation(c.img) : '';
+      <h3>推荐阵容（每只各打一场）</h3>
+      <div class="pairing-list">
+        ${pairing.map((p, i) => {
+          const enemy = p.enemy;
+          const card = p.match.card;
+          const d = p.detail;
+          const stars = '★'.repeat(card.rarity);
+          const enemyStars = '★'.repeat(enemy.rarity);
+          const typeBadges = card.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+          const enemyTypeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+          const specialBadges = (card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
 
-          // 每只敌方的攻防信息
-          const atkInfo = t.perEnemy.map(a => {
-            const atkClass = a.bestAtk.mult >= 2 ? 'atk-strong' : a.bestAtk.mult <= 0.5 ? 'atk-weak' : '';
-            const defClass = a.enemyDefMult >= 2 ? 'def-vulnerable' : a.enemyDefMult <= 0.5 ? 'def-safe' : '';
-            const atkText = `攻 ${a.bestAtk.type}${a.bestAtk.mult}x`;
-            const defText = a.enemyDefMult >= 4 ? `⚠️被打${a.enemyDefMult}x` : a.enemyDefMult >= 2 ? `被打${a.enemyDefMult}x` : '';
-            return `<div class="vs-line">vs ${a.enemy}: <span class="${atkClass}">${atkText}</span>${defText ? ` <span class="${defClass}">${defText}</span>` : ''}</div>`;
-          }).join('');
-
-          // 防御弱点警告
-          const defWarn = t.worstDefMult >= 4 ? '<div class="def-warning">⚠️ 被敌方4倍克制，慎用！</div>' : '';
+          const atkClass = d.bestAtk.mult >= 2 ? 'atk-strong' : d.bestAtk.mult <= 0.5 ? 'atk-weak' : '';
+          const defClass = d.enemyDefMult >= 2 ? 'def-vulnerable' : d.enemyDefMult <= 0.5 ? 'def-safe' : '';
+          const atkText = `${d.bestAtk.type} ${d.bestAtk.mult}x`;
+          const defText = d.enemyDefMult >= 4 ? `⚠️被打${d.enemyDefMult}x` : d.enemyDefMult >= 2 ? `被打${d.enemyDefMult}x` : d.enemyDefMult <= 0.5 ? `抗${d.enemyDefMult}x` : '';
+          const defWarn = d.enemyDefMult >= 4 ? '<div class="def-warning">⚠️ 被敌方4倍克制，慎用！</div>' : '';
 
           return `
-            <div class="team-card">
-              <div class="team-rank">#${i+1}</div>
-              <div class="card-img ${orient}">
-                ${c.img ? `<img src="${c.img}" alt="${c.name}" onload="adjustImgOrientation(this)">` : ''}
-                <span class="rarity-badge">${stars}</span>
+            <div class="pairing-item">
+              <div class="pairing-vs">
+                <div class="pairing-enemy">
+                  <div class="pairing-label">敌方 ${i+1}</div>
+                  <div class="pairing-name">${enemy.name}</div>
+                  <div class="pairing-stars">${enemyStars}</div>
+                  <div class="card-types">${enemyTypeBadges}</div>
+                </div>
+                <div class="pairing-arrow">→</div>
+                <div class="pairing-mine">
+                  ${card.img ? `<div class="pairing-img"><img src="${card.img}" alt="${card.name}" loading="lazy"></div>` : ''}
+                  <div class="pairing-name">${card.name}</div>
+                  <div class="pairing-stars">${stars}</div>
+                  <div class="card-types">${typeBadges}</div>
+                  ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
+                </div>
               </div>
-              <div class="card-name">${c.name}</div>
-              <div class="card-types">${typeBadges}</div>
-              ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
+              <div class="pairing-result">
+                <span class="${atkClass}">攻 ${atkText}</span>
+                ${defText ? `<span class="${defClass}">${defText}</span>` : ''}
+              </div>
               ${defWarn}
-              <div class="card-atk-info">${atkInfo}</div>
             </div>
           `;
         }).join('')}
@@ -494,9 +482,7 @@ function recommendTeam(){
         <p class="hint">收藏页可勾选支援券（谜拟丘/拉普拉斯/葱游兵/铝钢龙），这里会自动推荐。</p>
       `}
 
-      <div class="special-notice">
-        ${[...usedSpecials].length ? `本局已分配: ${[...usedSpecials].join('、')}（每场各限用一次）` : ''}
-      </div>
+      ${specialConflicts.length ? `<div class="special-notice">⚠️ ${specialConflicts.join('；')}（每场各限用一次）</div>` : ''}
     </div>
   `;
 }
@@ -506,7 +492,7 @@ function analyzeEnemy(e){
   const weak = [];
   for(const t of TYPES){
     let m = 1;
-    for(const et of e.types) m *= TYPE_CHART[t][et] || 1;
+    for(const et of e.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
     if(m >= 2) weak.push({type:t, mult:m});
   }
   const weakBadges = weak.map(w => `<span class="type-tag" style="background:${TYPE_COLORS[w.type]}">${w.type} ${w.mult}x</span>`).join('');
