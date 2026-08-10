@@ -12,7 +12,7 @@
           "types": [
             "超能力"
           ],
-          "img": "img/s1/HP_01.png",
+          "img": "img/s1/26c558639659464ba6d8b3389abd628b.png",
           "role": "main",
           "special": [
             "Mega进化"
@@ -25,7 +25,7 @@
           "types": [
             "超能力"
           ],
-          "img": "img/s1/HP_02.png",
+          "img": "img/s1/975698276d0b4963b614a4aa5447b1f5.png",
           "role": "main",
           "special": []
         },
@@ -36,7 +36,7 @@
           "types": [
             "妖精"
           ],
-          "img": "img/s1/HP_03.png",
+          "img": "img/s1/15e8393c538f4c438ffbe48eeffb59b6.png",
           "role": "main",
           "special": [
             "极巨化"
@@ -49,7 +49,7 @@
           "types": [
             "格斗"
           ],
-          "img": "img/s1/HP_04.png",
+          "img": "img/s1/c9be05831c7f40dbb79f8e08764218a1.png",
           "role": "main",
           "special": [
             "极巨化"
@@ -63,7 +63,7 @@
             "岩石",
             "恶"
           ],
-          "img": "img/s1/HP_05.png",
+          "img": "img/s1/d13f0c5ab9114daa9ad8560fc2234c15.png",
           "role": "main",
           "special": [
             "Mega进化"
@@ -77,7 +77,7 @@
             "钢",
             "超能力"
           ],
-          "img": "img/s1/HP_06.png",
+          "img": "img/s1/63f5217ea7304163a19b9271b2f3d771.png",
           "role": "main",
           "special": [
             "Mega进化"
@@ -91,7 +91,7 @@
             "电",
             "龙"
           ],
-          "img": "img/s1/26c558639659464ba6d8b3389abd628b.png",
+          "img": "img/s1/5b6f1812e12f4e688b4072c9cd12dce9.png",
           "role": "main",
           "special": []
         },
@@ -103,7 +103,7 @@
             "草",
             "毒"
           ],
-          "img": "img/s1/975698276d0b4963b614a4aa5447b1f5.png",
+          "img": "img/s1/a4a8b7c23bf54d8ea1fa0475252a933d.png",
           "role": "main",
           "special": [
             "Mega进化"
@@ -117,7 +117,7 @@
             "火",
             "飞行"
           ],
-          "img": "img/s1/15e8393c538f4c438ffbe48eeffb59b6.png",
+          "img": "img/s1/3161e6d2a841453c9da1c9bf72bd8845.png",
           "role": "main",
           "special": [
             "Mega进化"
@@ -130,7 +130,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/c9be05831c7f40dbb79f8e08764218a1.png",
+          "img": "img/s1/3acbdaa048844eb89aae4ae3e652e923.png",
           "role": "main",
           "special": [
             "Mega进化"
@@ -143,7 +143,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/d13f0c5ab9114daa9ad8560fc2234c15.png",
+          "img": "img/s1/6d4ead0092e4451887e98ea3c2a3002c.png",
           "role": "main",
           "special": []
         },
@@ -154,7 +154,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/63f5217ea7304163a19b9271b2f3d771.png",
+          "img": "img/s1/153a35221c4f4051b1cd00adebc006d3.png",
           "role": "main",
           "special": []
         },
@@ -165,7 +165,7 @@
           "types": [
             "恶"
           ],
-          "img": "img/s1/5b6f1812e12f4e688b4072c9cd12dce9.png",
+          "img": "img/s1/8c3fe44c2a8e4eb49e6d01d08bdd8186.png",
           "role": "main",
           "special": []
         },
@@ -176,7 +176,7 @@
           "types": [
             "冰"
           ],
-          "img": "img/s1/a4a8b7c23bf54d8ea1fa0475252a933d.png",
+          "img": "img/s1/dbda5223dd244ba39c4288572f8d5750.png",
           "role": "main",
           "special": []
         },
@@ -188,7 +188,7 @@
             "一般",
             "飞行"
           ],
-          "img": "img/s1/3161e6d2a841453c9da1c9bf72bd8845.png",
+          "img": "img/s1/3666b765d19d4a85a2ba2b0b421567ae.png",
           "role": "main",
           "special": []
         },
@@ -200,7 +200,7 @@
             "幽灵",
             "毒"
           ],
-          "img": "img/s1/3acbdaa048844eb89aae4ae3e652e923.png",
+          "img": "img/s1/788ab3dbbd3242508a8453a54ad24c01.png",
           "role": "main",
           "special": []
         },
@@ -211,7 +211,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/6d4ead0092e4451887e98ea3c2a3002c.png",
+          "img": "img/s1/38c6ebb62c9641bfac5a31655e1d221a.png",
           "role": "main",
           "special": []
         },
@@ -223,7 +223,7 @@
             "地面",
             "岩石"
           ],
-          "img": "img/s1/153a35221c4f4051b1cd00adebc006d3.png",
+          "img": "img/s1/2ba0f157cf824b0abb5c425731cd4519.png",
           "role": "main",
           "special": []
         },
@@ -234,7 +234,7 @@
           "types": [
             "电"
           ],
-          "img": "img/s1/8c3fe44c2a8e4eb49e6d01d08bdd8186.png",
+          "img": "img/s1/d9ab6347db264f8691cbde33c7ac5dbd.png",
           "role": "main",
           "special": []
         },
@@ -246,7 +246,7 @@
             "地面",
             "龙"
           ],
-          "img": "img/s1/dbda5223dd244ba39c4288572f8d5750.png",
+          "img": "img/s1/dae12537e65f41258a339681cb1f6db0.png",
           "role": "main",
           "special": []
         },
@@ -257,7 +257,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/3666b765d19d4a85a2ba2b0b421567ae.png",
+          "img": "img/s1/65625f3ed6804c9eafce1784db55dd54.png",
           "role": "main",
           "special": []
         },
@@ -268,7 +268,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/788ab3dbbd3242508a8453a54ad24c01.png",
+          "img": "img/s1/e1d8c301076c45d2a1ceeb4e178c04e0.png",
           "role": "main",
           "special": []
         },
@@ -279,7 +279,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/38c6ebb62c9641bfac5a31655e1d221a.png",
+          "img": "img/s1/7939c1e368554b0185d768602d6813c9.png",
           "role": "main",
           "special": []
         },
@@ -291,7 +291,7 @@
             "恶",
             "一般"
           ],
-          "img": "img/s1/2ba0f157cf824b0abb5c425731cd4519.png",
+          "img": "img/s1/bf8c0c0b9b5344eb8043fd194370f561.png",
           "role": "main",
           "special": []
         },
@@ -303,7 +303,7 @@
             "水",
             "格斗"
           ],
-          "img": "img/s1/d9ab6347db264f8691cbde33c7ac5dbd.png",
+          "img": "img/s1/c3928adef3104c61b329aa516c698823.png",
           "role": "main",
           "special": []
         },
@@ -314,7 +314,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/dae12537e65f41258a339681cb1f6db0.png",
+          "img": "img/s1/9889140965d5443e95afe86634144a5d.png",
           "role": "main",
           "special": []
         },
@@ -325,7 +325,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/65625f3ed6804c9eafce1784db55dd54.png",
+          "img": "img/s1/a29e9dc8c35b4d99a88c1a2c3a06bbef.png",
           "role": "main",
           "special": []
         },
@@ -336,7 +336,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/e1d8c301076c45d2a1ceeb4e178c04e0.png",
+          "img": "img/s1/f4e955d538f94e3285005fa202db4e81.png",
           "role": "main",
           "special": []
         },
@@ -347,7 +347,7 @@
           "types": [
             "电"
           ],
-          "img": "img/s1/7939c1e368554b0185d768602d6813c9.png",
+          "img": "img/s1/d3c65207d9254344bc30ce5c6bde10c5.png",
           "role": "main",
           "special": []
         },
@@ -358,7 +358,7 @@
           "types": [
             "电"
           ],
-          "img": "img/s1/bf8c0c0b9b5344eb8043fd194370f561.png",
+          "img": "img/s1/1de2a7e4f0614274b251a743ba962818.png",
           "role": "main",
           "special": []
         },
@@ -369,7 +369,7 @@
           "types": [
             "超能力"
           ],
-          "img": "img/s1/c3928adef3104c61b329aa516c698823.png",
+          "img": "img/s1/d6a686a27d4647298b9d48510c69b38f.png",
           "role": "main",
           "special": []
         },
@@ -380,7 +380,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/9889140965d5443e95afe86634144a5d.png",
+          "img": "img/s1/0144ce372276401286e99b3fe0e46afa.png",
           "role": "main",
           "special": []
         },
@@ -391,7 +391,7 @@
           "types": [
             "妖精"
           ],
-          "img": "img/s1/a29e9dc8c35b4d99a88c1a2c3a06bbef.png",
+          "img": "img/s1/77289e23791140e4bc89563a11535095.png",
           "role": "main",
           "special": []
         },
@@ -403,7 +403,7 @@
             "恶",
             "冰"
           ],
-          "img": "img/s1/f4e955d538f94e3285005fa202db4e81.png",
+          "img": "img/s1/29974623414541469ef562ca54a9ca66.png",
           "role": "main",
           "special": []
         },
@@ -415,7 +415,7 @@
             "水",
             "超能力"
           ],
-          "img": "img/s1/d3c65207d9254344bc30ce5c6bde10c5.png",
+          "img": "img/s1/bf5c57991ccb4a08bd04b9f281bf7619.png",
           "role": "main",
           "special": []
         },
@@ -426,7 +426,7 @@
           "types": [
             "地面"
           ],
-          "img": "img/s1/1de2a7e4f0614274b251a743ba962818.png",
+          "img": "img/s1/1b6feecb2b9e4ab98a028fd8817afa6f.png",
           "role": "main",
           "special": []
         },
@@ -438,7 +438,7 @@
             "恶",
             "一般"
           ],
-          "img": "img/s1/d6a686a27d4647298b9d48510c69b38f.png",
+          "img": "img/s1/dda539bd10b648bda304ea3b2c7fa6f1.png",
           "role": "main",
           "special": []
         },
@@ -462,7 +462,7 @@
             "一般",
             "飞行"
           ],
-          "img": "img/s1/77289e23791140e4bc89563a11535095.png",
+          "img": "img/s1/2bae04c3d3284f57bccf926598c18d7c.png",
           "role": "main",
           "special": []
         },
@@ -473,7 +473,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/29974623414541469ef562ca54a9ca66.png",
+          "img": "img/s1/e18b3de1ad7c40879b0e280691b2feff.png",
           "role": "main",
           "special": []
         },
@@ -485,7 +485,7 @@
             "火",
             "龙"
           ],
-          "img": "img/s1/bf5c57991ccb4a08bd04b9f281bf7619.png",
+          "img": "img/s1/63fb0e2a856c4d0d9dc70c44e3d5195e.png",
           "role": "main",
           "special": []
         },
@@ -497,7 +497,7 @@
             "冰",
             "虫"
           ],
-          "img": "img/s1/1b6feecb2b9e4ab98a028fd8817afa6f.png",
+          "img": "img/s1/f7ab1e910c224a2e8168504190f5e10d.png",
           "role": "main",
           "special": []
         },
@@ -508,7 +508,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/dda539bd10b648bda304ea3b2c7fa6f1.png",
+          "img": "img/s1/64b7b7aa5e2d481bbdd525f89055a160.png",
           "role": "main",
           "special": []
         },
@@ -519,7 +519,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/9b810692046c4dc698176ae3fbfa3135.png",
+          "img": "img/s1/f4812b1f019e4f5dafd7e1159595cef6.png",
           "role": "main",
           "special": []
         },
@@ -530,7 +530,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/2bae04c3d3284f57bccf926598c18d7c.png",
+          "img": "img/s1/c4c756fd6a654d0eb7641fd670ca743f.png",
           "role": "main",
           "special": []
         },
@@ -541,7 +541,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/e18b3de1ad7c40879b0e280691b2feff.png",
+          "img": "img/s1/4a3352823f3044829c21a7d0015a41a3.png",
           "role": "main",
           "special": []
         },
@@ -552,7 +552,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/63fb0e2a856c4d0d9dc70c44e3d5195e.png",
+          "img": "img/s1/05974603b0f442f89a8d35f013f33ecb.png",
           "role": "main",
           "special": []
         },
@@ -563,7 +563,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/f7ab1e910c224a2e8168504190f5e10d.png",
+          "img": "img/s1/681f802031204a769ebddbdcd1846996.png",
           "role": "main",
           "special": []
         },
@@ -574,7 +574,7 @@
           "types": [
             "电"
           ],
-          "img": "img/s1/64b7b7aa5e2d481bbdd525f89055a160.png",
+          "img": "img/s1/3612fdba31634e46b6c9c2ff05d92844.png",
           "role": "main",
           "special": []
         },
@@ -585,7 +585,7 @@
           "types": [
             "一般"
           ],
-          "img": "img/s1/f4812b1f019e4f5dafd7e1159595cef6.png",
+          "img": "img/s1/dc688b2ce6aa4e309187a70e42ed90b5.png",
           "role": "main",
           "special": []
         },
@@ -597,7 +597,7 @@
             "恶",
             "冰"
           ],
-          "img": "img/s1/c4c756fd6a654d0eb7641fd670ca743f.png",
+          "img": "img/s1/3419245ea6974261873ba51fb12d0996.png",
           "role": "main",
           "special": []
         },
@@ -609,7 +609,7 @@
             "地面",
             "幽灵"
           ],
-          "img": "img/s1/4a3352823f3044829c21a7d0015a41a3.png",
+          "img": "img/s1/f7f2da8b65654c4c83ca6d74ceb0aa7c.png",
           "role": "main",
           "special": []
         },
@@ -620,7 +620,7 @@
           "types": [
             "地面"
           ],
-          "img": "img/s1/05974603b0f442f89a8d35f013f33ecb.png",
+          "img": "img/s1/8607c15b090f4b0780baa8210df8f357.png",
           "role": "main",
           "special": []
         },
@@ -632,7 +632,7 @@
             "恶",
             "一般"
           ],
-          "img": "img/s1/681f802031204a769ebddbdcd1846996.png",
+          "img": "img/s1/a7f1bcf2cdb84743b8277851c1b5e6cb.png",
           "role": "main",
           "special": []
         },
@@ -644,7 +644,7 @@
             "虫",
             "电"
           ],
-          "img": "img/s1/3612fdba31634e46b6c9c2ff05d92844.png",
+          "img": "img/s1/1e03aa061c7d42c78c3f4a639b278cad.png",
           "role": "main",
           "special": []
         },
@@ -655,7 +655,7 @@
           "types": [
             "飞行"
           ],
-          "img": "img/s1/dc688b2ce6aa4e309187a70e42ed90b5.png",
+          "img": "img/s1/f8799d8f23ea45e2bc49d27dca4909a1.png",
           "role": "main",
           "special": []
         },
@@ -666,7 +666,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/3419245ea6974261873ba51fb12d0996.png",
+          "img": "img/s1/22f8661fd3c94c9d8888c5b3fa2b3ba8.png",
           "role": "main",
           "special": []
         },
@@ -677,7 +677,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/f7f2da8b65654c4c83ca6d74ceb0aa7c.png",
+          "img": "img/s1/20ffac70fe944a03934b8b35250880c3.png",
           "role": "main",
           "special": []
         },
@@ -688,7 +688,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/8607c15b090f4b0780baa8210df8f357.png",
+          "img": "img/s1/07cbc39b283d4352b58d3e1fd3106d4c.png",
           "role": "main",
           "special": []
         },
@@ -699,7 +699,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/a7f1bcf2cdb84743b8277851c1b5e6cb.png",
+          "img": "img/s1/56e1cd1c2ac64f4192a141a558a46981.png",
           "role": "main",
           "special": []
         },
@@ -710,7 +710,7 @@
           "types": [
             "火"
           ],
-          "img": "img/s1/1e03aa061c7d42c78c3f4a639b278cad.png",
+          "img": "img/s1/3800ab99ee844f9ba7e1e9c9ed8aaea9.png",
           "role": "main",
           "special": []
         },
@@ -733,7 +733,7 @@
             "电",
             "妖精"
           ],
-          "img": "img/s1/22f8661fd3c94c9d8888c5b3fa2b3ba8.png",
+          "img": "img/s1/857c59e04315466b9ba4fd93b0b5e8ef.png",
           "role": "main",
           "special": []
         },
@@ -745,7 +745,7 @@
             "地面",
             "幽灵"
           ],
-          "img": "img/s1/20ffac70fe944a03934b8b35250880c3.png",
+          "img": "img/s1/19343e23c63e413c8f4c2c806ca6d307.png",
           "role": "main",
           "special": []
         },
@@ -757,7 +757,7 @@
             "水",
             "超能力"
           ],
-          "img": "img/s1/07cbc39b283d4352b58d3e1fd3106d4c.png",
+          "img": "img/s1/b5b31066ac694171b649374a467db79f.png",
           "role": "main",
           "special": []
         },
@@ -769,7 +769,7 @@
             "恶",
             "一般"
           ],
-          "img": "img/s1/56e1cd1c2ac64f4192a141a558a46981.png",
+          "img": "img/s1/b2e37d1e12b549b39b3a80eff9a58909.png",
           "role": "main",
           "special": []
         },
@@ -780,7 +780,7 @@
           "types": [
             "虫"
           ],
-          "img": "img/s1/3800ab99ee844f9ba7e1e9c9ed8aaea9.png",
+          "img": "img/s1/37a2c3daa80d45b4bb659252e779f089.png",
           "role": "main",
           "special": []
         },
@@ -792,7 +792,7 @@
             "一般",
             "飞行"
           ],
-          "img": "img/s1/8b4185f89fd348d7ae544e7395fdc5ed.png",
+          "img": "img/s1/fb2a27e850164467846a84b7be2814fa.png",
           "role": "main",
           "special": []
         },
@@ -803,7 +803,7 @@
           "types": [
             "草"
           ],
-          "img": "img/s1/857c59e04315466b9ba4fd93b0b5e8ef.png",
+          "img": "img/s1/40b356f12c4d4380bd4fa2275a371dcb.png",
           "role": "main",
           "special": []
         },
@@ -815,7 +815,7 @@
             "冰",
             "虫"
           ],
-          "img": "img/s1/19343e23c63e413c8f4c2c806ca6d307.png",
+          "img": "img/s1/3a4d67d2f3584485867d1f04e8176846.png",
           "role": "main",
           "special": []
         }
@@ -832,7 +832,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s2/HP_01.png",
+          "img": "img/s2/25825d14599648d0988aaba28212c4b2.png",
           "special": [
             "极巨化"
           ],
@@ -846,7 +846,7 @@
             "地面",
             "火"
           ],
-          "img": "img/s2/HP_02.png",
+          "img": "img/s2/71c94977fdee49bea611feb55fbe46d9.png",
           "special": [
             "极巨化"
           ],
@@ -859,7 +859,7 @@
           "types": [
             "格斗"
           ],
-          "img": "img/s2/HP_03.png",
+          "img": "img/s2/a79293ffcf234a929a7240ff7159997c.png",
           "special": [
             "极巨化"
           ],
@@ -872,7 +872,7 @@
           "types": [
             "电"
           ],
-          "img": "img/s2/HP_04.png",
+          "img": "img/s2/a8ac4776159a4a5789a955007c7fc86a.png",
           "special": [
             "极巨化"
           ],
@@ -885,7 +885,7 @@
           "types": [
             "一般"
           ],
-          "img": "img/s2/HP_05.png",
+          "img": "img/s2/a35d21b8ae234af3a65f9f15e5881c9b.png",
           "special": [
             "极巨化"
           ],
@@ -899,7 +899,7 @@
             "龙",
             "格斗"
           ],
-          "img": "img/s2/HP_06.png",
+          "img": "img/s2/79e43e25939a4f7299f73584bffcc5b7.png",
           "special": [
             "极巨化"
           ],
@@ -913,7 +913,7 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/s2/HP_07.png",
+          "img": "img/s2/0e235ccc594c41d4983d5e27311a09fd.png",
           "special": [
             "Mega进化"
           ],
@@ -927,7 +927,7 @@
             "火",
             "龙"
           ],
-          "img": "img/s2/HP_08.png",
+          "img": "img/s2/98796e47a58042388ae936899e418c1b.png",
           "special": [
             "极巨化"
           ],
@@ -1672,7 +1672,7 @@
             "超能力",
             "飞行"
           ],
-          "img": "img/s3/HP_01.png",
+          "img": "img/s3/df5c66deb2a142179b45efcd18779d56.png",
           "special": [
             "极巨化"
           ],
@@ -1686,7 +1686,7 @@
             "火",
             "飞行"
           ],
-          "img": "img/s3/HP_02.png",
+          "img": "img/s3/11202402c2b94d8891c0623ed749992c.png",
           "special": [
             "极巨化"
           ],
@@ -1700,7 +1700,7 @@
             "超能力",
             "钢"
           ],
-          "img": "img/s3/HP_03.png",
+          "img": "img/s3/294bed418bd64951b2d0d544688d24ea.png",
           "special": [
             "极巨化"
           ],
@@ -1714,7 +1714,7 @@
             "超能力",
             "幽灵"
           ],
-          "img": "img/s3/HP_04.png",
+          "img": "img/s3/e66c4561a2e64dd3be3d6e7f812c1660.png",
           "special": [
             "极巨化"
           ],
@@ -1728,7 +1728,7 @@
             "水",
             "恶"
           ],
-          "img": "img/s3/HP_05.png",
+          "img": "img/s3/fd23e6ead65b4b35a53665e57e75a153.png",
           "special": [
             "极巨化"
           ],
@@ -1742,7 +1742,7 @@
             "电",
             "格斗"
           ],
-          "img": "img/s3/HP_06.png",
+          "img": "img/s3/5f82bc5c4c294eb080cdf9384181a13b.png",
           "special": [
             "极巨化"
           ],
@@ -1756,7 +1756,7 @@
             "毒",
             "龙"
           ],
-          "img": "img/s3/HP_07.png",
+          "img": "img/s3/f0ada8e1e2904021a4da3d8b37befbe4.png",
           "special": [
             "极巨化"
           ],
@@ -1770,7 +1770,7 @@
             "水",
             "格斗"
           ],
-          "img": "img/s3/HP_08.png",
+          "img": "img/s3/9d350a82ffa34ee7acca19b86b1b1f5a.png",
           "special": [
             "极巨化"
           ],
@@ -2503,7 +2503,7 @@
             "钢",
             "龙"
           ],
-          "img": "img/s4/HP_01.png",
+          "img": "img/s4/e091fb12e31040ddba0463a5c00b3a99.png",
           "special": [
             "极巨化"
           ],
@@ -2517,7 +2517,7 @@
             "水",
             "龙"
           ],
-          "img": "img/s4/HP_02.png",
+          "img": "img/s4/d4845ff1b47244ba8326a3ee44accce4.png",
           "special": [
             "极巨化"
           ],
@@ -2530,7 +2530,7 @@
           "types": [
             "妖精"
           ],
-          "img": "img/s4/HP_03.png",
+          "img": "img/s4/d2e5a726e9004a2ab88855ac3fe7c782.png",
           "special": [
             "极巨化"
           ],
@@ -2544,7 +2544,7 @@
             "恶",
             "飞行"
           ],
-          "img": "img/s4/HP_04.png",
+          "img": "img/s4/63aa4901664d4521a8826abf1358ffd3.png",
           "special": [
             "极巨化"
           ],
@@ -2558,7 +2558,7 @@
             "草",
             "超能力"
           ],
-          "img": "img/s4/HP_05.png",
+          "img": "img/s4/e8256a1136274fd7abfdb41c68fd2a62.png",
           "special": [
             "极巨化"
           ],
@@ -2572,7 +2572,7 @@
             "草",
             "幽灵"
           ],
-          "img": "img/s4/HP_06.png",
+          "img": "img/s4/661460072fe24d7fac0f5430753e6926.png",
           "special": [
             "极巨化"
           ],
@@ -2586,7 +2586,7 @@
             "幽灵",
             "妖精"
           ],
-          "img": "img/s4/HP_07.png",
+          "img": "img/s4/1d5797fc13474ca7bb6975b5dc9be907.png",
           "special": [
             "极巨化"
           ],
@@ -2600,7 +2600,7 @@
             "龙",
             "冰"
           ],
-          "img": "img/s4/HP_08.png",
+          "img": "img/s4/836918f1538d4fdba999aed1f2d39e55.png",
           "special": [
             "极巨化"
           ],
@@ -3341,7 +3341,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/HP_1_01.jpg",
+          "img": "img/g1/35bc5e7359cd46449581720675c82e7e.png",
           "special": [
             "极巨化"
           ],
@@ -3354,7 +3354,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/HP_1_02.jpg",
+          "img": "img/g1/d0b9f923bae24003b0744dbf8fc11f53.png",
           "special": [
             "极巨化"
           ],
@@ -3367,7 +3367,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g1/HP_1_03.jpg",
+          "img": "img/g1/4961017886d648e595a3047ec0e60474.png",
           "special": [
             "极巨化"
           ],
@@ -3380,7 +3380,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g1/HP_1_04.jpg",
+          "img": "img/g1/207b3019b2854b4bab3b1b56ac757ffa.png",
           "special": [
             "极巨化"
           ],
@@ -3393,7 +3393,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g1/HP_1_05.jpg",
+          "img": "img/g1/9ee9c5e376864951a15fde78c56460a0.png",
           "special": [
             "极巨化"
           ],
@@ -3406,7 +3406,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/HP_1_06.jpg",
+          "img": "img/g1/edecb1a6a0ba4cc980eea54140fa18f4.png",
           "special": [
             "极巨化"
           ],
@@ -3419,7 +3419,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g1/HP_1_07.jpg",
+          "img": "img/g1/4fd9f55e7a114f328f96d9003c91a967.png",
           "special": [
             "极巨化"
           ],
@@ -3432,7 +3432,7 @@
           "types": [
             "超能力"
           ],
-          "img": "img/g1/HP_1_08.jpg",
+          "img": "img/g1/343119a4cb244103a964e6125f1027c0.png",
           "special": [
             "Mega进化"
           ],
@@ -3445,7 +3445,7 @@
           "types": [
             "一般"
           ],
-          "img": "img/g1/35bc5e7359cd46449581720675c82e7e.png",
+          "img": "img/g1/944fb41e39a84a5ab679c581033e19e4.png",
           "special": [
             "极巨化"
           ],
@@ -3459,7 +3459,7 @@
             "一般",
             "幽灵"
           ],
-          "img": "img/g1/d0b9f923bae24003b0744dbf8fc11f53.png",
+          "img": "img/g1/41e0e4b58b3847a58b6dd4379f4bd371.png",
           "special": [
             "极巨化"
           ],
@@ -3472,7 +3472,7 @@
           "types": [
             "虫"
           ],
-          "img": "img/g1/4961017886d648e595a3047ec0e60474.png",
+          "img": "img/g1/a5038a02033b4302865cb02116651ee3.png",
           "special": [],
           "role": "main"
         },
@@ -3484,7 +3484,7 @@
             "虫",
             "格斗"
           ],
-          "img": "img/g1/207b3019b2854b4bab3b1b56ac757ffa.png",
+          "img": "img/g1/60d1bd3c478245418b3650a80e83d775.png",
           "special": [],
           "role": "main"
         },
@@ -3496,7 +3496,7 @@
             "水",
             "格斗"
           ],
-          "img": "img/g1/9ee9c5e376864951a15fde78c56460a0.png",
+          "img": "img/g1/7f4c9e3ba44b47fdacb931edd092f841.png",
           "special": [],
           "role": "main"
         },
@@ -3508,7 +3508,7 @@
             "恶",
             "冰"
           ],
-          "img": "img/g1/edecb1a6a0ba4cc980eea54140fa18f4.png",
+          "img": "img/g1/530354934659498985e5f9cc6688cb39.png",
           "special": [],
           "role": "main"
         },
@@ -3519,7 +3519,7 @@
           "types": [
             "格斗"
           ],
-          "img": "img/g1/4fd9f55e7a114f328f96d9003c91a967.png",
+          "img": "img/g1/626f4775e85b4f66a418e978a8377768.png",
           "special": [],
           "role": "main"
         },
@@ -3531,7 +3531,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/343119a4cb244103a964e6125f1027c0.png",
+          "img": "img/g1/14c3eb5f16694ad48e04fd94c911dc40.png",
           "special": [],
           "role": "main"
         },
@@ -3543,7 +3543,7 @@
             "水",
             "岩石"
           ],
-          "img": "img/g1/944fb41e39a84a5ab679c581033e19e4.png",
+          "img": "img/g1/3cc5c87a48854e5296f4c68ef3c4defa.png",
           "special": [],
           "role": "main"
         },
@@ -3554,7 +3554,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g1/41e0e4b58b3847a58b6dd4379f4bd371.png",
+          "img": "img/g1/c1f5909098dc4d43a3506568fbfc5c4b.png",
           "special": [],
           "role": "main"
         },
@@ -3565,7 +3565,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/a5038a02033b4302865cb02116651ee3.png",
+          "img": "img/g1/e1617e4cfe6e4488969867bcb4e31f09.png",
           "special": [],
           "role": "main"
         },
@@ -3577,7 +3577,7 @@
             "电",
             "毒"
           ],
-          "img": "img/g1/60d1bd3c478245418b3650a80e83d775.png",
+          "img": "img/g1/cb186f9ff3ba4da694e4215bb82ed094.png",
           "special": [],
           "role": "main"
         },
@@ -3589,7 +3589,7 @@
             "电",
             "龙"
           ],
-          "img": "img/g1/7f4c9e3ba44b47fdacb931edd092f841.png",
+          "img": "img/g1/f69fae9972ae48658635a0f7f4e0a8ca.png",
           "special": [],
           "role": "main"
         },
@@ -3600,7 +3600,7 @@
           "types": [
             "地面"
           ],
-          "img": "img/g1/530354934659498985e5f9cc6688cb39.png",
+          "img": "img/g1/79494a0c66bb42a38eea5b162f33df80.png",
           "special": [],
           "role": "main"
         },
@@ -3612,7 +3612,7 @@
             "虫",
             "电"
           ],
-          "img": "img/g1/626f4775e85b4f66a418e978a8377768.png",
+          "img": "img/g1/cb98e110f93748f890a2550a6ac32eb4.png",
           "special": [],
           "role": "main"
         },
@@ -3624,7 +3624,7 @@
             "草",
             "冰"
           ],
-          "img": "img/g1/14c3eb5f16694ad48e04fd94c911dc40.png",
+          "img": "img/g1/52e45a2ce20c4cbea9d0ad024bbff9de.png",
           "special": [],
           "role": "main"
         },
@@ -3635,7 +3635,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/0d25d5a1f1e24d8a9762c1f6a1b45592.png",
+          "img": "img/g1/83daa0cfad9748b880736047289a844e.png",
           "special": [],
           "role": "main"
         },
@@ -3646,7 +3646,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/3cc5c87a48854e5296f4c68ef3c4defa.png",
+          "img": "img/g1/5f5ab244c9a64186900603861230631a.png",
           "special": [],
           "role": "main"
         },
@@ -3657,7 +3657,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g1/c1f5909098dc4d43a3506568fbfc5c4b.png",
+          "img": "img/g1/781aede1b2de40d39464463c95d0a89d.png",
           "special": [],
           "role": "main"
         },
@@ -3669,7 +3669,7 @@
             "草",
             "冰"
           ],
-          "img": "img/g1/e1617e4cfe6e4488969867bcb4e31f09.png",
+          "img": "img/g1/f69116459f4a43a4bcb976c59dc86670.png",
           "special": [],
           "role": "main"
         },
@@ -3681,7 +3681,7 @@
             "幽灵",
             "飞行"
           ],
-          "img": "img/g1/cb186f9ff3ba4da694e4215bb82ed094.png",
+          "img": "img/g1/1afd4f8bd35e467bb4bb43bba197d5d6.png",
           "special": [],
           "role": "main"
         },
@@ -3693,7 +3693,7 @@
             "一般",
             "幽灵"
           ],
-          "img": "img/g1/f69fae9972ae48658635a0f7f4e0a8ca.png",
+          "img": "img/g1/445ee52233d748f396cc841a995d392a.png",
           "special": [],
           "role": "main"
         },
@@ -3705,7 +3705,7 @@
             "岩石",
             "草"
           ],
-          "img": "img/g1/79494a0c66bb42a38eea5b162f33df80.png",
+          "img": "img/g1/0cb7d40de4724e6e94d930d9c9ad5693.png",
           "special": [],
           "role": "main"
         },
@@ -3716,7 +3716,7 @@
           "types": [
             "格斗"
           ],
-          "img": "img/g1/cb98e110f93748f890a2550a6ac32eb4.png",
+          "img": "img/g1/ae6f7474dc834b318f7bccda34d44c39.png",
           "special": [],
           "role": "main"
         },
@@ -3728,7 +3728,7 @@
             "钢",
             "地面"
           ],
-          "img": "img/g1/52e45a2ce20c4cbea9d0ad024bbff9de.png",
+          "img": "img/g1/75409969a1d948ea98070bd263ac73bc.png",
           "special": [],
           "role": "main"
         },
@@ -3739,7 +3739,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/83daa0cfad9748b880736047289a844e.png",
+          "img": "img/g1/4f0c24f1f40d45c5b315f1b15fbf1f31.png",
           "special": [],
           "role": "main"
         },
@@ -3750,7 +3750,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/5f5ab244c9a64186900603861230631a.png",
+          "img": "img/g1/87a4ed5e25e54fc380ca5b84f49517e3.png",
           "special": [],
           "role": "main"
         },
@@ -3762,7 +3762,7 @@
             "电",
             "毒"
           ],
-          "img": "img/g1/781aede1b2de40d39464463c95d0a89d.png",
+          "img": "img/g1/7dc8365c868c4159b9a94739cc61ac30.png",
           "special": [],
           "role": "main"
         },
@@ -3774,7 +3774,7 @@
             "电",
             "龙"
           ],
-          "img": "img/g1/f69116459f4a43a4bcb976c59dc86670.png",
+          "img": "img/g1/e4048693eddc44289eb17c9e4a3c701a.png",
           "special": [],
           "role": "main"
         },
@@ -3785,7 +3785,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/1afd4f8bd35e467bb4bb43bba197d5d6.png",
+          "img": "img/g1/f50a9d0db8634805a53b2c3b0fad7540.png",
           "special": [],
           "role": "main"
         },
@@ -3797,7 +3797,7 @@
             "恶",
             "冰"
           ],
-          "img": "img/g1/445ee52233d748f396cc841a995d392a.png",
+          "img": "img/g1/7637e5af65314320a90a3203eab4df27.png",
           "special": [],
           "role": "main"
         },
@@ -3809,7 +3809,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/0cb7d40de4724e6e94d930d9c9ad5693.png",
+          "img": "img/g1/bf2ea4177eee4aa7881d375570d180f0.png",
           "special": [],
           "role": "main"
         },
@@ -3821,7 +3821,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/ae6f7474dc834b318f7bccda34d44c39.png",
+          "img": "img/g1/5fc5a31c88e245728e5023a8938be6d9.png",
           "special": [],
           "role": "main"
         },
@@ -3832,7 +3832,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/75409969a1d948ea98070bd263ac73bc.png",
+          "img": "img/g1/7e4e5851da894f25a01ac682b9f537df.png",
           "special": [],
           "role": "main"
         },
@@ -3843,7 +3843,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/4f0c24f1f40d45c5b315f1b15fbf1f31.png",
+          "img": "img/g1/97c7655fe66b4e3e84e2653492b66a82.png",
           "special": [],
           "role": "main"
         },
@@ -3854,7 +3854,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g1/87a4ed5e25e54fc380ca5b84f49517e3.png",
+          "img": "img/g1/3a414f501d1344b5968836bbaecfbaf8.png",
           "special": [],
           "role": "main"
         },
@@ -3866,7 +3866,7 @@
             "草",
             "冰"
           ],
-          "img": "img/g1/7dc8365c868c4159b9a94739cc61ac30.png",
+          "img": "img/g1/a5d8743076454ffd80edfb792680885c.png",
           "special": [],
           "role": "main"
         },
@@ -3878,7 +3878,7 @@
             "幽灵",
             "飞行"
           ],
-          "img": "img/g1/e4048693eddc44289eb17c9e4a3c701a.png",
+          "img": "img/g1/d3aa0ede31af4746a47886f9721bf1bd.png",
           "special": [],
           "role": "main"
         },
@@ -3890,7 +3890,7 @@
             "一般",
             "幽灵"
           ],
-          "img": "img/g1/f50a9d0db8634805a53b2c3b0fad7540.png",
+          "img": "img/g1/c05ac3d8929840f49365b84b7fd971d6.png",
           "special": [],
           "role": "main"
         },
@@ -3902,7 +3902,7 @@
             "岩石",
             "草"
           ],
-          "img": "img/g1/7637e5af65314320a90a3203eab4df27.png",
+          "img": "img/g1/c57d1559797840fc9649c40c29b2857a.png",
           "special": [],
           "role": "main"
         },
@@ -3914,7 +3914,7 @@
             "钢",
             "地面"
           ],
-          "img": "img/g1/bf2ea4177eee4aa7881d375570d180f0.png",
+          "img": "img/g1/05d27d21ab054894a2c7160432edbf6e.png",
           "special": [],
           "role": "main"
         },
@@ -3925,7 +3925,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/5fc5a31c88e245728e5023a8938be6d9.png",
+          "img": "img/g1/a9b76063423746fab3fa3705965277a0.png",
           "special": [],
           "role": "main"
         },
@@ -3936,7 +3936,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/7e4e5851da894f25a01ac682b9f537df.png",
+          "img": "img/g1/3d3e8e17d60c4828911345b60e63ab29.png",
           "special": [],
           "role": "main"
         },
@@ -3947,7 +3947,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/97c7655fe66b4e3e84e2653492b66a82.png",
+          "img": "img/g1/00df272330684cef8a4f4fc5d92a0095.png",
           "special": [],
           "role": "main"
         },
@@ -3959,7 +3959,7 @@
             "恶",
             "冰"
           ],
-          "img": "img/g1/3a414f501d1344b5968836bbaecfbaf8.png",
+          "img": "img/g1/2bfc2a3417de4501847dcaeec87b09a0.png",
           "special": [],
           "role": "main"
         },
@@ -3971,7 +3971,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/a5d8743076454ffd80edfb792680885c.png",
+          "img": "img/g1/0a2902003bfb4f899d5b1d33351da1d9.png",
           "special": [],
           "role": "main"
         },
@@ -3983,7 +3983,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/d3aa0ede31af4746a47886f9721bf1bd.png",
+          "img": "img/g1/aabb3de9eae142a0800618127796f4fd.png",
           "special": [],
           "role": "main"
         },
@@ -3994,7 +3994,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/c05ac3d8929840f49365b84b7fd971d6.png",
+          "img": "img/g1/8eb748f064d143438f5487367802d61d.png",
           "special": [],
           "role": "main"
         },
@@ -4005,7 +4005,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/c57d1559797840fc9649c40c29b2857a.png",
+          "img": "img/g1/cb0f9e44c1c44e8da570be5d27c1a573.png",
           "special": [],
           "role": "main"
         },
@@ -4016,7 +4016,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g1/05d27d21ab054894a2c7160432edbf6e.png",
+          "img": "img/g1/66b90e749c4d4abf9db4e33dc3641e96.png",
           "special": [],
           "role": "main"
         },
@@ -4027,7 +4027,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/a9b76063423746fab3fa3705965277a0.png",
+          "img": "img/g1/20fdd6628c424df58eed49f3db97ed0c.png",
           "special": [],
           "role": "main"
         },
@@ -4038,7 +4038,7 @@
           "types": [
             "冰"
           ],
-          "img": "img/g1/3d3e8e17d60c4828911345b60e63ab29.png",
+          "img": "img/g1/3b4b19f637f441f49b2dcabe3738a222.png",
           "special": [],
           "role": "main"
         },
@@ -4049,7 +4049,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g1/00df272330684cef8a4f4fc5d92a0095.png",
+          "img": "img/g1/191ea76d6c6f44d4b8e5cffa93082e33.png",
           "special": [],
           "role": "main"
         },
@@ -4060,7 +4060,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g1/2bfc2a3417de4501847dcaeec87b09a0.png",
+          "img": "img/g1/ec7be6a8b5a44fc1afec684f3df32c1e.png",
           "special": [],
           "role": "main"
         },
@@ -4071,7 +4071,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/0a2902003bfb4f899d5b1d33351da1d9.png",
+          "img": "img/g1/cf1185d6043940649fd8e890be0d63cf.png",
           "special": [],
           "role": "main"
         },
@@ -4082,7 +4082,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g1/aabb3de9eae142a0800618127796f4fd.png",
+          "img": "img/g1/353feb15e51843b380176d5c975974fa.png",
           "special": [],
           "role": "main"
         },
@@ -4093,7 +4093,7 @@
           "types": [
             "格斗"
           ],
-          "img": "img/g1/8eb748f064d143438f5487367802d61d.png",
+          "img": "img/g1/863fa76e914b4deba4b5321156e2767c.png",
           "special": [],
           "role": "main"
         },
@@ -4104,7 +4104,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g1/cb0f9e44c1c44e8da570be5d27c1a573.png",
+          "img": "img/g1/b79eca0453c1421988ed778f737f638f.png",
           "special": [],
           "role": "main"
         },
@@ -4115,7 +4115,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g1/66b90e749c4d4abf9db4e33dc3641e96.png",
+          "img": "img/g1/4a6fa71232d64aafa3d68dd1822c8686.png",
           "special": [],
           "role": "main"
         },
@@ -4127,7 +4127,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/20fdd6628c424df58eed49f3db97ed0c.png",
+          "img": "img/g1/847826868db84baeb5195c8b8f17b985.png",
           "special": [],
           "role": "main"
         },
@@ -4139,7 +4139,7 @@
             "毒",
             "地面"
           ],
-          "img": "img/g1/3b4b19f637f441f49b2dcabe3738a222.png",
+          "img": "img/g1/21230bec429741c7a5a89d2ae03d965c.png",
           "special": [],
           "role": "main"
         }
@@ -4156,7 +4156,7 @@
           "types": [
             "妖精"
           ],
-          "img": "img/g2/HP_01.png",
+          "img": "img/g2/998b982e3b624971814bf30c7af82bf9.png",
           "special": [
             "极巨化"
           ],
@@ -4183,7 +4183,7 @@
             "钢",
             "龙"
           ],
-          "img": "img/g2/HP_03.png",
+          "img": "img/g2/ab62d46fa3524e33b302d6bc34af86e5.png",
           "special": [
             "极巨化"
           ],
@@ -4197,7 +4197,7 @@
             "火",
             "飞行"
           ],
-          "img": "img/g2/HP_04.png",
+          "img": "img/g2/7496f62b67b74f08b34a9f6da2c76639.png",
           "special": [
             "极巨化"
           ],
@@ -4210,7 +4210,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/HP_05.png",
+          "img": "img/g2/2b0f1295b5864fd18193301aa220f31c.png",
           "special": [
             "极巨化"
           ],
@@ -4224,7 +4224,7 @@
             "格斗",
             "钢"
           ],
-          "img": "img/g2/HP_06.png",
+          "img": "img/g2/f63db176d41544108e05a0f71207a3b3.png",
           "special": [
             "Mega进化"
           ],
@@ -4238,7 +4238,7 @@
             "龙",
             "飞行"
           ],
-          "img": "img/g2/HP_07.png",
+          "img": "img/g2/9c701e4c229d4603980b224ba8de4bcc.png",
           "special": [
             "Mega进化"
           ],
@@ -4252,7 +4252,7 @@
             "龙",
             "超能力"
           ],
-          "img": "img/g2/HP_08.png",
+          "img": "img/g2/532aae5148a0488c96462373fabf4cc9.png",
           "special": [
             "Mega进化"
           ],
@@ -4266,7 +4266,7 @@
             "龙",
             "超能力"
           ],
-          "img": "img/g2/HP_09.png",
+          "img": "img/g2/34421b36a9574671b15cf407c9059a0b.png",
           "special": [
             "Mega进化"
           ],
@@ -4280,7 +4280,7 @@
             "龙",
             "恶"
           ],
-          "img": "img/g2/HP_10.png",
+          "img": "img/g2/824f3e6c908e4216b7ae30ce00b5f71f.png",
           "special": [
             "极巨化"
           ],
@@ -4294,7 +4294,7 @@
             "钢",
             "超能力"
           ],
-          "img": "img/g2/e19fa6a44ccc42df8540e54cce8f3a46.png",
+          "img": "img/g2/7d21b2e4993c4a27a29698ed17d7badb.png",
           "special": [],
           "role": "main"
         },
@@ -4305,7 +4305,7 @@
           "types": [
             "龙"
           ],
-          "img": "img/g2/998b982e3b624971814bf30c7af82bf9.png",
+          "img": "img/g2/6b18c019d6354e02a82eb219b0e95364.png",
           "special": [],
           "role": "main"
         },
@@ -4317,7 +4317,7 @@
             "岩石",
             "飞行"
           ],
-          "img": "img/g2/ab62d46fa3524e33b302d6bc34af86e5.png",
+          "img": "img/g2/81cf147eceb64c8b9d4aa1bb7971404e.png",
           "special": [],
           "role": "main"
         },
@@ -4329,7 +4329,7 @@
             "电",
             "龙"
           ],
-          "img": "img/g2/7496f62b67b74f08b34a9f6da2c76639.png",
+          "img": "img/g2/46c57e00c6da42faaa36370a8746bc52.png",
           "special": [],
           "role": "main"
         },
@@ -4341,7 +4341,7 @@
             "水",
             "龙"
           ],
-          "img": "img/g2/2b0f1295b5864fd18193301aa220f31c.png",
+          "img": "img/g2/6683d3cba6ce4667afc92952a5d62924.png",
           "special": [],
           "role": "main"
         },
@@ -4352,7 +4352,7 @@
           "types": [
             "超能力"
           ],
-          "img": "img/g2/f63db176d41544108e05a0f71207a3b3.png",
+          "img": "img/g2/e85fc10481a14267ae6c53d680399ba0.png",
           "special": [],
           "role": "main"
         },
@@ -4364,7 +4364,7 @@
             "电",
             "恶"
           ],
-          "img": "img/g2/9c701e4c229d4603980b224ba8de4bcc.png",
+          "img": "img/g2/d332359298b6439db902d521d24beee2.png",
           "special": [],
           "role": "main"
         },
@@ -4376,7 +4376,7 @@
             "虫",
             "水"
           ],
-          "img": "img/g2/532aae5148a0488c96462373fabf4cc9.png",
+          "img": "img/g2/7b626e9b2a9f4d42bdc16a7180cc4200.png",
           "special": [],
           "role": "main"
         },
@@ -4387,7 +4387,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/34421b36a9574671b15cf407c9059a0b.png",
+          "img": "img/g2/308002cd4eb242fcb386a416573f4f71.png",
           "special": [],
           "role": "main"
         },
@@ -4398,7 +4398,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/824f3e6c908e4216b7ae30ce00b5f71f.png",
+          "img": "img/g2/f2ab9c42bff54b328a1854774b46d2e8.png",
           "special": [],
           "role": "main"
         },
@@ -4409,7 +4409,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/7d21b2e4993c4a27a29698ed17d7badb.png",
+          "img": "img/g2/51622fa2dcc54bae9bc1dc6e33629744.png",
           "special": [],
           "role": "main"
         },
@@ -4421,7 +4421,7 @@
             "地面",
             "钢"
           ],
-          "img": "img/g2/6b18c019d6354e02a82eb219b0e95364.png",
+          "img": "img/g2/9082756bb9f84af2b033621704c1f75b.png",
           "special": [],
           "role": "main"
         },
@@ -4432,7 +4432,7 @@
           "types": [
             "毒"
           ],
-          "img": "img/g2/81cf147eceb64c8b9d4aa1bb7971404e.png",
+          "img": "img/g2/8172e77f27a943c4a949d81385b19c55.png",
           "special": [],
           "role": "main"
         },
@@ -4444,7 +4444,7 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/46c57e00c6da42faaa36370a8746bc52.png",
+          "img": "img/g2/c5f0286e6b48483187cae1ada0759649.png",
           "special": [],
           "role": "main"
         },
@@ -4455,7 +4455,7 @@
           "types": [
             "恶"
           ],
-          "img": "img/g2/6683d3cba6ce4667afc92952a5d62924.png",
+          "img": "img/g2/54c607f8e5c04d3bafb00ad97e7dcb86.png",
           "special": [],
           "role": "main"
         },
@@ -4467,7 +4467,7 @@
             "草",
             "恶"
           ],
-          "img": "img/g2/e85fc10481a14267ae6c53d680399ba0.png",
+          "img": "img/g2/f93960d8e1f742a2b4d41a367db1c3b6.png",
           "special": [],
           "role": "main"
         },
@@ -4479,7 +4479,7 @@
             "火",
             "幽灵"
           ],
-          "img": "img/g2/d332359298b6439db902d521d24beee2.png",
+          "img": "img/g2/e2bd07a198f84c3fbd15040584746dd7.png",
           "special": [],
           "role": "main"
         },
@@ -4491,7 +4491,7 @@
             "水",
             "格斗"
           ],
-          "img": "img/g2/7b626e9b2a9f4d42bdc16a7180cc4200.png",
+          "img": "img/g2/6e931fe9cd284d00876b8083c89c7814.png",
           "special": [],
           "role": "main"
         },
@@ -4502,7 +4502,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/308002cd4eb242fcb386a416573f4f71.png",
+          "img": "img/g2/c75fe4c3db4441db9a8f9db18272e20d.png",
           "special": [],
           "role": "main"
         },
@@ -4513,7 +4513,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/f2ab9c42bff54b328a1854774b46d2e8.png",
+          "img": "img/g2/b844b33762564ed3bf891ca49773739e.png",
           "special": [],
           "role": "main"
         },
@@ -4524,7 +4524,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/51622fa2dcc54bae9bc1dc6e33629744.png",
+          "img": "img/g2/7e4609b8c2ee4a81a981f16c57515561.png",
           "special": [],
           "role": "main"
         },
@@ -4536,7 +4536,7 @@
             "水",
             "格斗"
           ],
-          "img": "img/g2/9082756bb9f84af2b033621704c1f75b.png",
+          "img": "img/g2/551a153a4c194a94adaa7ebf470c32c5.png",
           "special": [],
           "role": "main"
         },
@@ -4547,7 +4547,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/8172e77f27a943c4a949d81385b19c55.png",
+          "img": "img/g2/0000efb3317d4708a420dc8f9fc3dcdb.png",
           "special": [],
           "role": "main"
         },
@@ -4558,7 +4558,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/c5f0286e6b48483187cae1ada0759649.png",
+          "img": "img/g2/a0aefcdd6a9a486081052d0fa48f1085.png",
           "special": [],
           "role": "main"
         },
@@ -4570,7 +4570,7 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/54c607f8e5c04d3bafb00ad97e7dcb86.png",
+          "img": "img/g2/cfcbae480f0e45f8a4bb4ad445a1c8fb.png",
           "special": [],
           "role": "main"
         },
@@ -4582,7 +4582,7 @@
             "超能力",
             "格斗"
           ],
-          "img": "img/g2/f93960d8e1f742a2b4d41a367db1c3b6.png",
+          "img": "img/g2/8f0edc3d96024e5a9bb745a903af48a4.png",
           "special": [],
           "role": "main"
         },
@@ -4594,7 +4594,7 @@
             "虫",
             "毒"
           ],
-          "img": "img/g2/e2bd07a198f84c3fbd15040584746dd7.png",
+          "img": "img/g2/c14a13e781464fe8b932bc67f284a721.png",
           "special": [],
           "role": "main"
         },
@@ -4605,7 +4605,7 @@
           "types": [
             "一般"
           ],
-          "img": "img/g2/6e931fe9cd284d00876b8083c89c7814.png",
+          "img": "img/g2/f76c42546e704037b391fbc51a90cd45.png",
           "special": [],
           "role": "main"
         },
@@ -4617,7 +4617,7 @@
             "冰",
             "水"
           ],
-          "img": "img/g2/c75fe4c3db4441db9a8f9db18272e20d.png",
+          "img": "img/g2/9bbe6e98ed6b4b0f9ffb3a0535d11664.png",
           "special": [],
           "role": "main"
         },
@@ -4629,7 +4629,7 @@
             "草",
             "毒"
           ],
-          "img": "img/g2/b844b33762564ed3bf891ca49773739e.png",
+          "img": "img/g2/2a8ac0e20afc49d0b56f0cb04aa193c0.png",
           "special": [],
           "role": "main"
         },
@@ -4640,7 +4640,7 @@
           "types": [
             "妖精"
           ],
-          "img": "img/g2/7e4609b8c2ee4a81a981f16c57515561.png",
+          "img": "img/g2/1b46a80ac456496b91d211d7fed7a521.png",
           "special": [],
           "role": "main"
         },
@@ -4651,7 +4651,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/551a153a4c194a94adaa7ebf470c32c5.png",
+          "img": "img/g2/6255f5e9205a48a38ce72825126b2bbd.png",
           "special": [],
           "role": "main"
         },
@@ -4662,7 +4662,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/0000efb3317d4708a420dc8f9fc3dcdb.png",
+          "img": "img/g2/2332bdb71c0b46a299ef02c28c89a1d2.png",
           "special": [],
           "role": "main"
         },
@@ -4673,7 +4673,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/a0aefcdd6a9a486081052d0fa48f1085.png",
+          "img": "img/g2/7bde18dc29c448c6ba8eb9383dac61e1.png",
           "special": [],
           "role": "main"
         },
@@ -4684,7 +4684,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/cfcbae480f0e45f8a4bb4ad445a1c8fb.png",
+          "img": "img/g2/d24afd98f07f4420905956ae00cfe5ec.png",
           "special": [],
           "role": "main"
         },
@@ -4695,7 +4695,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/8f0edc3d96024e5a9bb745a903af48a4.png",
+          "img": "img/g2/af793655f33444f7add2619842771a92.png",
           "special": [],
           "role": "main"
         },
@@ -4707,7 +4707,7 @@
             "火",
             "格斗"
           ],
-          "img": "img/g2/c14a13e781464fe8b932bc67f284a721.png",
+          "img": "img/g2/b0be8ecf5eb14037be63d22dcac7fe52.png",
           "special": [],
           "role": "main"
         },
@@ -4718,7 +4718,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/f76c42546e704037b391fbc51a90cd45.png",
+          "img": "img/g2/fc61168fac2c4d3c9ceddaa933d05790.png",
           "special": [],
           "role": "main"
         },
@@ -4729,7 +4729,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/9bbe6e98ed6b4b0f9ffb3a0535d11664.png",
+          "img": "img/g2/8cdc51fd69064f2388c9f8071ef688c6.png",
           "special": [],
           "role": "main"
         },
@@ -4740,7 +4740,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/2a8ac0e20afc49d0b56f0cb04aa193c0.png",
+          "img": "img/g2/077a34be362943feb37444726f19bce1.png",
           "special": [],
           "role": "main"
         },
@@ -4752,7 +4752,7 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/1b46a80ac456496b91d211d7fed7a521.png",
+          "img": "img/g2/31c784bb9e584ff1a0d6ee26107c2314.png",
           "special": [],
           "role": "main"
         },
@@ -4764,7 +4764,7 @@
             "虫",
             "毒"
           ],
-          "img": "img/g2/6255f5e9205a48a38ce72825126b2bbd.png",
+          "img": "img/g2/c0f07045064e47cbbd2b973af62c1c07.png",
           "special": [],
           "role": "main"
         },
@@ -4776,7 +4776,7 @@
             "冰",
             "水"
           ],
-          "img": "img/g2/2332bdb71c0b46a299ef02c28c89a1d2.png",
+          "img": "img/g2/f535e037de7c45648efb7f35f74bb6cc.png",
           "special": [],
           "role": "main"
         },
@@ -4788,7 +4788,7 @@
             "草",
             "毒"
           ],
-          "img": "img/g2/7bde18dc29c448c6ba8eb9383dac61e1.png",
+          "img": "img/g2/6f36f85e9ce24109a74041c0e3ab0aed.png",
           "special": [],
           "role": "main"
         },
@@ -4799,7 +4799,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/d24afd98f07f4420905956ae00cfe5ec.png",
+          "img": "img/g2/ecc8faf1baf24256b4c7ca45603abd76.png",
           "special": [],
           "role": "main"
         },
@@ -4810,7 +4810,7 @@
           "types": [
             "钢"
           ],
-          "img": "img/g2/af793655f33444f7add2619842771a92.png",
+          "img": "img/g2/38a24e7c361c463f98606b7f554cbb6b.png",
           "special": [],
           "role": "main"
         },
@@ -4821,7 +4821,7 @@
           "types": [
             "草"
           ],
-          "img": "img/g2/b0be8ecf5eb14037be63d22dcac7fe52.png",
+          "img": "img/g2/d65e5af618b641cfb6755bfce90c41b8.png",
           "special": [],
           "role": "main"
         },
@@ -4832,7 +4832,7 @@
           "types": [
             "火"
           ],
-          "img": "img/g2/fc61168fac2c4d3c9ceddaa933d05790.png",
+          "img": "img/g2/517e75d3d8884c2bbbe20447e1fdea79.png",
           "special": [],
           "role": "main"
         },
@@ -4843,7 +4843,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/8cdc51fd69064f2388c9f8071ef688c6.png",
+          "img": "img/g2/537e19aa10c9402083b7679823d572d1.png",
           "special": [],
           "role": "main"
         },
@@ -4854,7 +4854,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/077a34be362943feb37444726f19bce1.png",
+          "img": "img/g2/3bc43bd1cee14b19b677827883ee7911.png",
           "special": [],
           "role": "main"
         },
@@ -4865,7 +4865,7 @@
           "types": [
             "水"
           ],
-          "img": "img/g2/31c784bb9e584ff1a0d6ee26107c2314.png",
+          "img": "img/g2/9caa778b7c4f4d079f34e6da72a889fe.png",
           "special": [],
           "role": "main"
         },
@@ -4876,7 +4876,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/c0f07045064e47cbbd2b973af62c1c07.png",
+          "img": "img/g2/f85f14ada67b4a8b83b3305fce37da6e.png",
           "special": [],
           "role": "main"
         },
@@ -4888,7 +4888,7 @@
             "超能力",
             "妖精"
           ],
-          "img": "img/g2/f535e037de7c45648efb7f35f74bb6cc.png",
+          "img": "img/g2/c42428c5ea9f42e5ab053ae6ee7aa533.png",
           "special": [],
           "role": "main"
         },
@@ -4900,7 +4900,7 @@
             "虫",
             "毒"
           ],
-          "img": "img/g2/6f36f85e9ce24109a74041c0e3ab0aed.png",
+          "img": "img/g2/4285f6aafef8442cbb18a2fcb7d48b57.png",
           "special": [],
           "role": "main"
         },
@@ -4911,7 +4911,7 @@
           "types": [
             "一般"
           ],
-          "img": "img/g2/ecc8faf1baf24256b4c7ca45603abd76.png",
+          "img": "img/g2/9ce53600106a4d9a98c4074db4a25492.png",
           "special": [],
           "role": "main"
         },
@@ -4923,7 +4923,7 @@
             "冰",
             "水"
           ],
-          "img": "img/g2/38a24e7c361c463f98606b7f554cbb6b.png",
+          "img": "img/g2/7b2a5b3ceaab4e878345cacb91b5eabd.png",
           "special": [],
           "role": "main"
         },
@@ -4935,7 +4935,7 @@
             "草",
             "毒"
           ],
-          "img": "img/g2/d65e5af618b641cfb6755bfce90c41b8.png",
+          "img": "img/g2/bddd95a4606443579ffbc1436fab784e.png",
           "special": [],
           "role": "main"
         },
@@ -4946,7 +4946,7 @@
           "types": [
             "妖精"
           ],
-          "img": "img/g2/517e75d3d8884c2bbbe20447e1fdea79.png",
+          "img": "img/g2/77ccf5f4a2e445958a1f8feaaab3c46e.png",
           "special": [],
           "role": "main"
         },
@@ -4957,7 +4957,7 @@
           "types": [
             "电"
           ],
-          "img": "img/g2/537e19aa10c9402083b7679823d572d1.png",
+          "img": "img/g2/71e863252e6340e0bddcddc82a087426.png",
           "special": [],
           "role": "main"
         },
@@ -4968,7 +4968,7 @@
           "types": [
             "钢"
           ],
-          "img": "img/g2/3bc43bd1cee14b19b677827883ee7911.png",
+          "img": "img/g2/77b85d5d0a9c4767b52b027dc11038b9.png",
           "special": [],
           "role": "main"
         }
