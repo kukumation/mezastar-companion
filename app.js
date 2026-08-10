@@ -341,7 +341,7 @@ function recommendTeam(){
       // === 攻击：我打敌方几个属性 ===
       const atkMults = c.types.map(t => {
         let m = 1;
-        for(const et of enemy.types) m *= TYPE_CHART[t][et] || 1;
+        for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
         return {type: t, mult: m};
       });
       const bestAtk = atkMults.reduce((a,b) => a.mult > b.mult ? a : b);
@@ -355,7 +355,7 @@ function recommendTeam(){
       let enemyBestType = '';
       for(const et of enemy.types){
         let m = 1;
-        for(const ct of c.types) m *= TYPE_CHART[et][ct] || 1;
+        for(const ct of c.types) m *= (TYPE_CHART[et]?.[ct] ?? 1);
         if(m > enemyDefMult){
           enemyDefMult = m;
           enemyBestType = et;
@@ -517,6 +517,7 @@ function analyzeEnemy(e){
 window.openEnemyPickerPub = openEnemyPicker;
 window.removeEnemyPub = removeEnemy;
 window.selectEnemyPub = selectEnemy;
+window.adjustImgOrientation = adjustImgOrientation;
 
 // ===== Tab 切换 =====
 function switchTab(tab){
