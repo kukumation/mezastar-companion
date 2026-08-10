@@ -300,7 +300,7 @@ function renderEnemyPicker(){
   }).join('');
 }
 
-// 推荐：每只敌方各派1只上场（3场1v1），最优配对
+// 推荐：3v3 团战，每只都要对所有敌方有攻防评估
 function recommendTeam(){
   const result = document.getElementById('recommend-result');
   const enemies = enemySlots.filter(e => e !== null);
@@ -327,79 +327,89 @@ function recommendTeam(){
     return;
   }
 
-  // 计算单张卡对单个敌方的 1v1 得分（log 空间）
-  function scoreVSE(enemy, card){
-    // 攻击：我打敌方
-    const atkMults = card.types.map(t => {
-      let m = 1;
-      for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
-      return {type: t, mult: m};
-    });
-    const bestAtk = atkMults.reduce((a,b) => a.mult > b.mult ? a : b);
+  // 3v3 综合评分：每张卡对每个敌方分别算攻防，log 空间加总
+  function evalCard(card){
+    let totalOff = 0, totalDef = 0;
+    const perEnemy = [];
+    let worstDefMult = 0;
+    let worstDefEnemy = '';
 
-    // 防御：敌方打我
-    let enemyDefMult = 0;
-    for(const et of enemy.types){
-      let m = 1;
-      for(const ct of card.types) m *= (TYPE_CHART[et]?.[ct] ?? 1);
-      if(m > enemyDefMult) enemyDefMult = m;
+    for(const enemy of enemies){
+      // 攻击：我的每个属性打这个敌方的最佳倍率
+      const atkMults = card.types.map(t => {
+        let m = 1;
+        for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
+        return {type: t, mult: m};
+      });
+      const bestAtk = atkMults.reduce((a,b) => a.mult > b.mult ? a : b);
+
+      // 防御：这个敌方打我的最坏倍率
+      let enemyDefMult = 0;
+      let enemyBestType = '';
+      for(const et of enemy.types){
+        let m = 1;
+        for(const ct of card.types) m *= (TYPE_CHART[et]?.[ct] ?? 1);
+        if(m > enemyDefMult){ enemyDefMult = m; enemyBestType = et; }
+      }
+
+      if(enemyDefMult > worstDefMult){
+        worstDefMult = enemyDefMult;
+        worstDefEnemy = enemy.name;
+      }
+
+      totalOff += Math.log2(bestAtk.mult || 0.125);
+      totalDef += Math.log2(Math.max(enemyDefMult, 0.125));
+
+      perEnemy.push({enemy: enemy.name, bestAtk, enemyDefMult, enemyBestType});
     }
 
-    // log 评分（Opus 建议：攻击权重 > 防御）
-    const off = Math.log2(bestAtk.mult || 0.125);  // 0→-3
-    const def = -Math.log2(Math.max(enemyDefMult, 0.125));
-    let score = 1.0 * off + 0.6 * def;
+    // 综合分：攻击 - 防御（防御权重更高，因为3v3被克一只就拖累全队）
+    let score = totalOff - 0.8 * totalDef;
 
-    // 特殊机制和稀有度（压低权重避免盖过属性判断）
+    // 特殊机制和稀有度（低权重）
     if(card.special?.length > 0) score += 0.5;
     score += card.rarity * 0.15;
 
-    return {bestAtk, enemyDefMult, score};
+    return {card, score, perEnemy, worstDefMult, worstDefEnemy, totalOff, totalDef};
   }
 
-  // 为每张卡预计算对每个敌方的得分
-  const matrix = myCards.map(card => {
-    const vs = {};
-    for(const e of enemies){
-      vs[e.code] = scoreVSE(e, card);
-    }
-    return {card, vs};
-  });
+  const evaluated = myCards.map(evalCard);
+  evaluated.sort((a,b) => b.score - a.score);
 
-  // === 最优配对：每只敌方各派1只上场，总得分最高 ===
-  // 贪心 + 回溯（敌方≤3，收藏卡≤数百，足够快）
-  const usedCards = new Set();
-  const pairing = [];
+  // 选 3 张：防御优先——被严重克制的（worstDefMult >= 4）直接排除
+  const safeCards = evaluated.filter(e => e.worstDefMult < 4);
+  const pool = safeCards.length >= 3 ? safeCards : evaluated; // 如果都被克制就硬选
 
-  for(const enemy of enemies){
-    let bestPick = null;
-    let bestScore = -999;
-    for(const m of matrix){
-      if(usedCards.has(m.card.code)) continue;
-      const s = m.vs[enemy.code];
-      if(s.score > bestScore){
-        bestScore = s.score;
-        bestPick = m;
-      }
-    }
-    if(bestPick){
-      usedCards.add(bestPick.card.code);
-      pairing.push({enemy, match: bestPick, detail: bestPick.vs[enemy.code]});
-    }
-  }
-
-  // 特殊机制去重提示
+  // 从池子里选综合分最高的3张，去重特殊机制
+  const team = [];
   const usedSpecials = new Set();
-  const specialConflicts = [];
-  for(const p of pairing){
-    const sp = p.match.card.special || [];
-    for(const s of sp){
-      if(usedSpecials.has(s)) specialConflicts.push(`${p.match.card.name} 的 ${s} 与已上场卡冲突`);
-      usedSpecials.add(s);
+  for(const e of pool){
+    if(team.length >= 3) break;
+    const sp = e.card.special || [];
+    if(sp.some(s => usedSpecials.has(s))) continue;
+    sp.forEach(s => usedSpecials.add(s));
+    team.push(e);
+  }
+  // 填满3张
+  if(team.length < 3){
+    for(const e of pool){
+      if(team.length >= 3) break;
+      if(team.includes(e)) continue;
+      team.push(e);
     }
   }
 
-  // === 支援券推荐 ===
+  // 特殊机制冲突警告
+  const specialConflicts = [];
+  const seen = new Set();
+  for(const t of team){
+    for(const s of (t.card.special || [])){
+      if(seen.has(s)) specialConflicts.push(`${t.card.name} 的 ${s}`);
+      seen.add(s);
+    }
+  }
+
+  // 支援券
   let supportPick = null;
   if(mySupports.length > 0){
     const supportScored = mySupports.map(s => {
@@ -416,50 +426,37 @@ function recommendTeam(){
     supportPick = supportScored[0];
   }
 
-  // === 渲染 ===
+  // 渲染
   result.innerHTML = `
     <div class="recommend-team">
-      <h3>推荐阵容（每只各打一场）</h3>
-      <div class="pairing-list">
-        ${pairing.map((p, i) => {
-          const enemy = p.enemy;
-          const card = p.match.card;
-          const d = p.detail;
-          const stars = '★'.repeat(card.rarity);
-          const enemyStars = '★'.repeat(enemy.rarity);
-          const typeBadges = card.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
-          const enemyTypeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
-          const specialBadges = (card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
+      <h3>推荐阵容（3v3 团战）</h3>
+      <div class="team-cards">
+        ${team.map((t, i) => {
+          const c = t.card;
+          const stars = '★'.repeat(c.rarity);
+          const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+          const specialBadges = (c.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
 
-          const atkClass = d.bestAtk.mult >= 2 ? 'atk-strong' : d.bestAtk.mult <= 0.5 ? 'atk-weak' : '';
-          const defClass = d.enemyDefMult >= 2 ? 'def-vulnerable' : d.enemyDefMult <= 0.5 ? 'def-safe' : '';
-          const atkText = `${d.bestAtk.type} ${d.bestAtk.mult}x`;
-          const defText = d.enemyDefMult >= 4 ? `⚠️被打${d.enemyDefMult}x` : d.enemyDefMult >= 2 ? `被打${d.enemyDefMult}x` : d.enemyDefMult <= 0.5 ? `抗${d.enemyDefMult}x` : '';
-          const defWarn = d.enemyDefMult >= 4 ? '<div class="def-warning">⚠️ 被敌方4倍克制，慎用！</div>' : '';
+          // 每只敌方的攻防
+          const atkInfo = t.perEnemy.map(a => {
+            const atkClass = a.bestAtk.mult >= 2 ? 'atk-strong' : a.bestAtk.mult <= 0.5 ? 'atk-weak' : '';
+            const defClass = a.enemyDefMult >= 2 ? 'def-vulnerable' : a.enemyDefMult <= 0.5 ? 'def-safe' : '';
+            const atkText = `${a.bestAtk.type}${a.bestAtk.mult}x`;
+            const defText = a.enemyDefMult >= 4 ? `被打${a.enemyDefMult}x` : a.enemyDefMult >= 2 ? `被打${a.enemyDefMult}x` : a.enemyDefMult <= 0.5 ? `抗${a.enemyDefMult}x` : '';
+            return `<div class="vs-line">vs ${a.enemy}: <span class="${atkClass}">${atkText}</span>${defText ? ` <span class="${defClass}">${defText}</span>` : ''}</div>`;
+          }).join('');
+
+          const defWarn = t.worstDefMult >= 4 ? `<div class="def-warning">⚠️ 被${t.worstDefEnemy} 4倍克制！</div>` : t.worstDefMult >= 2 ? `<div class="def-warning">⚠️ 被${t.worstDefEnemy} 2倍克制</div>` : '';
 
           return `
-            <div class="pairing-item">
-              <div class="pairing-vs">
-                <div class="pairing-enemy">
-                  <div class="pairing-label">敌方 ${i+1}</div>
-                  <div class="pairing-name">${enemy.name}</div>
-                  <div class="pairing-stars">${enemyStars}</div>
-                  <div class="card-types">${enemyTypeBadges}</div>
-                </div>
-                <div class="pairing-arrow">→</div>
-                <div class="pairing-mine">
-                  ${card.img ? `<div class="pairing-img"><img src="${card.img}" alt="${card.name}" loading="lazy"></div>` : ''}
-                  <div class="pairing-name">${card.name}</div>
-                  <div class="pairing-stars">${stars}</div>
-                  <div class="card-types">${typeBadges}</div>
-                  ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
-                </div>
-              </div>
-              <div class="pairing-result">
-                <span class="${atkClass}">攻 ${atkText}</span>
-                ${defText ? `<span class="${defClass}">${defText}</span>` : ''}
-              </div>
+            <div class="team-card">
+              <div class="team-rank">#${i+1}</div>
+              ${c.img ? `<div class="card-img"><img src="${c.img}" alt="${c.name}" loading="lazy"></div>` : ''}
+              <div class="card-name">${c.name}</div>
+              <div class="card-types">${typeBadges}</div>
+              ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
               ${defWarn}
+              <div class="card-atk-info">${atkInfo}</div>
             </div>
           `;
         }).join('')}
@@ -471,9 +468,7 @@ function recommendTeam(){
           <div class="team-card support">
             <div class="support-label">支援券</div>
             <div class="card-name">${supportPick.card.name}</div>
-            <div class="card-types">
-              <span class="type-tag sm" style="background:${TYPE_COLORS[supportPick.moveType]}">${supportPick.moveType}</span>
-            </div>
+            <div class="card-types"><span class="type-tag sm" style="background:${TYPE_COLORS[supportPick.moveType]}">${supportPick.moveType}</span></div>
             <div class="card-atk-info">支援招式：${supportPick.card.support_move || ''}</div>
           </div>
         </div>
