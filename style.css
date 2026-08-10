@@ -94,10 +94,7 @@ h3 { font-size:1.1rem; margin:16px 0 8px; }
 .picker-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(90px,1fr)); gap:8px; padding:8px 16px 16px; max-height:50vh; overflow-y:auto; }
 .picker-card { background:#0f3460; border-radius:8px; overflow:hidden; cursor:pointer; border:1px solid transparent; transition:border-color .2s; }
 .picker-card:hover { border-color:#e94560; }
-.picker-card .card-img { height:80px; }
-.picker-card .card-img.portrait { height:120px; }
-.picker-card .card-img.portrait img { height:120px; }
-.picker-card .card-img.landscape img { height:80px; }
+.picker-card .card-img { aspect-ratio:3/4; }
 .picker-card-info { padding:4px 6px; }
 .picker-card-info .card-name { font-size:.8rem; }
 
