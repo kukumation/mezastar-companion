@@ -59,34 +59,10 @@ function populateFilters(seriesList){
 // 但渲染前拿不到尺寸，所以策略：
 //   1) HP_ 前缀 → 必为 ★6 超长竖版 → portrait
 //   2) 其他文件默认 landscape，渲染后 onload 测量真实宽高再纠正 class
-const imgOrientCache = {};
-function getImgOrientation(imgPath){
-  if(!imgPath) return '';
-  if(imgOrientCache[imgPath] !== undefined) return imgOrientCache[imgPath];
-  // ★6 超长竖版长图（1000x1874 ~ 1000x3000+）固定 portrait
-  if(imgPath.includes('HP_')){
-    imgOrientCache[imgPath] = 'portrait';
-  } else {
-    // 默认按 landscape 渲染，由 adjustImgOrientation() 测量后纠正
-    imgOrientCache[imgPath] = 'landscape';
-  }
-  return imgOrientCache[imgPath];
-}
-
-// 渲染后测量真实尺寸：w/h<0.95 判为 portrait（覆盖 800x1000 / 400x500 等普通竖版）
-function adjustImgOrientation(imgEl){
-  if(!imgEl || !imgEl.naturalWidth) return;
-  const ratio = imgEl.naturalWidth / imgEl.naturalHeight;
-  const container = imgEl.parentElement;
-  if(!container) return;
-  const src = imgEl.getAttribute('src');
-  const newOrient = ratio < 0.95 ? 'portrait' : (ratio > 1.05 ? 'landscape' : 'landscape');
-  const cached = imgOrientCache[src];
-  if(cached !== newOrient){
-    imgOrientCache[src] = newOrient;
-    container.classList.remove('portrait','landscape','no-img');
-    container.classList.add(newOrient);
-  }
+// 判断图片类型：HP_ 开头 = ★6超竖版 → tall，其他 → normal
+function getImgClass(imgPath){
+  if(!imgPath) return 'no-img';
+  return imgPath.includes('HP_') ? 'tall' : 'normal';
 }
 
 // ===== 属性克制表 =====
@@ -168,9 +144,9 @@ function renderCardGrid(){
     const specialBadges = (c.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
     const supportMove = c.support_move ? `<div class="support-move-info">支援：${c.support_move}（${c.support_move_type}）</div>` : '';
     const imgFile = c.img || '';
-    const orient = imgFile ? getImgOrientation(imgFile) : '';
+    const orient = imgFile ? getImgClass(imgFile) : 'no-img';
     const imgHtml = imgFile
-      ? `<img src="${imgFile}" alt="${c.name}" loading="lazy" onload="adjustImgOrientation(this)" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">`
+      ? `<img src="${imgFile}" alt="${c.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">`
       : '';
     const supportClass = c.role === 'support' ? 'support-card' : '';
     return `
@@ -284,11 +260,11 @@ function renderEnemyPicker(){
   grid.innerHTML = filtered.map(c => {
     const stars = '★'.repeat(c.rarity);
     const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
-    const orient = c.img ? getImgOrientation(c.img) : '';
+    const orient = c.img ? getImgClass(c.img) : 'no-img';
     return `
       <div class="picker-card" onclick="selectEnemyPub('${c.code}')">
         <div class="card-img ${orient}">
-          ${c.img ? `<img src="${c.img}" alt="${c.name}" loading="lazy" onload="adjustImgOrientation(this)">` : ''}
+          ${c.img ? `<img src="${c.img}" alt="${c.name}" loading="lazy">` : ''}
           <span class="rarity-badge">${stars}</span>
         </div>
         <div class="picker-card-info">
@@ -498,7 +474,6 @@ function analyzeEnemy(e){
 window.openEnemyPickerPub = openEnemyPicker;
 window.removeEnemyPub = removeEnemy;
 window.selectEnemyPub = selectEnemy;
-window.adjustImgOrientation = adjustImgOrientation;
 
 // ===== Tab 切换 =====
 function switchTab(tab){
