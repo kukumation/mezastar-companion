@@ -149,8 +149,13 @@ function renderCardGrid(){
       ? `<img src="${imgFile}" alt="${c.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">`
       : '';
     const supportClass = c.role === 'support' ? 'support-card' : '';
+    const primaryType = c.types[0];
+    const typeColor = primaryType ? TYPE_COLORS[primaryType] : '';
+    const typeStyle = typeColor ? `--type-color:${typeColor};` : '';
+    const typeAttr = primaryType ? `data-type="${primaryType}"` : '';
+    const rareClass = c.rarity === 6 ? 'is-rare' : '';
     return `
-      <div class="card ${owned?'owned':''} ${supportClass}" data-code="${c.code}">
+      <div class="card ${owned?'owned':''} ${supportClass} ${rareClass}" data-code="${c.code}" ${typeAttr} style="${typeStyle}">
         <div class="card-img ${orient} ${imgFile?'':'no-img'}">
           ${imgHtml}
           <span class="rarity-badge">${stars}</span>
@@ -477,7 +482,7 @@ window.selectEnemyPub = selectEnemy;
 
 // ===== Tab 切换 =====
 function switchTab(tab){
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.toggle('is-active', b.dataset.tab === tab));
   document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById('tab-' + tab).classList.add('active');
 }
@@ -489,7 +494,7 @@ function init(){
   renderTypeGrid('type-grid', showTypeEffect);
   renderEnemySlots();
 
-  document.querySelectorAll('.tab-btn').forEach(btn => {
+  document.querySelectorAll('.nav-item').forEach(btn => {
     btn.addEventListener('click', ()=> switchTab(btn.dataset.tab));
   });
   document.querySelectorAll('#filter-series,#filter-rarity,#filter-type,#filter-owned').forEach(el => {
@@ -504,4 +509,37 @@ function init(){
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
 else init();
+})();
+
+// ===== 主题切换器 =====
+(function setupThemeSwitcher(){
+  const THEME_KEY = "mezastar-theme";
+  const themeNames = { light: "明亮", dark: "暗色", comfort: "护眼" };
+  const themeColors = { light: "#F7FAFF", dark: "#101927", comfort: "#F3F0DD" };
+
+  const switcher = document.querySelector(".theme-switcher");
+  const status = document.querySelector("#themeStatus");
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  if(!switcher) return;
+
+  function applyTheme(theme, shouldSave){
+    if(!themeNames[theme]) return;
+    document.documentElement.dataset.theme = theme;
+    switcher.querySelectorAll("[data-theme-value]").forEach(btn => {
+      btn.setAttribute("aria-pressed", String(btn.dataset.themeValue === theme));
+    });
+    if(themeColorMeta) themeColorMeta.setAttribute("content", themeColors[theme]);
+    if(status) status.textContent = "已切换为" + themeNames[theme] + "主题";
+    if(shouldSave){
+      try { localStorage.setItem(THEME_KEY, theme); } catch(e) {}
+    }
+  }
+
+  switcher.addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-theme-value]");
+    if(!btn) return;
+    applyTheme(btn.dataset.themeValue, true);
+  });
+
+  applyTheme(document.documentElement.dataset.theme || "light", false);
 })();

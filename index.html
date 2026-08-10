@@ -4,16 +4,79 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>明耀之星 Companion</title>
+
+<!-- theme-color（初始值与 light 主题 bg 一致，applyTheme 会按主题动态更新）-->
+<meta name="theme-color" content="#F7FAFF">
+
+<!-- 防闪烁：在 CSS 应用前同步设置 data-theme -->
+<script>
+  (() => {
+    const validThemes = ["light", "dark", "comfort"];
+    let theme = null;
+    try { theme = localStorage.getItem("mezastar-theme"); } catch (e) { theme = null; }
+    if (!validThemes.includes(theme)) {
+      theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- SVG symbols：属性图标（按 data-type 名引用，符号内容为通用圆形，因 18 系属性是中文，图标作装饰用） -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
+  <symbol id="type-symbol" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.9"/>
+    <circle cx="12" cy="12" r="5" fill="#FFFFFF" opacity="0.35"/>
+  </symbol>
+</svg>
+
+<!-- ===== Sticky Header ===== -->
+<header class="topbar">
+  <div class="app-brand">
+    <span class="brand-ball" aria-hidden="true"></span>
+    <div>
+      <strong>明耀之星</strong>
+      <small>Companion</small>
+    </div>
+  </div>
+
+  <div class="theme-switcher" role="group" aria-label="界面主题">
+    <button type="button" data-theme-value="light" aria-pressed="false">
+      <span aria-hidden="true">☀</span>
+      <span>明亮</span>
+    </button>
+    <button type="button" data-theme-value="dark" aria-pressed="false">
+      <span aria-hidden="true">◐</span>
+      <span>暗色</span>
+    </button>
+    <button type="button" data-theme-value="comfort" aria-pressed="false">
+      <span aria-hidden="true">♧</span>
+      <span>护眼</span>
+    </button>
+  </div>
+</header>
+
+<p id="themeStatus" class="sr-only" aria-live="polite"></p>
+
 <div id="app">
-  <!-- 底部导航 -->
-  <nav class="tab-bar">
-    <button class="tab-btn" data-tab="collection">收藏</button>
-    <button class="tab-btn active" data-tab="battle">对战推荐</button>
-    <button class="tab-btn" data-tab="type-chart">属性表</button>
+
+  <!-- ===== 底部导航（四色顶线） ===== -->
+  <nav class="app-nav" aria-label="主要导航">
+    <button class="nav-item" data-tab="collection">
+      <span class="nav-icon" aria-hidden="true">◆</span>
+      <span>收藏</span>
+    </button>
+    <button class="nav-item is-active" data-tab="battle">
+      <span class="nav-icon" aria-hidden="true">⚔</span>
+      <span>对战推荐</span>
+    </button>
+    <button class="nav-item" data-tab="type-chart">
+      <span class="nav-icon" aria-hidden="true">◎</span>
+      <span>属性表</span>
+    </button>
   </nav>
 
   <!-- ===== 对战推荐页 ===== -->
