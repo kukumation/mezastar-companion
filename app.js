@@ -55,17 +55,38 @@ function populateFilters(seriesList){
 }
 
 // ===== 图片横竖版检测 =====
+// 用实际图片尺寸判断更可靠：w/h < 0.95 = 竖版（含 ★6 长图 1000x3000+ 和普通 800x1000）
+// 但渲染前拿不到尺寸，所以策略：
+//   1) HP_ 前缀 → 必为 ★6 超长竖版 → portrait
+//   2) 其他文件默认 landscape，渲染后 onload 测量真实宽高再纠正 class
 const imgOrientCache = {};
 function getImgOrientation(imgPath){
+  if(!imgPath) return '';
   if(imgOrientCache[imgPath] !== undefined) return imgOrientCache[imgPath];
-  // HP_XX.png 是★6竖版长图（宽高比 < 0.8）
-  // hash.png 是横版图（宽高比 ~1.25）
-  if(imgPath && imgPath.includes('HP_')){
+  // ★6 超长竖版长图（1000x1874 ~ 1000x3000+）固定 portrait
+  if(imgPath.includes('HP_')){
     imgOrientCache[imgPath] = 'portrait';
   } else {
+    // 默认按 landscape 渲染，由 adjustImgOrientation() 测量后纠正
     imgOrientCache[imgPath] = 'landscape';
   }
   return imgOrientCache[imgPath];
+}
+
+// 渲染后测量真实尺寸：w/h<0.95 判为 portrait（覆盖 800x1000 / 400x500 等普通竖版）
+function adjustImgOrientation(imgEl){
+  if(!imgEl || !imgEl.naturalWidth) return;
+  const ratio = imgEl.naturalWidth / imgEl.naturalHeight;
+  const container = imgEl.parentElement;
+  if(!container) return;
+  const src = imgEl.getAttribute('src');
+  const newOrient = ratio < 0.95 ? 'portrait' : (ratio > 1.05 ? 'landscape' : 'landscape');
+  const cached = imgOrientCache[src];
+  if(cached !== newOrient){
+    imgOrientCache[src] = newOrient;
+    container.classList.remove('portrait','landscape','no-img');
+    container.classList.add(newOrient);
+  }
 }
 
 // ===== 属性克制表 =====
@@ -130,7 +151,17 @@ function renderCardGrid(){
     return b.rarity - a.rarity;
   });
 
-  grid.innerHTML = filtered.map(c => {
+  // 按稀有度分组渲染（每组前面加分割线标题）
+  const RARITY_GROUPS = [
+    {rarity: 6, label: '★★★★★★ 超级明星'},
+    {rarity: 5, label: '★★★★★ 明星'},
+    {rarity: 4, label: '★★★★'},
+    {rarity: 3, label: '★★★'},
+    {rarity: 2, label: '★★'},
+    {rarity: 'support', label: '支援券'},
+  ];
+
+  const renderCard = (c) => {
     const owned = collection[c.code];
     const stars = c.role === 'support' ? '支援' : '★'.repeat(c.rarity);
     const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
@@ -139,7 +170,7 @@ function renderCardGrid(){
     const imgFile = c.img || '';
     const orient = imgFile ? getImgOrientation(imgFile) : '';
     const imgHtml = imgFile
-      ? `<img src="${imgFile}" alt="${c.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">`
+      ? `<img src="${imgFile}" alt="${c.name}" loading="lazy" onload="adjustImgOrientation(this)" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">`
       : '';
     const supportClass = c.role === 'support' ? 'support-card' : '';
     return `
@@ -158,7 +189,19 @@ function renderCardGrid(){
         <button class="own-btn ${owned?'checked':''}" onclick="event.stopPropagation();toggleCardPub('${c.code}')">${owned?'✓':'+'}</button>
       </div>
     `;
-  }).join('');
+  };
+
+  // 按 group 拼接 HTML（每组前加 divider）
+  let html = '';
+  for(const group of RARITY_GROUPS){
+    const groupCards = filtered.filter(c =>
+      group.rarity === 'support' ? c.role === 'support' : (c.role !== 'support' && c.rarity === group.rarity)
+    );
+    if(groupCards.length === 0) continue;
+    html += `<div class="rarity-divider"><span class="rarity-divider-label">${group.label}</span></div>`;
+    html += groupCards.map(renderCard).join('');
+  }
+  grid.innerHTML = html;
 }
 window.toggleCardPub = toggleCard;
 
@@ -245,7 +288,7 @@ function renderEnemyPicker(){
     return `
       <div class="picker-card" onclick="selectEnemyPub('${c.code}')">
         <div class="card-img ${orient}">
-          ${c.img ? `<img src="${c.img}" alt="${c.name}" loading="lazy">` : ''}
+          ${c.img ? `<img src="${c.img}" alt="${c.name}" loading="lazy" onload="adjustImgOrientation(this)">` : ''}
           <span class="rarity-badge">${stars}</span>
         </div>
         <div class="picker-card-info">
@@ -421,7 +464,7 @@ function recommendTeam(){
             <div class="team-card">
               <div class="team-rank">#${i+1}</div>
               <div class="card-img ${orient}">
-                ${c.img ? `<img src="${c.img}" alt="${c.name}">` : ''}
+                ${c.img ? `<img src="${c.img}" alt="${c.name}" onload="adjustImgOrientation(this)">` : ''}
                 <span class="rarity-badge">${stars}</span>
               </div>
               <div class="card-name">${c.name}</div>

@@ -2,6 +2,3335 @@
   "schema_version": 1,
   "series": [
     {
+      "id": "s1",
+      "name": "星光第1弹",
+      "cards": [
+        {
+          "code": "1-1-001 SC",
+          "name": "超梦",
+          "rarity": 6,
+          "types": [
+            "超能力"
+          ],
+          "img": "img/s1/HP_01.png",
+          "role": "main",
+          "special": [
+            "Mega进化"
+          ]
+        },
+        {
+          "code": "1-1-002 SC",
+          "name": "梦幻",
+          "rarity": 6,
+          "types": [
+            "超能力"
+          ],
+          "img": "img/s1/HP_02.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-003 SC",
+          "name": "苍响",
+          "rarity": 6,
+          "types": [
+            "妖精"
+          ],
+          "img": "img/s1/HP_03.png",
+          "role": "main",
+          "special": [
+            "极巨化"
+          ]
+        },
+        {
+          "code": "1-1-004 SC",
+          "name": "藏玛然特",
+          "rarity": 6,
+          "types": [
+            "格斗"
+          ],
+          "img": "img/s1/HP_04.png",
+          "role": "main",
+          "special": [
+            "极巨化"
+          ]
+        },
+        {
+          "code": "1-1-005 SC",
+          "name": "班基拉斯",
+          "rarity": 6,
+          "types": [
+            "岩石",
+            "恶"
+          ],
+          "img": "img/s1/HP_05.png",
+          "role": "main",
+          "special": [
+            "Mega进化"
+          ]
+        },
+        {
+          "code": "1-1-006 SC",
+          "name": "巨金怪",
+          "rarity": 6,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "img/s1/HP_06.png",
+          "role": "main",
+          "special": [
+            "Mega进化"
+          ]
+        },
+        {
+          "code": "1-1-007 SC",
+          "name": "密勒顿",
+          "rarity": 6,
+          "types": [
+            "电",
+            "龙"
+          ],
+          "img": "img/s1/26c558639659464ba6d8b3389abd628b.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-008 SC",
+          "name": "妙蛙花",
+          "rarity": 6,
+          "types": [
+            "草",
+            "毒"
+          ],
+          "img": "img/s1/975698276d0b4963b614a4aa5447b1f5.png",
+          "role": "main",
+          "special": [
+            "Mega进化"
+          ]
+        },
+        {
+          "code": "1-1-009 SC",
+          "name": "喷火龙",
+          "rarity": 6,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "img/s1/15e8393c538f4c438ffbe48eeffb59b6.png",
+          "role": "main",
+          "special": [
+            "Mega进化"
+          ]
+        },
+        {
+          "code": "1-1-010 SC",
+          "name": "水箭龟",
+          "rarity": 6,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/c9be05831c7f40dbb79f8e08764218a1.png",
+          "role": "main",
+          "special": [
+            "Mega进化"
+          ]
+        },
+        {
+          "code": "1-1-011 SC",
+          "name": "水伊布",
+          "rarity": 5,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/d13f0c5ab9114daa9ad8560fc2234c15.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-012 SC",
+          "name": "火伊布",
+          "rarity": 5,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/63f5217ea7304163a19b9271b2f3d771.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-013 SC",
+          "name": "月亮伊布",
+          "rarity": 5,
+          "types": [
+            "恶"
+          ],
+          "img": "img/s1/5b6f1812e12f4e688b4072c9cd12dce9.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-014 SC",
+          "name": "冰伊布",
+          "rarity": 5,
+          "types": [
+            "冰"
+          ],
+          "img": "img/s1/a4a8b7c23bf54d8ea1fa0475252a933d.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-015 SC",
+          "name": "大比鸟",
+          "rarity": 5,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "img/s1/3161e6d2a841453c9da1c9bf72bd8845.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-016 SC",
+          "name": "耿鬼",
+          "rarity": 5,
+          "types": [
+            "幽灵",
+            "毒"
+          ],
+          "img": "img/s1/3acbdaa048844eb89aae4ae3e652e923.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-017 SC",
+          "name": "风速狗",
+          "rarity": 5,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/6d4ead0092e4451887e98ea3c2a3002c.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-018 SC",
+          "name": "超甲狂犀",
+          "rarity": 5,
+          "types": [
+            "地面",
+            "岩石"
+          ],
+          "img": "img/s1/153a35221c4f4051b1cd00adebc006d3.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-019 SC",
+          "name": "皮卡丘",
+          "rarity": 5,
+          "types": [
+            "电"
+          ],
+          "img": "img/s1/8c3fe44c2a8e4eb49e6d01d08bdd8186.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-020 SC",
+          "name": "沙漠蜻蜓",
+          "rarity": 5,
+          "types": [
+            "地面",
+            "龙"
+          ],
+          "img": "img/s1/dbda5223dd244ba39c4288572f8d5750.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-021 SC",
+          "name": "轰擂金刚猩",
+          "rarity": 5,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/3666b765d19d4a85a2ba2b0b421567ae.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-022 SC",
+          "name": "闪焰王牌",
+          "rarity": 5,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/788ab3dbbd3242508a8453a54ad24c01.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-023 SC",
+          "name": "千面避役",
+          "rarity": 5,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/38c6ebb62c9641bfac5a31655e1d221a.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-024 SC",
+          "name": "堵拦熊",
+          "rarity": 5,
+          "types": [
+            "恶",
+            "一般"
+          ],
+          "img": "img/s1/2ba0f157cf824b0abb5c425731cd4519.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-025 SC",
+          "name": "凯路迪欧",
+          "rarity": 5,
+          "types": [
+            "水",
+            "格斗"
+          ],
+          "img": "img/s1/d9ab6347db264f8691cbde33c7ac5dbd.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-034 SC",
+          "name": "轰擂金刚猩",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/dae12537e65f41258a339681cb1f6db0.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-037 SC",
+          "name": "闪焰王牌",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/65625f3ed6804c9eafce1784db55dd54.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-040 SC",
+          "name": "千面避役",
+          "rarity": 4,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/e1d8c301076c45d2a1ceeb4e178c04e0.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-043 SC",
+          "name": "雷丘",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "img/s1/7939c1e368554b0185d768602d6813c9.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-045 SC",
+          "name": "雷伊布",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "img/s1/bf8c0c0b9b5344eb8043fd194370f561.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-046 SC",
+          "name": "太阳伊布",
+          "rarity": 4,
+          "types": [
+            "超能力"
+          ],
+          "img": "img/s1/c3928adef3104c61b329aa516c698823.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-047 SC",
+          "name": "叶伊布",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/9889140965d5443e95afe86634144a5d.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-048 SC",
+          "name": "仙子伊布",
+          "rarity": 4,
+          "types": [
+            "妖精"
+          ],
+          "img": "img/s1/a29e9dc8c35b4d99a88c1a2c3a06bbef.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-050 SC",
+          "name": "玛狃拉",
+          "rarity": 4,
+          "types": [
+            "恶",
+            "冰"
+          ],
+          "img": "img/s1/f4e955d538f94e3285005fa202db4e81.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-054 SC",
+          "name": "呆壳兽",
+          "rarity": 4,
+          "types": [
+            "水",
+            "超能力"
+          ],
+          "img": "img/s1/d3c65207d9254344bc30ce5c6bde10c5.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-056 SC",
+          "name": "重泥挽马",
+          "rarity": 4,
+          "types": [
+            "地面"
+          ],
+          "img": "img/s1/1de2a7e4f0614274b251a743ba962818.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-059 SC",
+          "name": "堵拦熊",
+          "rarity": 4,
+          "types": [
+            "恶",
+            "一般"
+          ],
+          "img": "img/s1/d6a686a27d4647298b9d48510c69b38f.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-062 SC",
+          "name": "锹农炮虫",
+          "rarity": 4,
+          "types": [
+            "虫",
+            "电"
+          ],
+          "img": "img/s1/0144ce372276401286e99b3fe0e46afa.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-064 SC",
+          "name": "嘟嘟利",
+          "rarity": 4,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "img/s1/77289e23791140e4bc89563a11535095.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-066 SC",
+          "name": "白蓬蓬",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/29974623414541469ef562ca54a9ca66.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-067 SC",
+          "name": "爆焰龟兽",
+          "rarity": 4,
+          "types": [
+            "火",
+            "龙"
+          ],
+          "img": "img/s1/bf5c57991ccb4a08bd04b9f281bf7619.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-070 SC",
+          "name": "雪绒蛾",
+          "rarity": 4,
+          "types": [
+            "冰",
+            "虫"
+          ],
+          "img": "img/s1/1b6feecb2b9e4ab98a028fd8817afa6f.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-027 SC",
+          "name": "蒂蕾喵",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/dda539bd10b648bda304ea3b2c7fa6f1.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-029 SC",
+          "name": "炙烫鳄",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/9b810692046c4dc698176ae3fbfa3135.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-031 SC",
+          "name": "涌跃鸭",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/2bae04c3d3284f57bccf926598c18d7c.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-033 SC",
+          "name": "啪咚猴",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/e18b3de1ad7c40879b0e280691b2feff.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-036 SC",
+          "name": "腾蹴小将",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/63fb0e2a856c4d0d9dc70c44e3d5195e.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-039 SC",
+          "name": "变涩蜥",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/f7ab1e910c224a2e8168504190f5e10d.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-042 SC",
+          "name": "皮卡丘",
+          "rarity": 3,
+          "types": [
+            "电"
+          ],
+          "img": "img/s1/64b7b7aa5e2d481bbdd525f89055a160.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-044 SC",
+          "name": "伊布",
+          "rarity": 3,
+          "types": [
+            "一般"
+          ],
+          "img": "img/s1/f4812b1f019e4f5dafd7e1159595cef6.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-049 SC",
+          "name": "狃拉",
+          "rarity": 3,
+          "types": [
+            "恶",
+            "冰"
+          ],
+          "img": "img/s1/c4c756fd6a654d0eb7641fd670ca743f.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-052 SC",
+          "name": "泥偶巨人",
+          "rarity": 3,
+          "types": [
+            "地面",
+            "幽灵"
+          ],
+          "img": "img/s1/4a3352823f3044829c21a7d0015a41a3.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-055 SC",
+          "name": "泥驴仔",
+          "rarity": 3,
+          "types": [
+            "地面"
+          ],
+          "img": "img/s1/05974603b0f442f89a8d35f013f33ecb.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-058 SC",
+          "name": "迦勒尔直冲熊",
+          "rarity": 3,
+          "types": [
+            "恶",
+            "一般"
+          ],
+          "img": "img/s1/681f802031204a769ebddbdcd1846996.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-061 SC",
+          "name": "虫电宝",
+          "rarity": 3,
+          "types": [
+            "虫",
+            "电"
+          ],
+          "img": "img/s1/3612fdba31634e46b6c9c2ff05d92844.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-068 SC",
+          "name": "古月鸟",
+          "rarity": 3,
+          "types": [
+            "飞行"
+          ],
+          "img": "img/s1/dc688b2ce6aa4e309187a70e42ed90b5.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-026 SC",
+          "name": "新叶喵",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/3419245ea6974261873ba51fb12d0996.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-028 SC",
+          "name": "呆火鳄",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/f7f2da8b65654c4c83ca6d74ceb0aa7c.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-030 SC",
+          "name": "润水鸭",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/8607c15b090f4b0780baa8210df8f357.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-032 SC",
+          "name": "敲音猴",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/a7f1bcf2cdb84743b8277851c1b5e6cb.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-035 SC",
+          "name": "炎兔儿",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/s1/1e03aa061c7d42c78c3f4a639b278cad.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-038 SC",
+          "name": "泪眼蜥",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/s1/f8799d8f23ea45e2bc49d27dca4909a1.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-041 SC",
+          "name": "咚咚鼠",
+          "rarity": 2,
+          "types": [
+            "电",
+            "妖精"
+          ],
+          "img": "img/s1/22f8661fd3c94c9d8888c5b3fa2b3ba8.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-051 SC",
+          "name": "泥偶小人",
+          "rarity": 2,
+          "types": [
+            "地面",
+            "幽灵"
+          ],
+          "img": "img/s1/20ffac70fe944a03934b8b35250880c3.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-053 SC",
+          "name": "呆呆兽",
+          "rarity": 2,
+          "types": [
+            "水",
+            "超能力"
+          ],
+          "img": "img/s1/07cbc39b283d4352b58d3e1fd3106d4c.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-057 SC",
+          "name": "伽勒尔蛇纹熊",
+          "rarity": 2,
+          "types": [
+            "恶",
+            "一般"
+          ],
+          "img": "img/s1/56e1cd1c2ac64f4192a141a558a46981.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-060 SC",
+          "name": "强颚鸡母虫",
+          "rarity": 2,
+          "types": [
+            "虫"
+          ],
+          "img": "img/s1/3800ab99ee844f9ba7e1e9c9ed8aaea9.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-063 SC",
+          "name": "嘟嘟",
+          "rarity": 2,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "img/s1/8b4185f89fd348d7ae544e7395fdc5ed.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-065 SC",
+          "name": "幼棉棉",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "img/s1/857c59e04315466b9ba4fd93b0b5e8ef.png",
+          "role": "main",
+          "special": []
+        },
+        {
+          "code": "1-1-069 SC",
+          "name": "雪吞虫",
+          "rarity": 2,
+          "types": [
+            "冰",
+            "虫"
+          ],
+          "img": "img/s1/19343e23c63e413c8f4c2c806ca6d307.png",
+          "role": "main",
+          "special": []
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "星光第2弹",
+      "cards": [
+        {
+          "code": "1-2-001 SC",
+          "name": "盖欧卡",
+          "rarity": 6,
+          "types": [
+            "水"
+          ],
+          "img": "img/s2/HP_01.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-002 SC",
+          "name": "固拉多",
+          "rarity": 6,
+          "types": [
+            "地面",
+            "火"
+          ],
+          "img": "img/s2/HP_02.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-003 SC",
+          "name": "故勒顿",
+          "rarity": 6,
+          "types": [
+            "格斗"
+          ],
+          "img": "img/s2/HP_03.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-004 SC",
+          "name": "皮卡丘",
+          "rarity": 6,
+          "types": [
+            "电"
+          ],
+          "img": "img/s2/HP_04.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-005 SC",
+          "name": "卡比兽",
+          "rarity": 6,
+          "types": [
+            "一般"
+          ],
+          "img": "img/s2/HP_05.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-006 SC",
+          "name": "杖尾鳞甲龙",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "格斗"
+          ],
+          "img": "img/s2/HP_06.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-007 SC",
+          "name": "沙奈朵",
+          "rarity": 6,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "img/s2/HP_07.png",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-008 SC",
+          "name": "莱希拉姆",
+          "rarity": 6,
+          "types": [
+            "火",
+            "龙"
+          ],
+          "img": "img/s2/HP_08.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-009 SC",
+          "name": "捷克罗姆",
+          "rarity": 6,
+          "types": [
+            "电",
+            "龙"
+          ],
+          "img": "",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-010 SC",
+          "name": "酋雷姆",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "冰"
+          ],
+          "img": "",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-2-011 SC",
+          "name": "雷伊布",
+          "rarity": 5,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-012 SC",
+          "name": "太阳伊布",
+          "rarity": 5,
+          "types": [
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-013 SC",
+          "name": "叶伊布",
+          "rarity": 5,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-014 SC",
+          "name": "仙子伊布",
+          "rarity": 5,
+          "types": [
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-015 SC",
+          "name": "路卡利欧",
+          "rarity": 5,
+          "types": [
+            "格斗",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-016 SC",
+          "name": "土台龟",
+          "rarity": 5,
+          "types": [
+            "草",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-017 SC",
+          "name": "烈焰猴",
+          "rarity": 5,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-018 SC",
+          "name": "帝王拿波",
+          "rarity": 5,
+          "types": [
+            "水",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-019 SC",
+          "name": "阿罗拉九尾",
+          "rarity": 5,
+          "types": [
+            "冰",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-020 SC",
+          "name": "班基拉斯",
+          "rarity": 5,
+          "types": [
+            "岩石",
+            "恶"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-021 SC",
+          "name": "巨金怪",
+          "rarity": 5,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-022 SC",
+          "name": "苹裹龙",
+          "rarity": 5,
+          "types": [
+            "草",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-023 SC",
+          "name": "丰蜜龙",
+          "rarity": 5,
+          "types": [
+            "草",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-024 SC",
+          "name": "霜奶仙",
+          "rarity": 5,
+          "types": [
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-025 SC",
+          "name": "暴噬龟",
+          "rarity": 5,
+          "types": [
+            "水",
+            "岩石"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-026 SC",
+          "name": "魔幻假面喵",
+          "rarity": 4,
+          "types": [
+            "草",
+            "恶"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-027 SC",
+          "name": "骨纹巨声鳄",
+          "rarity": 4,
+          "types": [
+            "火",
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-028 SC",
+          "name": "狂欢浪舞鸭",
+          "rarity": 4,
+          "types": [
+            "水",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-034 SC",
+          "name": "土台龟",
+          "rarity": 4,
+          "types": [
+            "草",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-037 SC",
+          "name": "烈焰猴",
+          "rarity": 4,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-040 SC",
+          "name": "帝王拿波",
+          "rarity": 4,
+          "types": [
+            "水",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-041 SC",
+          "name": "水伊布",
+          "rarity": 4,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-042 SC",
+          "name": "火伊布",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-043 SC",
+          "name": "月亮伊布",
+          "rarity": 4,
+          "types": [
+            "恶"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-044 SC",
+          "name": "冰伊布",
+          "rarity": 4,
+          "types": [
+            "冰"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-046 SC",
+          "name": "逐电犬",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-049 SC",
+          "name": "大比鸟",
+          "rarity": 4,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-051 SC",
+          "name": "阿罗拉穿山王",
+          "rarity": 4,
+          "types": [
+            "冰",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-056 SC",
+          "name": "沙漠蜻蜓",
+          "rarity": 4,
+          "types": [
+            "地面",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-062 SC",
+          "name": "胡地",
+          "rarity": 4,
+          "types": [
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-064 SC",
+          "name": "随风球",
+          "rarity": 4,
+          "types": [
+            "幽灵",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-069 SC",
+          "name": "沙奈朵",
+          "rarity": 4,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-033 SC",
+          "name": "树林龟",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-036 SC",
+          "name": "猛火猴",
+          "rarity": 3,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-039 SC",
+          "name": "波皇子",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-048 SC",
+          "name": "比比鸟",
+          "rarity": 3,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-053 SC",
+          "name": "青铜钟",
+          "rarity": 3,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-055 SC",
+          "name": "超音波幼虫",
+          "rarity": 3,
+          "types": [
+            "地面",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-058 SC",
+          "name": "大嘴鸥",
+          "rarity": 3,
+          "types": [
+            "水",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-059 SC",
+          "name": "迷唇姐",
+          "rarity": 3,
+          "types": [
+            "冰",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-061 SC",
+          "name": "勇基拉",
+          "rarity": 3,
+          "types": [
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-063 SC",
+          "name": "飘飘球",
+          "rarity": 3,
+          "types": [
+            "幽灵",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-065 SC",
+          "name": "好坏星",
+          "rarity": 3,
+          "types": [
+            "毒",
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-066 SC",
+          "name": "托戈德玛尔",
+          "rarity": 3,
+          "types": [
+            "电",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-068 SC",
+          "name": "奇鲁莉安",
+          "rarity": 3,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-070 SC",
+          "name": "大岩蛇",
+          "rarity": 3,
+          "types": [
+            "岩石",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-029 SC",
+          "name": "炭小侍",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-030 SC",
+          "name": "凉脊龙",
+          "rarity": 2,
+          "types": [
+            "冰"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-031 SC",
+          "name": "布拨",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-032 SC",
+          "name": "草苗龟",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-035 SC",
+          "name": "小火焰猴",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-038 SC",
+          "name": "波加曼",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-045 SC",
+          "name": "来电汪",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-047 SC",
+          "name": "波波",
+          "rarity": 2,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-050 SC",
+          "name": "阿罗拉穿山鼠",
+          "rarity": 2,
+          "types": [
+            "冰",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-052 SC",
+          "name": "铜镜怪",
+          "rarity": 2,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-054 SC",
+          "name": "大颚蚁",
+          "rarity": 2,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-057 SC",
+          "name": "长翅鸥",
+          "rarity": 2,
+          "types": [
+            "水",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-060 SC",
+          "name": "凯西",
+          "rarity": 2,
+          "types": [
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-2-067 SC",
+          "name": "拉鲁拉丝",
+          "rarity": 2,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "星光第3弹",
+      "cards": [
+        {
+          "code": "1-3-001 SC",
+          "name": "洛奇亚",
+          "rarity": 6,
+          "types": [
+            "超能力",
+            "飞行"
+          ],
+          "img": "img/s3/HP_01.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-002 SC",
+          "name": "凤王",
+          "rarity": 6,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "img/s3/HP_02.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-003 SC",
+          "name": "索尔迦雷欧",
+          "rarity": 6,
+          "types": [
+            "超能力",
+            "钢"
+          ],
+          "img": "img/s3/HP_03.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-004 SC",
+          "name": "露奈雅拉",
+          "rarity": 6,
+          "types": [
+            "超能力",
+            "幽灵"
+          ],
+          "img": "img/s3/HP_04.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-005 SC",
+          "name": "甲贺忍蛙",
+          "rarity": 6,
+          "types": [
+            "水",
+            "恶"
+          ],
+          "img": "img/s3/HP_05.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-006 SC",
+          "name": "捷拉奥拉",
+          "rarity": 6,
+          "types": [
+            "电",
+            "格斗"
+          ],
+          "img": "img/s3/HP_06.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-007 SC",
+          "name": "无极汰那",
+          "rarity": 6,
+          "types": [
+            "毒",
+            "龙"
+          ],
+          "img": "img/s3/HP_07.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-008 SC",
+          "name": "凯路迪欧",
+          "rarity": 6,
+          "types": [
+            "水",
+            "格斗"
+          ],
+          "img": "img/s3/HP_08.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-009 SC",
+          "name": "长毛巨魔",
+          "rarity": 6,
+          "types": [
+            "恶",
+            "妖精"
+          ],
+          "img": "",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-010 SC",
+          "name": "基格尔德",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "地面"
+          ],
+          "img": "",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-3-011 SC",
+          "name": "蜥蜴王",
+          "rarity": 5,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-012 SC",
+          "name": "火焰鸡",
+          "rarity": 5,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-013 SC",
+          "name": "巨沼怪",
+          "rarity": 5,
+          "types": [
+            "水",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-014 SC",
+          "name": "水晶灯火灵",
+          "rarity": 5,
+          "types": [
+            "幽灵",
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-015 SC",
+          "name": "长毛巨魔",
+          "rarity": 5,
+          "types": [
+            "恶",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-016 SC",
+          "name": "尼多后",
+          "rarity": 5,
+          "types": [
+            "毒",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-017 SC",
+          "name": "大比鸟",
+          "rarity": 5,
+          "types": [
+            "一般",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-018 SC",
+          "name": "巨炭山",
+          "rarity": 5,
+          "types": [
+            "岩石",
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-019 SC",
+          "name": "皮卡丘",
+          "rarity": 5,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-020 SC",
+          "name": "胡地",
+          "rarity": 5,
+          "types": [
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-021 SC",
+          "name": "雷吉洛克",
+          "rarity": 5,
+          "types": [
+            "岩石"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-022 SC",
+          "name": "雷吉艾斯",
+          "rarity": 5,
+          "types": [
+            "冰"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-023 SC",
+          "name": "雷吉斯奇鲁",
+          "rarity": 5,
+          "types": [
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-024 SC",
+          "name": "雄伟牙",
+          "rarity": 5,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-025 SC",
+          "name": "双斧战龙",
+          "rarity": 5,
+          "types": [
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-026 SC",
+          "name": "红莲铠骑",
+          "rarity": 4,
+          "types": [
+            "火",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-031 SC",
+          "name": "蜥蜴王",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-034 SC",
+          "name": "火焰鸡",
+          "rarity": 4,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-037 SC",
+          "name": "巨沼怪",
+          "rarity": 4,
+          "types": [
+            "水",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-040 SC",
+          "name": "鸭嘴炎兽",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-042 SC",
+          "name": "伽勒尔双弹瓦斯",
+          "rarity": 4,
+          "types": [
+            "毒",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-045 SC",
+          "name": "巨金怪",
+          "rarity": 4,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-048 SC",
+          "name": "伦琴猫",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-051 SC",
+          "name": "以欧路普",
+          "rarity": 4,
+          "types": [
+            "虫",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-053 SC",
+          "name": "沙螺蟒",
+          "rarity": 4,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-056 SC",
+          "name": "巨炭山",
+          "rarity": 4,
+          "types": [
+            "岩石",
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-058 SC",
+          "name": "重泥挽马",
+          "rarity": 4,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-061 SC",
+          "name": "长毛巨魔",
+          "rarity": 4,
+          "types": [
+            "恶",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-062 SC",
+          "name": "爆焰龟兽",
+          "rarity": 4,
+          "types": [
+            "火",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-064 SC",
+          "name": "狐大盗",
+          "rarity": 4,
+          "types": [
+            "恶"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-067 SC",
+          "name": "暗夜魔灵",
+          "rarity": 4,
+          "types": [
+            "幽灵",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-070 SC",
+          "name": "双斧战龙",
+          "rarity": 4,
+          "types": [
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-027 SC",
+          "name": "冻脊龙",
+          "rarity": 3,
+          "types": [
+            "冰"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-028 SC",
+          "name": "布土拨",
+          "rarity": 3,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-030 SC",
+          "name": "森林蜥蜴",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-033 SC",
+          "name": "力壮鸡",
+          "rarity": 3,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-036 SC",
+          "name": "沼跃鱼",
+          "rarity": 3,
+          "types": [
+            "水",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-039 SC",
+          "name": "鸭嘴火兽",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-044 SC",
+          "name": "金属怪",
+          "rarity": 3,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-047 SC",
+          "name": "勒克猫",
+          "rarity": 3,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-050 SC",
+          "name": "天罩虫",
+          "rarity": 3,
+          "types": [
+            "虫",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-055 SC",
+          "name": "大炭车",
+          "rarity": 3,
+          "types": [
+            "岩石",
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-057 SC",
+          "name": "泥驴仔",
+          "rarity": 3,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-060 SC",
+          "name": "诈唬魔",
+          "rarity": 3,
+          "types": [
+            "恶",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-066 SC",
+          "name": "彷徨夜灵",
+          "rarity": 3,
+          "types": [
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-069 SC",
+          "name": "斧牙龙",
+          "rarity": 3,
+          "types": [
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-029 SC",
+          "name": "木守宫",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-032 SC",
+          "name": "火稚鸡",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-035 SC",
+          "name": "水跃鱼",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-038 SC",
+          "name": "鸭嘴宝宝",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-041 SC",
+          "name": "瓦斯弹",
+          "rarity": 2,
+          "types": [
+            "毒"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-043 SC",
+          "name": "铁哑铃",
+          "rarity": 2,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-046 SC",
+          "name": "小猫怪",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-049 SC",
+          "name": "索侦虫",
+          "rarity": 2,
+          "types": [
+            "虫"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-052 SC",
+          "name": "沙包蛇",
+          "rarity": 2,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-054 SC",
+          "name": "小炭仔",
+          "rarity": 2,
+          "types": [
+            "岩石"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-059 SC",
+          "name": "捣蛋小妖",
+          "rarity": 2,
+          "types": [
+            "恶",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-063 SC",
+          "name": "偷儿狐",
+          "rarity": 2,
+          "types": [
+            "恶"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-065 SC",
+          "name": "夜巡灵",
+          "rarity": 2,
+          "types": [
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-3-068 SC",
+          "name": "牙牙",
+          "rarity": 2,
+          "types": [
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "name": "星光第4弹",
+      "cards": [
+        {
+          "code": "1-4-001 SC",
+          "name": "帝牙卢卡",
+          "rarity": 6,
+          "types": [
+            "钢",
+            "龙"
+          ],
+          "img": "img/s4/HP_01.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-002 SC",
+          "name": "帕路奇亚",
+          "rarity": 6,
+          "types": [
+            "水",
+            "龙"
+          ],
+          "img": "img/s4/HP_02.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-003 SC",
+          "name": "哲尔尼亚斯",
+          "rarity": 6,
+          "types": [
+            "妖精"
+          ],
+          "img": "img/s4/HP_03.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-004 SC",
+          "name": "伊裴尔塔尔",
+          "rarity": 6,
+          "types": [
+            "恶",
+            "飞行"
+          ],
+          "img": "img/s4/HP_04.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-005 SC",
+          "name": "蕾冠王",
+          "rarity": 6,
+          "types": [
+            "草",
+            "超能力"
+          ],
+          "img": "img/s4/HP_05.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-006 SC",
+          "name": "蕾冠王",
+          "rarity": 6,
+          "types": [
+            "草",
+            "幽灵"
+          ],
+          "img": "img/s4/HP_06.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-007 SC",
+          "name": "谜拟丘",
+          "rarity": 6,
+          "types": [
+            "幽灵",
+            "妖精"
+          ],
+          "img": "img/s4/HP_07.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-008 SC",
+          "name": "酋雷姆",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "冰"
+          ],
+          "img": "img/s4/HP_08.png",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-009 SC",
+          "name": "酋雷姆",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "冰"
+          ],
+          "img": "",
+          "special": [
+            "极巨化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-010 SC",
+          "name": "烈空坐",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "飞行"
+          ],
+          "img": "",
+          "special": [
+            "Mega进化"
+          ],
+          "role": "main"
+        },
+        {
+          "code": "1-4-011 SC",
+          "name": "波士可多拉",
+          "rarity": 5,
+          "types": [
+            "钢",
+            "岩石"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-012 SC",
+          "name": "大竺葵",
+          "rarity": 5,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-013 SC",
+          "name": "火暴兽",
+          "rarity": 5,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-014 SC",
+          "name": "大力鳄",
+          "rarity": 5,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-015 SC",
+          "name": "黏美龙",
+          "rarity": 5,
+          "types": [
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-016 SC",
+          "name": "钢铠鸦",
+          "rarity": 5,
+          "types": [
+            "飞行",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-017 SC",
+          "name": "迭失板",
+          "rarity": 5,
+          "types": [
+            "岩石"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-018 SC",
+          "name": "怪力",
+          "rarity": 5,
+          "types": [
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-019 SC",
+          "name": "沙奈朵",
+          "rarity": 5,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-020 SC",
+          "name": "堵拦熊",
+          "rarity": 5,
+          "types": [
+            "恶",
+            "一般"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-021 SC",
+          "name": "雷吉艾勒奇",
+          "rarity": 5,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-022 SC",
+          "name": "雷吉铎拉戈",
+          "rarity": 5,
+          "types": [
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-023 SC",
+          "name": "铁辙迹",
+          "rarity": 5,
+          "types": [
+            "地面",
+            "钢"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-024 SC",
+          "name": "大王铜象",
+          "rarity": 5,
+          "types": [
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-025 SC",
+          "name": "烈箭鹰",
+          "rarity": 5,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-026 SC",
+          "name": "苍炎刃鬼",
+          "rarity": 4,
+          "types": [
+            "火",
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-027 SC",
+          "name": "戟脊龙",
+          "rarity": 4,
+          "types": [
+            "龙",
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-030 SC",
+          "name": "大竺葵",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-033 SC",
+          "name": "火暴兽",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-036 SC",
+          "name": "大力鳄",
+          "rarity": 4,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-039 SC",
+          "name": "多龙巴鲁托",
+          "rarity": 4,
+          "types": [
+            "龙",
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-041 SC",
+          "name": "怖思壶",
+          "rarity": 4,
+          "types": [
+            "幽灵",
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-045 SC",
+          "name": "电击魔兽",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-047 SC",
+          "name": "阿罗拉九尾",
+          "rarity": 4,
+          "types": [
+            "冰",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-049 SC",
+          "name": "毛毛角羊",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-052 SC",
+          "name": "三首恶龙",
+          "rarity": 4,
+          "types": [
+            "恶",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-057 SC",
+          "name": "怪力",
+          "rarity": 4,
+          "types": [
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-059 SC",
+          "name": "乌鸦头头",
+          "rarity": 4,
+          "types": [
+            "恶",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-062 SC",
+          "name": "布莉姆温",
+          "rarity": 4,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-065 SC",
+          "name": "象牙猪",
+          "rarity": 4,
+          "types": [
+            "冰",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-068 SC",
+          "name": "烈箭鹰",
+          "rarity": 4,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-070 SC",
+          "name": "音波龙",
+          "rarity": 4,
+          "types": [
+            "飞行",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-029 SC",
+          "name": "月桂叶",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-032 SC",
+          "name": "火岩鼠",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-035 SC",
+          "name": "蓝鳄",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-038 SC",
+          "name": "多龙奇",
+          "rarity": 3,
+          "types": [
+            "龙",
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-042 SC",
+          "name": "老翁龙",
+          "rarity": 3,
+          "types": [
+            "一般",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-044 SC",
+          "name": "电击兽",
+          "rarity": 3,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-046 SC",
+          "name": "阿罗拉六尾",
+          "rarity": 3,
+          "types": [
+            "冰",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-051 SC",
+          "name": "双首暴龙",
+          "rarity": 3,
+          "types": [
+            "恶",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-054 SC",
+          "name": "心蝙蝠",
+          "rarity": 3,
+          "types": [
+            "超能力",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-056 SC",
+          "name": "豪力",
+          "rarity": 3,
+          "types": [
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-058 SC",
+          "name": "黑暗鸦",
+          "rarity": 3,
+          "types": [
+            "恶",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-061 SC",
+          "name": "提布莉姆",
+          "rarity": 3,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-064 SC",
+          "name": "长毛猪",
+          "rarity": 3,
+          "types": [
+            "冰",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-067 SC",
+          "name": "火箭雀",
+          "rarity": 3,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-028 SC",
+          "name": "菊草叶",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-031 SC",
+          "name": "火球鼠",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-034 SC",
+          "name": "小锯鳄",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-037 SC",
+          "name": "多龙梅西亚",
+          "rarity": 2,
+          "types": [
+            "龙",
+            "幽灵"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-040 SC",
+          "name": "来悲茶",
+          "rarity": 2,
+          "types": [
+            "幽灵",
+            "水"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-043 SC",
+          "name": "电击怪",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-048 SC",
+          "name": "毛辫羊",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-050 SC",
+          "name": "单首龙",
+          "rarity": 2,
+          "types": [
+            "恶",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-053 SC",
+          "name": "滚滚蝙蝠",
+          "rarity": 3,
+          "types": [
+            "超能力",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-055 SC",
+          "name": "腕力",
+          "rarity": 2,
+          "types": [
+            "格斗"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-060 SC",
+          "name": "迷布莉姆",
+          "rarity": 2,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-063 SC",
+          "name": "小山猪",
+          "rarity": 2,
+          "types": [
+            "冰",
+            "地面"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-066 SC",
+          "name": "小箭雀",
+          "rarity": 2,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        },
+        {
+          "code": "1-4-069 SC",
+          "name": "嗡蝠",
+          "rarity": 2,
+          "types": [
+            "飞行",
+            "龙"
+          ],
+          "img": "",
+          "special": [],
+          "role": "main"
+        }
+      ]
+    },
+    {
       "id": "g1",
       "name": "银河第1弹",
       "cards": [
