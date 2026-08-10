@@ -45,6 +45,9 @@ h3 { font-size:1.1rem; margin:16px 0 8px; }
 .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; padding:0 12px; }
 .card { background:#16213e; border-radius:10px; overflow:hidden; border:1px solid #2a2a4a; transition:border-color .2s; position:relative; }
 .card.owned { border-color:#e94560; }
+.card.support-card { border-color:#4caf50; background:#0a2e1a; }
+.card.support-card.owned { border-color:#66bb6a; }
+.support-move-info { font-size:.7rem; color:#81c784; margin-bottom:2px; }
 
 /* 卡牌图片 - 横竖版自适应 */
 .card-img { background:linear-gradient(135deg,#0f3460,#16213e); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
@@ -126,6 +129,11 @@ h3 { font-size:1.1rem; margin:16px 0 8px; }
 .team-card .card-atk-info { padding:4px 8px 8px; font-size:.7rem; color:#aaa; line-height:1.6; }
 .atk-strong { color:#e94560; font-weight:600; }
 .atk-weak { color:#f0a500; }
+.def-vulnerable { color:#ff4444; font-weight:600; }
+.def-safe { color:#4caf50; }
+.vs-line { margin-bottom:2px; }
+.def-warning { margin:4px 0; padding:3px 6px; background:rgba(255,68,68,.15); border-radius:3px; font-size:.75rem; color:#ff6666; }
+.support-label { display:inline-block; font-size:.65rem; padding:1px 6px; border-radius:3px; background:linear-gradient(135deg,#4caf50,#1a5e3a); color:#fff; margin-bottom:4px; }
 .special-notice { margin-top:12px; padding:8px 12px; background:rgba(233,69,96,.1); border-radius:6px; font-size:.8rem; color:#e94560; }
 
 /* ===== 响应式 ===== */

@@ -1644,6 +1644,66 @@
           "role": "main"
         }
       ]
+    },
+    {
+      "id": "support",
+      "name": "支援券",
+      "cards": [
+        {
+          "code": "SP-001",
+          "name": "谜拟丘",
+          "rarity": 0,
+          "types": [
+            "幽灵"
+          ],
+          "img": "",
+          "role": "support",
+          "special": [],
+          "support_move": "暗影爪",
+          "support_move_type": "幽灵"
+        },
+        {
+          "code": "SP-002",
+          "name": "拉普拉斯",
+          "rarity": 0,
+          "types": [
+            "水",
+            "冰"
+          ],
+          "img": "",
+          "role": "support",
+          "special": [],
+          "support_move": "冰冻光束",
+          "support_move_type": "冰"
+        },
+        {
+          "code": "SP-003",
+          "name": "葱游兵",
+          "rarity": 0,
+          "types": [
+            "格斗"
+          ],
+          "img": "",
+          "role": "support",
+          "special": [],
+          "support_move": "流星突击",
+          "support_move_type": "格斗"
+        },
+        {
+          "code": "SP-004",
+          "name": "铝钢龙",
+          "rarity": 0,
+          "types": [
+            "钢",
+            "龙"
+          ],
+          "img": "",
+          "role": "support",
+          "special": [],
+          "support_move": "加农光炮",
+          "support_move_type": "钢"
+        }
+      ]
     }
   ]
 }
