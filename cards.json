@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "series": [
+    {
+      "id": "g2",
+      "name": "银河第2弹",
+      "cards": [
+        {
+          "code": "2-2-001 SC",
+          "name": "苍响",
+          "rarity": 6,
+          "types": [
+            "妖精"
+          ],
+          "img": "img/g2/HP_01.png"
+        },
+        {
+          "code": "2-2-002 SC",
+          "name": "藏玛然特",
+          "rarity": 6,
+          "types": [
+            "格斗"
+          ],
+          "img": "img/g2/HP_02.png"
+        },
+        {
+          "code": "2-2-003 SC",
+          "name": "铝钢龙",
+          "rarity": 6,
+          "types": [
+            "钢",
+            "龙"
+          ],
+          "img": "img/g2/HP_03.png"
+        },
+        {
+          "code": "2-2-004 SC",
+          "name": "喷火龙",
+          "rarity": 6,
+          "types": [
+            "火",
+            "飞行"
+          ],
+          "img": "img/g2/HP_04.png"
+        },
+        {
+          "code": "2-2-005 SC",
+          "name": "萨戮德",
+          "rarity": 6,
+          "types": [
+            "草"
+          ],
+          "img": "img/g2/HP_05.png"
+        },
+        {
+          "code": "2-2-006 SC",
+          "name": "路卡利欧",
+          "rarity": 6,
+          "types": [
+            "格斗",
+            "钢"
+          ],
+          "img": "img/g2/HP_06.png"
+        },
+        {
+          "code": "2-2-007 SC",
+          "name": "烈空坐",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "飞行"
+          ],
+          "img": "img/g2/HP_07.png"
+        },
+        {
+          "code": "2-2-008 SC",
+          "name": "拉帝亚斯",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "超能力"
+          ],
+          "img": "img/g2/HP_08.png"
+        },
+        {
+          "code": "2-2-009 SC",
+          "name": "拉帝欧斯",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "超能力"
+          ],
+          "img": "img/g2/HP_09.png"
+        },
+        {
+          "code": "2-2-010 SC",
+          "name": "四颚针龙",
+          "rarity": 6,
+          "types": [
+            "龙",
+            "恶"
+          ],
+          "img": "img/g2/HP_10.png"
+        },
+        {
+          "code": "2-2-011 SC",
+          "name": "巨金怪",
+          "rarity": 5,
+          "types": [
+            "钢",
+            "超能力"
+          ],
+          "img": "img/g2/e19fa6a44ccc42df8540e54cce8f3a46.png"
+        },
+        {
+          "code": "2-2-012 SC",
+          "name": "双斧战龙",
+          "rarity": 5,
+          "types": [
+            "龙"
+          ],
+          "img": "img/g2/998b982e3b624971814bf30c7af82bf9.png"
+        },
+        {
+          "code": "2-2-013 SC",
+          "name": "化石翼龙",
+          "rarity": 5,
+          "types": [
+            "岩石",
+            "飞行"
+          ],
+          "img": "img/g2/ab62d46fa3524e33b302d6bc34af86e5.png"
+        },
+        {
+          "code": "2-2-014 SC",
+          "name": "雷鸟龙",
+          "rarity": 5,
+          "types": [
+            "电",
+            "龙"
+          ],
+          "img": "img/g2/7496f62b67b74f08b34a9f6da2c76639.png"
+        },
+        {
+          "code": "2-2-015 SC",
+          "name": "鳃鱼龙",
+          "rarity": 5,
+          "types": [
+            "水",
+            "龙"
+          ],
+          "img": "img/g2/2b0f1295b5864fd18193301aa220f31c.png"
+        },
+        {
+          "code": "2-2-016 SC",
+          "name": "胡地",
+          "rarity": 5,
+          "types": [
+            "超能力"
+          ],
+          "img": "img/g2/f63db176d41544108e05a0f71207a3b3.png"
+        },
+        {
+          "code": "2-2-017 SC",
+          "name": "雷鸟海兽",
+          "rarity": 5,
+          "types": [
+            "电",
+            "恶"
+          ],
+          "img": "img/g2/9c701e4c229d4603980b224ba8de4bcc.png"
+        },
+        {
+          "code": "2-2-018 SC",
+          "name": "具甲武者",
+          "rarity": 5,
+          "types": [
+            "虫",
+            "水"
+          ],
+          "img": "img/g2/532aae5148a0488c96462373fabf4cc9.png"
+        },
+        {
+          "code": "2-2-019 SC",
+          "name": "君主蛇",
+          "rarity": 5,
+          "types": [
+            "草"
+          ],
+          "img": "img/g2/34421b36a9574671b15cf407c9059a0b.png"
+        },
+        {
+          "code": "2-2-020 SC",
+          "name": "炎武王",
+          "rarity": 5,
+          "types": [
+            "火"
+          ],
+          "img": "img/g2/824f3e6c908e4216b7ae30ce00b5f71f.png"
+        },
+        {
+          "code": "2-2-021 SC",
+          "name": "大剑鬼",
+          "rarity": 5,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/7d21b2e4993c4a27a29698ed17d7badb.png"
+        },
+        {
+          "code": "2-2-022 SC",
+          "name": "铁辙迹",
+          "rarity": 5,
+          "types": [
+            "地面",
+            "钢"
+          ],
+          "img": "img/g2/6b18c019d6354e02a82eb219b0e95364.png"
+        },
+        {
+          "code": "2-2-023 SC",
+          "name": "毒贝比",
+          "rarity": 5,
+          "types": [
+            "毒"
+          ],
+          "img": "img/g2/81cf147eceb64c8b9d4aa1bb7971404e.png"
+        },
+        {
+          "code": "2-2-024 SC",
+          "name": "布莉姆温",
+          "rarity": 5,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "img/g2/46c57e00c6da42faaa36370a8746bc52.png"
+        },
+        {
+          "code": "2-2-025 SC",
+          "name": "阿勃梭鲁",
+          "rarity": 5,
+          "types": [
+            "恶"
+          ],
+          "img": "img/g2/6683d3cba6ce4667afc92952a5d62924.png"
+        },
+        {
+          "code": "2-2-027 SC",
+          "name": "魔幻假面喵",
+          "rarity": 4,
+          "types": [
+            "草",
+            "恶"
+          ],
+          "img": "img/g2/e85fc10481a14267ae6c53d680399ba0.png"
+        },
+        {
+          "code": "2-2-029 SC",
+          "name": "骨纹巨声鳄",
+          "rarity": 4,
+          "types": [
+            "火",
+            "幽灵"
+          ],
+          "img": "img/g2/d332359298b6439db902d521d24beee2.png"
+        },
+        {
+          "code": "2-2-031 SC",
+          "name": "狂欢浪舞鸭",
+          "rarity": 4,
+          "types": [
+            "水",
+            "格斗"
+          ],
+          "img": "img/g2/7b626e9b2a9f4d42bdc16a7180cc4200.png"
+        },
+        {
+          "code": "2-2-034 SC",
+          "name": "君主蛇",
+          "rarity": 4,
+          "types": [
+            "草"
+          ],
+          "img": "img/g2/308002cd4eb242fcb386a416573f4f71.png"
+        },
+        {
+          "code": "2-2-037 SC",
+          "name": "炎武王",
+          "rarity": 4,
+          "types": [
+            "火"
+          ],
+          "img": "img/g2/f2ab9c42bff54b328a1854774b46d2e8.png"
+        },
+        {
+          "code": "2-2-040 SC",
+          "name": "大剑鬼",
+          "rarity": 4,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/51622fa2dcc54bae9bc1dc6e33629744.png"
+        },
+        {
+          "code": "2-2-043 SC",
+          "name": "蚊香泳士",
+          "rarity": 4,
+          "types": [
+            "水",
+            "格斗"
+          ],
+          "img": "img/g2/9082756bb9f84af2b033621704c1f75b.png"
+        },
+        {
+          "code": "2-2-045 SC",
+          "name": "美纳斯",
+          "rarity": 4,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/8172e77f27a943c4a949d81385b19c55.png"
+        },
+        {
+          "code": "2-2-048 SC",
+          "name": "麻麻鳗鱼王",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "img/g2/c5f0286e6b48483187cae1ada0759649.png"
+        },
+        {
+          "code": "2-2-051 SC",
+          "name": "沙奈朵",
+          "rarity": 4,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "img/g2/54c607f8e5c04d3bafb00ad97e7dcb86.png"
+        },
+        {
+          "code": "2-2-052 SC",
+          "name": "艾路雷朵",
+          "rarity": 4,
+          "types": [
+            "超能力",
+            "格斗"
+          ],
+          "img": "img/g2/f93960d8e1f742a2b4d41a367db1c3b6.png"
+        },
+        {
+          "code": "2-2-055 SC",
+          "name": "蜈蚣王",
+          "rarity": 4,
+          "types": [
+            "虫",
+            "毒"
+          ],
+          "img": "img/g2/e2bd07a198f84c3fbd15040584746dd7.png"
+        },
+        {
+          "code": "2-2-057 SC",
+          "name": "藏饱栗鼠",
+          "rarity": 4,
+          "types": [
+            "一般"
+          ],
+          "img": "img/g2/6e931fe9cd284d00876b8083c89c7814.png"
+        },
+        {
+          "code": "2-2-060 SC",
+          "name": "帝牙海狮",
+          "rarity": 4,
+          "types": [
+            "冰",
+            "水"
+          ],
+          "img": "img/g2/c75fe4c3db4441db9a8f9db18272e20d.png"
+        },
+        {
+          "code": "2-2-063 SC",
+          "name": "罗丝雷朵",
+          "rarity": 4,
+          "types": [
+            "草",
+            "毒"
+          ],
+          "img": "img/g2/b844b33762564ed3bf891ca49773739e.png"
+        },
+        {
+          "code": "2-2-065 SC",
+          "name": "霜奶仙",
+          "rarity": 4,
+          "types": [
+            "妖精"
+          ],
+          "img": "img/g2/7e4609b8c2ee4a81a981f16c57515561.png"
+        },
+        {
+          "code": "2-2-068 SC",
+          "name": "电击魔兽",
+          "rarity": 4,
+          "types": [
+            "电"
+          ],
+          "img": "img/g2/551a153a4c194a94adaa7ebf470c32c5.png"
+        },
+        {
+          "code": "2-2-026 SC",
+          "name": "蒂蕾喵",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "img/g2/0000efb3317d4708a420dc8f9fc3dcdb.png"
+        },
+        {
+          "code": "2-2-028 SC",
+          "name": "炙烫鳄",
+          "rarity": 3,
+          "types": [
+            "火"
+          ],
+          "img": "img/g2/a0aefcdd6a9a486081052d0fa48f1085.png"
+        },
+        {
+          "code": "2-2-030 SC",
+          "name": "涌跃鸭",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/cfcbae480f0e45f8a4bb4ad445a1c8fb.png"
+        },
+        {
+          "code": "2-2-033 SC",
+          "name": "青藤蛇",
+          "rarity": 3,
+          "types": [
+            "草"
+          ],
+          "img": "img/g2/8f0edc3d96024e5a9bb745a903af48a4.png"
+        },
+        {
+          "code": "2-2-036 SC",
+          "name": "炒炒猪",
+          "rarity": 3,
+          "types": [
+            "火",
+            "格斗"
+          ],
+          "img": "img/g2/c14a13e781464fe8b932bc67f284a721.png"
+        },
+        {
+          "code": "2-2-039 SC",
+          "name": "双刃丸",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/f76c42546e704037b391fbc51a90cd45.png"
+        },
+        {
+          "code": "2-2-042 SC",
+          "name": "蚊香君",
+          "rarity": 3,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/9bbe6e98ed6b4b0f9ffb3a0535d11664.png"
+        },
+        {
+          "code": "2-2-047 SC",
+          "name": "麻麻鳗",
+          "rarity": 3,
+          "types": [
+            "电"
+          ],
+          "img": "img/g2/2a8ac0e20afc49d0b56f0cb04aa193c0.png"
+        },
+        {
+          "code": "2-2-050 SC",
+          "name": "奇鲁莉安",
+          "rarity": 3,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "img/g2/1b46a80ac456496b91d211d7fed7a521.png"
+        },
+        {
+          "code": "2-2-054 SC",
+          "name": "车轮球",
+          "rarity": 3,
+          "types": [
+            "虫",
+            "毒"
+          ],
+          "img": "img/g2/6255f5e9205a48a38ce72825126b2bbd.png"
+        },
+        {
+          "code": "2-2-059 SC",
+          "name": "海魔狮",
+          "rarity": 3,
+          "types": [
+            "冰",
+            "水"
+          ],
+          "img": "img/g2/2332bdb71c0b46a299ef02c28c89a1d2.png"
+        },
+        {
+          "code": "2-2-062 SC",
+          "name": "毒蔷薇",
+          "rarity": 3,
+          "types": [
+            "草",
+            "毒"
+          ],
+          "img": "img/g2/7bde18dc29c448c6ba8eb9383dac61e1.png"
+        },
+        {
+          "code": "2-2-067 SC",
+          "name": "电击兽",
+          "rarity": 3,
+          "types": [
+            "电"
+          ],
+          "img": "img/g2/d24afd98f07f4420905956ae00cfe5ec.png"
+        },
+        {
+          "code": "2-2-070 SC",
+          "name": "喵头目",
+          "rarity": 3,
+          "types": [
+            "钢"
+          ],
+          "img": "img/g2/af793655f33444f7add2619842771a92.png"
+        },
+        {
+          "code": "2-2-032 SC",
+          "name": "藤藤蛇",
+          "rarity": 2,
+          "types": [
+            "草"
+          ],
+          "img": "img/g2/b0be8ecf5eb14037be63d22dcac7fe52.png"
+        },
+        {
+          "code": "2-2-035 SC",
+          "name": "暖暖猪",
+          "rarity": 2,
+          "types": [
+            "火"
+          ],
+          "img": "img/g2/fc61168fac2c4d3c9ceddaa933d05790.png"
+        },
+        {
+          "code": "2-2-038 SC",
+          "name": "水水獭",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/8cdc51fd69064f2388c9f8071ef688c6.png"
+        },
+        {
+          "code": "2-2-041 SC",
+          "name": "蚊香蝌蚪",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/077a34be362943feb37444726f19bce1.png"
+        },
+        {
+          "code": "2-2-044 SC",
+          "name": "丑丑鱼",
+          "rarity": 2,
+          "types": [
+            "水"
+          ],
+          "img": "img/g2/31c784bb9e584ff1a0d6ee26107c2314.png"
+        },
+        {
+          "code": "2-2-046 SC",
+          "name": "麻麻小鱼",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "img/g2/c0f07045064e47cbbd2b973af62c1c07.png"
+        },
+        {
+          "code": "2-2-049 SC",
+          "name": "拉鲁拉丝",
+          "rarity": 2,
+          "types": [
+            "超能力",
+            "妖精"
+          ],
+          "img": "img/g2/f535e037de7c45648efb7f35f74bb6cc.png"
+        },
+        {
+          "code": "2-2-053 SC",
+          "name": "百足蜈蚣",
+          "rarity": 2,
+          "types": [
+            "虫",
+            "毒"
+          ],
+          "img": "img/g2/6f36f85e9ce24109a74041c0e3ab0aed.png"
+        },
+        {
+          "code": "2-2-056 SC",
+          "name": "贪心栗鼠",
+          "rarity": 2,
+          "types": [
+            "一般"
+          ],
+          "img": "img/g2/ecc8faf1baf24256b4c7ca45603abd76.png"
+        },
+        {
+          "code": "2-2-058 SC",
+          "name": "海豹球",
+          "rarity": 2,
+          "types": [
+            "冰",
+            "水"
+          ],
+          "img": "img/g2/38a24e7c361c463f98606b7f554cbb6b.png"
+        },
+        {
+          "code": "2-2-061 SC",
+          "name": "含羞苞",
+          "rarity": 2,
+          "types": [
+            "草",
+            "毒"
+          ],
+          "img": "img/g2/d65e5af618b641cfb6755bfce90c41b8.png"
+        },
+        {
+          "code": "2-2-064 SC",
+          "name": "小仙奶",
+          "rarity": 2,
+          "types": [
+            "妖精"
+          ],
+          "img": "img/g2/517e75d3d8884c2bbbe20447e1fdea79.png"
+        },
+        {
+          "code": "2-2-066 SC",
+          "name": "电击怪",
+          "rarity": 2,
+          "types": [
+            "电"
+          ],
+          "img": "img/g2/537e19aa10c9402083b7679823d572d1.png"
+        },
+        {
+          "code": "2-2-069 SC",
+          "name": "伽勒尔喵喵",
+          "rarity": 2,
+          "types": [
+            "钢"
+          ],
+          "img": "img/g2/3bc43bd1cee14b19b677827883ee7911.png"
+        }
+      ]
+    }
+  ]
+}

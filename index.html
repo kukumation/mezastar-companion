@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>明耀之星 Companion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <!-- 底部导航 -->
+  <nav class="tab-bar">
+    <button class="tab-btn active" data-tab="type-chart">属性表</button>
+    <button class="tab-btn" data-tab="collection">我的收藏</button>
+    <button class="tab-btn" data-tab="recommend" style="display:none">推荐</button>
+  </nav>
+
+  <!-- 属性克制表页 -->
+  <div id="tab-type-chart" class="tab-content active">
+    <h2>属性克制表</h2>
+    <p class="hint">点击你的宝可梦属性，查看对其他属性的攻击效果</p>
+    <div id="type-grid" class="type-grid"></div>
+    <div id="type-result" class="type-result"></div>
+  </div>
+
+  <!-- 收藏页 -->
+  <div id="tab-collection" class="tab-content">
+    <div class="filter-bar">
+      <select id="filter-series">
+        <option value="all">全部弹数</option>
+      </select>
+      <select id="filter-rarity">
+        <option value="all">全部稀有度</option>
+        <option value="6">★6</option>
+        <option value="5">★5</option>
+        <option value="4">★4</option>
+        <option value="3">★3</option>
+        <option value="2">★2</option>
+      </select>
+      <select id="filter-type">
+        <option value="all">全部属性</option>
+      </select>
+      <label class="owned-only">
+        <input type="checkbox" id="filter-owned"> 只看已收藏
+      </label>
+    </div>
+    <div class="stats-bar" id="collection-stats"></div>
+    <div id="card-grid" class="card-grid"></div>
+  </div>
+
+  <!-- 推荐页（P1启用） -->
+  <div id="tab-recommend" class="tab-content">
+    <h2>对战推荐</h2>
+    <p class="hint">选择对方宝可梦的属性</p>
+    <div id="enemy-type-picker" class="type-grid"></div>
+    <div id="recommend-result"></div>
+  </div>
+</div>
+
+<script src="type_chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
