@@ -8,6 +8,16 @@
 <!-- theme-color（初始值与 light 主题 bg 一致，applyTheme 会按主题动态更新）-->
 <meta name="theme-color" content="#F7FAFF">
 
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MEZASTAR">
+<meta name="mobile-web-app-capable" content="yes">
+
 <!-- 防闪烁：在 CSS 应用前同步设置 data-theme -->
 <script>
   (() => {
@@ -26,7 +36,7 @@
   })();
 </script>
 
-<link rel="stylesheet" href="style.css?v=20260811k">
+<link rel="stylesheet" href="style.css?v=20260811p">
 </head>
 <body>
 
@@ -177,7 +187,12 @@
   <div id="card-detail-modal" class="detail-modal"></div>
 </div>
 
-<script src="type_chart.js?v=20260811k"></script>
-<script src="app.js?v=20260811k"></script>
+<script src="type_chart.js?v=20260811p"></script>
+<script src="app.js?v=20260811p"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(()=>{});
+  }
+</script>
 </body>
 </html>

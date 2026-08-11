@@ -1099,4 +1099,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811k
+// v20260811p
