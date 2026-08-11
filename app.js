@@ -755,6 +755,9 @@ function init(){
   document.getElementById('picker-close').addEventListener('click', closeEnemyPicker);
   document.getElementById('picker-rarity').addEventListener('change', renderEnemyPicker);
   document.getElementById('picker-search').addEventListener('input', renderEnemyPicker);
+
+  // 数据加载完成后重新应用语言（更新筛选器选项翻译）
+  if(typeof window.applyLang_ === 'function') window.applyLang_(document.documentElement.dataset.lang || 'zh', false);
 }
 
 if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
@@ -962,6 +965,9 @@ function getSeriesName(sid){
     applyLang(btn.dataset.langValue, true);
   });
 
+  // 暴露到全局，让 init() 可以在数据加载后调用
+  window.applyLang_ = applyLang;
+
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811e
+// v20260811f
