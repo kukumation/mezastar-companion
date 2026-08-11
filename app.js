@@ -51,6 +51,8 @@ async function loadCards(){
       }
     }
     populateFilters(data.series);
+    // 数据加载完成后重新应用语言（翻译筛选器选项+卡牌名）
+    if(typeof window.applyLang_ === 'function') window.applyLang_(document.documentElement.dataset.lang || 'zh', false);
     renderCardGrid();
     updateStats();
     renderEnemyPicker();
@@ -970,4 +972,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811f
+// v20260811g
