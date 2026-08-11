@@ -89,6 +89,8 @@ function getCardDesc(c){
   return c.desc || '';
 }
 function isEN(){ return document.documentElement.dataset.lang === 'en'; }
+window.getCardName_ = getCardName;
+window.getCardDesc_ = getCardDesc;
 
 // ===== 属性克制表 =====
 function renderTypeGrid(containerId, onClick){
@@ -216,7 +218,7 @@ function renderCardGrid(){
           <span class="rarity-badge">${stars}</span>
         </div>
         <div class="card-info">
-          <div class="card-name">${getCardName(c)}</div>
+          <div class="card-name">${(window.getCardName_||getCardName)(c)}</div>
           <div class="card-types">${typeBadges}</div>
           ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
           ${supportMove}
@@ -341,7 +343,7 @@ function renderEnemyPicker(){
           <span class="rarity-badge">${stars}</span>
         </div>
         <div class="picker-card-info">
-          <div class="card-name">${getCardName(c)}</div>
+          <div class="card-name">${(window.getCardName_||getCardName)(c)}</div>
           <div class="card-types">${typeBadges}</div>
         </div>
       </div>
@@ -669,7 +671,7 @@ function showCardDetail(code){
       <button class="detail-close" onclick="closeCardDetailPub()">✕</button>
       <div class="detail-img">${imgHtml}</div>
       <div class="detail-body">
-        <h2 class="detail-name">${getCardName(card)}</h2>
+        <h2 class="detail-name">${(window.getCardName_||getCardName)(card)}</h2>
         <div class="detail-meta">
           <span class="detail-stars">${stars}</span>
           <span class="detail-code">${card.code}</span>
@@ -683,7 +685,7 @@ function showCardDetail(code){
           </div>
         </div>
         ${supportInfo}
-        ${getCardDesc(card) ? `<div class="detail-desc">${getCardDesc(card)}</div>` : ''}
+        ${(window.getCardDesc_||getCardDesc)(card) ? `<div class="detail-desc">${(window.getCardDesc_||getCardDesc)(card)}</div>` : ''}
         ${card.base_stats ? `
         <div class="detail-section">
           <h3>${T('basestats')}</h3>
@@ -883,7 +885,7 @@ function getSeriesName(sid){
       const span = btn.querySelector('span:last-child');
       if(tab === 'collection') span.textContent = t.collection;
       else if(tab === 'battle') span.textContent = t.battle;
-      else if(tab === 'typechart') span.textContent = t.typechart;
+      else if(tab === 'type-chart' || tab === 'typechart') span.textContent = t.typechart;
     });
 
     // 品牌标题
@@ -962,4 +964,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811d
+// v20260811e
