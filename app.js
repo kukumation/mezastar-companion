@@ -125,33 +125,33 @@ function showTypeEffect(atkType){
 
   result.innerHTML = `
     <div class="effect-section">
-      <h3 class="effect-direction">攻击 ${atkType} 系 →</h3>
+      <h3 class="effect-direction">${T('atk_dir')} ${getTypeName(atkType)} →</h3>
       <div class="effect-group strong">
-        <span class="effect-label">效果绝佳 (2x)</span>
-        <div class="type-tags">${strong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')||'<span class="hint">无</span>'}</div>
+        <span class="effect-label">${T('atk_effect')}</span>
+        <div class="type-tags">${strong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')||'<span class="hint">—</span>'}</div>
       </div>
       ${weak.length ? `<div class="effect-group weak">
-        <span class="effect-label">效果不佳 (0.5x)</span>
-        <div class="type-tags">${weak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+        <span class="effect-label">${T('atk_weak')}</span>
+        <div class="type-tags">${weak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')}</div>
       </div>`:''}
       ${immune.length ? `<div class="effect-group immune">
-        <span class="effect-label">无效 (0x)</span>
-        <div class="type-tags">${immune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+        <span class="effect-label">${T('atk_none')}</span>
+        <div class="type-tags">${immune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')}</div>
       </div>`:''}
     </div>
     <div class="effect-section">
-      <h3 class="effect-direction">← 防守 ${atkType} 系</h3>
+      <h3 class="effect-direction">← ${T('def_dir')} ${getTypeName(atkType)}</h3>
       <div class="effect-group strong">
-        <span class="effect-label">被克 (受到2x)</span>
-        <div class="type-tags">${defStrong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')||'<span class="hint">无</span>'}</div>
+        <span class="effect-label">${T('be_weak')}</span>
+        <div class="type-tags">${defStrong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')||'<span class="hint">—</span>'}</div>
       </div>
       ${defWeak.length ? `<div class="effect-group weak">
-        <span class="effect-label">抗性 (受到0.5x)</span>
-        <div class="type-tags">${defWeak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+        <span class="effect-label">${T('be_resist')}</span>
+        <div class="type-tags">${defWeak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')}</div>
       </div>`:''}
       ${defImmune.length ? `<div class="effect-group immune">
-        <span class="effect-label">免疫 (受到0x)</span>
-        <div class="type-tags">${defImmune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+        <span class="effect-label">${T('be_immune')}</span>
+        <div class="type-tags">${defImmune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')}</div>
       </div>`:''}
     </div>
   `;
@@ -184,18 +184,18 @@ function renderCardGrid(){
 
   // 按稀有度分组渲染（每组前面加分割线标题）
   const RARITY_GROUPS = [
-    {rarity: 6, label: '★★★★★★ 超级明星'},
-    {rarity: 5, label: '★★★★★ 明星'},
-    {rarity: 4, label: '★★★★'},
-    {rarity: 3, label: '★★★'},
-    {rarity: 2, label: '★★'},
-    {rarity: 'support', label: '支援券'},
+    {rarity: 6, label: () => '★★★★★★ ' + T('rarity_6')},
+    {rarity: 5, label: () => '★★★★★ ' + T('rarity_5')},
+    {rarity: 4, label: () => '★★★★'},
+    {rarity: 3, label: () => '★★★'},
+    {rarity: 2, label: () => '★★'},
+    {rarity: 'support', label: () => T('support')},
   ];
 
   const renderCard = (c) => {
     const owned = collection[c.code];
     const stars = c.role === 'support' ? '支援' : '★'.repeat(c.rarity);
-    const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+    const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
     const specialBadges = (c.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
     const supportMove = c.support_move ? `<div class="support-move-info">支援：${c.support_move}（${c.support_move_type}）</div>` : '';
     const imgFile = c.img || '';
@@ -237,13 +237,13 @@ function renderCardGrid(){
       return match;
     });
     if(groupCards.length === 0) continue;
-    html += `<div class="rarity-divider"><span class="rarity-divider-label">${group.label}</span></div>`;
+    html += `<div class="rarity-divider"><span class="rarity-divider-label">${typeof group.label === 'function' ? group.label() : group.label}</span></div>`;
     html += groupCards.map(renderCard).join('');
   }
   // 兜底：渲染未被任何分组匹配的卡
   const rest = filtered.filter(c => !rendered.has(c.code));
   if(rest.length){
-    html += `<div class="rarity-divider"><span class="rarity-divider-label">其他</span></div>`;
+    html += `<div class="rarity-divider"><span class="rarity-divider-label">${T('rarity_other')}</span></div>`;
     html += rest.map(renderCard).join('');
   }
   grid.innerHTML = html;
@@ -254,7 +254,7 @@ function updateStats(){
   const total = allCards.length;
   const owned = Object.keys(collection).filter(k=>collection[k]).length;
   const el = document.getElementById('collection-stats');
-  if(el) el.innerHTML = `<span>已收藏: <strong>${owned}</strong> / ${total}</span>`;
+  if(el) el.innerHTML = `<span>${T('owned')}: <strong>${owned}</strong> / ${total}</span>`;
 }
 
 // ===== 对战推荐 =====
@@ -289,7 +289,7 @@ function renderEnemySlots(){
   const container = document.getElementById('enemy-slots');
   container.innerHTML = enemySlots.map((enemy, i) => {
     if(enemy){
-      const typeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+      const typeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
       const stars = '★'.repeat(enemy.rarity);
       return `
         <div class="enemy-slot filled" data-slot="${i}">
@@ -328,7 +328,7 @@ function renderEnemyPicker(){
 
   grid.innerHTML = filtered.map(c => {
     const stars = '★'.repeat(c.rarity);
-    const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+    const typeBadges = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
     const orient = c.img ? getImgClass(c.img) : 'no-img';
     return `
       <div class="picker-card" onclick="selectEnemyPub('${c.code}')">
@@ -351,7 +351,7 @@ function recommendTeam(){
   const enemies = enemySlots.filter(e => e !== null);
 
   if(enemies.length === 0){
-    result.innerHTML = '<p class="hint">选择敌方宝可梦后，这里会显示推荐阵容</p>';
+    result.innerHTML = `<p class="hint">${T('recommend_empty')}</p>`;
     return;
   }
 
@@ -521,7 +521,7 @@ function recommendTeam(){
   // 渲染
   result.innerHTML = `
     <div class="recommend-team">
-      <h3>推荐阵容（每只各打一场）</h3>
+      <h3>${T('recommend_title')}</h3>
       <div class="pairing-list">
         ${pairing.map((p, i) => {
           const enemy = p.enemy;
@@ -529,8 +529,8 @@ function recommendTeam(){
           const d = p.detail;
           const stars = '★'.repeat(card.rarity);
           const enemyStars = '★'.repeat(enemy.rarity);
-          const typeBadges = card.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
-          const enemyTypeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('');
+          const typeBadges = card.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
+          const enemyTypeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
           const specialBadges = (card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
 
           const atkClass = d.bestAtk.mult >= 2 ? 'atk-strong' : d.bestAtk.mult <= 0.5 ? 'atk-weak' : '';
@@ -568,21 +568,21 @@ function recommendTeam(){
       ${warnings.length ? `<div class="coverage-warnings">${warnings.map(w => `<div class="coverage-warn">${w}</div>`).join('')}</div>` : ''}
 
       ${supportPick ? `
-        <h3>推荐支援券</h3>
+        <h3>${T('recommend_support')}</h3>
         <div class="team-cards support">
           <div class="team-card support">
-            <div class="support-label">支援券</div>
+            <div class="support-label">${T('support')}</div>
             <div class="card-name">${supportPick.card.name}</div>
             <div class="card-types"><span class="type-tag sm" style="background:${TYPE_COLORS[supportPick.moveType]}">${supportPick.moveType}</span></div>
             <div class="card-atk-info">支援招式：${supportPick.card.support_move || ''}</div>
           </div>
         </div>
       ` : `
-        <h3>支援券</h3>
-        <p class="hint">收藏页可勾选支援券（谜拟丘/拉普拉斯/葱游兵/铝钢龙），这里会自动推荐。</p>
+        <h3>${T('support')}</h3>
+        <p class="hint">${T('support_hint')}</p>
       `}
 
-      ${specialConflicts.length ? `<div class="special-notice">⚠️ ${specialConflicts.join('；')}（每场各限用一次）</div>` : ''}
+      ${specialConflicts.length ? `<div class="special-notice">⚠️ ${specialConflicts.join('；')}${T('special_conflict')}</div>` : ''}
     </div>
   `;
 }
@@ -595,7 +595,7 @@ function analyzeEnemy(e){
     for(const et of e.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
     if(m >= 2) weak.push({type:t, mult:m});
   }
-  const weakBadges = weak.map(w => `<span class="type-tag" style="background:${TYPE_COLORS[w.type]}">${w.type} ${w.mult}x</span>`).join('');
+  const weakBadges = weak.map(w => `<span class="type-tag" style="background:${TYPE_COLORS[w.type]}">${getTypeName(w.type)} ${w.mult}x</span>`).join('');
   return `<div class="enemy-analysis"><span class="analysis-name">vs ${e.name} ★${e.rarity}</span><div class="type-tags">${weakBadges||'<span class="hint">无2x克制</span>'}</div></div>`;
 }
 
@@ -621,7 +621,7 @@ function showCardDetail(code){
   if(!modal) return;
 
   const stars = card.role === 'support' ? '支援券' : '★'.repeat(card.rarity);
-  const typeBadges = card.types.map(t => `<span class="type-tag" style="background:${TYPE_COLORS[t]||'#666'}">${t}</span>`).join('');
+  const typeBadges = card.types.map(t => `<span class="type-tag" style="background:${TYPE_COLORS[t]||'#666'}">${getTypeName(t)}</span>`).join('');
   const specialBadges = (card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
   const owned = collection[code];
   const energyText = card.energy ? `<span class="detail-energy">${card.energy}</span>` : '<span class="detail-energy missing">?</span>';
@@ -646,13 +646,13 @@ function showCardDetail(code){
   resistances.sort((a,b) => a.mult - b.mult);
 
   const weakHtml = weaknesses.length
-    ? weaknesses.map(w => `<span class="type-tag weak" style="background:${TYPE_COLORS[w.type]||'#666'}">${w.type} ${w.mult}x</span>`).join('')
+    ? weaknesses.map(w => `<span class="type-tag weak" style="background:${TYPE_COLORS[w.type]||'#666'}">${getTypeName(w.type)} ${w.mult}x</span>`).join('')
     : '<span class="hint">无</span>';
   const resistHtml = resistances.length
-    ? resistances.map(r => `<span class="type-tag resist" style="background:${TYPE_COLORS[r.type]||'#666'}">${r.type} ${r.mult}x</span>`).join('')
+    ? resistances.map(r => `<span class="type-tag resist" style="background:${TYPE_COLORS[r.type]||'#666'}">${getTypeName(r.type)} ${r.mult}x</span>`).join('')
     : '<span class="hint">无</span>';
   const immuneHtml = immunities.length
-    ? immunities.map(i => `<span class="type-tag immune" style="background:${TYPE_COLORS[i.type]||'#666'}">${i.type} 免疫</span>`).join('')
+    ? immunities.map(i => `<span class="type-tag immune" style="background:${TYPE_COLORS[i.type]||'#666'}">${getTypeName(i.type)} ${T('immune')}</span>`).join('')
     : '';
 
   // 支援招式
@@ -674,7 +674,7 @@ function showCardDetail(code){
         ${specialBadges ? `<div class="detail-special">${specialBadges}</div>` : ''}
         <div class="detail-stats">
           <div class="stat-box">
-            <span class="stat-label">宝可能量</span>
+            <span class="stat-label">${T('energy')}</span>
             ${energyText}
           </div>
         </div>
@@ -682,7 +682,7 @@ function showCardDetail(code){
         ${getCardDesc(card) ? `<div class="detail-desc">${getCardDesc(card)}</div>` : ''}
         ${card.base_stats ? `
         <div class="detail-section">
-          <h3>基础属性</h3>
+          <h3>${T('basestats')}</h3>
           <div class="stats-grid">
             ${[{'key':'hp','label':'HP'},{'key':'atk','label':'攻击'},{'key':'def','label':'防御'},{'key':'spa','label':'特攻'},{'key':'spd','label':'特防'},{'key':'spe','label':'速度'}].map(s => {
               const val = card.base_stats[s.key];
@@ -691,20 +691,20 @@ function showCardDetail(code){
               return `<div class="stat-row"><span class="stat-row-label">${s.label}</span><span class="stat-row-val">${val}</span><div class="stat-bar ${barClass}" style="width:${pct}%"></div></div>`;
             }).join('')}
           </div>
-          <div class="stats-extra">身高 ${card.base_stats.height}m · 体重 ${card.base_stats.weight}kg</div>
+          <div class="stats-extra">${T('height')} ${card.base_stats.height}m · ${T('weight')} ${card.base_stats.weight}kg</div>
         </div>
         ` : ''}
         <div class="detail-section">
-          <h3>被克弱点</h3>
+          <h3>${T('weak')}</h3>
           <div class="type-tags">${weakHtml}</div>
         </div>
         <div class="detail-section">
-          <h3>抗性减伤</h3>
+          <h3>${T('resist')}</h3>
           <div class="type-tags">${resistHtml}</div>
         </div>
-        ${immuneHtml ? `<div class="detail-section"><h3>免疫</h3><div class="type-tags">${immuneHtml}</div></div>` : ''}
+        ${immuneHtml ? `<div class="detail-section"><h3>${T('immune')}</h3><div class="type-tags">${immuneHtml}</div></div>` : ''}
         <button class="detail-own-btn ${owned?'checked':''}" onclick="event.stopPropagation();toggleCardPub('${code}');showCardDetailPub('${code}')">
-          ${owned ? '✓ 已收藏' : '+ 收藏'}
+          ${owned ? '✓ ' + T('owned') : '+ ' + T('own_btn')}
         </button>
       </div>
     </div>
@@ -789,16 +789,84 @@ else init();
 })();
 
 // ===== 语言切换器 =====
+const I18N = {
+  zh: {
+    collection:"收藏", battle:"对战推荐", typechart:"属性表",
+    brand:"明耀之星", app_title:"属性克制表", typechart_hint:"点击属性查看攻防效果",
+    energy:"宝可能量", basestats:"基础属性", weak:"被克弱点", resist:"抗性减伤", immune:"免疫",
+    search_ph:"搜索宝可梦...", own_btn:"收藏", owned:"已收藏", support:"支援券",
+    recommend_title:"推荐阵容（每只各打一场）", recommend_empty:"选择敌方宝可梦后，这里会显示推荐阵容",
+    recommend_support:"推荐支援券", support_hint:"收藏页可勾选支援券，这里会自动推荐。",
+    no_counter:"无有效克制", suggest:"建议", xi:"系",
+    be_weak:"被克 (受到2x)", be_resist:"抗性 (受到0.5x)", be_immune:"免疫 (受到0x)",
+    atk_effect:"效果绝佳 (2x)", atk_weak:"效果不佳 (0.5x)", atk_none:"无效 (0x)",
+    all_series:"全部弹数", all_rarity:"全部稀有度", all_types:"全部属性", owned_only:"只看已收藏",
+    height:"身高", weight:"体重", special_conflict:"（每场各限用一次）",
+    rarity_6:"超级明星", rarity_5:"明星", rarity_4:"", rarity_3:"", rarity_2:"", rarity_other:"其他",
+    add_slot:"添加敌方", enemy_slot:"敌方", remove:"移除", select_enemy:"选择敌方宝可梦",
+    light:"明亮", dark:"暗色", comfort:"护眼",
+    atk_dir:"攻击", def_dir:"防守", pairing_label:"敌方", my_label:"我方", atk_text:"攻", def_text:"被打",
+    res_text:"抗", immune_text:"免疫",
+  },
+  en: {
+    collection:"Collection", battle:"Battle", typechart:"Type Chart",
+    brand:"MEZASTAR", app_title:"Type Chart", typechart_hint:"Click a type to see offense & defense",
+    energy:"Poké Energy", basestats:"Base Stats", weak:"Weakness", resist:"Resistance", immune:"Immunity",
+    search_ph:"Search Pokémon...", own_btn:"Owned", owned:"Owned", support:"Support",
+    recommend_title:"Recommended Team (1v1 each)", recommend_empty:"Select opponent Pokémon to see your team",
+    recommend_support:"Recommended Support", support_hint:"Mark Support cards in Collection to get recommendations.",
+    no_counter:"No effective counter", suggest:"Try", xi:"type",
+    be_weak:"Weak to (takes 2x)", be_resist:"Resists (takes 0.5x)", be_immune:"Immune (takes 0x)",
+    atk_effect:"Super effective (2x)", atk_weak:"Not very effective (0.5x)", atk_none:"No effect (0x)",
+    all_series:"All Series", all_rarity:"All Rarities", all_types:"All Types", owned_only:"Owned Only",
+    height:"Height", weight:"Weight", special_conflict:"(each once per match)",
+    rarity_6:"Superstar", rarity_5:"Star", rarity_4:"", rarity_3:"", rarity_2:"", rarity_other:"Other",
+    add_slot:"Add Opponent", enemy_slot:"Enemy", remove:"Remove", select_enemy:"Select Opponent",
+    light:"Light", dark:"Dark", comfort:"Eye Care",
+    atk_dir:"Attack", def_dir:"Defense", pairing_label:"Enemy", my_label:"Yours", atk_text:"ATK", def_text:"DEF",
+    res_text:"RES", immune_text:"IMM",
+  },
+};
+
+function T(key){
+  const lang = document.documentElement.dataset.lang || 'zh';
+  const t = I18N[lang] || I18N.zh;
+  return t[key] !== undefined ? t[key] : key;
+}
+
+// 属性名翻译
+const TYPE_I18N = {
+  '一般':['一般','Normal'], '火':['火','Fire'], '水':['水','Water'], '草':['草','Grass'],
+  '电':['电','Electric'], '冰':['冰','Ice'], '格斗':['格斗','Fighting'], '毒':['毒','Poison'],
+  '地面':['地面','Ground'], '飞行':['飞行','Flying'], '超能力':['超能力','Psychic'],
+  '虫':['虫','Bug'], '岩石':['岩石','Rock'], '幽灵':['幽灵','Ghost'], '龙':['龙','Dragon'],
+  '恶':['恶','Dark'], '钢':['钢','Steel'], '妖精':['妖精','Fairy'],
+};
+function getTypeName(t){
+  const lang = document.documentElement.dataset.lang || 'zh';
+  const entry = TYPE_I18N[t];
+  if(!entry) return t;
+  return lang === 'en' ? entry[1] : entry[0];
+}
+
+// 弹数名翻译
+const SERIES_I18N = {
+  's1':['星光第1弹','Star Pack 1'], 's2':['星光第2弹','Star Pack 2'],
+  's3':['星光第3弹','Star Pack 3'], 's4':['星光第4弹','Star Pack 4'],
+  'g1':['银河第1弹','Galaxy Pack 1'], 'g2':['银河第2弹','Galaxy Pack 2'],
+  'support':['支援券','Support'],
+};
+function getSeriesName(sid){
+  const lang = document.documentElement.dataset.lang || 'zh';
+  const entry = SERIES_I18N[sid];
+  if(!entry) return sid;
+  return lang === 'en' ? entry[1] : entry[0];
+}
+
 (function setupLangSwitcher(){
   const LANG_KEY = "mezastar-lang";
   const switcher = document.querySelector(".lang-switcher");
   if(!switcher) return;
-
-  // 界面文字翻译表
-  const I18N = {
-    zh: { collection:"收藏", battle:"对战推荐", typechart:"属性表", energy:"宝可能量", basestats:"基础属性", weak:"被克弱点", resist:"抗性减伤", immune:"免疫", search_ph:"搜索宝可梦...", own_btn:"收藏", support:"支援券", recommend_title:"推荐阵容（每只各打一场）", recommend_empty:"选择敌方宝可梦后，这里会显示推荐阵容", no_counter:"无有效克制", be_weak:"被克 (受到2x)", be_resist:"抗性 (受到0.5x)", be_immune:"免疫 (受到0x)", atk_effect:"效果绝佳 (2x)", atk_weak:"效果不佳 (0.5x)", atk_none:"无效 (0x)", all_series:"全部弹数", all_rarity:"全部稀有度", all_types:"全部属性", owned_only:"只看已收藏", height:"身高", weight:"体重", star:"★", desc_label:"介绍" },
-    en: { collection:"Collection", battle:"Battle", typechart:"Type Chart", energy:"Poké Energy", basestats:"Base Stats", weak:"Weakness", resist:"Resistance", immune:"Immunity", search_ph:"Search Pokémon...", own_btn:"Owned", support:"Support", recommend_title:"Recommended Team (1v1 each)", recommend_empty:"Select opponent Pokémon to see your team", no_counter:"No effective counter", be_weak:"Weak to (takes 2x)", be_resist:"Resists (takes 0.5x)", be_immune:"Immune (takes 0x)", atk_effect:"Super effective (2x)", atk_weak:"Not very effective (0.5x)", atk_none:"No effect (0x)", all_series:"All Series", all_rarity:"All Rarities", all_types:"All Types", owned_only:"Owned Only", height:"Height", weight:"Weight", star:"★", desc_label:"Description" },
-  };
 
   function applyLang(lang, shouldSave){
     if(!I18N[lang]) return;
@@ -808,45 +876,80 @@ else init();
     // 导航按钮
     document.querySelectorAll('.nav-item').forEach(btn => {
       const tab = btn.dataset.tab;
-      if(tab === 'collection') btn.querySelector('span:last-child').textContent = t.collection;
-      else if(tab === 'battle') btn.querySelector('span:last-child').textContent = t.battle;
-      else if(tab === 'typechart') btn.querySelector('span:last-child').textContent = t.typechart;
+      const span = btn.querySelector('span:last-child');
+      if(tab === 'collection') span.textContent = t.collection;
+      else if(tab === 'battle') span.textContent = t.battle;
+      else if(tab === 'typechart') span.textContent = t.typechart;
     });
 
-    // 页面标题
-    const h2s = document.querySelectorAll('h2');
-    h2s.forEach(h => {
-      if(h.textContent.includes('对战推荐')) h.textContent = t.battle;
-      else if(h.textContent.includes('属性克制表')) h.textContent = t.typechart;
+    // 品牌标题
+    document.querySelectorAll('.app-brand strong').forEach(el => el.textContent = t.brand);
+
+    // 主题切换器文字
+    document.querySelectorAll('.theme-switcher button').forEach(btn => {
+      const val = btn.dataset.themeValue;
+      const span = btn.querySelector('span:last-child');
+      if(span) span.textContent = t[val] || val;
     });
 
-    // 搜索框 placeholder
+    // 页面 h2 标题
+    document.querySelectorAll('h2').forEach(h => {
+      if(h.closest('#tab-battle')) h.textContent = t.battle;
+      else if(h.closest('#tab-type-chart')) h.textContent = t.app_title;
+    });
+
+    // 属性表提示
+    const hints = document.querySelectorAll('#tab-type-chart .hint');
+    if(hints[0]) hints[0].textContent = t.typechart_hint;
+
+    // 搜索框
     const search = document.getElementById('filter-search');
     if(search) search.placeholder = t.search_ph;
 
     // 筛选器
     const fs = document.getElementById('filter-series');
-    if(fs) fs.options[0].textContent = t.all_series;
+    if(fs){
+      fs.options[0].textContent = t.all_series;
+      for(let i=1;i<fs.options.length;i++){
+        const sid = fs.options[i].value;
+        fs.options[i].textContent = getSeriesName(sid);
+      }
+    }
     const fr = document.getElementById('filter-rarity');
     if(fr) fr.options[0].textContent = t.all_rarity;
-    const ft = document.getElementById('filter-type');
-    if(ft) ft.options[0].textContent = t.all_types;
-    const fo = document.querySelector('#filter-owned');
-    if(fo && fo.parentElement) fo.parentElement.lastChild.textContent = ' ' + t.owned_only;
 
-    // 切换按钮状态
+    const ft = document.getElementById('filter-type');
+    if(ft){
+      ft.options[0].textContent = t.all_types;
+      for(let i=1;i<ft.options.length;i++){
+        const tname = ft.options[i].value;
+        ft.options[i].textContent = getTypeName(tname);
+      }
+    }
+
+    const fo = document.querySelector('#filter-owned');
+    if(fo && fo.parentElement){
+      const label = fo.parentElement;
+      label.innerHTML = '';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox'; cb.id = 'filter-owned';
+      cb.checked = fo.checked;
+      cb.addEventListener('change', renderCardGrid);
+      label.appendChild(cb);
+      label.appendChild(document.createTextNode(' ' + t.owned_only));
+    }
+
+    // 按钮 aria-pressed
     switcher.querySelectorAll("[data-lang-value]").forEach(btn => {
       btn.setAttribute("aria-pressed", String(btn.dataset.langValue === lang));
     });
 
-    // 保存
-    if(shouldSave){
-      try { localStorage.setItem(LANG_KEY, lang); } catch(e) {}
-    }
+    if(shouldSave){ try { localStorage.setItem(LANG_KEY, lang); } catch(e) {} }
 
-    // 重新渲染当前页
+    // 重新渲染
     if(typeof renderCardGrid === 'function') renderCardGrid();
     if(typeof recommendTeam === 'function') recommendTeam();
+    if(typeof renderTypeGrid === 'function') renderTypeGrid('type-grid', showTypeEffect);
   }
 
   switcher.addEventListener("click", (event) => {
