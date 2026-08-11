@@ -22,7 +22,20 @@ function toggleCard(code){
   if(collection[code]) delete collection[code];
   else collection[code] = true;
   saveCollection();
-  renderCardGrid();
+
+  // 局部更新：只改目标卡元素，不全量重渲染
+  const cardEl = document.querySelector(`.card[data-code="${code}"]`);
+  if(cardEl){
+    const owned = !!collection[code];
+    cardEl.classList.toggle('owned', owned);
+    const btn = cardEl.querySelector('.own-btn');
+    if(btn){
+      btn.classList.toggle('checked', owned);
+      btn.textContent = owned ? '✓' : '+';
+    }
+  } else {
+    renderCardGrid(); // fallback：找不到元素时全量渲染
+  }
   updateStats();
 }
 
@@ -88,19 +101,47 @@ function showTypeEffect(atkType){
     else if(mult === 0.5) weak.push(defType);
     else if(mult === 0) immune.push(defType);
   }
+
+  // 防守视角：谁打我有效
+  const defStrong = [], defWeak = [], defImmune = [];
+  for(const atkT of TYPES){
+    const mult = TYPE_CHART[atkT]?.[atkType] ?? 1;
+    if(mult >= 2) defStrong.push(atkT);
+    else if(mult === 0.5) defWeak.push(atkT);
+    else if(mult === 0) defImmune.push(atkT);
+  }
+
   result.innerHTML = `
-    <div class="effect-group strong">
-      <span class="effect-label">效果绝佳 (2x)</span>
-      <div class="type-tags">${strong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+    <div class="effect-section">
+      <h3 class="effect-direction">攻击 ${atkType} 系 →</h3>
+      <div class="effect-group strong">
+        <span class="effect-label">效果绝佳 (2x)</span>
+        <div class="type-tags">${strong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')||'<span class="hint">无</span>'}</div>
+      </div>
+      ${weak.length ? `<div class="effect-group weak">
+        <span class="effect-label">效果不佳 (0.5x)</span>
+        <div class="type-tags">${weak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+      </div>`:''}
+      ${immune.length ? `<div class="effect-group immune">
+        <span class="effect-label">无效 (0x)</span>
+        <div class="type-tags">${immune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+      </div>`:''}
     </div>
-    ${weak.length ? `<div class="effect-group weak">
-      <span class="effect-label">效果不佳 (0.5x)</span>
-      <div class="type-tags">${weak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
-    </div>`:''}
-    ${immune.length ? `<div class="effect-group immune">
-      <span class="effect-label">无效 (0x)</span>
-      <div class="type-tags">${immune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
-    </div>`:''}
+    <div class="effect-section">
+      <h3 class="effect-direction">← 防守 ${atkType} 系</h3>
+      <div class="effect-group strong">
+        <span class="effect-label">被克 (受到2x)</span>
+        <div class="type-tags">${defStrong.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')||'<span class="hint">无</span>'}</div>
+      </div>
+      ${defWeak.length ? `<div class="effect-group weak">
+        <span class="effect-label">抗性 (受到0.5x)</span>
+        <div class="type-tags">${defWeak.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+      </div>`:''}
+      ${defImmune.length ? `<div class="effect-group immune">
+        <span class="effect-label">免疫 (受到0x)</span>
+        <div class="type-tags">${defImmune.map(t=>`<span class="type-tag" style="background:${TYPE_COLORS[t]}">${t}</span>`).join('')}</div>
+      </div>`:''}
+    </div>
   `;
 }
 
@@ -357,44 +398,84 @@ function recommendTeam(){
     return {card, vs};
   });
 
-  // 贪心配对：逐个敌方选最优可用卡
-  const usedCards = new Set();
-  const pairing = [];
-  const warnings = [];
+  // 穷举所有排列取全局最优（3! = 6 种，成本极低）
+  function permutations(arr){
+    if(arr.length <= 1) return [arr.slice()];
+    const result = [];
+    for(let i = 0; i < arr.length; i++){
+      const rest = arr.slice(0,i).concat(arr.slice(i+1));
+      for(const p of permutations(rest)) result.push([arr[i], ...p]);
+    }
+    return result;
+  }
 
-  for(const enemy of enemies){
-    let bestPick = null;
-    let bestScore = -999;
-    for(const m of matrix){
-      if(usedCards.has(m.card.code)) continue;
-      const s = m.vs[enemy.code];
-      if(s.score > bestScore){
-        bestScore = s.score;
-        bestPick = m;
+  // 为每种敌方排列，贪心选最优可用卡（每张卡只用一次）
+  let bestPairing = null;
+  let bestTotalScore = -999;
+
+  if(enemies.length <= 4){
+    // 小规模：穷举敌方排列 × 每位贪心选卡
+    for(const perm of permutations(enemies)){
+      const used = new Set();
+      const pair = [];
+      let totalScore = 0;
+      for(const enemy of perm){
+        let pick = null, sc = -999;
+        for(const m of matrix){
+          if(used.has(m.card.code)) continue;
+          const s = m.vs[enemy.code];
+          if(s.score > sc){ sc = s.score; pick = m; }
+        }
+        if(pick){
+          used.add(pick.card.code);
+          pair.push({enemy, match: pick, detail: pick.vs[enemy.code]});
+          totalScore += sc;
+        }
+      }
+      if(totalScore > bestTotalScore){
+        bestTotalScore = totalScore;
+        bestPairing = pair;
       }
     }
-    if(bestPick){
-      usedCards.add(bestPick.card.code);
-      const d = bestPick.vs[enemy.code];
-      pairing.push({enemy, match: bestPick, detail: d});
+  } else {
+    // 大规模（>4敌方）：退回贪心
+    const used = new Set();
+    bestPairing = [];
+    for(const enemy of enemies){
+      let pick = null, sc = -999;
+      for(const m of matrix){
+        if(used.has(m.card.code)) continue;
+        const s = m.vs[enemy.code];
+        if(s.score > sc){ sc = s.score; pick = m; }
+      }
+      if(pick){
+        used.add(pick.card.code);
+        bestPairing.push({enemy, match: pick, detail: pick.vs[enemy.code]});
+      }
+    }
+  }
 
-      // 覆盖率提示
-      if(d.bestAtk.mult < 2){
-        const weakTypes = [];
-        for(const t of TYPES){
-          let m = 1;
-          for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
-          if(m >= 2) weakTypes.push(t);
-        }
-        if(weakTypes.length){
-          warnings.push(`对 ${enemy.name} 无有效克制（建议 ${weakTypes.join('/')} 系）`);
-        } else {
-          warnings.push(`对 ${enemy.name} 无2x克制属性`);
-        }
+  const pairing = bestPairing || [];
+  const warnings = [];
+
+  for(const p of pairing){
+    const d = p.detail;
+    const enemy = p.enemy;
+    if(d.bestAtk.mult < 2){
+      const weakTypes = [];
+      for(const t of TYPES){
+        let m = 1;
+        for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
+        if(m >= 2) weakTypes.push(t);
       }
-      if(d.enemyDefMult >= 4){
-        warnings.push(`⚠️ ${bestPick.card.name} 被 ${enemy.name} 4倍克制！`);
+      if(weakTypes.length){
+        warnings.push(`对 ${enemy.name} 无有效克制（建议 ${weakTypes.join('/')} 系）`);
+      } else {
+        warnings.push(`对 ${enemy.name} 无2x克制属性`);
       }
+    }
+    if(d.enemyDefMult >= 4){
+      warnings.push(`⚠️ ${p.match.card.name} 被 ${enemy.name} 4倍克制！`);
     }
   }
 
@@ -593,7 +674,7 @@ function showCardDetail(code){
           <div class="stats-grid">
             ${[{'key':'hp','label':'HP'},{'key':'atk','label':'攻击'},{'key':'def','label':'防御'},{'key':'spa','label':'特攻'},{'key':'spd','label':'特防'},{'key':'spe','label':'速度'}].map(s => {
               const val = card.base_stats[s.key];
-              const pct = Math.min(100, val/255*100);
+              const pct = Math.min(100, val/180*100);
               const barClass = val >= 100 ? 'stat-bar-high' : val >= 60 ? 'stat-bar-mid' : 'stat-bar-low';
               return `<div class="stat-row"><span class="stat-row-label">${s.label}</span><span class="stat-row-val">${val}</span><div class="stat-bar ${barClass}" style="width:${pct}%"></div></div>`;
             }).join('')}

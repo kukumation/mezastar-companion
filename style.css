@@ -1180,6 +1180,10 @@ h3 { font-size: 1.1rem; margin: 16px 0 8px; }
   font-size: .8rem;
 }
 
+/* 属性表攻防双视角 */
+.effect-section { margin-bottom: 12px; }
+.effect-direction { font-size: .85rem; font-weight: 600; color: var(--text-primary); margin: 0 0 6px; }
+
 /* 覆盖率提示 */
 .coverage-warnings { margin-top: 8px; }
 .coverage-warn {
