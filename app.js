@@ -56,7 +56,7 @@ async function loadCards(){
     renderEnemyPicker();
   } catch(e){
     console.error('Failed to load cards.json:', e);
-    document.getElementById('card-grid').innerHTML = '<p class="error">数据加载失败</p>';
+    document.getElementById('card-grid').innerHTML = `<p class="error">${T('load_error') || 'Load failed'}</p>`;
   }
 }
 
@@ -164,7 +164,7 @@ function renderCardGrid(){
   const sf = document.getElementById('filter-series').value;
   const rf = document.getElementById('filter-rarity').value;
   const tf = document.getElementById('filter-type').value;
-  const of = document.getElementById('filter-owned').checked;
+  const of = document.getElementById('filter-owned')?.checked || false;
   const sf2 = (document.getElementById('filter-search')?.value || '').trim().toLowerCase();
 
   const filtered = allCards.filter(c => {
@@ -810,7 +810,7 @@ var I18N = {
     add_slot:"添加敌方", enemy_slot:"敌方", remove:"移除", select_enemy:"选择敌方宝可梦",
     light:"明亮", dark:"暗色", comfort:"护眼",
     atk_dir:"攻击", def_dir:"防守", pairing_label:"敌方", my_label:"我方", atk_text:"攻", def_text:"被打",
-    res_text:"抗", immune_text:"免疫",
+    res_text:"抗", immune_text:"免疫", load_error:"数据加载失败",
   },
   en: {
     collection:"Collection", battle:"Battle", typechart:"Type Chart",
@@ -828,7 +828,7 @@ var I18N = {
     add_slot:"Add Opponent", enemy_slot:"Enemy", remove:"Remove", select_enemy:"Select Opponent",
     light:"Light", dark:"Dark", comfort:"Eye Care",
     atk_dir:"Attack", def_dir:"Defense", pairing_label:"Enemy", my_label:"Yours", atk_text:"ATK", def_text:"DEF",
-    res_text:"RES", immune_text:"IMM",
+    res_text:"RES", immune_text:"IMM", load_error:"Failed to load data",
   },
 };
 
@@ -933,14 +933,12 @@ function getSeriesName(sid){
 
     const fo = document.querySelector('#filter-owned');
     if(fo && fo.parentElement){
+      // 只改 label 文字，不重建 checkbox（避免丢失事件绑定）
       const label = fo.parentElement;
-      label.innerHTML = '';
-      const cb = document.createElement('input');
-      cb.type = 'checkbox'; cb.id = 'filter-owned';
-      cb.checked = fo.checked;
-      cb.addEventListener('change', renderCardGrid);
-      label.appendChild(cb);
-      label.appendChild(document.createTextNode(' ' + t.owned_only));
+      // 找到 label 里的文字节点并更新
+      label.childNodes.forEach(node => {
+        if(node.nodeType === 3) node.textContent = ' ' + t.owned_only;
+      });
     }
 
     // 按钮 aria-pressed
@@ -964,4 +962,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811c
+// v20260811d
