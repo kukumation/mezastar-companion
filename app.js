@@ -576,6 +576,20 @@ function showCardDetail(code){
         </div>
         ${supportInfo}
         ${card.desc ? `<div class="detail-desc">${card.desc}</div>` : ''}
+        ${card.base_stats ? `
+        <div class="detail-section">
+          <h3>基础属性</h3>
+          <div class="stats-grid">
+            ${[{'key':'hp','label':'HP'},{'key':'atk','label':'攻击'},{'key':'def','label':'防御'},{'key':'spa','label':'特攻'},{'key':'spd','label':'特防'},{'key':'spe','label':'速度'}].map(s => {
+              const val = card.base_stats[s.key];
+              const pct = Math.min(100, val/255*100);
+              const barClass = val >= 100 ? 'stat-bar-high' : val >= 60 ? 'stat-bar-mid' : 'stat-bar-low';
+              return `<div class="stat-row"><span class="stat-row-label">${s.label}</span><span class="stat-row-val">${val}</span><div class="stat-bar ${barClass}" style="width:${pct}%"></div></div>`;
+            }).join('')}
+          </div>
+          <div class="stats-extra">身高 ${card.base_stats.height}m · 体重 ${card.base_stats.weight}kg</div>
+        </div>
+        ` : ''}
         <div class="detail-section">
           <h3>被克弱点</h3>
           <div class="type-tags">${weakHtml}</div>

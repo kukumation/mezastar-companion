@@ -1157,6 +1157,17 @@ h3 { font-size: 1.1rem; margin: 16px 0 8px; }
   color: var(--text-secondary);
 }
 
+/* 6维属性条 */
+.stats-grid { display: flex; flex-direction: column; gap: 4px; }
+.stat-row { display: flex; align-items: center; gap: 8px; font-size: .75rem; }
+.stat-row-label { width: 32px; color: var(--text-secondary); flex-shrink: 0; }
+.stat-row-val { width: 28px; font-weight: 700; text-align: right; flex-shrink: 0; }
+.stat-bar { height: 6px; border-radius: 3px; min-width: 4px; }
+.stat-bar-high { background: var(--success); }
+.stat-bar-mid { background: var(--warning); }
+.stat-bar-low { background: var(--danger); opacity: .6; }
+.stats-extra { margin-top: 6px; font-size: .7rem; color: var(--text-secondary); }
+
 /* 覆盖率提示 */
 .coverage-warnings { margin-top: 8px; }
 .coverage-warn {
