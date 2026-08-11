@@ -792,8 +792,8 @@ else init();
   applyTheme(document.documentElement.dataset.theme || "light", false);
 })();
 
-// ===== 语言切换器 =====
-const I18N = {
+// ===== 语言切换器（全局变量用 var 避免顶层 const 重复声明问题）=====
+var I18N = {
   zh: {
     collection:"收藏", battle:"对战推荐", typechart:"属性表",
     brand:"明耀之星", app_title:"属性克制表", typechart_hint:"点击属性查看攻防效果",
@@ -839,7 +839,7 @@ function T(key){
 }
 
 // 属性名翻译
-const TYPE_I18N = {
+var TYPE_I18N = {
   '一般':['一般','Normal'], '火':['火','Fire'], '水':['水','Water'], '草':['草','Grass'],
   '电':['电','Electric'], '冰':['冰','Ice'], '格斗':['格斗','Fighting'], '毒':['毒','Poison'],
   '地面':['地面','Ground'], '飞行':['飞行','Flying'], '超能力':['超能力','Psychic'],
@@ -854,7 +854,7 @@ function getTypeName(t){
 }
 
 // 弹数名翻译
-const SERIES_I18N = {
+var SERIES_I18N = {
   's1':['星光第1弹','Star Pack 1'], 's2':['星光第2弹','Star Pack 2'],
   's3':['星光第3弹','Star Pack 3'], 's4':['星光第4弹','Star Pack 4'],
   'g1':['银河第1弹','Galaxy Pack 1'], 'g2':['银河第2弹','Galaxy Pack 2'],
@@ -964,3 +964,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
+// v20260811c
