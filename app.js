@@ -42,7 +42,7 @@ function toggleCard(code){
 // ===== 数据加载 =====
 async function loadCards(){
   try {
-    const resp = await fetch('cards.json?v=20260811h');
+    const resp = await fetch('cards.json?v=20260811i');
     const data = await resp.json();
     allCards = [];
     for(const series of data.series){
@@ -101,7 +101,7 @@ function renderTypeGrid(containerId, onClick){
     const btn = document.createElement('button');
     btn.className = 'type-btn';
     btn.style.backgroundColor = TYPE_COLORS[type];
-    btn.textContent = type;
+    btn.textContent = (typeof getTypeName === 'function') ? getTypeName(type) : type;
     btn.addEventListener('click', ()=> onClick(type));
     grid.appendChild(btn);
   }
@@ -1038,4 +1038,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811h
+// v20260811i
