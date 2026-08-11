@@ -575,6 +575,7 @@ function showCardDetail(code){
           </div>
         </div>
         ${supportInfo}
+        ${card.desc ? `<div class="detail-desc">${card.desc}</div>` : ''}
         <div class="detail-section">
           <h3>被克弱点</h3>
           <div class="type-tags">${weakHtml}</div>
