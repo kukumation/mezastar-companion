@@ -101,7 +101,7 @@ function renderTypeGrid(containerId, onClick){
     const btn = document.createElement('button');
     btn.className = 'type-btn';
     btn.style.backgroundColor = TYPE_COLORS[type];
-    btn.textContent = (typeof getTypeName === 'function') ? getTypeName(type) : type;
+    btn.textContent = (typeof window.getTypeName === 'function') ? window.getTypeName(type) : (typeof getTypeName === 'function' ? getTypeName(type) : type);
     btn.addEventListener('click', ()=> onClick(type));
     grid.appendChild(btn);
   }
@@ -1038,4 +1038,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811i
+// v20260811j
