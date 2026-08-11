@@ -18,6 +18,11 @@
       theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     document.documentElement.dataset.theme = theme;
+    // 语言预加载（防闪烁）
+    try {
+      const lang = localStorage.getItem("mezastar-lang");
+      if(lang) document.documentElement.dataset.lang = lang;
+    } catch(e) {}
   })();
 </script>
 
@@ -56,6 +61,10 @@
       <span aria-hidden="true">♧</span>
       <span>护眼</span>
     </button>
+  </div>
+  <div class="lang-switcher" role="group" aria-label="语言">
+    <button type="button" data-lang-value="zh" aria-pressed="true">中</button>
+    <button type="button" data-lang-value="en" aria-pressed="false">EN</button>
   </div>
 </header>
 

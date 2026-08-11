@@ -28,7 +28,9 @@
             "spe": 130,
             "height": 2.0,
             "weight": 122.0
-          }
+          },
+          "name_en": "mewtwo",
+          "desc_en": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
         },
         {
           "code": "1-1-002 SC",
@@ -51,7 +53,9 @@
             "spe": 100,
             "height": 0.4,
             "weight": 4.0
-          }
+          },
+          "name_en": "mew",
+          "desc_en": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
         },
         {
           "code": "1-1-003 SC",
@@ -76,7 +80,9 @@
             "spe": 138,
             "height": 2.8,
             "weight": 110.0
-          }
+          },
+          "name_en": "zacian",
+          "desc_en": "Known as a legendary hero, this Pokémon absorbs metal particles, transforming them into a weapon it uses to battle."
         },
         {
           "code": "1-1-004 SC",
@@ -100,7 +106,9 @@
             "spe": 138,
             "height": 2.9,
             "weight": 210.0
-          }
+          },
+          "name_en": "zamazenta",
+          "desc_en": "In times past, it worked together with a king of the people to save the Galar region. It absorbs metal that it then uses in battle."
         },
         {
           "code": "1-1-005 SC",
@@ -126,7 +134,9 @@
             "spe": 61,
             "height": 2.0,
             "weight": 202.0
-          }
+          },
+          "name_en": "tyranitar",
+          "desc_en": "Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies."
         },
         {
           "code": "1-1-006 SC",
@@ -151,7 +161,9 @@
             "spe": 70,
             "height": 1.6,
             "weight": 550.0
-          }
+          },
+          "name_en": "metagross",
+          "desc_en": "METAGROSS has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This POKéMON can float in the air by tucking in its four legs."
         },
         {
           "code": "1-1-007 SC",
@@ -175,7 +187,9 @@
             "spe": 135,
             "height": 3.5,
             "weight": 240.0
-          }
+          },
+          "name_en": "miraidon",
+          "desc_en": "Much remains unknown about this creature. It resembles Cyclizar, but it is far more ruthless and powerful."
         },
         {
           "code": "1-1-008 SC",
@@ -201,7 +215,9 @@
             "spe": 80,
             "height": 2.0,
             "weight": 100.0
-          }
+          },
+          "name_en": "venusaur",
+          "desc_en": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
         },
         {
           "code": "1-1-009 SC",
@@ -227,7 +243,9 @@
             "spe": 100,
             "height": 1.7,
             "weight": 90.5
-          }
+          },
+          "name_en": "charizard",
+          "desc_en": "It is said that Charizard’s fire burns hotter if it has experienced harsh battles."
         },
         {
           "code": "1-1-010 SC",
@@ -252,7 +270,9 @@
             "spe": 78,
             "height": 1.6,
             "weight": 85.5
-          }
+          },
+          "name_en": "blastoise",
+          "desc_en": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles."
         },
         {
           "code": "1-1-011 SC",
@@ -275,7 +295,9 @@
             "spe": 65,
             "height": 1.0,
             "weight": 29.0
-          }
+          },
+          "name_en": "vaporeon",
+          "desc_en": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's."
         },
         {
           "code": "1-1-012 SC",
@@ -298,7 +320,9 @@
             "spe": 65,
             "height": 0.9,
             "weight": 25.0
-          }
+          },
+          "name_en": "flareon",
+          "desc_en": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
         },
         {
           "code": "1-1-013 SC",
@@ -321,7 +345,9 @@
             "spe": 65,
             "height": 1.0,
             "weight": 27.0
-          }
+          },
+          "name_en": "umbreon",
+          "desc_en": "When agitated, this POKéMON pro­ tects itself by spraying poisonous sweat from its pores."
         },
         {
           "code": "1-1-014 SC",
@@ -344,7 +370,9 @@
             "spe": 65,
             "height": 0.8,
             "weight": 25.9
-          }
+          },
+          "name_en": "glaceon",
+          "desc_en": "As a protective technique, it can completely freeze its fur to make its hairs stand like needles."
         },
         {
           "code": "1-1-015 SC",
@@ -368,7 +396,9 @@
             "spe": 101,
             "height": 1.5,
             "weight": 39.5
-          }
+          },
+          "name_en": "pidgeot",
+          "desc_en": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
         },
         {
           "code": "1-1-016 SC",
@@ -392,7 +422,9 @@
             "spe": 110,
             "height": 1.5,
             "weight": 40.5
-          }
+          },
+          "name_en": "gengar",
+          "desc_en": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright."
         },
         {
           "code": "1-1-017 SC",
@@ -415,7 +447,9 @@
             "spe": 95,
             "height": 1.9,
             "weight": 155.0
-          }
+          },
+          "name_en": "arcanine",
+          "desc_en": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings."
         },
         {
           "code": "1-1-018 SC",
@@ -439,7 +473,9 @@
             "spe": 40,
             "height": 2.4,
             "weight": 282.8
-          }
+          },
+          "name_en": "rhyperior",
+          "desc_en": "It puts rocks in holes in its palms and uses its muscles to shoot them. GEODUDE are shot at rare times."
         },
         {
           "code": "1-1-019 SC",
@@ -462,7 +498,9 @@
             "spe": 90,
             "height": 0.4,
             "weight": 6.0
-          }
+          },
+          "name_en": "pikachu",
+          "desc_en": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
         },
         {
           "code": "1-1-020 SC",
@@ -485,7 +523,9 @@
             "spe": 100,
             "height": 2.0,
             "weight": 82.0
-          }
+          },
+          "name_en": "flygon",
+          "desc_en": "FLYGON is nicknamed “the elemental spirit of the desert.” Because its flapping wings whip up a cloud of sand, this POKéMON is always enveloped in a sandstorm while flying."
         },
         {
           "code": "1-1-021 SC",
@@ -508,7 +548,9 @@
             "spe": 85,
             "height": 2.1,
             "weight": 90.0
-          }
+          },
+          "name_en": "rillaboom",
+          "desc_en": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle."
         },
         {
           "code": "1-1-022 SC",
@@ -531,7 +573,9 @@
             "spe": 119,
             "height": 1.4,
             "weight": 33.0
-          }
+          },
+          "name_en": "cinderace",
+          "desc_en": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
         },
         {
           "code": "1-1-023 SC",
@@ -554,7 +598,9 @@
             "spe": 120,
             "height": 1.9,
             "weight": 45.2
-          }
+          },
+          "name_en": "inteleon",
+          "desc_en": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air."
         },
         {
           "code": "1-1-024 SC",
@@ -578,7 +624,9 @@
             "spe": 95,
             "height": 1.6,
             "weight": 46.0
-          }
+          },
+          "name_en": "obstagoon",
+          "desc_en": "Its voice is staggering in volume. Obstagoon has a tendency to take on a threatening posture and shout—this move is known as Obstruct."
         },
         {
           "code": "1-1-025 SC",
@@ -624,7 +672,9 @@
             "spe": 85,
             "height": 2.1,
             "weight": 90.0
-          }
+          },
+          "name_en": "rillaboom",
+          "desc_en": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle."
         },
         {
           "code": "1-1-037 SC",
@@ -647,7 +697,9 @@
             "spe": 119,
             "height": 1.4,
             "weight": 33.0
-          }
+          },
+          "name_en": "cinderace",
+          "desc_en": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
         },
         {
           "code": "1-1-040 SC",
@@ -670,7 +722,9 @@
             "spe": 120,
             "height": 1.9,
             "weight": 45.2
-          }
+          },
+          "name_en": "inteleon",
+          "desc_en": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air."
         },
         {
           "code": "1-1-043 SC",
@@ -693,7 +747,9 @@
             "spe": 110,
             "height": 0.8,
             "weight": 30.0
-          }
+          },
+          "name_en": "raichu",
+          "desc_en": "Its long tail serves as a ground to protect itself from its own high voltage power."
         },
         {
           "code": "1-1-045 SC",
@@ -715,7 +771,9 @@
             "spe": 130,
             "height": 0.8,
             "weight": 24.5
-          }
+          },
+          "name_en": "jolteon",
+          "desc_en": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts."
         },
         {
           "code": "1-1-046 SC",
@@ -738,7 +796,9 @@
             "spe": 110,
             "height": 0.9,
             "weight": 26.5
-          }
+          },
+          "name_en": "espeon",
+          "desc_en": "Its fur is so sensitive, it can sense minute shifts in the air and predict the weather."
         },
         {
           "code": "1-1-047 SC",
@@ -761,7 +821,9 @@
             "spe": 95,
             "height": 1.0,
             "weight": 25.5
-          }
+          },
+          "name_en": "leafeon",
+          "desc_en": "Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air."
         },
         {
           "code": "1-1-048 SC",
@@ -784,7 +846,9 @@
             "spe": 60,
             "height": 1.0,
             "weight": 23.5
-          }
+          },
+          "name_en": "sylveon",
+          "desc_en": "It sends a soothing aura from its ribbonlike feelers to calm fights."
         },
         {
           "code": "1-1-050 SC",
@@ -807,7 +871,9 @@
             "spe": 125,
             "height": 1.1,
             "weight": 34.0
-          }
+          },
+          "name_en": "weavile",
+          "desc_en": "They communicate by clawing signs in boulders and work together to surround enemies."
         },
         {
           "code": "1-1-054 SC",
@@ -831,7 +897,9 @@
             "spe": 30,
             "height": 1.6,
             "weight": 78.5
-          }
+          },
+          "name_en": "slowbro",
+          "desc_en": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps."
         },
         {
           "code": "1-1-056 SC",
@@ -854,7 +922,9 @@
             "spe": 35,
             "height": 2.5,
             "weight": 920.0
-          }
+          },
+          "name_en": "mudsdale",
+          "desc_en": "It spits a mud that provides resistance to both wind and rain, so the walls of old houses were often coated with it."
         },
         {
           "code": "1-1-059 SC",
@@ -878,7 +948,9 @@
             "spe": 95,
             "height": 1.6,
             "weight": 46.0
-          }
+          },
+          "name_en": "obstagoon",
+          "desc_en": "Its voice is staggering in volume. Obstagoon has a tendency to take on a threatening posture and shout—this move is known as Obstruct."
         },
         {
           "code": "1-1-062 SC",
@@ -902,7 +974,9 @@
             "spe": 43,
             "height": 1.5,
             "weight": 45.0
-          }
+          },
+          "name_en": "vikavolt",
+          "desc_en": "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies."
         },
         {
           "code": "1-1-064 SC",
@@ -926,7 +1000,9 @@
             "spe": 110,
             "height": 1.8,
             "weight": 85.2
-          }
+          },
+          "name_en": "dodrio",
+          "desc_en": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake."
         },
         {
           "code": "1-1-066 SC",
@@ -949,7 +1025,9 @@
             "spe": 60,
             "height": 0.5,
             "weight": 2.5
-          }
+          },
+          "name_en": "eldegoss",
+          "desc_en": "The seeds attached to its cotton fluff are full of nutrients. It spreads them on the wind so that plants and other Pokémon can benefit from them."
         },
         {
           "code": "1-1-067 SC",
@@ -973,7 +1051,9 @@
             "spe": 36,
             "height": 2.0,
             "weight": 212.0
-          }
+          },
+          "name_en": "turtonator",
+          "desc_en": "The shell on its back is chemically unstable and explodes violently if struck. The hole in its stomach is its weak point."
         },
         {
           "code": "1-1-070 SC",
@@ -997,7 +1077,9 @@
             "spe": 65,
             "height": 1.3,
             "weight": 42.0
-          }
+          },
+          "name_en": "frosmoth",
+          "desc_en": "Icy scales fall from its wings like snow as it flies over fields and mountains. The temperature of its wings is less than −290 degrees Fahrenheit."
         },
         {
           "code": "1-1-027 SC",
@@ -1020,7 +1102,9 @@
             "spe": 83,
             "height": 0.9,
             "weight": 12.2
-          }
+          },
+          "name_en": "floragato",
+          "desc_en": "Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents."
         },
         {
           "code": "1-1-029 SC",
@@ -1043,7 +1127,9 @@
             "spe": 49,
             "height": 1.0,
             "weight": 30.7
-          }
+          },
+          "name_en": "crocalor",
+          "desc_en": "The combination of Crocalor’s fire energy and overflowing vitality has caused an egg-shaped fireball to appear on the Pokémon’s head."
         },
         {
           "code": "1-1-031 SC",
@@ -1066,7 +1152,9 @@
             "spe": 65,
             "height": 1.2,
             "weight": 21.5
-          }
+          },
+          "name_en": "quaxwell",
+          "desc_en": "These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully."
         },
         {
           "code": "1-1-033 SC",
@@ -1089,7 +1177,9 @@
             "spe": 80,
             "height": 0.7,
             "weight": 14.0
-          }
+          },
+          "name_en": "thwackey",
+          "desc_en": "The faster a Thwackey can beat out a rhythm with its two sticks, the more respect it wins from its peers."
         },
         {
           "code": "1-1-036 SC",
@@ -1112,7 +1202,9 @@
             "spe": 94,
             "height": 0.6,
             "weight": 9.0
-          }
+          },
+          "name_en": "raboot",
+          "desc_en": "Its thick and fluffy fur protects it from the cold and enables it to use hotter fire moves."
         },
         {
           "code": "1-1-039 SC",
@@ -1135,7 +1227,9 @@
             "spe": 90,
             "height": 0.7,
             "weight": 11.5
-          }
+          },
+          "name_en": "drizzile",
+          "desc_en": "A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms."
         },
         {
           "code": "1-1-042 SC",
@@ -1158,7 +1252,9 @@
             "spe": 90,
             "height": 0.4,
             "weight": 6.0
-          }
+          },
+          "name_en": "pikachu",
+          "desc_en": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
         },
         {
           "code": "1-1-044 SC",
@@ -1181,7 +1277,9 @@
             "spe": 55,
             "height": 0.3,
             "weight": 6.5
-          }
+          },
+          "name_en": "eevee",
+          "desc_en": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs."
         },
         {
           "code": "1-1-049 SC",
@@ -1205,7 +1303,9 @@
             "spe": 115,
             "height": 0.9,
             "weight": 28.0
-          }
+          },
+          "name_en": "sneasel",
+          "desc_en": "Its paws conceal sharp claws. If attacked, it sud­ denly extends the claws and startles its enemy."
         },
         {
           "code": "1-1-052 SC",
@@ -1229,7 +1329,9 @@
             "spe": 55,
             "height": 2.8,
             "weight": 330.0
-          }
+          },
+          "name_en": "golurk",
+          "desc_en": "It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control."
         },
         {
           "code": "1-1-055 SC",
@@ -1252,7 +1354,9 @@
             "spe": 45,
             "height": 1.0,
             "weight": 110.0
-          }
+          },
+          "name_en": "mudbray",
+          "desc_en": "The mud stuck to Mudbray’s hooves enhances its grip and its powerful running gait."
         },
         {
           "code": "1-1-058 SC",
@@ -1299,7 +1403,9 @@
             "spe": 36,
             "height": 0.5,
             "weight": 10.5
-          }
+          },
+          "name_en": "charjabug",
+          "desc_en": "Its body is capable of storing electricity. On camping trips, people are grateful to have one around."
         },
         {
           "code": "1-1-068 SC",
@@ -1322,7 +1428,9 @@
             "spe": 85,
             "height": 0.8,
             "weight": 18.0
-          }
+          },
+          "name_en": "cramorant",
+          "desc_en": "It’s so strong that it can knock out some opponents in a single hit, but it also may forget what it’s battling midfight."
         },
         {
           "code": "1-1-026 SC",
@@ -1344,7 +1452,9 @@
             "spe": 65,
             "height": 0.4,
             "weight": 4.1
-          }
+          },
+          "name_en": "sprigatito",
+          "desc_en": "Its fluffy fur is similar in composition to plants. This Pokémon frequently washes its face to keep it from drying out."
         },
         {
           "code": "1-1-028 SC",
@@ -1366,7 +1476,9 @@
             "spe": 36,
             "height": 0.4,
             "weight": 9.8
-          }
+          },
+          "name_en": "fuecoco",
+          "desc_en": "It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy."
         },
         {
           "code": "1-1-030 SC",
@@ -1388,7 +1500,9 @@
             "spe": 50,
             "height": 0.5,
             "weight": 6.1
-          }
+          },
+          "name_en": "quaxly",
+          "desc_en": "This Pokémon migrated to Paldea from distant lands long ago. The gel secreted by its feathers repels water and grime."
         },
         {
           "code": "1-1-032 SC",
@@ -1410,7 +1524,9 @@
             "spe": 65,
             "height": 0.3,
             "weight": 5.0
-          }
+          },
+          "name_en": "grookey",
+          "desc_en": "When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area."
         },
         {
           "code": "1-1-035 SC",
@@ -1432,7 +1548,9 @@
             "spe": 69,
             "height": 0.3,
             "weight": 4.5
-          }
+          },
+          "name_en": "scorbunny",
+          "desc_en": "A warm-up of running around gets fire energy coursing through this Pokémon’s body. Once that happens, it’s ready to fight at full power."
         },
         {
           "code": "1-1-038 SC",
@@ -1455,7 +1573,9 @@
             "spe": 70,
             "height": 0.3,
             "weight": 4.0
-          }
+          },
+          "name_en": "sobble",
+          "desc_en": "When scared, this Pokémon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
         },
         {
           "code": "1-1-041 SC",
@@ -1479,7 +1599,9 @@
             "spe": 101,
             "height": 0.2,
             "weight": 2.2
-          }
+          },
+          "name_en": "dedenne",
+          "desc_en": "Its whiskers serve as antennas. By sending and receiving electrical waves, it can communicate with others over vast distances."
         },
         {
           "code": "1-1-051 SC",
@@ -1502,7 +1624,9 @@
             "spe": 35,
             "height": 1.0,
             "weight": 92.0
-          }
+          },
+          "name_en": "golett",
+          "desc_en": "The energy that burns inside it enables it to move, but no one has yet been able to identify this energy."
         },
         {
           "code": "1-1-053 SC",
@@ -1525,7 +1649,9 @@
             "spe": 15,
             "height": 1.2,
             "weight": 36.0
-          }
+          },
+          "name_en": "slowpoke",
+          "desc_en": "It is always so absent-minded that it won't react, even if its flavorful tail is bitten."
         },
         {
           "code": "1-1-057 SC",
@@ -1569,7 +1695,9 @@
             "spe": 46,
             "height": 0.4,
             "weight": 4.4
-          }
+          },
+          "name_en": "grubbin",
+          "desc_en": "Its strong jaw enables it to scrape trees and slurp out the sap. It normally lives underground."
         },
         {
           "code": "1-1-063 SC",
@@ -1592,7 +1720,9 @@
             "spe": 75,
             "height": 1.4,
             "weight": 39.2
-          }
+          },
+          "name_en": "doduo",
+          "desc_en": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints."
         },
         {
           "code": "1-1-065 SC",
@@ -1614,7 +1744,9 @@
             "spe": 10,
             "height": 0.4,
             "weight": 2.2
-          }
+          },
+          "name_en": "gossifleur",
+          "desc_en": "It anchors itself in the ground with its single leg, then basks in the sun. After absorbing enough sunlight, its petals spread as it blooms brilliantly."
         },
         {
           "code": "1-1-069 SC",
@@ -1637,7 +1769,9 @@
             "spe": 20,
             "height": 0.3,
             "weight": 3.8
-          }
+          },
+          "name_en": "snom",
+          "desc_en": "It spits out thread imbued with a frigid sort of energy and uses it to tie its body to branches, disguising itself as an icicle while it sleeps."
         }
       ]
     },
@@ -1668,7 +1802,9 @@
             "spe": 90,
             "height": 4.5,
             "weight": 352.0
-          }
+          },
+          "name_en": "kyogre",
+          "desc_en": "KYOGRE has the power to create massive rain clouds that cover the entire sky and bring about torrential downpours. This POKéMON saved people who were suffering from droughts."
         },
         {
           "code": "1-2-002 SC",
@@ -1694,7 +1830,9 @@
             "spe": 90,
             "height": 3.5,
             "weight": 950.0
-          }
+          },
+          "name_en": "groudon",
+          "desc_en": "GROUDON has long been described in mythology as the POKéMON that raised lands and expanded continents. This POKéMON took to sleep after a cataclysmic battle with KYOGRE."
         },
         {
           "code": "1-2-003 SC",
@@ -1718,7 +1856,9 @@
             "spe": 135,
             "height": 2.5,
             "weight": 303.0
-          }
+          },
+          "name_en": "koraidon",
+          "desc_en": "This seems to be the Winged King mentioned in an old expedition journal. It was said to have split the land with its bare fists."
         },
         {
           "code": "1-2-004 SC",
@@ -1743,7 +1883,9 @@
             "spe": 90,
             "height": 0.4,
             "weight": 6.0
-          }
+          },
+          "name_en": "pikachu",
+          "desc_en": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
         },
         {
           "code": "1-2-005 SC",
@@ -1767,7 +1909,9 @@
             "spe": 30,
             "height": 2.1,
             "weight": 460.0
-          }
+          },
+          "name_en": "snorlax",
+          "desc_en": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
         },
         {
           "code": "1-2-006 SC",
@@ -1793,7 +1937,9 @@
             "spe": 85,
             "height": 1.6,
             "weight": 78.2
-          }
+          },
+          "name_en": "kommo-o",
+          "desc_en": "When it spots enemies, it threatens them by jingling the scales on its tail. Weak opponents will crack and flee in panic."
         },
         {
           "code": "1-2-007 SC",
@@ -1819,7 +1965,9 @@
             "spe": 80,
             "height": 1.6,
             "weight": 48.4
-          }
+          },
+          "name_en": "gardevoir",
+          "desc_en": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with."
         },
         {
           "code": "1-2-008 SC",
@@ -1845,7 +1993,9 @@
             "spe": 90,
             "height": 3.2,
             "weight": 330.0
-          }
+          },
+          "name_en": "reshiram",
+          "desc_en": "This Pokémon appears in legends. It sends flames into the air from its tail, burning up everything around it."
         },
         {
           "code": "1-2-009 SC",
@@ -1871,7 +2021,9 @@
             "spe": 90,
             "height": 2.9,
             "weight": 345.0
-          }
+          },
+          "name_en": "zekrom",
+          "desc_en": "Concealing itself in lightning clouds, it flies throughout the Unova region. It creates electricity in its tail."
         },
         {
           "code": "1-2-010 SC",
@@ -1897,7 +2049,9 @@
             "spe": 95,
             "height": 3.0,
             "weight": 325.0
-          }
+          },
+          "name_en": "kyurem",
+          "desc_en": "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out."
         },
         {
           "code": "1-2-011 SC",
@@ -1920,7 +2074,9 @@
             "spe": 130,
             "height": 0.8,
             "weight": 24.5
-          }
+          },
+          "name_en": "jolteon",
+          "desc_en": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts."
         },
         {
           "code": "1-2-012 SC",
@@ -1943,7 +2099,9 @@
             "spe": 110,
             "height": 0.9,
             "weight": 26.5
-          }
+          },
+          "name_en": "espeon",
+          "desc_en": "Its fur is so sensitive, it can sense minute shifts in the air and predict the weather."
         },
         {
           "code": "1-2-013 SC",
@@ -1966,7 +2124,9 @@
             "spe": 95,
             "height": 1.0,
             "weight": 25.5
-          }
+          },
+          "name_en": "leafeon",
+          "desc_en": "Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air."
         },
         {
           "code": "1-2-014 SC",
@@ -1989,7 +2149,9 @@
             "spe": 60,
             "height": 1.0,
             "weight": 23.5
-          }
+          },
+          "name_en": "sylveon",
+          "desc_en": "It sends a soothing aura from its ribbonlike feelers to calm fights."
         },
         {
           "code": "1-2-015 SC",
@@ -2013,7 +2175,9 @@
             "spe": 90,
             "height": 1.2,
             "weight": 54.0
-          }
+          },
+          "name_en": "lucario",
+          "desc_en": "It has the ability to sense the auras of all things. It understands human speech."
         },
         {
           "code": "1-2-016 SC",
@@ -2037,7 +2201,9 @@
             "spe": 56,
             "height": 2.2,
             "weight": 310.0
-          }
+          },
+          "name_en": "torterra",
+          "desc_en": "Some Pokémon are born on a Torterra’s back and spend their entire life there."
         },
         {
           "code": "1-2-017 SC",
@@ -2061,7 +2227,9 @@
             "spe": 108,
             "height": 1.2,
             "weight": 55.0
-          }
+          },
+          "name_en": "infernape",
+          "desc_en": "It uses a special kind of martial arts involving all its limbs. Its fire never goes out."
         },
         {
           "code": "1-2-018 SC",
@@ -2085,7 +2253,9 @@
             "spe": 60,
             "height": 1.7,
             "weight": 84.5
-          }
+          },
+          "name_en": "empoleon",
+          "desc_en": "The three horns that extend from its beak attest to its power. The leader has the biggest horns."
         },
         {
           "code": "1-2-019 SC",
@@ -2132,7 +2302,9 @@
             "spe": 61,
             "height": 2.0,
             "weight": 202.0
-          }
+          },
+          "name_en": "tyranitar",
+          "desc_en": "Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies."
         },
         {
           "code": "1-2-021 SC",
@@ -2156,7 +2328,9 @@
             "spe": 70,
             "height": 1.6,
             "weight": 550.0
-          }
+          },
+          "name_en": "metagross",
+          "desc_en": "METAGROSS has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This POKéMON can float in the air by tucking in its four legs."
         },
         {
           "code": "1-2-022 SC",
@@ -2180,7 +2354,9 @@
             "spe": 70,
             "height": 0.3,
             "weight": 1.0
-          }
+          },
+          "name_en": "flapple",
+          "desc_en": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns."
         },
         {
           "code": "1-2-023 SC",
@@ -2204,7 +2380,9 @@
             "spe": 30,
             "height": 0.4,
             "weight": 13.0
-          }
+          },
+          "name_en": "appletun",
+          "desc_en": "Eating a sweet apple caused its evolution. A nectarous scent wafts from its body, luring in the bug Pokémon it preys on."
         },
         {
           "code": "1-2-024 SC",
@@ -2227,7 +2405,9 @@
             "spe": 64,
             "height": 0.3,
             "weight": 0.5
-          }
+          },
+          "name_en": "alcremie",
+          "desc_en": "When it trusts a Trainer, it will treat them to berries it’s decorated with cream."
         },
         {
           "code": "1-2-025 SC",
@@ -2251,7 +2431,9 @@
             "spe": 74,
             "height": 1.0,
             "weight": 115.5
-          }
+          },
+          "name_en": "drednaw",
+          "desc_en": "With jaws that can shear through steel rods, this highly aggressive Pokémon chomps down on its unfortunate prey."
         },
         {
           "code": "1-2-026 SC",
@@ -2275,7 +2457,9 @@
             "spe": 123,
             "height": 1.5,
             "weight": 31.2
-          }
+          },
+          "name_en": "meowscarada",
+          "desc_en": "This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating."
         },
         {
           "code": "1-2-027 SC",
@@ -2299,7 +2483,9 @@
             "spe": 66,
             "height": 1.6,
             "weight": 326.5
-          }
+          },
+          "name_en": "skeledirge",
+          "desc_en": "The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirge’s head gained a soul."
         },
         {
           "code": "1-2-028 SC",
@@ -2323,7 +2509,9 @@
             "spe": 85,
             "height": 1.8,
             "weight": 61.9
-          }
+          },
+          "name_en": "quaquaval",
+          "desc_en": "A single kick from a Quaquaval can send a truck rolling. This Pokémon uses its powerful legs to perform striking dances from far-off lands."
         },
         {
           "code": "1-2-034 SC",
@@ -2347,7 +2535,9 @@
             "spe": 56,
             "height": 2.2,
             "weight": 310.0
-          }
+          },
+          "name_en": "torterra",
+          "desc_en": "Some Pokémon are born on a Torterra’s back and spend their entire life there."
         },
         {
           "code": "1-2-037 SC",
@@ -2371,7 +2561,9 @@
             "spe": 108,
             "height": 1.2,
             "weight": 55.0
-          }
+          },
+          "name_en": "infernape",
+          "desc_en": "It uses a special kind of martial arts involving all its limbs. Its fire never goes out."
         },
         {
           "code": "1-2-040 SC",
@@ -2395,7 +2587,9 @@
             "spe": 60,
             "height": 1.7,
             "weight": 84.5
-          }
+          },
+          "name_en": "empoleon",
+          "desc_en": "The three horns that extend from its beak attest to its power. The leader has the biggest horns."
         },
         {
           "code": "1-2-041 SC",
@@ -2418,7 +2612,9 @@
             "spe": 65,
             "height": 1.0,
             "weight": 29.0
-          }
+          },
+          "name_en": "vaporeon",
+          "desc_en": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's."
         },
         {
           "code": "1-2-042 SC",
@@ -2441,7 +2637,9 @@
             "spe": 65,
             "height": 0.9,
             "weight": 25.0
-          }
+          },
+          "name_en": "flareon",
+          "desc_en": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
         },
         {
           "code": "1-2-043 SC",
@@ -2464,7 +2662,9 @@
             "spe": 65,
             "height": 1.0,
             "weight": 27.0
-          }
+          },
+          "name_en": "umbreon",
+          "desc_en": "When agitated, this POKéMON pro­ tects itself by spraying poisonous sweat from its pores."
         },
         {
           "code": "1-2-044 SC",
@@ -2487,7 +2687,9 @@
             "spe": 65,
             "height": 0.8,
             "weight": 25.9
-          }
+          },
+          "name_en": "glaceon",
+          "desc_en": "As a protective technique, it can completely freeze its fur to make its hairs stand like needles."
         },
         {
           "code": "1-2-046 SC",
@@ -2510,7 +2712,9 @@
             "spe": 121,
             "height": 1.0,
             "weight": 34.0
-          }
+          },
+          "name_en": "boltund",
+          "desc_en": "This Pokémon generates electricity and channels it into its legs to keep them going strong. Boltund can run nonstop for three full days."
         },
         {
           "code": "1-2-049 SC",
@@ -2534,7 +2738,9 @@
             "spe": 101,
             "height": 1.5,
             "weight": 39.5
-          }
+          },
+          "name_en": "pidgeot",
+          "desc_en": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
         },
         {
           "code": "1-2-051 SC",
@@ -2581,7 +2787,9 @@
             "spe": 100,
             "height": 2.0,
             "weight": 82.0
-          }
+          },
+          "name_en": "flygon",
+          "desc_en": "FLYGON is nicknamed “the elemental spirit of the desert.” Because its flapping wings whip up a cloud of sand, this POKéMON is always enveloped in a sandstorm while flying."
         },
         {
           "code": "1-2-062 SC",
@@ -2604,7 +2812,9 @@
             "spe": 120,
             "height": 1.5,
             "weight": 48.0
-          }
+          },
+          "name_en": "alakazam",
+          "desc_en": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000."
         },
         {
           "code": "1-2-064 SC",
@@ -2628,7 +2838,9 @@
             "spe": 80,
             "height": 1.2,
             "weight": 15.0
-          }
+          },
+          "name_en": "drifblim",
+          "desc_en": "It’s drowzy in daytime, but flies off in the evening in big groups. No one knows where they go."
         },
         {
           "code": "1-2-069 SC",
@@ -2652,7 +2864,9 @@
             "spe": 80,
             "height": 1.6,
             "weight": 48.4
-          }
+          },
+          "name_en": "gardevoir",
+          "desc_en": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with."
         },
         {
           "code": "1-2-033 SC",
@@ -2675,7 +2889,9 @@
             "spe": 36,
             "height": 1.1,
             "weight": 97.0
-          }
+          },
+          "name_en": "grotle",
+          "desc_en": "A GROTLE that lives in the forest is said to have its own secret springwater."
         },
         {
           "code": "1-2-036 SC",
@@ -2699,7 +2915,9 @@
             "spe": 81,
             "height": 0.9,
             "weight": 22.0
-          }
+          },
+          "name_en": "monferno",
+          "desc_en": "To intimidate attackers, it stretches the fire on its tail to make itself appear bigger."
         },
         {
           "code": "1-2-039 SC",
@@ -2722,7 +2940,9 @@
             "spe": 50,
             "height": 0.8,
             "weight": 23.0
-          }
+          },
+          "name_en": "prinplup",
+          "desc_en": "It lives alone, away from others. Apparently, every one of them believes it is the most important."
         },
         {
           "code": "1-2-048 SC",
@@ -2746,7 +2966,9 @@
             "spe": 71,
             "height": 1.1,
             "weight": 30.0
-          }
+          },
+          "name_en": "pidgeotto",
+          "desc_en": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder."
         },
         {
           "code": "1-2-053 SC",
@@ -2770,7 +2992,9 @@
             "spe": 33,
             "height": 1.3,
             "weight": 187.0
-          }
+          },
+          "name_en": "bronzong",
+          "desc_en": "One caused a news sensation when it was dug up at a construction site after a 2,000-year sleep."
         },
         {
           "code": "1-2-055 SC",
@@ -2794,7 +3018,9 @@
             "spe": 70,
             "height": 1.1,
             "weight": 15.3
-          }
+          },
+          "name_en": "vibrava",
+          "desc_en": "To make prey faint, VIBRAVA generates ultrasonic waves by vigorously making its two wings vibrate. This POKéMON’s ultrasonic waves are so powerful, they can bring on headaches in people."
         },
         {
           "code": "1-2-058 SC",
@@ -2818,7 +3044,9 @@
             "spe": 65,
             "height": 1.2,
             "weight": 28.0
-          }
+          },
+          "name_en": "pelipper",
+          "desc_en": "PELIPPER is a flying transporter that carries small POKéMON and eggs inside its massive bill. This POKéMON builds its nest on steep cliffs facing the sea."
         },
         {
           "code": "1-2-059 SC",
@@ -2842,7 +3070,9 @@
             "spe": 95,
             "height": 1.4,
             "weight": 40.6
-          }
+          },
+          "name_en": "jynx",
+          "desc_en": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it."
         },
         {
           "code": "1-2-061 SC",
@@ -2864,7 +3094,9 @@
             "spe": 105,
             "height": 1.3,
             "weight": 56.5
-          }
+          },
+          "name_en": "kadabra",
+          "desc_en": "It emits special alpha waves from its body that induce headaches just by being close by."
         },
         {
           "code": "1-2-063 SC",
@@ -2888,7 +3120,9 @@
             "spe": 70,
             "height": 0.4,
             "weight": 1.2
-          }
+          },
+          "name_en": "drifloon",
+          "desc_en": "A Pokémon formed by the spirits of people and Pokémon. It loves damp, humid seasons."
         },
         {
           "code": "1-2-065 SC",
@@ -2912,7 +3146,9 @@
             "spe": 45,
             "height": 0.4,
             "weight": 8.0
-          }
+          },
+          "name_en": "mareanie",
+          "desc_en": "It plunges the poison spike on its head into its prey. When the prey has weakened, Mareanie deals the finishing blow with its 10 tentacles."
         },
         {
           "code": "1-2-066 SC",
@@ -2936,7 +3172,9 @@
             "spe": 96,
             "height": 0.3,
             "weight": 3.3
-          }
+          },
+          "name_en": "togedemaru",
+          "desc_en": "The spiny fur on its back is normally at rest. When this Pokémon becomes agitated, its fur stands on end and stabs into its attackers."
         },
         {
           "code": "1-2-068 SC",
@@ -2960,7 +3198,9 @@
             "spe": 50,
             "height": 0.8,
             "weight": 20.2
-          }
+          },
+          "name_en": "kirlia",
+          "desc_en": "It is said that a KIRLIA that is exposed to the positive emotions of its TRAINER grows beautiful. This POKéMON controls psychokinetic powers with its highly developed brain."
         },
         {
           "code": "1-2-070 SC",
@@ -2984,7 +3224,9 @@
             "spe": 70,
             "height": 8.8,
             "weight": 210.0
-          }
+          },
+          "name_en": "onix",
+          "desc_en": "It burrows through the ground at a speed of 50 mph while feeding on large boulders."
         },
         {
           "code": "1-2-029 SC",
@@ -3007,7 +3249,9 @@
             "spe": 35,
             "height": 0.6,
             "weight": 10.5
-          }
+          },
+          "name_en": "charcadet",
+          "desc_en": "Burnt charcoal came to life and became a Pokémon. Possessing a fiery fighting spirit, Charcadet will battle even tough opponents."
         },
         {
           "code": "1-2-030 SC",
@@ -3030,7 +3274,9 @@
             "spe": 55,
             "height": 0.5,
             "weight": 17.0
-          }
+          },
+          "name_en": "frigibax",
+          "desc_en": "Frigibax absorbs heat through its dorsal fin and converts the heat into ice energy. The higher the temperature, the more energy Frigibax stores."
         },
         {
           "code": "1-2-031 SC",
@@ -3053,7 +3299,9 @@
             "spe": 60,
             "height": 0.3,
             "weight": 2.5
-          }
+          },
+          "name_en": "pawmi",
+          "desc_en": "It has underdeveloped electric sacs on its cheeks. These sacs can produce electricity only if Pawmi rubs them furiously with the pads on its forepaws."
         },
         {
           "code": "1-2-032 SC",
@@ -3076,7 +3324,9 @@
             "spe": 31,
             "height": 0.4,
             "weight": 10.2
-          }
+          },
+          "name_en": "turtwig",
+          "desc_en": "Made from soil, the shell on its back hardens when it drinks water. It lives along lakes."
         },
         {
           "code": "1-2-035 SC",
@@ -3098,7 +3348,9 @@
             "spe": 61,
             "height": 0.5,
             "weight": 6.2
-          }
+          },
+          "name_en": "chimchar",
+          "desc_en": "It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps."
         },
         {
           "code": "1-2-038 SC",
@@ -3121,7 +3373,9 @@
             "spe": 40,
             "height": 0.4,
             "weight": 5.2
-          }
+          },
+          "name_en": "piplup",
+          "desc_en": "Because it is very proud, it hates accepting food from people. Its thick down guards it from cold."
         },
         {
           "code": "1-2-045 SC",
@@ -3144,7 +3398,9 @@
             "spe": 26,
             "height": 0.3,
             "weight": 13.5
-          }
+          },
+          "name_en": "yamper",
+          "desc_en": "This Pokémon is very popular as a herding dog in the Galar region. As it runs, it generates electricity from the base of its tail."
         },
         {
           "code": "1-2-047 SC",
@@ -3167,7 +3423,9 @@
             "spe": 56,
             "height": 0.3,
             "weight": 1.8
-          }
+          },
+          "name_en": "pidgey",
+          "desc_en": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
         },
         {
           "code": "1-2-050 SC",
@@ -3213,7 +3471,9 @@
             "spe": 23,
             "height": 0.5,
             "weight": 60.5
-          }
+          },
+          "name_en": "bronzor",
+          "desc_en": "Implements shaped like it were discovered in ancient tombs. It is unknown if they are related."
         },
         {
           "code": "1-2-054 SC",
@@ -3236,7 +3496,9 @@
             "spe": 10,
             "height": 0.7,
             "weight": 15.0
-          }
+          },
+          "name_en": "trapinch",
+          "desc_en": "TRAPINCH’s nest is a sloped, bowl-like pit dug in sand. This POKéMON patiently waits for prey to tumble down the pit. Its giant jaws have enough strength to crush even boulders."
         },
         {
           "code": "1-2-057 SC",
@@ -3260,7 +3522,9 @@
             "spe": 85,
             "height": 0.6,
             "weight": 9.5
-          }
+          },
+          "name_en": "wingull",
+          "desc_en": "WINGULL has the habit of carrying prey and valuables in its beak and hiding them in all sorts of locations. This POKéMON rides the winds and flies as if it were skating across the sky."
         },
         {
           "code": "1-2-060 SC",
@@ -3282,7 +3546,9 @@
             "spe": 90,
             "height": 0.9,
             "weight": 19.5
-          }
+          },
+          "name_en": "abra",
+          "desc_en": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety."
         },
         {
           "code": "1-2-067 SC",
@@ -3306,7 +3572,9 @@
             "spe": 40,
             "height": 0.4,
             "weight": 6.6
-          }
+          },
+          "name_en": "ralts",
+          "desc_en": "RALTS senses the emotions of people using the horns on its head. This POKéMON rarely appears before people. But when it does, it draws closer if it senses that the person has a positive disposition."
         }
       ]
     },
@@ -3338,7 +3606,9 @@
             "spe": 110,
             "height": 5.2,
             "weight": 216.0
-          }
+          },
+          "name_en": "lugia",
+          "desc_en": "It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong."
         },
         {
           "code": "1-3-002 SC",
@@ -3364,7 +3634,9 @@
             "spe": 90,
             "height": 3.8,
             "weight": 199.0
-          }
+          },
+          "name_en": "ho-oh",
+          "desc_en": "Legends claim this POKéMON flies the world's skies con­ tinuously on its magnificent seven- colored wings."
         },
         {
           "code": "1-3-003 SC",
@@ -3390,7 +3662,9 @@
             "spe": 97,
             "height": 3.4,
             "weight": 230.0
-          }
+          },
+          "name_en": "solgaleo",
+          "desc_en": "It is said to live in another world. The intense light it radiates from the surface of its body can make the darkest of nights light up like midday."
         },
         {
           "code": "1-3-004 SC",
@@ -3416,7 +3690,9 @@
             "spe": 97,
             "height": 4.0,
             "weight": 120.0
-          }
+          },
+          "name_en": "lunala",
+          "desc_en": "It is said to be a female evolution of Cosmog. When its third eye activates, away it flies to another world."
         },
         {
           "code": "1-3-005 SC",
@@ -3442,7 +3718,9 @@
             "spe": 122,
             "height": 1.5,
             "weight": 40.0
-          }
+          },
+          "name_en": "greninja",
+          "desc_en": "It creates throwing stars out of compressed water. When it spins them and throws them at high speed, these stars can split metal in two."
         },
         {
           "code": "1-3-006 SC",
@@ -3468,7 +3746,9 @@
             "spe": 143,
             "height": 1.5,
             "weight": 44.5
-          }
+          },
+          "name_en": "zeraora",
+          "desc_en": "It electrifies its claws and tears its opponents apart with them. Even if they dodge its attack, they’ll be electrocuted by the flying sparks."
         },
         {
           "code": "1-3-007 SC",
@@ -3494,7 +3774,9 @@
             "spe": 130,
             "height": 20.0,
             "weight": 950.0
-          }
+          },
+          "name_en": "eternatus",
+          "desc_en": "The core on its chest absorbs energy emanating from the lands of the Galar region. This energy is what allows Eternatus to stay active."
         },
         {
           "code": "1-3-008 SC",
@@ -3546,7 +3828,9 @@
             "spe": 60,
             "height": 1.5,
             "weight": 61.0
-          }
+          },
+          "name_en": "grimmsnarl",
+          "desc_en": "With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp."
         },
         {
           "code": "1-3-010 SC",
@@ -3595,7 +3879,9 @@
             "spe": 120,
             "height": 1.7,
             "weight": 52.2
-          }
+          },
+          "name_en": "sceptile",
+          "desc_en": "The leaves growing on SCEPTILE’s body are very sharp edged. This POKéMON is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind."
         },
         {
           "code": "1-3-012 SC",
@@ -3619,7 +3905,9 @@
             "spe": 80,
             "height": 1.9,
             "weight": 52.0
-          }
+          },
+          "name_en": "blaziken",
+          "desc_en": "Flames spout from its wrists, enveloping its knuckles. Its punches scorch its foes."
         },
         {
           "code": "1-3-013 SC",
@@ -3643,7 +3931,9 @@
             "spe": 60,
             "height": 1.5,
             "weight": 81.9
-          }
+          },
+          "name_en": "swampert",
+          "desc_en": "SWAMPERT is very strong. It has enough power to easily drag a boulder weighing more than a ton. This POKéMON also has powerful vision that lets it see even in murky water."
         },
         {
           "code": "1-3-014 SC",
@@ -3667,7 +3957,9 @@
             "spe": 80,
             "height": 1.0,
             "weight": 34.3
-          }
+          },
+          "name_en": "chandelure",
+          "desc_en": "It absorbs a spirit, which it then burns. By waving the flames on its arms, it puts its foes into a hypnotic trance."
         },
         {
           "code": "1-3-015 SC",
@@ -3691,7 +3983,9 @@
             "spe": 60,
             "height": 1.5,
             "weight": 61.0
-          }
+          },
+          "name_en": "grimmsnarl",
+          "desc_en": "With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp."
         },
         {
           "code": "1-3-016 SC",
@@ -3715,7 +4009,9 @@
             "spe": 76,
             "height": 1.3,
             "weight": 60.0
-          }
+          },
+          "name_en": "nidoqueen",
+          "desc_en": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves."
         },
         {
           "code": "1-3-017 SC",
@@ -3739,7 +4035,9 @@
             "spe": 101,
             "height": 1.5,
             "weight": 39.5
-          }
+          },
+          "name_en": "pidgeot",
+          "desc_en": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
         },
         {
           "code": "1-3-018 SC",
@@ -3763,7 +4061,9 @@
             "spe": 30,
             "height": 2.8,
             "weight": 310.5
-          }
+          },
+          "name_en": "coalossal",
+          "desc_en": "It’s usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit."
         },
         {
           "code": "1-3-019 SC",
@@ -3786,7 +4086,9 @@
             "spe": 90,
             "height": 0.4,
             "weight": 6.0
-          }
+          },
+          "name_en": "pikachu",
+          "desc_en": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
         },
         {
           "code": "1-3-020 SC",
@@ -3809,7 +4111,9 @@
             "spe": 120,
             "height": 1.5,
             "weight": 48.0
-          }
+          },
+          "name_en": "alakazam",
+          "desc_en": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000."
         },
         {
           "code": "1-3-021 SC",
@@ -3832,7 +4136,9 @@
             "spe": 50,
             "height": 1.7,
             "weight": 230.0
-          }
+          },
+          "name_en": "regirock",
+          "desc_en": "REGIROCK was sealed away by people long ago. If this POKéMON’s body is damaged in battle, it is said to seek out suitable rocks on its own to repair itself."
         },
         {
           "code": "1-3-022 SC",
@@ -3855,7 +4161,9 @@
             "spe": 50,
             "height": 1.8,
             "weight": 175.0
-          }
+          },
+          "name_en": "regice",
+          "desc_en": "REGICE’s body was made during an ice age. The deep-frozen body can’t be melted, even by fire. This POKéMON controls frigid air of minus 328 degrees F."
         },
         {
           "code": "1-3-023 SC",
@@ -3878,7 +4186,9 @@
             "spe": 50,
             "height": 1.9,
             "weight": 205.0
-          }
+          },
+          "name_en": "registeel",
+          "desc_en": "REGISTEEL has a body that is harder than any kind of metal. Its body is apparently hollow. No one has any idea what this POKéMON eats."
         },
         {
           "code": "1-3-024 SC",
@@ -3901,7 +4211,9 @@
             "spe": 87,
             "height": 2.2,
             "weight": 320.0
-          }
+          },
+          "name_en": "great-tusk",
+          "desc_en": "Sightings of this Pokémon have occurred in recent years. The name Great Tusk was taken from a creature listed in a certain book."
         },
         {
           "code": "1-3-025 SC",
@@ -3924,7 +4236,9 @@
             "spe": 97,
             "height": 1.8,
             "weight": 105.5
-          }
+          },
+          "name_en": "haxorus",
+          "desc_en": "They are kind but can be relentless when defending territory. They challenge foes with tusks that can cut steel."
         },
         {
           "code": "1-3-026 SC",
@@ -3948,7 +4262,9 @@
             "spe": 75,
             "height": 1.5,
             "weight": 85.0
-          }
+          },
+          "name_en": "armarouge",
+          "desc_en": "Armarouge evolved through the use of a set of armor that belonged to a distinguished warrior. This Pokémon is incredibly loyal."
         },
         {
           "code": "1-3-031 SC",
@@ -3971,7 +4287,9 @@
             "spe": 120,
             "height": 1.7,
             "weight": 52.2
-          }
+          },
+          "name_en": "sceptile",
+          "desc_en": "The leaves growing on SCEPTILE’s body are very sharp edged. This POKéMON is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind."
         },
         {
           "code": "1-3-034 SC",
@@ -3995,7 +4313,9 @@
             "spe": 80,
             "height": 1.9,
             "weight": 52.0
-          }
+          },
+          "name_en": "blaziken",
+          "desc_en": "Flames spout from its wrists, enveloping its knuckles. Its punches scorch its foes."
         },
         {
           "code": "1-3-037 SC",
@@ -4019,7 +4339,9 @@
             "spe": 60,
             "height": 1.5,
             "weight": 81.9
-          }
+          },
+          "name_en": "swampert",
+          "desc_en": "SWAMPERT is very strong. It has enough power to easily drag a boulder weighing more than a ton. This POKéMON also has powerful vision that lets it see even in murky water."
         },
         {
           "code": "1-3-040 SC",
@@ -4042,7 +4364,9 @@
             "spe": 83,
             "height": 1.6,
             "weight": 68.0
-          }
+          },
+          "name_en": "magmortar",
+          "desc_en": "It blasts fireballs of over 3,600 degrees F from the ends of its arms. It lives in volcanic craters."
         },
         {
           "code": "1-3-042 SC",
@@ -4089,7 +4413,9 @@
             "spe": 70,
             "height": 1.6,
             "weight": 550.0
-          }
+          },
+          "name_en": "metagross",
+          "desc_en": "METAGROSS has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This POKéMON can float in the air by tucking in its four legs."
         },
         {
           "code": "1-3-048 SC",
@@ -4136,7 +4462,9 @@
             "spe": 90,
             "height": 0.4,
             "weight": 40.8
-          }
+          },
+          "name_en": "orbeetle",
+          "desc_en": "It’s famous for its high level of intelligence, and the large size of its brain is proof that it also possesses immense psychic power."
         },
         {
           "code": "1-3-053 SC",
@@ -4159,7 +4487,9 @@
             "spe": 71,
             "height": 3.8,
             "weight": 65.5
-          }
+          },
+          "name_en": "sandaconda",
+          "desc_en": "When it contracts its body, over 220 pounds of sand sprays from its nose. If it ever runs out of sand, it becomes disheartened."
         },
         {
           "code": "1-3-056 SC",
@@ -4183,7 +4513,9 @@
             "spe": 30,
             "height": 2.8,
             "weight": 310.5
-          }
+          },
+          "name_en": "coalossal",
+          "desc_en": "It’s usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit."
         },
         {
           "code": "1-3-058 SC",
@@ -4206,7 +4538,9 @@
             "spe": 35,
             "height": 2.5,
             "weight": 920.0
-          }
+          },
+          "name_en": "mudsdale",
+          "desc_en": "It spits a mud that provides resistance to both wind and rain, so the walls of old houses were often coated with it."
         },
         {
           "code": "1-3-061 SC",
@@ -4230,7 +4564,9 @@
             "spe": 60,
             "height": 1.5,
             "weight": 61.0
-          }
+          },
+          "name_en": "grimmsnarl",
+          "desc_en": "With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp."
         },
         {
           "code": "1-3-062 SC",
@@ -4254,7 +4590,9 @@
             "spe": 36,
             "height": 2.0,
             "weight": 212.0
-          }
+          },
+          "name_en": "turtonator",
+          "desc_en": "The shell on its back is chemically unstable and explodes violently if struck. The hole in its stomach is its weak point."
         },
         {
           "code": "1-3-064 SC",
@@ -4276,7 +4614,9 @@
             "spe": 90,
             "height": 1.2,
             "weight": 19.9
-          }
+          },
+          "name_en": "thievul",
+          "desc_en": "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
         },
         {
           "code": "1-3-067 SC",
@@ -4299,7 +4639,9 @@
             "spe": 97,
             "height": 4.0,
             "weight": 120.0
-          }
+          },
+          "name_en": "lunala",
+          "desc_en": "It is said to be a female evolution of Cosmog. When its third eye activates, away it flies to another world."
         },
         {
           "code": "1-3-070 SC",
@@ -4322,7 +4664,9 @@
             "spe": 97,
             "height": 1.8,
             "weight": 105.5
-          }
+          },
+          "name_en": "haxorus",
+          "desc_en": "They are kind but can be relentless when defending territory. They challenge foes with tusks that can cut steel."
         },
         {
           "code": "1-3-027 SC",
@@ -4345,7 +4689,9 @@
             "spe": 62,
             "height": 0.8,
             "weight": 30.0
-          }
+          },
+          "name_en": "arctibax",
+          "desc_en": "Arctibax freezes the air around it, protecting its face with an ice mask and turning its dorsal fin into a blade of ice."
         },
         {
           "code": "1-3-028 SC",
@@ -4368,7 +4714,9 @@
             "spe": 85,
             "height": 0.4,
             "weight": 6.5
-          }
+          },
+          "name_en": "pawmo",
+          "desc_en": "When its group is attacked, Pawmo is the first to leap into battle, defeating enemies with a fighting technique that utilizes electric shocks."
         },
         {
           "code": "1-3-030 SC",
@@ -4391,7 +4739,9 @@
             "spe": 95,
             "height": 0.9,
             "weight": 21.6
-          }
+          },
+          "name_en": "grovyle",
+          "desc_en": "The leaves growing out of GROVYLE’s body are convenient for camouflaging it from enemies in the forest. This POKéMON is a master at climbing trees in jungles."
         },
         {
           "code": "1-3-033 SC",
@@ -4415,7 +4765,9 @@
             "spe": 55,
             "height": 0.9,
             "weight": 19.5
-          }
+          },
+          "name_en": "combusken",
+          "desc_en": "COMBUSKEN toughens up its legs and thighs by running through fields and mountains. This POKéMON’s legs possess both speed and power, enabling it to dole out ten kicks in one second."
         },
         {
           "code": "1-3-036 SC",
@@ -4439,7 +4791,9 @@
             "spe": 50,
             "height": 0.7,
             "weight": 28.0
-          }
+          },
+          "name_en": "marshtomp",
+          "desc_en": "The surface of MARSHTOMP’s body is enveloped by a thin, sticky film that enables it to live on land. This POKéMON plays in mud on beaches when the ocean tide is low."
         },
         {
           "code": "1-3-039 SC",
@@ -4462,7 +4816,9 @@
             "spe": 93,
             "height": 1.3,
             "weight": 44.5
-          }
+          },
+          "name_en": "magmar",
+          "desc_en": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
         },
         {
           "code": "1-3-044 SC",
@@ -4486,7 +4842,9 @@
             "spe": 50,
             "height": 1.2,
             "weight": 202.5
-          }
+          },
+          "name_en": "metang",
+          "desc_en": "When two BELDUM fuse together, METANG is formed. The brains of the BELDUM are joined by a magnetic nervous system. By linking its brains magnetically, this POKéMON generates strong psychokinetic power"
         },
         {
           "code": "1-3-047 SC",
@@ -4509,7 +4867,9 @@
             "spe": 60,
             "height": 0.9,
             "weight": 30.5
-          }
+          },
+          "name_en": "luxio",
+          "desc_en": "Its claws loose electricity with enough amperage to cause fainting. They live in small groups."
         },
         {
           "code": "1-3-050 SC",
@@ -4533,7 +4893,9 @@
             "spe": 30,
             "height": 0.4,
             "weight": 19.5
-          }
+          },
+          "name_en": "dottler",
+          "desc_en": "It barely moves, but it’s still alive. Hiding in its shell without food or water seems to have awakened its psychic powers."
         },
         {
           "code": "1-3-055 SC",
@@ -4557,7 +4919,9 @@
             "spe": 50,
             "height": 1.1,
             "weight": 78.0
-          }
+          },
+          "name_en": "carkol",
+          "desc_en": "It forms coal inside its body. Coal dropped by this Pokémon once helped fuel the lives of people in the Galar region."
         },
         {
           "code": "1-3-057 SC",
@@ -4580,7 +4944,9 @@
             "spe": 45,
             "height": 1.0,
             "weight": 110.0
-          }
+          },
+          "name_en": "mudbray",
+          "desc_en": "The mud stuck to Mudbray’s hooves enhances its grip and its powerful running gait."
         },
         {
           "code": "1-3-060 SC",
@@ -4604,7 +4970,9 @@
             "spe": 70,
             "height": 0.8,
             "weight": 12.5
-          }
+          },
+          "name_en": "morgrem",
+          "desc_en": "When it gets down on all fours as if to beg for forgiveness, it’s trying to lure opponents in so that it can stab them with its spear-like hair."
         },
         {
           "code": "1-3-066 SC",
@@ -4627,7 +4995,9 @@
             "spe": 25,
             "height": 1.6,
             "weight": 30.6
-          }
+          },
+          "name_en": "dusclops",
+          "desc_en": "DUSCLOPS’s body is completely hollow - there is nothing at all inside. It is said that its body is like a black hole. This POKéMON will absorb anything into its body, but nothing will ever come back o"
         },
         {
           "code": "1-3-069 SC",
@@ -4650,7 +5020,9 @@
             "spe": 67,
             "height": 1.0,
             "weight": 36.0
-          }
+          },
+          "name_en": "fraxure",
+          "desc_en": "Since a broken tusk will not grow back, they diligently sharpen their tusks on river rocks after they’ve been fighting."
         },
         {
           "code": "1-3-029 SC",
@@ -4673,7 +5045,9 @@
             "spe": 70,
             "height": 0.5,
             "weight": 5.0
-          }
+          },
+          "name_en": "treecko",
+          "desc_en": "TREECKO has small hooks on the bottom of its feet that enable it to scale vertical walls. This POKéMON attacks by slamming foes with its thick tail."
         },
         {
           "code": "1-3-032 SC",
@@ -4696,7 +5070,9 @@
             "spe": 45,
             "height": 0.4,
             "weight": 2.5
-          }
+          },
+          "name_en": "torchic",
+          "desc_en": "TORCHIC sticks with its TRAINER, following behind with unsteady steps. This POKéMON breathes fire of over 1,800 degrees F, including fireballs that leave the foe scorched black."
         },
         {
           "code": "1-3-035 SC",
@@ -4719,7 +5095,9 @@
             "spe": 40,
             "height": 0.4,
             "weight": 7.6
-          }
+          },
+          "name_en": "mudkip",
+          "desc_en": "The fin on MUDKIP’s head acts as highly sensitive radar. Using this fin to sense movements of water and air, this POKéMON can determine what is taking place around it without using its eyes."
         },
         {
           "code": "1-3-038 SC",
@@ -4742,7 +5120,9 @@
             "spe": 83,
             "height": 0.7,
             "weight": 21.4
-          }
+          },
+          "name_en": "magby",
+          "desc_en": "Each and every time it inhales and exhales, hot embers dribble out of its mouth and nostrils."
         },
         {
           "code": "1-3-041 SC",
@@ -4765,7 +5145,9 @@
             "spe": 35,
             "height": 0.6,
             "weight": 1.0
-          }
+          },
+          "name_en": "koffing",
+          "desc_en": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning."
         },
         {
           "code": "1-3-043 SC",
@@ -4789,7 +5171,9 @@
             "spe": 30,
             "height": 0.6,
             "weight": 95.2
-          }
+          },
+          "name_en": "beldum",
+          "desc_en": "It converses with others by using magnetic pulses. In a swarm, they move in perfect unison."
         },
         {
           "code": "1-3-046 SC",
@@ -4812,7 +5196,9 @@
             "spe": 45,
             "height": 0.5,
             "weight": 9.5
-          }
+          },
+          "name_en": "shinx",
+          "desc_en": "All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded."
         },
         {
           "code": "1-3-049 SC",
@@ -4835,7 +5221,9 @@
             "spe": 45,
             "height": 0.4,
             "weight": 8.0
-          }
+          },
+          "name_en": "blipbug",
+          "desc_en": "A constant collector of information, this Pokémon is very smart. Very strong is what it isn’t."
         },
         {
           "code": "1-3-052 SC",
@@ -4881,7 +5269,9 @@
             "spe": 30,
             "height": 0.3,
             "weight": 12.0
-          }
+          },
+          "name_en": "rolycoly",
+          "desc_en": "Most of its body has the same composition as coal. Fittingly, this Pokémon was first discovered in coal mines about 400 years ago."
         },
         {
           "code": "1-3-059 SC",
@@ -4905,7 +5295,9 @@
             "spe": 50,
             "height": 0.4,
             "weight": 5.5
-          }
+          },
+          "name_en": "impidimp",
+          "desc_en": "Through its nose, it sucks in the emanations produced by people and Pokémon when they feel annoyed. It thrives off this negative energy."
         },
         {
           "code": "1-3-063 SC",
@@ -4927,7 +5319,9 @@
             "spe": 50,
             "height": 0.6,
             "weight": 8.9
-          }
+          },
+          "name_en": "nickit",
+          "desc_en": "Aided by the soft pads on its feet, it silently raids the food stores of other Pokémon. It survives off its ill-gotten gains."
         },
         {
           "code": "1-3-065 SC",
@@ -4950,7 +5344,9 @@
             "spe": 25,
             "height": 0.8,
             "weight": 15.0
-          }
+          },
+          "name_en": "duskull",
+          "desc_en": "DUSKULL can pass through any wall no matter how thick it may be. Once this POKéMON chooses a target, it will doggedly pursue the intended victim until the break of dawn."
         },
         {
           "code": "1-3-068 SC",
@@ -4973,7 +5369,9 @@
             "spe": 57,
             "height": 0.6,
             "weight": 18.0
-          }
+          },
+          "name_en": "axew",
+          "desc_en": "They use their tusks to crush the berries they eat. Repeated regrowth makes their tusks strong and sharp."
         }
       ]
     },
@@ -5005,7 +5403,9 @@
             "spe": 90,
             "height": 5.4,
             "weight": 683.0
-          }
+          },
+          "name_en": "dialga",
+          "desc_en": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity."
         },
         {
           "code": "1-4-002 SC",
@@ -5030,7 +5430,9 @@
             "spe": 100,
             "height": 4.2,
             "weight": 336.0
-          }
+          },
+          "name_en": "palkia",
+          "desc_en": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
         },
         {
           "code": "1-4-003 SC",
@@ -5055,7 +5457,9 @@
             "spe": 99,
             "height": 3.0,
             "weight": 215.0
-          }
+          },
+          "name_en": "xerneas",
+          "desc_en": "Legends say it can share eternal life. It slept for a thousand years in the form of a tree before its revival."
         },
         {
           "code": "1-4-004 SC",
@@ -5081,7 +5485,9 @@
             "spe": 99,
             "height": 5.8,
             "weight": 203.0
-          }
+          },
+          "name_en": "yveltal",
+          "desc_en": "When this legendary Pokémon’s wings and tail feathers spread wide and glow red, it absorbs the life force of living creatures."
         },
         {
           "code": "1-4-005 SC",
@@ -5107,7 +5513,9 @@
             "spe": 80,
             "height": 1.1,
             "weight": 7.7
-          }
+          },
+          "name_en": "calyrex",
+          "desc_en": "Calyrex is a merciful Pokémon, capable of providing healing and blessings. It reigned over the Galar region in times of yore."
         },
         {
           "code": "1-4-006 SC",
@@ -5133,7 +5541,9 @@
             "spe": 80,
             "height": 1.1,
             "weight": 7.7
-          }
+          },
+          "name_en": "calyrex",
+          "desc_en": "Calyrex is a merciful Pokémon, capable of providing healing and blessings. It reigned over the Galar region in times of yore."
         },
         {
           "code": "1-4-007 SC",
@@ -5184,7 +5594,9 @@
             "spe": 95,
             "height": 3.0,
             "weight": 325.0
-          }
+          },
+          "name_en": "kyurem",
+          "desc_en": "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out."
         },
         {
           "code": "1-4-009 SC",
@@ -5209,7 +5621,9 @@
             "spe": 95,
             "height": 3.0,
             "weight": 325.0
-          }
+          },
+          "name_en": "kyurem",
+          "desc_en": "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out."
         },
         {
           "code": "1-4-010 SC",
@@ -5235,7 +5649,9 @@
             "spe": 95,
             "height": 7.0,
             "weight": 206.5
-          }
+          },
+          "name_en": "rayquaza",
+          "desc_en": "RAYQUAZA lived for hundreds of millions of years in the earth’s ozone layer, never descending to the ground. This POKéMON appears to feed on water and particles in the atmosphere."
         },
         {
           "code": "1-4-011 SC",
@@ -5259,7 +5675,9 @@
             "spe": 50,
             "height": 2.1,
             "weight": 360.0
-          }
+          },
+          "name_en": "aggron",
+          "desc_en": "AGGRON claims an entire mountain as its own territory. It mercilessly beats up anything that violates its environment. This POKéMON vigilantly patrols its territory at all times."
         },
         {
           "code": "1-4-012 SC",
@@ -5282,7 +5700,9 @@
             "spe": 80,
             "height": 1.8,
             "weight": 100.5
-          }
+          },
+          "name_en": "meganium",
+          "desc_en": "The aroma that rises from its petals contains a substance that calms aggressive feelings."
         },
         {
           "code": "1-4-013 SC",
@@ -5305,7 +5725,9 @@
             "spe": 100,
             "height": 1.7,
             "weight": 79.5
-          }
+          },
+          "name_en": "typhlosion",
+          "desc_en": "If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames."
         },
         {
           "code": "1-4-014 SC",
@@ -5328,7 +5750,9 @@
             "spe": 78,
             "height": 2.3,
             "weight": 88.8
-          }
+          },
+          "name_en": "feraligatr",
+          "desc_en": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up."
         },
         {
           "code": "1-4-015 SC",
@@ -5351,7 +5775,9 @@
             "spe": 80,
             "height": 2.0,
             "weight": 150.5
-          }
+          },
+          "name_en": "goodra",
+          "desc_en": "This very friendly Dragon-type Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime."
         },
         {
           "code": "1-4-016 SC",
@@ -5375,7 +5801,9 @@
             "spe": 67,
             "height": 2.2,
             "weight": 75.0
-          }
+          },
+          "name_en": "corviknight",
+          "desc_en": "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe."
         },
         {
           "code": "1-4-017 SC",
@@ -5398,7 +5826,9 @@
             "spe": 55,
             "height": 2.0,
             "weight": 175.0
-          }
+          },
+          "name_en": "arctovish",
+          "desc_en": "Though it’s able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head."
         },
         {
           "code": "1-4-018 SC",
@@ -5421,7 +5851,9 @@
             "spe": 55,
             "height": 1.6,
             "weight": 130.0
-          }
+          },
+          "name_en": "machamp",
+          "desc_en": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
         },
         {
           "code": "1-4-019 SC",
@@ -5445,7 +5877,9 @@
             "spe": 80,
             "height": 1.6,
             "weight": 48.4
-          }
+          },
+          "name_en": "gardevoir",
+          "desc_en": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with."
         },
         {
           "code": "1-4-020 SC",
@@ -5469,7 +5903,9 @@
             "spe": 95,
             "height": 1.6,
             "weight": 46.0
-          }
+          },
+          "name_en": "obstagoon",
+          "desc_en": "Its voice is staggering in volume. Obstagoon has a tendency to take on a threatening posture and shout—this move is known as Obstruct."
         },
         {
           "code": "1-4-021 SC",
@@ -5492,7 +5928,9 @@
             "spe": 200,
             "height": 1.2,
             "weight": 145.0
-          }
+          },
+          "name_en": "regieleki",
+          "desc_en": "This Pokémon is a cluster of electrical energy. It’s said that removing the rings on Regieleki’s body will unleash the Pokémon’s latent power."
         },
         {
           "code": "1-4-022 SC",
@@ -5515,7 +5953,9 @@
             "spe": 80,
             "height": 2.1,
             "weight": 200.0
-          }
+          },
+          "name_en": "regidrago",
+          "desc_en": "An academic theory proposes that Regidrago’s arms were once the head of an ancient dragon Pokémon. The theory remains unproven."
         },
         {
           "code": "1-4-023 SC",
@@ -5539,7 +5979,9 @@
             "spe": 106,
             "height": 0.9,
             "weight": 240.0
-          }
+          },
+          "name_en": "iron-treads",
+          "desc_en": "This Pokémon closely resembles a scientific weapon that a paranormal magazine claimed was sent to this planet by aliens."
         },
         {
           "code": "1-4-024 SC",
@@ -5562,7 +6004,9 @@
             "spe": 30,
             "height": 3.0,
             "weight": 650.0
-          }
+          },
+          "name_en": "copperajah",
+          "desc_en": "They came over from another region long ago and worked together with humans. Their green skin is resistant to water."
         },
         {
           "code": "1-4-025 SC",
@@ -5586,7 +6030,9 @@
             "spe": 126,
             "height": 1.2,
             "weight": 24.5
-          }
+          },
+          "name_en": "talonflame",
+          "desc_en": "In the fever of an exciting battle, it showers embers from the gaps between its feathers and takes to the air."
         },
         {
           "code": "1-4-026 SC",
@@ -5610,7 +6056,9 @@
             "spe": 85,
             "height": 1.6,
             "weight": 62.0
-          }
+          },
+          "name_en": "ceruledge",
+          "desc_en": "The fiery blades on its arms burn fiercely with the lingering resentment of a sword wielder who fell before accomplishing their goal."
         },
         {
           "code": "1-4-027 SC",
@@ -5634,7 +6082,9 @@
             "spe": 87,
             "height": 2.1,
             "weight": 210.0
-          }
+          },
+          "name_en": "baxcalibur",
+          "desc_en": "This Pokémon blasts cryogenic air out from its mouth. This air can instantly freeze even liquid-hot lava."
         },
         {
           "code": "1-4-030 SC",
@@ -5657,7 +6107,9 @@
             "spe": 80,
             "height": 1.8,
             "weight": 100.5
-          }
+          },
+          "name_en": "meganium",
+          "desc_en": "The aroma that rises from its petals contains a substance that calms aggressive feelings."
         },
         {
           "code": "1-4-033 SC",
@@ -5680,7 +6132,9 @@
             "spe": 100,
             "height": 1.7,
             "weight": 79.5
-          }
+          },
+          "name_en": "typhlosion",
+          "desc_en": "If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames."
         },
         {
           "code": "1-4-036 SC",
@@ -5703,7 +6157,9 @@
             "spe": 78,
             "height": 2.3,
             "weight": 88.8
-          }
+          },
+          "name_en": "feraligatr",
+          "desc_en": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up."
         },
         {
           "code": "1-4-039 SC",
@@ -5727,7 +6183,9 @@
             "spe": 142,
             "height": 3.0,
             "weight": 50.0
-          }
+          },
+          "name_en": "dragapult",
+          "desc_en": "When it isn’t battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles."
         },
         {
           "code": "1-4-041 SC",
@@ -5751,7 +6209,9 @@
             "spe": 70,
             "height": 0.2,
             "weight": 0.4
-          }
+          },
+          "name_en": "polteageist",
+          "desc_en": "This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found."
         },
         {
           "code": "1-4-045 SC",
@@ -5774,7 +6234,9 @@
             "spe": 95,
             "height": 1.8,
             "weight": 138.6
-          }
+          },
+          "name_en": "electivire",
+          "desc_en": "It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power."
         },
         {
           "code": "1-4-047 SC",
@@ -5820,7 +6282,9 @@
             "spe": 88,
             "height": 1.3,
             "weight": 43.0
-          }
+          },
+          "name_en": "dubwool",
+          "desc_en": "Weave a carpet from its springy wool, and you end up with something closer to a trampoline. You’ll start to bounce the moment you set foot on it."
         },
         {
           "code": "1-4-052 SC",
@@ -5844,7 +6308,9 @@
             "spe": 98,
             "height": 1.8,
             "weight": 160.0
-          }
+          },
+          "name_en": "hydreigon",
+          "desc_en": "This brutal Pokémon travels the skies on its six wings. Anything that moves seems like a foe to it, triggering its attack."
         },
         {
           "code": "1-4-057 SC",
@@ -5867,7 +6333,9 @@
             "spe": 55,
             "height": 1.6,
             "weight": 130.0
-          }
+          },
+          "name_en": "machamp",
+          "desc_en": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
         },
         {
           "code": "1-4-059 SC",
@@ -5891,7 +6359,9 @@
             "spe": 71,
             "height": 0.9,
             "weight": 27.3
-          }
+          },
+          "name_en": "honchkrow",
+          "desc_en": "Becoming active at night, it is known to swarm with numerous MURKROW in tow."
         },
         {
           "code": "1-4-062 SC",
@@ -5915,7 +6385,9 @@
             "spe": 29,
             "height": 2.1,
             "weight": 5.1
-          }
+          },
+          "name_en": "hatterene",
+          "desc_en": "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others."
         },
         {
           "code": "1-4-065 SC",
@@ -5939,7 +6411,9 @@
             "spe": 80,
             "height": 2.5,
             "weight": 291.0
-          }
+          },
+          "name_en": "mamoswine",
+          "desc_en": "Its impressive tusks are made of ice. The population thinned when it turned warm after the ice age."
         },
         {
           "code": "1-4-068 SC",
@@ -5963,7 +6437,9 @@
             "spe": 126,
             "height": 1.2,
             "weight": 24.5
-          }
+          },
+          "name_en": "talonflame",
+          "desc_en": "In the fever of an exciting battle, it showers embers from the gaps between its feathers and takes to the air."
         },
         {
           "code": "1-4-070 SC",
@@ -5987,7 +6463,9 @@
             "spe": 123,
             "height": 1.5,
             "weight": 85.0
-          }
+          },
+          "name_en": "noivern",
+          "desc_en": "They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark."
         },
         {
           "code": "1-4-029 SC",
@@ -6010,7 +6488,9 @@
             "spe": 60,
             "height": 1.2,
             "weight": 15.8
-          }
+          },
+          "name_en": "bayleef",
+          "desc_en": "The scent of spices comes from around its neck. Somehow, sniffing it makes you want to fight."
         },
         {
           "code": "1-4-032 SC",
@@ -6033,7 +6513,9 @@
             "spe": 80,
             "height": 0.9,
             "weight": 19.0
-          }
+          },
+          "name_en": "quilava",
+          "desc_en": "Be careful if it turns its back during battle. It means that it will attack with the fire on its back."
         },
         {
           "code": "1-4-035 SC",
@@ -6056,7 +6538,9 @@
             "spe": 58,
             "height": 1.1,
             "weight": 25.0
-          }
+          },
+          "name_en": "croconaw",
+          "desc_en": "If it loses a fang, a new one grows back in its place. There are always 48 fangs lining its mouth."
         },
         {
           "code": "1-4-038 SC",
@@ -6080,7 +6564,9 @@
             "spe": 102,
             "height": 1.4,
             "weight": 11.0
-          }
+          },
+          "name_en": "drakloak",
+          "desc_en": "It’s capable of flying faster than 120 mph. It battles alongside Dreepy and dotes on them until they successfully evolve."
         },
         {
           "code": "1-4-042 SC",
@@ -6104,7 +6590,9 @@
             "spe": 36,
             "height": 3.0,
             "weight": 185.0
-          }
+          },
+          "name_en": "drampa",
+          "desc_en": "It has a compassionate personality, but if it is angered, it completely destroys its surroundings with its intense breath."
         },
         {
           "code": "1-4-044 SC",
@@ -6127,7 +6615,9 @@
             "spe": 105,
             "height": 1.1,
             "weight": 30.0
-          }
+          },
+          "name_en": "electabuzz",
+          "desc_en": "Normally found near power plants, they can wander away and cause major blackouts in cities."
         },
         {
           "code": "1-4-046 SC",
@@ -6174,7 +6664,9 @@
             "spe": 58,
             "height": 1.4,
             "weight": 50.0
-          }
+          },
+          "name_en": "zweilous",
+          "desc_en": "After it has eaten up all the food in its territory, it moves to another area. Its two heads do not get along."
         },
         {
           "code": "1-4-054 SC",
@@ -6198,7 +6690,9 @@
             "spe": 114,
             "height": 0.9,
             "weight": 10.5
-          }
+          },
+          "name_en": "swoobat",
+          "desc_en": "It emits sound waves of various frequencies from its nose, including some powerful enough to destroy rocks."
         },
         {
           "code": "1-4-056 SC",
@@ -6221,7 +6715,9 @@
             "spe": 45,
             "height": 1.5,
             "weight": 70.5
-          }
+          },
+          "name_en": "machoke",
+          "desc_en": "It happily carries heavy cargo to toughen up. It willingly does hard work for people."
         },
         {
           "code": "1-4-058 SC",
@@ -6245,7 +6741,9 @@
             "spe": 91,
             "height": 0.5,
             "weight": 2.1
-          }
+          },
+          "name_en": "murkrow",
+          "desc_en": "Feared and loathed by many, it is believed to bring misfortune to all those who see it at night."
         },
         {
           "code": "1-4-061 SC",
@@ -6269,7 +6767,9 @@
             "spe": 49,
             "height": 0.6,
             "weight": 4.8
-          }
+          },
+          "name_en": "hattrem",
+          "desc_en": "No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently."
         },
         {
           "code": "1-4-064 SC",
@@ -6293,7 +6793,9 @@
             "spe": 50,
             "height": 1.1,
             "weight": 55.8
-          }
+          },
+          "name_en": "piloswine",
+          "desc_en": "Although its legs are short, its rugged hooves prevent it from slipping, even on icy ground."
         },
         {
           "code": "1-4-067 SC",
@@ -6317,7 +6819,9 @@
             "spe": 84,
             "height": 0.7,
             "weight": 16.0
-          }
+          },
+          "name_en": "fletchinder",
+          "desc_en": "From its beak, it expels embers that set the tall grass on fire. Then it pounces on the bewildered prey that pop out of the grass."
         },
         {
           "code": "1-4-028 SC",
@@ -6340,7 +6844,9 @@
             "spe": 45,
             "height": 0.9,
             "weight": 6.4
-          }
+          },
+          "name_en": "chikorita",
+          "desc_en": "It uses the leaf on its head to determine the temperature and humidity. It loves to sunbathe."
         },
         {
           "code": "1-4-031 SC",
@@ -6363,7 +6869,9 @@
             "spe": 65,
             "height": 0.5,
             "weight": 7.9
-          }
+          },
+          "name_en": "cyndaquil",
+          "desc_en": "It is timid, and always curls it­ self up in a ball. If attacked, it flares up its back for protection."
         },
         {
           "code": "1-4-034 SC",
@@ -6386,7 +6894,9 @@
             "spe": 43,
             "height": 0.6,
             "weight": 9.5
-          }
+          },
+          "name_en": "totodile",
+          "desc_en": "Its well-developed jaws are powerful and capable of crushing anything. Even its trainer must be careful."
         },
         {
           "code": "1-4-037 SC",
@@ -6410,7 +6920,9 @@
             "spe": 82,
             "height": 0.5,
             "weight": 2.0
-          }
+          },
+          "name_en": "dreepy",
+          "desc_en": "After being reborn as a ghost Pokémon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
         },
         {
           "code": "1-4-040 SC",
@@ -6434,7 +6946,9 @@
             "spe": 50,
             "height": 0.1,
             "weight": 0.2
-          }
+          },
+          "name_en": "sinistea",
+          "desc_en": "This Pokémon is said to have been born when a lonely spirit possessed a cold, leftover cup of tea."
         },
         {
           "code": "1-4-043 SC",
@@ -6457,7 +6971,9 @@
             "spe": 95,
             "height": 0.6,
             "weight": 23.5
-          }
+          },
+          "name_en": "elekid",
+          "desc_en": "It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit."
         },
         {
           "code": "1-4-048 SC",
@@ -6480,7 +6996,9 @@
             "spe": 48,
             "height": 0.6,
             "weight": 6.0
-          }
+          },
+          "name_en": "wooloo",
+          "desc_en": "Its curly fleece is such an effective cushion that this Pokémon could fall off a cliff and stand right back up at the bottom, unharmed."
         },
         {
           "code": "1-4-050 SC",
@@ -6504,7 +7022,9 @@
             "spe": 38,
             "height": 0.8,
             "weight": 17.3
-          }
+          },
+          "name_en": "deino",
+          "desc_en": "It tends to bite everything, and it is not a picky eater. Approaching it carelessly is dangerous."
         },
         {
           "code": "1-4-053 SC",
@@ -6528,7 +7048,9 @@
             "spe": 72,
             "height": 0.4,
             "weight": 2.1
-          }
+          },
+          "name_en": "woobat",
+          "desc_en": "Its habitat is dark forests and caves. It emits ultrasonic waves from its nose to learn about its surroundings."
         },
         {
           "code": "1-4-055 SC",
@@ -6551,7 +7073,9 @@
             "spe": 35,
             "height": 0.8,
             "weight": 19.5
-          }
+          },
+          "name_en": "machop",
+          "desc_en": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger."
         },
         {
           "code": "1-4-060 SC",
@@ -6575,7 +7099,9 @@
             "spe": 39,
             "height": 0.4,
             "weight": 3.4
-          }
+          },
+          "name_en": "hatenna",
+          "desc_en": "Via the protrusion on its head, it senses other creatures’ emotions. If you don’t have a calm disposition, it will never warm up to you."
         },
         {
           "code": "1-4-063 SC",
@@ -6599,7 +7125,9 @@
             "spe": 50,
             "height": 0.4,
             "weight": 6.5
-          }
+          },
+          "name_en": "swinub",
+          "desc_en": "It rubs its snout on the ground to find and dig up food. It sometimes discovers hot springs."
         },
         {
           "code": "1-4-066 SC",
@@ -6623,7 +7151,9 @@
             "spe": 62,
             "height": 0.3,
             "weight": 1.7
-          }
+          },
+          "name_en": "fletchling",
+          "desc_en": "These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements."
         },
         {
           "code": "1-4-069 SC",
@@ -6647,7 +7177,9 @@
             "spe": 55,
             "height": 0.5,
             "weight": 8.0
-          }
+          },
+          "name_en": "noibat",
+          "desc_en": "They live in pitch-black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz."
         }
       ]
     },
@@ -6678,7 +7210,9 @@
             "spe": 85,
             "height": 2.1,
             "weight": 90.0
-          }
+          },
+          "name_en": "rillaboom",
+          "desc_en": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle."
         },
         {
           "code": "2-1-002 SC",
@@ -6703,7 +7237,9 @@
             "spe": 119,
             "height": 1.4,
             "weight": 33.0
-          }
+          },
+          "name_en": "cinderace",
+          "desc_en": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
         },
         {
           "code": "2-1-003 SC",
@@ -6728,7 +7264,9 @@
             "spe": 120,
             "height": 1.9,
             "weight": 45.2
-          }
+          },
+          "name_en": "inteleon",
+          "desc_en": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air."
         },
         {
           "code": "2-1-004 SC",
@@ -6753,7 +7291,9 @@
             "spe": 90,
             "height": 0.4,
             "weight": 6.0
-          }
+          },
+          "name_en": "pikachu",
+          "desc_en": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
         },
         {
           "code": "2-1-005 SC",
@@ -6778,7 +7318,9 @@
             "spe": 115,
             "height": 1.9,
             "weight": 178.0
-          }
+          },
+          "name_en": "raikou",
+          "desc_en": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning."
         },
         {
           "code": "2-1-006 SC",
@@ -6802,7 +7344,9 @@
             "spe": 100,
             "height": 2.1,
             "weight": 198.0
-          }
+          },
+          "name_en": "entei",
+          "desc_en": "Volcanoes erupt when it barks. Un­ able to restrain its extreme power, it races headlong around the land."
         },
         {
           "code": "2-1-007 SC",
@@ -6826,7 +7370,9 @@
             "spe": 85,
             "height": 2.0,
             "weight": 187.0
-          }
+          },
+          "name_en": "suicune",
+          "desc_en": "Said to be the reincarnation of north winds, it can instantly purify filthy, murky water."
         },
         {
           "code": "2-1-008 SC",
@@ -6851,7 +7397,9 @@
             "spe": 130,
             "height": 2.0,
             "weight": 122.0
-          }
+          },
+          "name_en": "mewtwo",
+          "desc_en": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
         },
         {
           "code": "2-1-009 SC",
@@ -6875,7 +7423,9 @@
             "spe": 120,
             "height": 3.2,
             "weight": 320.0
-          }
+          },
+          "name_en": "arceus",
+          "desc_en": "It is said to have emerged from an egg in a place where there was nothing, then shaped the world."
         },
         {
           "code": "2-1-010 SC",
@@ -6923,7 +7473,9 @@
             "spe": 85,
             "height": 1.5,
             "weight": 55.0
-          }
+          },
+          "name_en": "pinsir",
+          "desc_en": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard."
         },
         {
           "code": "2-1-012 SC",
@@ -6947,7 +7499,9 @@
             "spe": 85,
             "height": 1.5,
             "weight": 54.0
-          }
+          },
+          "name_en": "heracross",
+          "desc_en": "This powerful POKéMON thrusts its prized horn under its enemies’ bellies then lifts and throws them."
         },
         {
           "code": "2-1-013 SC",
@@ -6995,7 +7549,9 @@
             "spe": 125,
             "height": 1.1,
             "weight": 34.0
-          }
+          },
+          "name_en": "weavile",
+          "desc_en": "They communicate by clawing signs in boulders and work together to surround enemies."
         },
         {
           "code": "2-1-015 SC",
@@ -7018,7 +7574,9 @@
             "spe": 65,
             "height": 0.8,
             "weight": 117.0
-          }
+          },
+          "name_en": "sirfetchd",
+          "desc_en": "Only Farfetch’d that have survived many battles can attain this evolution. When this Pokémon’s leek withers, it will retire from combat."
         },
         {
           "code": "2-1-016 SC",
@@ -7042,7 +7600,9 @@
             "spe": 85,
             "height": 1.4,
             "weight": 62.0
-          }
+          },
+          "name_en": "nidoking",
+          "desc_en": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones."
         },
         {
           "code": "2-1-018 SC",
@@ -7066,7 +7626,9 @@
             "spe": 55,
             "height": 2.0,
             "weight": 175.0
-          }
+          },
+          "name_en": "arctovish",
+          "desc_en": "Though it’s able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head."
         },
         {
           "code": "2-1-019 SC",
@@ -7089,7 +7651,9 @@
             "spe": 95,
             "height": 1.8,
             "weight": 138.6
-          }
+          },
+          "name_en": "electivire",
+          "desc_en": "It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power."
         },
         {
           "code": "2-1-020 SC",
@@ -7112,7 +7676,9 @@
             "spe": 83,
             "height": 1.6,
             "weight": 68.0
-          }
+          },
+          "name_en": "magmortar",
+          "desc_en": "It blasts fireballs of over 3,600 degrees F from the ends of its arms. It lives in volcanic craters."
         },
         {
           "code": "2-1-021 SC",
@@ -7183,7 +7749,9 @@
             "spe": 87,
             "height": 2.2,
             "weight": 320.0
-          }
+          },
+          "name_en": "great-tusk",
+          "desc_en": "Sightings of this Pokémon have occurred in recent years. The name Great Tusk was taken from a creature listed in a certain book."
         },
         {
           "code": "2-1-024 SC",
@@ -7207,7 +7775,9 @@
             "spe": 43,
             "height": 1.5,
             "weight": 45.0
-          }
+          },
+          "name_en": "vikavolt",
+          "desc_en": "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies."
         },
         {
           "code": "2-1-025 SC",
@@ -7231,7 +7801,9 @@
             "spe": 60,
             "height": 2.2,
             "weight": 135.5
-          }
+          },
+          "name_en": "abomasnow",
+          "desc_en": "It whips up blizzards in mountains that are always buried in snow. It is the abominable snowman."
         },
         {
           "code": "2-1-034 SC",
@@ -7254,7 +7826,9 @@
             "spe": 85,
             "height": 2.1,
             "weight": 90.0
-          }
+          },
+          "name_en": "rillaboom",
+          "desc_en": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle."
         },
         {
           "code": "2-1-037 SC",
@@ -7277,7 +7851,9 @@
             "spe": 119,
             "height": 1.4,
             "weight": 33.0
-          }
+          },
+          "name_en": "cinderace",
+          "desc_en": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
         },
         {
           "code": "2-1-040 SC",
@@ -7300,7 +7876,9 @@
             "spe": 120,
             "height": 1.9,
             "weight": 45.2
-          }
+          },
+          "name_en": "inteleon",
+          "desc_en": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air."
         },
         {
           "code": "2-1-042 SC",
@@ -7324,7 +7902,9 @@
             "spe": 60,
             "height": 2.2,
             "weight": 135.5
-          }
+          },
+          "name_en": "abomasnow",
+          "desc_en": "It whips up blizzards in mountains that are always buried in snow. It is the abominable snowman."
         },
         {
           "code": "2-1-044 SC",
@@ -7348,7 +7928,9 @@
             "spe": 80,
             "height": 1.2,
             "weight": 15.0
-          }
+          },
+          "name_en": "drifblim",
+          "desc_en": "It’s drowzy in daytime, but flies off in the evening in big groups. No one knows where they go."
         },
         {
           "code": "2-1-046 SC",
@@ -7395,7 +7977,9 @@
             "spe": 43,
             "height": 1.5,
             "weight": 60.4
-          }
+          },
+          "name_en": "cradily",
+          "desc_en": "CRADILY roams around the ocean floor in search of food. This POKéMON freely extends its tree trunk-like neck and captures unwary prey using its eight tentacles."
         },
         {
           "code": "2-1-050 SC",
@@ -7418,7 +8002,9 @@
             "spe": 65,
             "height": 0.8,
             "weight": 117.0
-          }
+          },
+          "name_en": "sirfetchd",
+          "desc_en": "Only Farfetch’d that have survived many battles can attain this evolution. When this Pokémon’s leek withers, it will retire from combat."
         },
         {
           "code": "2-1-052 SC",
@@ -7442,7 +8028,9 @@
             "spe": 88,
             "height": 0.7,
             "weight": 40.4
-          }
+          },
+          "name_en": "excadrill",
+          "desc_en": "It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates."
         },
         {
           "code": "2-1-055 SC",
@@ -7465,7 +8053,9 @@
             "spe": 83,
             "height": 1.6,
             "weight": 68.0
-          }
+          },
+          "name_en": "magmortar",
+          "desc_en": "It blasts fireballs of over 3,600 degrees F from the ends of its arms. It lives in volcanic craters."
         },
         {
           "code": "2-1-057 SC",
@@ -7488,7 +8078,9 @@
             "spe": 95,
             "height": 1.9,
             "weight": 155.0
-          }
+          },
+          "name_en": "arcanine",
+          "desc_en": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings."
         },
         {
           "code": "2-1-059 SC",
@@ -7558,7 +8150,9 @@
             "spe": 60,
             "height": 0.5,
             "weight": 2.5
-          }
+          },
+          "name_en": "eldegoss",
+          "desc_en": "The seeds attached to its cotton fluff are full of nutrients. It spreads them on the wind so that plants and other Pokémon can benefit from them."
         },
         {
           "code": "2-1-064 SC",
@@ -7582,7 +8176,9 @@
             "spe": 125,
             "height": 1.1,
             "weight": 34.0
-          }
+          },
+          "name_en": "weavile",
+          "desc_en": "They communicate by clawing signs in boulders and work together to surround enemies."
         },
         {
           "code": "2-1-067 SC",
@@ -7606,7 +8202,9 @@
             "spe": 76,
             "height": 1.3,
             "weight": 60.0
-          }
+          },
+          "name_en": "nidoqueen",
+          "desc_en": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves."
         },
         {
           "code": "2-1-070 SC",
@@ -7630,7 +8228,9 @@
             "spe": 85,
             "height": 1.4,
             "weight": 62.0
-          }
+          },
+          "name_en": "nidoking",
+          "desc_en": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones."
         },
         {
           "code": "2-1-033 SC",
@@ -7653,7 +8253,9 @@
             "spe": 80,
             "height": 0.7,
             "weight": 14.0
-          }
+          },
+          "name_en": "thwackey",
+          "desc_en": "The faster a Thwackey can beat out a rhythm with its two sticks, the more respect it wins from its peers."
         },
         {
           "code": "2-1-036 SC",
@@ -7676,7 +8278,9 @@
             "spe": 94,
             "height": 0.6,
             "weight": 9.0
-          }
+          },
+          "name_en": "raboot",
+          "desc_en": "Its thick and fluffy fur protects it from the cold and enables it to use hotter fire moves."
         },
         {
           "code": "2-1-039 SC",
@@ -7699,7 +8303,9 @@
             "spe": 90,
             "height": 0.7,
             "weight": 11.5
-          }
+          },
+          "name_en": "drizzile",
+          "desc_en": "A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms."
         },
         {
           "code": "2-1-041 SC",
@@ -7723,7 +8329,9 @@
             "spe": 40,
             "height": 1.0,
             "weight": 50.5
-          }
+          },
+          "name_en": "snover",
+          "desc_en": "It lives on snowy mountains. Having had little contact with humans, it is boldly inquisitive."
         },
         {
           "code": "2-1-043 SC",
@@ -7747,7 +8355,9 @@
             "spe": 70,
             "height": 0.4,
             "weight": 1.2
-          }
+          },
+          "name_en": "drifloon",
+          "desc_en": "A Pokémon formed by the spirits of people and Pokémon. It loves damp, humid seasons."
         },
         {
           "code": "2-1-045 SC",
@@ -7794,7 +8404,9 @@
             "spe": 23,
             "height": 1.0,
             "weight": 23.8
-          }
+          },
+          "name_en": "lileep",
+          "desc_en": "It lived on the seafloor 100 million years ago and was reanimated scientifically."
         },
         {
           "code": "2-1-051 SC",
@@ -7818,7 +8430,9 @@
             "spe": 68,
             "height": 0.3,
             "weight": 8.5
-          }
+          },
+          "name_en": "drilbur",
+          "desc_en": "It can dig through the ground at a speed of 30 mph. It could give a car running aboveground a good race."
         },
         {
           "code": "2-1-054 SC",
@@ -7841,7 +8455,9 @@
             "spe": 93,
             "height": 1.3,
             "weight": 44.5
-          }
+          },
+          "name_en": "magmar",
+          "desc_en": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
         },
         {
           "code": "2-1-056 SC",
@@ -7864,7 +8480,9 @@
             "spe": 60,
             "height": 0.7,
             "weight": 19.0
-          }
+          },
+          "name_en": "growlithe",
+          "desc_en": "Very protective of its territory. It will bark and bite to repel intruders from its space."
         },
         {
           "code": "2-1-061 SC",
@@ -7887,7 +8505,9 @@
             "spe": 10,
             "height": 0.4,
             "weight": 2.2
-          }
+          },
+          "name_en": "gossifleur",
+          "desc_en": "It anchors itself in the ground with its single leg, then basks in the sun. After absorbing enough sunlight, its petals spread as it blooms brilliantly."
         },
         {
           "code": "2-1-063 SC",
@@ -7911,7 +8531,9 @@
             "spe": 115,
             "height": 0.9,
             "weight": 28.0
-          }
+          },
+          "name_en": "sneasel",
+          "desc_en": "Its paws conceal sharp claws. If attacked, it sud­ denly extends the claws and startles its enemy."
         },
         {
           "code": "2-1-066 SC",
@@ -7935,7 +8557,9 @@
             "spe": 56,
             "height": 0.8,
             "weight": 20.0
-          }
+          },
+          "name_en": "nidorina",
+          "desc_en": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting."
         },
         {
           "code": "2-1-069 SC",
@@ -7959,7 +8583,9 @@
             "spe": 65,
             "height": 0.9,
             "weight": 19.5
-          }
+          },
+          "name_en": "nidorino",
+          "desc_en": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom."
         },
         {
           "code": "2-1-026 SC",
@@ -7982,7 +8608,9 @@
             "spe": 65,
             "height": 0.4,
             "weight": 4.1
-          }
+          },
+          "name_en": "sprigatito",
+          "desc_en": "Its fluffy fur is similar in composition to plants. This Pokémon frequently washes its face to keep it from drying out."
         },
         {
           "code": "2-1-027 SC",
@@ -8005,7 +8633,9 @@
             "spe": 36,
             "height": 0.4,
             "weight": 9.8
-          }
+          },
+          "name_en": "fuecoco",
+          "desc_en": "It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy."
         },
         {
           "code": "2-1-028 SC",
@@ -8028,7 +8658,9 @@
             "spe": 50,
             "height": 0.5,
             "weight": 6.1
-          }
+          },
+          "name_en": "quaxly",
+          "desc_en": "This Pokémon migrated to Paldea from distant lands long ago. The gel secreted by its feathers repels water and grime."
         },
         {
           "code": "2-1-029 SC",
@@ -8051,7 +8683,9 @@
             "spe": 35,
             "height": 0.6,
             "weight": 10.5
-          }
+          },
+          "name_en": "charcadet",
+          "desc_en": "Burnt charcoal came to life and became a Pokémon. Possessing a fiery fighting spirit, Charcadet will battle even tough opponents."
         },
         {
           "code": "2-1-030 SC",
@@ -8074,7 +8708,9 @@
             "spe": 55,
             "height": 0.5,
             "weight": 17.0
-          }
+          },
+          "name_en": "frigibax",
+          "desc_en": "Frigibax absorbs heat through its dorsal fin and converts the heat into ice energy. The higher the temperature, the more energy Frigibax stores."
         },
         {
           "code": "2-1-031 SC",
@@ -8097,7 +8733,9 @@
             "spe": 60,
             "height": 0.3,
             "weight": 2.5
-          }
+          },
+          "name_en": "pawmi",
+          "desc_en": "It has underdeveloped electric sacs on its cheeks. These sacs can produce electricity only if Pawmi rubs them furiously with the pads on its forepaws."
         },
         {
           "code": "2-1-032 SC",
@@ -8120,7 +8758,9 @@
             "spe": 65,
             "height": 0.3,
             "weight": 5.0
-          }
+          },
+          "name_en": "grookey",
+          "desc_en": "When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area."
         },
         {
           "code": "2-1-035 SC",
@@ -8143,7 +8783,9 @@
             "spe": 69,
             "height": 0.3,
             "weight": 4.5
-          }
+          },
+          "name_en": "scorbunny",
+          "desc_en": "A warm-up of running around gets fire energy coursing through this Pokémon’s body. Once that happens, it’s ready to fight at full power."
         },
         {
           "code": "2-1-038 SC",
@@ -8166,7 +8808,9 @@
             "spe": 70,
             "height": 0.3,
             "weight": 4.0
-          }
+          },
+          "name_en": "sobble",
+          "desc_en": "When scared, this Pokémon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
         },
         {
           "code": "2-1-049 SC",
@@ -8211,7 +8855,9 @@
             "spe": 83,
             "height": 0.7,
             "weight": 21.4
-          }
+          },
+          "name_en": "magby",
+          "desc_en": "Each and every time it inhales and exhales, hot embers dribble out of its mouth and nostrils."
         },
         {
           "code": "2-1-058 SC",
@@ -8257,7 +8903,9 @@
             "spe": 41,
             "height": 0.4,
             "weight": 7.0
-          }
+          },
+          "name_en": "nidoran-f",
+          "desc_en": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns."
         },
         {
           "code": "2-1-068 SC",
@@ -8281,7 +8929,9 @@
             "spe": 50,
             "height": 0.5,
             "weight": 9.0
-          }
+          },
+          "name_en": "nidoran-m",
+          "desc_en": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom."
         }
       ]
     },
@@ -8312,7 +8962,9 @@
             "spe": 138,
             "height": 2.8,
             "weight": 110.0
-          }
+          },
+          "name_en": "zacian",
+          "desc_en": "Known as a legendary hero, this Pokémon absorbs metal particles, transforming them into a weapon it uses to battle."
         },
         {
           "code": "2-2-002 SC",
@@ -8336,7 +8988,9 @@
             "spe": 138,
             "height": 2.9,
             "weight": 210.0
-          }
+          },
+          "name_en": "zamazenta",
+          "desc_en": "In times past, it worked together with a king of the people to save the Galar region. It absorbs metal that it then uses in battle."
         },
         {
           "code": "2-2-003 SC",
@@ -8361,7 +9015,9 @@
             "spe": 85,
             "height": 1.8,
             "weight": 40.0
-          }
+          },
+          "name_en": "duraludon",
+          "desc_en": "Its body resembles polished metal, and it’s both lightweight and strong. The only drawback is that it rusts easily."
         },
         {
           "code": "2-2-004 SC",
@@ -8387,7 +9043,9 @@
             "spe": 100,
             "height": 1.7,
             "weight": 90.5
-          }
+          },
+          "name_en": "charizard",
+          "desc_en": "It is said that Charizard’s fire burns hotter if it has experienced harsh battles."
         },
         {
           "code": "2-2-005 SC",
@@ -8412,7 +9070,9 @@
             "spe": 105,
             "height": 1.8,
             "weight": 70.0
-          }
+          },
+          "name_en": "zarude",
+          "desc_en": "Within dense forests, this Pokémon lives in a pack with others of its kind. It’s incredibly aggressive, and the other Pokémon of the forest fear it."
         },
         {
           "code": "2-2-006 SC",
@@ -8438,7 +9098,9 @@
             "spe": 90,
             "height": 1.2,
             "weight": 54.0
-          }
+          },
+          "name_en": "lucario",
+          "desc_en": "It has the ability to sense the auras of all things. It understands human speech."
         },
         {
           "code": "2-2-007 SC",
@@ -8464,7 +9126,9 @@
             "spe": 95,
             "height": 7.0,
             "weight": 206.5
-          }
+          },
+          "name_en": "rayquaza",
+          "desc_en": "RAYQUAZA lived for hundreds of millions of years in the earth’s ozone layer, never descending to the ground. This POKéMON appears to feed on water and particles in the atmosphere."
         },
         {
           "code": "2-2-008 SC",
@@ -8490,7 +9154,9 @@
             "spe": 110,
             "height": 1.4,
             "weight": 40.0
-          }
+          },
+          "name_en": "latias",
+          "desc_en": "LATIAS is highly sensitive to the emotions of people. If it senses any hostility, this POKéMON ruffles the feathers all over its body and cries shrilly to intimidate the foe."
         },
         {
           "code": "2-2-009 SC",
@@ -8516,7 +9182,9 @@
             "spe": 110,
             "height": 2.0,
             "weight": 60.0
-          }
+          },
+          "name_en": "latios",
+          "desc_en": "LATIOS has the ability to make its foe see an image of what it has seen or imagines in its head. This POKéMON is intelligent and understands human speech."
         },
         {
           "code": "2-2-010 SC",
@@ -8542,7 +9210,9 @@
             "spe": 121,
             "height": 3.6,
             "weight": 150.0
-          }
+          },
+          "name_en": "naganadel",
+          "desc_en": "It stores hundreds of liters of poisonous liquid inside its body. It is one of the organisms known as UBs."
         },
         {
           "code": "2-2-011 SC",
@@ -8566,7 +9236,9 @@
             "spe": 70,
             "height": 1.6,
             "weight": 550.0
-          }
+          },
+          "name_en": "metagross",
+          "desc_en": "METAGROSS has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This POKéMON can float in the air by tucking in its four legs."
         },
         {
           "code": "2-2-012 SC",
@@ -8589,7 +9261,9 @@
             "spe": 97,
             "height": 1.8,
             "weight": 105.5
-          }
+          },
+          "name_en": "haxorus",
+          "desc_en": "They are kind but can be relentless when defending territory. They challenge foes with tusks that can cut steel."
         },
         {
           "code": "2-2-013 SC",
@@ -8613,7 +9287,9 @@
             "spe": 130,
             "height": 1.8,
             "weight": 59.0
-          }
+          },
+          "name_en": "aerodactyl",
+          "desc_en": "A ferocious, pre­ historic POKéMON that goes for the enemy's throat with its serrated saw-like fangs."
         },
         {
           "code": "2-2-014 SC",
@@ -8637,7 +9313,9 @@
             "spe": 75,
             "height": 1.8,
             "weight": 190.0
-          }
+          },
+          "name_en": "dracozolt",
+          "desc_en": "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
         },
         {
           "code": "2-2-015 SC",
@@ -8661,7 +9339,9 @@
             "spe": 75,
             "height": 2.3,
             "weight": 215.0
-          }
+          },
+          "name_en": "dracovish",
+          "desc_en": "Powerful legs and jaws made it the apex predator of its time. Its own overhunting of its prey was what drove it to extinction."
         },
         {
           "code": "2-2-016 SC",
@@ -8684,7 +9364,9 @@
             "spe": 120,
             "height": 1.5,
             "weight": 48.0
-          }
+          },
+          "name_en": "alakazam",
+          "desc_en": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000."
         },
         {
           "code": "2-2-017 SC",
@@ -8708,7 +9390,9 @@
             "spe": 55,
             "height": 2.3,
             "weight": 150.0
-          }
+          },
+          "name_en": "arctozolt",
+          "desc_en": "The shaking of its freezing upper half is what generates its electricity. It has a hard time walking around."
         },
         {
           "code": "2-2-018 SC",
@@ -8732,7 +9416,9 @@
             "spe": 40,
             "height": 2.0,
             "weight": 108.0
-          }
+          },
+          "name_en": "golisopod",
+          "desc_en": "With a flashing slash of its giant sharp claws, it cleaves seawater—or even air—right in two."
         },
         {
           "code": "2-2-019 SC",
@@ -8755,7 +9441,9 @@
             "spe": 113,
             "height": 3.3,
             "weight": 63.0
-          }
+          },
+          "name_en": "serperior",
+          "desc_en": "It can stop its opponents’ movements with just a glare. It takes in solar energy and boosts it internally."
         },
         {
           "code": "2-2-020 SC",
@@ -8778,7 +9466,9 @@
             "spe": 65,
             "height": 1.6,
             "weight": 150.0
-          }
+          },
+          "name_en": "emboar",
+          "desc_en": "It has mastered fast and powerful fighting moves. It grows a beard of fire."
         },
         {
           "code": "2-2-021 SC",
@@ -8801,7 +9491,9 @@
             "spe": 70,
             "height": 1.5,
             "weight": 94.6
-          }
+          },
+          "name_en": "samurott",
+          "desc_en": "One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody."
         },
         {
           "code": "2-2-022 SC",
@@ -8825,7 +9517,9 @@
             "spe": 106,
             "height": 0.9,
             "weight": 240.0
-          }
+          },
+          "name_en": "iron-treads",
+          "desc_en": "This Pokémon closely resembles a scientific weapon that a paranormal magazine claimed was sent to this planet by aliens."
         },
         {
           "code": "2-2-023 SC",
@@ -8847,7 +9541,9 @@
             "spe": 73,
             "height": 0.6,
             "weight": 1.8
-          }
+          },
+          "name_en": "poipole",
+          "desc_en": "This Ultra Beast is well enough liked to be chosen as a first partner in its own world."
         },
         {
           "code": "2-2-024 SC",
@@ -8871,7 +9567,9 @@
             "spe": 29,
             "height": 2.1,
             "weight": 5.1
-          }
+          },
+          "name_en": "hatterene",
+          "desc_en": "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others."
         },
         {
           "code": "2-2-025 SC",
@@ -8894,7 +9592,9 @@
             "spe": 75,
             "height": 1.2,
             "weight": 47.0
-          }
+          },
+          "name_en": "absol",
+          "desc_en": "Every time ABSOL appears before people, it is followed by a disaster such as an earthquake or a tidal wave. As a result, it came to be known as the disaster POKéMON."
         },
         {
           "code": "2-2-027 SC",
@@ -8918,7 +9618,9 @@
             "spe": 123,
             "height": 1.5,
             "weight": 31.2
-          }
+          },
+          "name_en": "meowscarada",
+          "desc_en": "This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating."
         },
         {
           "code": "2-2-029 SC",
@@ -8942,7 +9644,9 @@
             "spe": 66,
             "height": 1.6,
             "weight": 326.5
-          }
+          },
+          "name_en": "skeledirge",
+          "desc_en": "The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirge’s head gained a soul."
         },
         {
           "code": "2-2-031 SC",
@@ -8966,7 +9670,9 @@
             "spe": 85,
             "height": 1.8,
             "weight": 61.9
-          }
+          },
+          "name_en": "quaquaval",
+          "desc_en": "A single kick from a Quaquaval can send a truck rolling. This Pokémon uses its powerful legs to perform striking dances from far-off lands."
         },
         {
           "code": "2-2-034 SC",
@@ -8989,7 +9695,9 @@
             "spe": 113,
             "height": 3.3,
             "weight": 63.0
-          }
+          },
+          "name_en": "serperior",
+          "desc_en": "It can stop its opponents’ movements with just a glare. It takes in solar energy and boosts it internally."
         },
         {
           "code": "2-2-037 SC",
@@ -9012,7 +9720,9 @@
             "spe": 65,
             "height": 1.6,
             "weight": 150.0
-          }
+          },
+          "name_en": "emboar",
+          "desc_en": "It has mastered fast and powerful fighting moves. It grows a beard of fire."
         },
         {
           "code": "2-2-040 SC",
@@ -9035,7 +9745,9 @@
             "spe": 70,
             "height": 1.5,
             "weight": 94.6
-          }
+          },
+          "name_en": "samurott",
+          "desc_en": "One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody."
         },
         {
           "code": "2-2-043 SC",
@@ -9059,7 +9771,9 @@
             "spe": 70,
             "height": 1.3,
             "weight": 54.0
-          }
+          },
+          "name_en": "poliwrath",
+          "desc_en": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
         },
         {
           "code": "2-2-045 SC",
@@ -9082,7 +9796,9 @@
             "spe": 81,
             "height": 6.2,
             "weight": 162.0
-          }
+          },
+          "name_en": "milotic",
+          "desc_en": "MILOTIC is breathtakingly beautiful. Those that see it are said to forget their combative spirits."
         },
         {
           "code": "2-2-048 SC",
@@ -9105,7 +9821,9 @@
             "spe": 50,
             "height": 2.1,
             "weight": 80.5
-          }
+          },
+          "name_en": "eelektross",
+          "desc_en": "They crawl out of the ocean using their arms. They will attack prey on shore and immediately drag it into the ocean."
         },
         {
           "code": "2-2-051 SC",
@@ -9129,7 +9847,9 @@
             "spe": 80,
             "height": 1.6,
             "weight": 48.4
-          }
+          },
+          "name_en": "gardevoir",
+          "desc_en": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with."
         },
         {
           "code": "2-2-052 SC",
@@ -9153,7 +9873,9 @@
             "spe": 80,
             "height": 1.6,
             "weight": 52.0
-          }
+          },
+          "name_en": "gallade",
+          "desc_en": "A master of courtesy and swordsmanship, it fights using extending swords on its elbows."
         },
         {
           "code": "2-2-055 SC",
@@ -9177,7 +9899,9 @@
             "spe": 112,
             "height": 2.5,
             "weight": 200.5
-          }
+          },
+          "name_en": "scolipede",
+          "desc_en": "With quick movements, it chases down its foes, attacking relentlessly with its horns until it prevails."
         },
         {
           "code": "2-2-057 SC",
@@ -9200,7 +9924,9 @@
             "spe": 20,
             "height": 0.6,
             "weight": 6.0
-          }
+          },
+          "name_en": "greedent",
+          "desc_en": "It stashes berries in its tail—so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn’t notice the loss."
         },
         {
           "code": "2-2-060 SC",
@@ -9224,7 +9950,9 @@
             "spe": 65,
             "height": 1.4,
             "weight": 150.6
-          }
+          },
+          "name_en": "walrein",
+          "desc_en": "WALREIN’s two massively developed tusks can totally shatter blocks of ice weighing ten tons with one blow. This POKéMON’s thick coat of blubber insulates it from subzero temperatures."
         },
         {
           "code": "2-2-063 SC",
@@ -9248,7 +9976,9 @@
             "spe": 90,
             "height": 0.9,
             "weight": 14.5
-          }
+          },
+          "name_en": "roserade",
+          "desc_en": "It attracts prey with a sweet aroma, then downs it with thorny whips hidden in its arms."
         },
         {
           "code": "2-2-065 SC",
@@ -9271,7 +10001,9 @@
             "spe": 64,
             "height": 0.3,
             "weight": 0.5
-          }
+          },
+          "name_en": "alcremie",
+          "desc_en": "When it trusts a Trainer, it will treat them to berries it’s decorated with cream."
         },
         {
           "code": "2-2-068 SC",
@@ -9294,7 +10026,9 @@
             "spe": 95,
             "height": 1.8,
             "weight": 138.6
-          }
+          },
+          "name_en": "electivire",
+          "desc_en": "It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power."
         },
         {
           "code": "2-2-026 SC",
@@ -9317,7 +10051,9 @@
             "spe": 83,
             "height": 0.9,
             "weight": 12.2
-          }
+          },
+          "name_en": "floragato",
+          "desc_en": "Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents."
         },
         {
           "code": "2-2-028 SC",
@@ -9340,7 +10076,9 @@
             "spe": 49,
             "height": 1.0,
             "weight": 30.7
-          }
+          },
+          "name_en": "crocalor",
+          "desc_en": "The combination of Crocalor’s fire energy and overflowing vitality has caused an egg-shaped fireball to appear on the Pokémon’s head."
         },
         {
           "code": "2-2-030 SC",
@@ -9363,7 +10101,9 @@
             "spe": 65,
             "height": 1.2,
             "weight": 21.5
-          }
+          },
+          "name_en": "quaxwell",
+          "desc_en": "These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully."
         },
         {
           "code": "2-2-033 SC",
@@ -9386,7 +10126,9 @@
             "spe": 83,
             "height": 0.8,
             "weight": 16.0
-          }
+          },
+          "name_en": "servine",
+          "desc_en": "It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip."
         },
         {
           "code": "2-2-036 SC",
@@ -9410,7 +10152,9 @@
             "spe": 55,
             "height": 1.0,
             "weight": 55.5
-          }
+          },
+          "name_en": "pignite",
+          "desc_en": "When its internal fire flares up, its movements grow sharper and faster. When in trouble, it emits smoke."
         },
         {
           "code": "2-2-039 SC",
@@ -9433,7 +10177,9 @@
             "spe": 60,
             "height": 0.8,
             "weight": 24.5
-          }
+          },
+          "name_en": "dewott",
+          "desc_en": "Strict training is how it learns its flowing double-scalchop technique."
         },
         {
           "code": "2-2-042 SC",
@@ -9456,7 +10202,9 @@
             "spe": 90,
             "height": 1.0,
             "weight": 20.0
-          }
+          },
+          "name_en": "poliwhirl",
+          "desc_en": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy."
         },
         {
           "code": "2-2-047 SC",
@@ -9479,7 +10227,9 @@
             "spe": 40,
             "height": 1.2,
             "weight": 22.0
-          }
+          },
+          "name_en": "eelektrik",
+          "desc_en": "They coil around foes and shock them with electricity-generating organs that seem simply to be circular patterns."
         },
         {
           "code": "2-2-050 SC",
@@ -9503,7 +10253,9 @@
             "spe": 50,
             "height": 0.8,
             "weight": 20.2
-          }
+          },
+          "name_en": "kirlia",
+          "desc_en": "It is said that a KIRLIA that is exposed to the positive emotions of its TRAINER grows beautiful. This POKéMON controls psychokinetic powers with its highly developed brain."
         },
         {
           "code": "2-2-054 SC",
@@ -9527,7 +10279,9 @@
             "spe": 47,
             "height": 1.2,
             "weight": 58.5
-          }
+          },
+          "name_en": "whirlipede",
+          "desc_en": "Protected by a hard shell, it spins its body like a wheel and crashes furiously into its enemies."
         },
         {
           "code": "2-2-059 SC",
@@ -9551,7 +10305,9 @@
             "spe": 45,
             "height": 1.1,
             "weight": 87.6
-          }
+          },
+          "name_en": "sealeo",
+          "desc_en": "It has a very sensitive nose. It touches new things with its nose to examine them."
         },
         {
           "code": "2-2-062 SC",
@@ -9575,7 +10331,9 @@
             "spe": 65,
             "height": 0.3,
             "weight": 2.0
-          }
+          },
+          "name_en": "roselia",
+          "desc_en": "ROSELIA shoots sharp thorns as projectiles at any opponent that tries to steal the flowers on its arms. The aroma of this POKéMON brings serenity to living things."
         },
         {
           "code": "2-2-067 SC",
@@ -9598,7 +10356,9 @@
             "spe": 105,
             "height": 1.1,
             "weight": 30.0
-          }
+          },
+          "name_en": "electabuzz",
+          "desc_en": "Normally found near power plants, they can wander away and cause major blackouts in cities."
         },
         {
           "code": "2-2-070 SC",
@@ -9621,7 +10381,9 @@
             "spe": 50,
             "height": 0.8,
             "weight": 28.0
-          }
+          },
+          "name_en": "perrserker",
+          "desc_en": "What appears to be an iron helmet is actually hardened hair. This Pokémon lives for the thrill of battle."
         },
         {
           "code": "2-2-032 SC",
@@ -9644,7 +10406,9 @@
             "spe": 63,
             "height": 0.6,
             "weight": 8.1
-          }
+          },
+          "name_en": "snivy",
+          "desc_en": "It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter."
         },
         {
           "code": "2-2-035 SC",
@@ -9667,7 +10431,9 @@
             "spe": 45,
             "height": 0.5,
             "weight": 9.9
-          }
+          },
+          "name_en": "tepig",
+          "desc_en": "It can deftly dodge its foe’s attacks while shooting fireballs from its nose. It roasts berries before it eats them."
         },
         {
           "code": "2-2-038 SC",
@@ -9690,7 +10456,9 @@
             "spe": 45,
             "height": 0.5,
             "weight": 5.9
-          }
+          },
+          "name_en": "oshawott",
+          "desc_en": "It fights using the scalchop on its stomach. In response to an attack, it retaliates immediately by slashing."
         },
         {
           "code": "2-2-041 SC",
@@ -9713,7 +10481,9 @@
             "spe": 90,
             "height": 0.6,
             "weight": 12.4
-          }
+          },
+          "name_en": "poliwag",
+          "desc_en": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
         },
         {
           "code": "2-2-044 SC",
@@ -9736,7 +10506,9 @@
             "spe": 80,
             "height": 0.6,
             "weight": 7.4
-          }
+          },
+          "name_en": "feebas",
+          "desc_en": "FEEBAS’s fins are ragged and tattered from the start of its life. Because of its shoddy appearance, this POKéMON is largely ignored. It is capable of living in both the sea and in rivers."
         },
         {
           "code": "2-2-046 SC",
@@ -9759,7 +10531,9 @@
             "spe": 60,
             "height": 0.2,
             "weight": 0.3
-          }
+          },
+          "name_en": "tynamo",
+          "desc_en": "While one alone doesn’t have much power, a chain of many Tynamo can be as powerful as lightning."
         },
         {
           "code": "2-2-049 SC",
@@ -9783,7 +10557,9 @@
             "spe": 40,
             "height": 0.4,
             "weight": 6.6
-          }
+          },
+          "name_en": "ralts",
+          "desc_en": "RALTS senses the emotions of people using the horns on its head. This POKéMON rarely appears before people. But when it does, it draws closer if it senses that the person has a positive disposition."
         },
         {
           "code": "2-2-053 SC",
@@ -9807,7 +10583,9 @@
             "spe": 57,
             "height": 0.4,
             "weight": 5.3
-          }
+          },
+          "name_en": "venipede",
+          "desc_en": "Its bite injects a potent poison, enough to paralyze large bird Pokémon that try to prey on it."
         },
         {
           "code": "2-2-056 SC",
@@ -9830,7 +10608,9 @@
             "spe": 25,
             "height": 0.3,
             "weight": 2.5
-          }
+          },
+          "name_en": "skwovet",
+          "desc_en": "Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries."
         },
         {
           "code": "2-2-058 SC",
@@ -9854,7 +10634,9 @@
             "spe": 25,
             "height": 0.8,
             "weight": 39.5
-          }
+          },
+          "name_en": "spheal",
+          "desc_en": "SPHEAL is much faster rolling than walking to get around. When groups of this POKéMON eat, they all clap at once to show their pleasure. Because of this, their mealtimes are noisy."
         },
         {
           "code": "2-2-061 SC",
@@ -9878,7 +10660,9 @@
             "spe": 55,
             "height": 0.2,
             "weight": 1.2
-          }
+          },
+          "name_en": "budew",
+          "desc_en": "Over the winter, it closes its bud and endures the cold. In spring, the bud opens and releases pollen."
         },
         {
           "code": "2-2-064 SC",
@@ -9901,7 +10685,9 @@
             "spe": 34,
             "height": 0.2,
             "weight": 0.3
-          }
+          },
+          "name_en": "milcery",
+          "desc_en": "This Pokémon was born from sweet-smelling particles in the air. Its body is made of cream."
         },
         {
           "code": "2-2-066 SC",
@@ -9924,7 +10710,9 @@
             "spe": 95,
             "height": 0.6,
             "weight": 23.5
-          }
+          },
+          "name_en": "elekid",
+          "desc_en": "It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit."
         },
         {
           "code": "2-2-069 SC",
@@ -10014,7 +10802,9 @@
             "spe": 65,
             "height": 0.8,
             "weight": 117.0
-          }
+          },
+          "name_en": "sirfetchd",
+          "desc_en": "Only Farfetch’d that have survived many battles can attain this evolution. When this Pokémon’s leek withers, it will retire from combat."
         },
         {
           "code": "SP-004",
@@ -10039,7 +10829,9 @@
             "spe": 85,
             "height": 1.8,
             "weight": 40.0
-          }
+          },
+          "name_en": "duraludon",
+          "desc_en": "Its body resembles polished metal, and it’s both lightweight and strong. The only drawback is that it rusts easily."
         }
       ]
     }

@@ -1184,6 +1184,23 @@ h3 { font-size: 1.1rem; margin: 16px 0 8px; }
 .effect-section { margin-bottom: 12px; }
 .effect-direction { font-size: .85rem; font-weight: 600; color: var(--text-primary); margin: 0 0 6px; }
 
+/* 语言切换器 */
+.lang-switcher {
+  display: flex; gap: 2px;
+  background: var(--bg-tertiary);
+  border-radius: 8px; padding: 2px;
+}
+.lang-switcher button {
+  border: none; background: transparent;
+  padding: 5px 10px; border-radius: 6px;
+  cursor: pointer; color: var(--text-secondary);
+  font-weight: 600; font-size: .75rem;
+  transition: all .15s;
+}
+.lang-switcher button[aria-pressed="true"] {
+  background: var(--accent); color: #fff;
+}
+
 /* 覆盖率提示 */
 .coverage-warnings { margin-top: 8px; }
 .coverage-warn {

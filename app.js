@@ -78,6 +78,18 @@ function getImgClass(imgPath){
   return imgPath.includes('HP_') ? 'tall' : 'normal';
 }
 
+// 语言辅助：获取当前语言下显示的名字和描述
+function getCardName(c){
+  const lang = document.documentElement.dataset.lang || 'zh';
+  return (lang === 'en' && c.name_en) ? c.name_en : c.name;
+}
+function getCardDesc(c){
+  const lang = document.documentElement.dataset.lang || 'zh';
+  if(lang === 'en' && c.desc_en) return c.desc_en;
+  return c.desc || '';
+}
+function isEN(){ return document.documentElement.dataset.lang === 'en'; }
+
 // ===== 属性克制表 =====
 function renderTypeGrid(containerId, onClick){
   const grid = document.getElementById(containerId);
@@ -204,7 +216,7 @@ function renderCardGrid(){
           <span class="rarity-badge">${stars}</span>
         </div>
         <div class="card-info">
-          <div class="card-name">${c.name}</div>
+          <div class="card-name">${getCardName(c)}</div>
           <div class="card-types">${typeBadges}</div>
           ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
           ${supportMove}
@@ -325,7 +337,7 @@ function renderEnemyPicker(){
           <span class="rarity-badge">${stars}</span>
         </div>
         <div class="picker-card-info">
-          <div class="card-name">${c.name}</div>
+          <div class="card-name">${getCardName(c)}</div>
           <div class="card-types">${typeBadges}</div>
         </div>
       </div>
@@ -653,7 +665,7 @@ function showCardDetail(code){
       <button class="detail-close" onclick="closeCardDetailPub()">✕</button>
       <div class="detail-img">${imgHtml}</div>
       <div class="detail-body">
-        <h2 class="detail-name">${card.name}</h2>
+        <h2 class="detail-name">${getCardName(card)}</h2>
         <div class="detail-meta">
           <span class="detail-stars">${stars}</span>
           <span class="detail-code">${card.code}</span>
@@ -667,7 +679,7 @@ function showCardDetail(code){
           </div>
         </div>
         ${supportInfo}
-        ${card.desc ? `<div class="detail-desc">${card.desc}</div>` : ''}
+        ${getCardDesc(card) ? `<div class="detail-desc">${getCardDesc(card)}</div>` : ''}
         ${card.base_stats ? `
         <div class="detail-section">
           <h3>基础属性</h3>
@@ -774,4 +786,74 @@ else init();
   });
 
   applyTheme(document.documentElement.dataset.theme || "light", false);
+})();
+
+// ===== 语言切换器 =====
+(function setupLangSwitcher(){
+  const LANG_KEY = "mezastar-lang";
+  const switcher = document.querySelector(".lang-switcher");
+  if(!switcher) return;
+
+  // 界面文字翻译表
+  const I18N = {
+    zh: { collection:"收藏", battle:"对战推荐", typechart:"属性表", energy:"宝可能量", basestats:"基础属性", weak:"被克弱点", resist:"抗性减伤", immune:"免疫", search_ph:"搜索宝可梦...", own_btn:"收藏", support:"支援券", recommend_title:"推荐阵容（每只各打一场）", recommend_empty:"选择敌方宝可梦后，这里会显示推荐阵容", no_counter:"无有效克制", be_weak:"被克 (受到2x)", be_resist:"抗性 (受到0.5x)", be_immune:"免疫 (受到0x)", atk_effect:"效果绝佳 (2x)", atk_weak:"效果不佳 (0.5x)", atk_none:"无效 (0x)", all_series:"全部弹数", all_rarity:"全部稀有度", all_types:"全部属性", owned_only:"只看已收藏", height:"身高", weight:"体重", star:"★", desc_label:"介绍" },
+    en: { collection:"Collection", battle:"Battle", typechart:"Type Chart", energy:"Poké Energy", basestats:"Base Stats", weak:"Weakness", resist:"Resistance", immune:"Immunity", search_ph:"Search Pokémon...", own_btn:"Owned", support:"Support", recommend_title:"Recommended Team (1v1 each)", recommend_empty:"Select opponent Pokémon to see your team", no_counter:"No effective counter", be_weak:"Weak to (takes 2x)", be_resist:"Resists (takes 0.5x)", be_immune:"Immune (takes 0x)", atk_effect:"Super effective (2x)", atk_weak:"Not very effective (0.5x)", atk_none:"No effect (0x)", all_series:"All Series", all_rarity:"All Rarities", all_types:"All Types", owned_only:"Owned Only", height:"Height", weight:"Weight", star:"★", desc_label:"Description" },
+  };
+
+  function applyLang(lang, shouldSave){
+    if(!I18N[lang]) return;
+    document.documentElement.dataset.lang = lang;
+    const t = I18N[lang];
+
+    // 导航按钮
+    document.querySelectorAll('.nav-item').forEach(btn => {
+      const tab = btn.dataset.tab;
+      if(tab === 'collection') btn.querySelector('span:last-child').textContent = t.collection;
+      else if(tab === 'battle') btn.querySelector('span:last-child').textContent = t.battle;
+      else if(tab === 'typechart') btn.querySelector('span:last-child').textContent = t.typechart;
+    });
+
+    // 页面标题
+    const h2s = document.querySelectorAll('h2');
+    h2s.forEach(h => {
+      if(h.textContent.includes('对战推荐')) h.textContent = t.battle;
+      else if(h.textContent.includes('属性克制表')) h.textContent = t.typechart;
+    });
+
+    // 搜索框 placeholder
+    const search = document.getElementById('filter-search');
+    if(search) search.placeholder = t.search_ph;
+
+    // 筛选器
+    const fs = document.getElementById('filter-series');
+    if(fs) fs.options[0].textContent = t.all_series;
+    const fr = document.getElementById('filter-rarity');
+    if(fr) fr.options[0].textContent = t.all_rarity;
+    const ft = document.getElementById('filter-type');
+    if(ft) ft.options[0].textContent = t.all_types;
+    const fo = document.querySelector('#filter-owned');
+    if(fo && fo.parentElement) fo.parentElement.lastChild.textContent = ' ' + t.owned_only;
+
+    // 切换按钮状态
+    switcher.querySelectorAll("[data-lang-value]").forEach(btn => {
+      btn.setAttribute("aria-pressed", String(btn.dataset.langValue === lang));
+    });
+
+    // 保存
+    if(shouldSave){
+      try { localStorage.setItem(LANG_KEY, lang); } catch(e) {}
+    }
+
+    // 重新渲染当前页
+    if(typeof renderCardGrid === 'function') renderCardGrid();
+    if(typeof recommendTeam === 'function') recommendTeam();
+  }
+
+  switcher.addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-lang-value]");
+    if(!btn) return;
+    applyLang(btn.dataset.langValue, true);
+  });
+
+  applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
