@@ -281,7 +281,7 @@ function renderEnemyPicker(){
   }).join('');
 }
 
-// 推荐：3v3 团战，每只都要对所有敌方有攻防评估
+// 推荐：1v1 配对模式，每只敌方各派1只上场
 function recommendTeam(){
   const result = document.getElementById('recommend-result');
   const enemies = enemySlots.filter(e => e !== null);
