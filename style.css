@@ -1080,3 +1080,13 @@ h3 { font-size: 1.1rem; margin: 16px 0 8px; }
   font-size: 1rem; font-weight: 600; cursor: pointer;
 }
 .detail-own-btn.checked { background: var(--success); }
+
+/* 覆盖率提示 */
+.coverage-warnings { margin-top: 8px; }
+.coverage-warn {
+  padding: 6px 10px; margin-bottom: 4px;
+  background: color-mix(in srgb, var(--warning) 12%, transparent);
+  border-left: 3px solid var(--warning);
+  border-radius: 4px;
+  font-size: .8rem; color: var(--text-primary);
+}
