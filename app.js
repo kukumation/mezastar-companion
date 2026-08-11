@@ -112,12 +112,14 @@ function renderCardGrid(){
   const rf = document.getElementById('filter-rarity').value;
   const tf = document.getElementById('filter-type').value;
   const of = document.getElementById('filter-owned').checked;
+  const sf2 = (document.getElementById('filter-search')?.value || '').trim().toLowerCase();
 
   const filtered = allCards.filter(c => {
     if(sf !== 'all' && c.series !== sf) return false;
     if(rf !== 'all' && c.rarity !== parseInt(rf)) return false;
     if(tf !== 'all' && !c.types.includes(tf)) return false;
     if(of && !collection[c.code]) return false;
+    if(sf2 && !c.name.toLowerCase().includes(sf2) && !c.code.toLowerCase().includes(sf2)) return false;
     return true;
   });
   filtered.sort((a,b) => {
@@ -174,13 +176,22 @@ function renderCardGrid(){
 
   // 按 group 拼接 HTML（每组前加 divider）
   let html = '';
+  const rendered = new Set();
   for(const group of RARITY_GROUPS){
-    const groupCards = filtered.filter(c =>
-      group.rarity === 'support' ? c.role === 'support' : (c.role !== 'support' && c.rarity === group.rarity)
-    );
+    const groupCards = filtered.filter(c => {
+      const match = group.rarity === 'support' ? c.role === 'support' : (c.role !== 'support' && c.rarity === group.rarity);
+      if(match) rendered.add(c.code);
+      return match;
+    });
     if(groupCards.length === 0) continue;
     html += `<div class="rarity-divider"><span class="rarity-divider-label">${group.label}</span></div>`;
     html += groupCards.map(renderCard).join('');
+  }
+  // 兜底：渲染未被任何分组匹配的卡
+  const rest = filtered.filter(c => !rendered.has(c.code));
+  if(rest.length){
+    html += `<div class="rarity-divider"><span class="rarity-divider-label">其他</span></div>`;
+    html += rest.map(renderCard).join('');
   }
   grid.innerHTML = html;
 }
@@ -333,8 +344,8 @@ function recommendTeam(){
     let score = 1.0 * off + 0.6 * def;
 
     // 特殊机制和稀有度（低权重）
-    if(card.special?.length > 0) score += 0.5;
-    score += card.rarity * 0.15;
+    if(card.special?.length > 0) score += 0.3;
+    score += card.rarity * 0.08;
 
     return {bestAtk, enemyDefMult, enemyBestType, score};
   }
@@ -615,6 +626,11 @@ function closeCardDetail(){
   if(overlay) overlay.classList.remove('show');
 }
 
+// ESC 关闭弹窗
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') closeCardDetail();
+});
+
 // ===== 初始化 =====
 function init(){
   loadCollection();
@@ -627,6 +643,13 @@ function init(){
   });
   document.querySelectorAll('#filter-series,#filter-rarity,#filter-type,#filter-owned').forEach(el => {
     el.addEventListener('change', renderCardGrid);
+  });
+
+  // 搜索框防抖
+  let searchTimer;
+  document.getElementById('filter-search')?.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(renderCardGrid, 200);
   });
 
   // 敌方选择面板事件

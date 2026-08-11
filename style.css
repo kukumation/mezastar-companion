@@ -1168,6 +1168,18 @@ h3 { font-size: 1.1rem; margin: 16px 0 8px; }
 .stat-bar-low { background: var(--danger); opacity: .6; }
 .stats-extra { margin-top: 6px; font-size: .7rem; color: var(--text-secondary); }
 
+/* 搜索框 */
+.filter-search {
+  flex: 1 1 100px;
+  min-width: 80px;
+  padding: 6px 10px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: .8rem;
+}
+
 /* 覆盖率提示 */
 .coverage-warnings { margin-top: 8px; }
 .coverage-warn {
