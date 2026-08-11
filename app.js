@@ -249,6 +249,10 @@ function renderCardGrid(){
   grid.innerHTML = html;
 }
 window.toggleCardPub = toggleCard;
+window.renderCardGrid_ = renderCardGrid;
+window.recommendTeam_ = recommendTeam;
+window.renderTypeGrid_ = renderTypeGrid;
+window.showTypeEffect_ = showTypeEffect;
 
 function updateStats(){
   const total = allCards.length;
@@ -946,10 +950,10 @@ function getSeriesName(sid){
 
     if(shouldSave){ try { localStorage.setItem(LANG_KEY, lang); } catch(e) {} }
 
-    // 重新渲染
-    if(typeof renderCardGrid === 'function') renderCardGrid();
-    if(typeof recommendTeam === 'function') recommendTeam();
-    if(typeof renderTypeGrid === 'function') renderTypeGrid('type-grid', showTypeEffect);
+    // 重新渲染（通过 window 暴露的引用，跨 IIFE 调用）
+    if(typeof window.renderCardGrid_ === 'function') window.renderCardGrid_();
+    if(typeof window.recommendTeam_ === 'function') window.recommendTeam_();
+    if(typeof window.renderTypeGrid_ === 'function') window.renderTypeGrid_('type-grid', window.showTypeEffect_ || undefined);
   }
 
   switcher.addEventListener("click", (event) => {
