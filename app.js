@@ -155,7 +155,7 @@ function renderCardGrid(){
     const typeAttr = primaryType ? `data-type="${primaryType}"` : '';
     const rareClass = c.rarity === 6 ? 'is-rare' : '';
     return `
-      <div class="card ${owned?'owned':''} ${supportClass} ${rareClass}" data-code="${c.code}" ${typeAttr} style="${typeStyle}">
+      <div class="card ${owned?'owned':''} ${supportClass} ${rareClass}" data-code="${c.code}" ${typeAttr} style="${typeStyle}" onclick="showCardDetailPub('${c.code}')">
         <div class="card-img ${orient} ${imgFile?'':'no-img'}">
           ${imgHtml}
           <span class="rarity-badge">${stars}</span>
@@ -479,12 +479,105 @@ function analyzeEnemy(e){
 window.openEnemyPickerPub = openEnemyPicker;
 window.removeEnemyPub = removeEnemy;
 window.selectEnemyPub = selectEnemy;
+window.showCardDetailPub = showCardDetail;
+window.closeCardDetailPub = closeCardDetail;
 
 // ===== Tab 切换 =====
 function switchTab(tab){
   document.querySelectorAll('.nav-item').forEach(b => b.classList.toggle('is-active', b.dataset.tab === tab));
   document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById('tab-' + tab).classList.add('active');
+}
+
+// ===== 卡牌详情弹窗 =====
+function showCardDetail(code){
+  const card = allCards.find(c => c.code === code);
+  if(!card) return;
+  const modal = document.getElementById('card-detail-modal');
+  if(!modal) return;
+
+  const stars = card.role === 'support' ? '支援券' : '★'.repeat(card.rarity);
+  const typeBadges = card.types.map(t => `<span class="type-tag" style="background:${TYPE_COLORS[t]||'#666'}">${t}</span>`).join('');
+  const specialBadges = (card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
+  const owned = collection[code];
+  const energyText = card.energy ? `<span class="detail-energy">${card.energy}</span>` : '<span class="detail-energy missing">?</span>';
+  const imgHtml = card.img
+    ? `<img src="${card.img}" alt="${card.name}" onerror="this.style.display='none'">`
+    : '<div class="detail-no-img">暂无图片</div>';
+
+  // 弱点和抗性
+  const weaknesses = [];
+  const resistances = [];
+  const immunities = [];
+  for(const atkType of TYPES){
+    let mult = 1;
+    for(const defType of card.types){
+      mult *= (TYPE_CHART[atkType]?.[defType] ?? 1);
+    }
+    if(mult >= 2) weaknesses.push({type: atkType, mult});
+    else if(mult > 0 && mult <= 0.5) resistances.push({type: atkType, mult});
+    else if(mult === 0) immunities.push({type: atkType});
+  }
+  weaknesses.sort((a,b) => b.mult - a.mult);
+  resistances.sort((a,b) => a.mult - b.mult);
+
+  const weakHtml = weaknesses.length
+    ? weaknesses.map(w => `<span class="type-tag weak" style="background:${TYPE_COLORS[w.type]||'#666'}">${w.type} ${w.mult}x</span>`).join('')
+    : '<span class="hint">无</span>';
+  const resistHtml = resistances.length
+    ? resistances.map(r => `<span class="type-tag resist" style="background:${TYPE_COLORS[r.type]||'#666'}">${r.type} ${r.mult}x</span>`).join('')
+    : '<span class="hint">无</span>';
+  const immuneHtml = immunities.length
+    ? immunities.map(i => `<span class="type-tag immune" style="background:${TYPE_COLORS[i.type]||'#666'}">${i.type} 免疫</span>`).join('')
+    : '';
+
+  // 支援招式
+  const supportInfo = card.support_move
+    ? `<div class="detail-row"><span class="detail-label">支援招式</span><span class="detail-value">${card.support_move}（${card.support_move_type}）</span></div>`
+    : '';
+
+  modal.innerHTML = `
+    <div class="detail-content" style="--type-color:${TYPE_COLORS[card.types[0]]||'var(--accent)'}">
+      <button class="detail-close" onclick="closeCardDetailPub()">✕</button>
+      <div class="detail-img">${imgHtml}</div>
+      <div class="detail-body">
+        <h2 class="detail-name">${card.name}</h2>
+        <div class="detail-meta">
+          <span class="detail-stars">${stars}</span>
+          <span class="detail-code">${card.code}</span>
+        </div>
+        <div class="detail-types">${typeBadges}</div>
+        ${specialBadges ? `<div class="detail-special">${specialBadges}</div>` : ''}
+        <div class="detail-stats">
+          <div class="stat-box">
+            <span class="stat-label">宝可能量</span>
+            ${energyText}
+          </div>
+        </div>
+        ${supportInfo}
+        <div class="detail-section">
+          <h3>被克弱点</h3>
+          <div class="type-tags">${weakHtml}</div>
+        </div>
+        <div class="detail-section">
+          <h3>抗性减伤</h3>
+          <div class="type-tags">${resistHtml}</div>
+        </div>
+        ${immuneHtml ? `<div class="detail-section"><h3>免疫</h3><div class="type-tags">${immuneHtml}</div></div>` : ''}
+        <button class="detail-own-btn ${owned?'checked':''}" onclick="event.stopPropagation();toggleCardPub('${code}');showCardDetailPub('${code}')">
+          ${owned ? '✓ 已收藏' : '+ 收藏'}
+        </button>
+      </div>
+    </div>
+  `;
+
+  const overlay = document.getElementById('card-detail-overlay');
+  if(overlay) overlay.classList.add('show');
+}
+
+function closeCardDetail(){
+  const overlay = document.getElementById('card-detail-overlay');
+  if(overlay) overlay.classList.remove('show');
 }
 
 // ===== 初始化 =====
