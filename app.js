@@ -388,35 +388,96 @@ function recommendTeam(){
     return;
   }
 
+  // ===== 推荐评分常量 =====
+  const SCORE_W = { off: 3.0, def: 1.2, energy: 1.1, rarity: 0.2 };
+  const SPECIAL_SCORE = { '极巨化': 0.75, 'Mega进化': 0.70, '超级进化': 0.70, 'Ｚ招式': 0.80, 'Z招式': 0.80, '双重招式': 0.50, '组合招式': 0.55, '太晶化': 0.40 };
+
+  // 预计算各星级 energy 中位数
+  const ENERGY_MEDIAN = {};
+  {
+    const byR = {};
+    for(const c of allCards){
+      if(c.role === 'support') continue;
+      const e = Number(c.energy);
+      if(!Number.isFinite(e) || e <= 0) continue;
+      const r = c.rarity;
+      if(!byR[r]) byR[r] = [];
+      byR[r].push(e);
+    }
+    for(const [r, vals] of Object.entries(byR)){
+      vals.sort((a,b) => a - b);
+      ENERGY_MEDIAN[r] = vals.length % 2 ? vals[vals.length >> 1] : (vals[vals.length/2-1] + vals[vals.length/2]) / 2;
+    }
+    ENERGY_MEDIAN._global = (() => {
+      const all = Object.values(byR).flat().sort((a,b) => a - b);
+      return all.length ? (all.length % 2 ? all[all.length >> 1] : (all[all.length/2-1] + all[all.length/2]) / 2) : 100;
+    })();
+  }
+
+  function clampN(v, lo, hi){ return Math.max(lo, Math.min(hi, v)); }
+
   // 1v1 配对评分：每张卡对单个敌方的对局得分
   function scoreVS(enemy, card){
     // 攻击：我打敌方
-    const atkMults = card.types.map(t => {
+    const atkMults = (card.types || []).map(t => {
       let m = 1;
-      for(const et of enemy.types) m *= (TYPE_CHART[t]?.[et] ?? 1);
+      for(const et of (enemy.types || [])) m *= (TYPE_CHART[t]?.[et] ?? 1);
       return {type: t, mult: m};
     });
-    const bestAtk = atkMults.reduce((a,b) => a.mult > b.mult ? a : b);
+    const bestAtk = atkMults.length ? atkMults.reduce((a,b) => a.mult > b.mult ? a : b) : {type: null, mult: 1};
 
     // 防御：敌方打我
     let enemyDefMult = 0;
     let enemyBestType = '';
-    for(const et of enemy.types){
+    for(const et of (enemy.types || [])){
       let m = 1;
-      for(const ct of card.types) m *= (TYPE_CHART[et]?.[ct] ?? 1);
+      for(const ct of (card.types || [])) m *= (TYPE_CHART[et]?.[ct] ?? 1);
       if(m > enemyDefMult){ enemyDefMult = m; enemyBestType = et; }
     }
 
-    // log 评分（攻击权重 > 防御）
-    const off = Math.log2(bestAtk.mult || 0.125);
-    const def = -Math.log2(Math.max(enemyDefMult, 0.125));
-    let score = 1.0 * off + 0.6 * def;
+    // 对数评分
+    const offRaw = Math.log2(bestAtk.mult || 0.125);
+    const defRaw = -Math.log2(Math.max(enemyDefMult, 0.125));
+    const offScore = SCORE_W.off * offRaw;
+    const defScore = SCORE_W.def * defRaw;
 
-    // 特殊机制和稀有度（低权重）
-    if(card.special?.length > 0) score += 0.3;
-    score += card.rarity * 0.08;
+    // 宝可能量（对数归一化，以100为基准）
+    let energyVal = Number(card.energy);
+    let energySource = 'actual';
+    if(!Number.isFinite(energyVal) || energyVal <= 0){
+      energyVal = ENERGY_MEDIAN[card.rarity] || ENERGY_MEDIAN._global || 100;
+      energySource = ENERGY_MEDIAN[card.rarity] ? 'rarityMedian' : 'globalMedian';
+    }
+    const energyNorm = clampN(Math.log2(energyVal / 100), -1.5, 1.1);
+    const energyScore = SCORE_W.energy * energyNorm;
 
-    return {bestAtk, enemyDefMult, enemyBestType, score};
+    // 特殊机制（分层，每张卡实际只有1个机制）
+    let specialScore = 0;
+    const specialItems = [];
+    for(const s of (card.special || [])){
+      const w = SPECIAL_SCORE[s] ?? 0;
+      if(w > 0){
+        specialScore = Math.max(specialScore, w);
+        specialItems.push({name: s, score: w});
+      }
+    }
+
+    // 稀有度（居中归一化，★4=0）
+    const rarityNorm = (card.rarity >= 2 && card.rarity <= 6) ? clampN((card.rarity - 4) / 2, -1, 1) : 0;
+    const rarityScore = SCORE_W.rarity * rarityNorm;
+
+    const score = offScore + defScore + energyScore + specialScore + rarityScore;
+
+    return {
+      bestAtk, enemyDefMult, enemyBestType, score,
+      contributions: {
+        offense: {raw: offRaw, weight: SCORE_W.off, score: offScore},
+        defense: {raw: defRaw, weight: SCORE_W.def, score: defScore},
+        energy: {value: energyVal, source: energySource, normalized: energyNorm, weight: SCORE_W.energy, score: energyScore},
+        special: {items: specialItems, score: specialScore},
+        rarity: {value: card.rarity, normalized: rarityNorm, weight: SCORE_W.rarity, score: rarityScore}
+      }
+    };
   }
 
   // 预计算所有卡对所有敌方的得分矩阵
@@ -1038,4 +1099,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811j
+// v20260811k
