@@ -468,8 +468,12 @@ function recommendTeam(){
 
     const score = offScore + defScore + energyScore + specialScore + rarityScore;
 
+    // 词典序分层：先克制层，次防御层，数值分只做层内微调
+    const offTier = bestAtk.mult >= 2 ? 2 : (bestAtk.mult >= 1 ? 1 : 0);
+    const defTier = enemyDefMult === 0 ? 4 : (enemyDefMult <= 0.5 ? 3 : (enemyDefMult <= 1 ? 2 : (enemyDefMult <= 2 ? 1 : 0)));
+
     return {
-      bestAtk, enemyDefMult, enemyBestType, score,
+      bestAtk, enemyDefMult, enemyBestType, score, offTier, defTier,
       contributions: {
         offense: {raw: offRaw, weight: SCORE_W.off, score: offScore},
         defense: {raw: defRaw, weight: SCORE_W.def, score: defScore},
@@ -498,12 +502,20 @@ function recommendTeam(){
     return result;
   }
 
+  // 词典序比较：先克制层，次防御层，再数值分（层内微调）
+  function cmpVS(a, b){
+    if(a.offTier !== b.offTier) return b.offTier - a.offTier;
+    if(a.defTier !== b.defTier) return b.defTier - a.defTier;
+    if(a.score !== b.score) return b.score - a.score;
+    return 0;
+  }
+
   // 为每种敌方排列，贪心选最优可用卡（每张卡只用一次）
   let bestPairing = null;
   let bestTotalScore = -999;
 
   if(enemies.length <= 4){
-    // 小规模：穷举敌方排列 × 每位贪心选卡
+    // 小规模：穷举敌方排列 × 每位贪心选卡（词典序）
     for(const perm of permutations(enemies)){
       const used = new Set();
       const pair = [];
@@ -513,7 +525,7 @@ function recommendTeam(){
         for(const m of matrix){
           if(used.has(m.card.code)) continue;
           const s = m.vs[enemy.code];
-          if(s.score > sc){ sc = s.score; pick = m; }
+          if(!pick || cmpVS(s, pick.vs[enemy.code]) > 0){ sc = s.score; pick = m; }
         }
         if(pick){
           used.add(pick.card.code);
@@ -527,21 +539,30 @@ function recommendTeam(){
       }
     }
   } else {
-    // 大规模（>4敌方）：退回贪心
+    // 大规模（>4敌方）：退回贪心（词典序）
     const used = new Set();
     bestPairing = [];
     for(const enemy of enemies){
-      let pick = null, sc = -999;
+      let pick = null;
       for(const m of matrix){
         if(used.has(m.card.code)) continue;
         const s = m.vs[enemy.code];
-        if(s.score > sc){ sc = s.score; pick = m; }
+        if(!pick || cmpVS(s, pick.vs[enemy.code]) > 0) pick = m;
       }
       if(pick){
         used.add(pick.card.code);
         bestPairing.push({enemy, match: pick, detail: pick.vs[enemy.code]});
       }
     }
+  }
+
+  // 每个敌方槽位的 top-3 备选（含被选中的那张，供 UI 展示替代方案）
+  const alternates = {};
+  for(const e of enemies){
+    const sorted = matrix
+      .map(m => ({card: m.card, d: m.vs[e.code]}))
+      .sort((x, y) => cmpVS(y.d, x.d));
+    alternates[e.code] = sorted.slice(0, 3);
   }
 
   const pairing = bestPairing || [];
@@ -607,18 +628,46 @@ function recommendTeam(){
           const enemy = p.enemy;
           const card = p.match.card;
           const d = p.detail;
-          const stars = '★'.repeat(card.rarity);
           const enemyStars = '★'.repeat(enemy.rarity);
-          const typeBadges = card.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
           const enemyTypeBadges = enemy.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
-          const specialBadges = (card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('');
           const enemyName = (window.getCardName_||getCardName)(enemy);
-          const cardName = (window.getCardName_||getCardName)(card);
 
-          const atkClass = d.bestAtk.mult >= 2 ? 'atk-strong' : d.bestAtk.mult <= 0.5 ? 'atk-weak' : '';
-          const defClass = d.enemyDefMult >= 2 ? 'def-vulnerable' : d.enemyDefMult <= 0.5 ? 'def-safe' : '';
-          const atkText = `${getTypeName(d.bestAtk.type)} ${d.bestAtk.mult}x`;
-          const defText = d.enemyDefMult >= 4 ? `${T('def_text')} ${d.enemyDefMult}x` : d.enemyDefMult >= 2 ? `${T('def_text')} ${d.enemyDefMult}x` : d.enemyDefMult <= 0.5 ? `${T('res_text')} ${d.enemyDefMult}x` : '';
+          // 该敌方的 top-3 备选 + 相克徽章
+          const alts = (alternates[enemy.code] || []).map((a, ai) => {
+            const c = a.card;
+            const ad = a.d;
+            const cName = (window.getCardName_||getCardName)(c);
+            const cStars = '★'.repeat(c.rarity);
+            const cTypes = c.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('');
+
+            let badge = '', badgeCls = 'alt-neutral';
+            if(ad.bestAtk.mult >= 2){ badge = `${T('counter_badge')} ${ad.bestAtk.mult}x`; badgeCls = 'alt-counter'; }
+            else if(ad.bestAtk.mult === 0){ badge = T('zero_atk_badge'); badgeCls = 'alt-zero'; }
+            else if(ad.enemyDefMult === 0){ badge = T('immune_def_badge'); badgeCls = 'alt-counter'; }
+            else if(ad.enemyDefMult >= 4){ badge = `${T('countered_badge')} ${ad.enemyDefMult}x`; badgeCls = 'alt-danger'; }
+            else if(ad.bestAtk.mult < 1){ badge = T('weak_atk_badge'); badgeCls = 'alt-weak'; }
+            else { badge = T('no_counter_badge'); badgeCls = 'alt-neutral'; }
+
+            const atkDesc = ad.bestAtk.mult !== 1 ? `${getTypeName(ad.bestAtk.type)} ${ad.bestAtk.mult}x` : '';
+            const defDesc = ad.enemyDefMult >= 2 ? `${T('takes')} ${ad.enemyDefMult}x(${getTypeName(ad.enemyBestType)})` : ((ad.enemyDefMult <= 0.5 && ad.enemyDefMult > 0) ? `${T('resists')} ${ad.enemyDefMult}x` : '');
+
+            return `
+              <div class="alt-card ${badgeCls}">
+                <div class="alt-rank">#${ai + 1}</div>
+                ${c.img ? `<img class="alt-img" src="${c.img}" alt="${cName}" loading="lazy">` : ''}
+                <div class="alt-info">
+                  <div class="alt-name">${cName} <span class="alt-stars">${cStars}</span></div>
+                  <div class="alt-types">${cTypes}</div>
+                  <div class="alt-badge">${badge}</div>
+                  ${(atkDesc || defDesc) ? `<div class="alt-detail">${[atkDesc, defDesc].filter(Boolean).join(' · ')}</div>` : ''}
+                  ${c.energy ? `<div class="alt-energy">${T('energy')} ${c.energy}</div>` : ''}
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          const noCounter = d.bestAtk.mult < 2;
+          const cardName = (window.getCardName_||getCardName)(card);
 
           return `
             <div class="pairing-item">
@@ -633,19 +682,19 @@ function recommendTeam(){
                 <div class="pairing-mine">
                   ${card.img ? `<div class="pairing-img"><img src="${card.img}" alt="${cardName}" loading="lazy"></div>` : ''}
                   <div class="pairing-name">${cardName}</div>
-                  <div class="pairing-stars">${stars}</div>
-                  <div class="card-types">${typeBadges}</div>
-                  ${specialBadges ? `<div class="card-special">${specialBadges}</div>` : ''}
+                  <div class="pairing-stars">${'★'.repeat(card.rarity)}</div>
+                  <div class="card-types">${card.types.map(t => `<span class="type-tag sm" style="background:${TYPE_COLORS[t]}">${getTypeName(t)}</span>`).join('')}</div>
+                  ${(card.special||[]).length ? `<div class="card-special">${(card.special||[]).map(s => `<span class="special-badge">${s}</span>`).join('')}</div>` : ''}
                 </div>
               </div>
-              <div class="pairing-result">
-                <span class="${atkClass}">${T('atk_text')} ${atkText}</span>
-                ${defText ? `<span class="${defClass}">${defText}</span>` : ''}
-              </div>
+              ${noCounter ? `<div class="slot-banner">${T('no_counter_banner')}</div>` : ''}
+              <div class="alt-list">${alts}</div>
             </div>
           `;
         }).join('')}
       </div>
+
+      <div class="type-proxy-note">${T('type_proxy_note')}</div>
 
       ${warnings.length ? `<div class="coverage-warnings">${warnings.map(w => `<div class="coverage-warn">${w}</div>`).join('')}</div>` : ''}
 
@@ -913,6 +962,9 @@ var I18N = {
     enemy_analysis:"敌方阵容分析", no_cards_owned:"你还没有收藏任何卡牌！",
     no_cards_hint:"去「收藏」页勾选你拥有的明耀之星盘。",
     no_2x_weak:"无2x克制", warn_4x:"被4倍克制！", theme_status:"已切换为{theme}主题",
+    counter_badge:"克制", countered_badge:"被克", zero_atk_badge:"无法命中0x", weak_atk_badge:"输出减半",
+    immune_def_badge:"免疫对手", no_counter_badge:"无克制·生存向", no_counter_banner:"⚠ 此对手你没有克制卡——以下按防御与能量择优",
+    takes:"承伤", resists:"抗性", type_proxy_note:"* 属性按宝可梦本体推定，实际伤害以卡背招式属性为准",
   },
   en: {
     collection:"Collection", battle:"Battle", typechart:"Type Chart",
@@ -937,6 +989,9 @@ var I18N = {
     enemy_analysis:"Enemy Analysis", no_cards_owned:"You haven't collected any cards yet!",
     no_cards_hint:"Go to Collection to mark your MEZASTAR discs.",
     no_2x_weak:"No 2x weakness", warn_4x:"takes 4x damage!", theme_status:"Switched to {theme} theme",
+    counter_badge:"Counter", countered_badge:"Countered", zero_atk_badge:"No effect 0x", weak_atk_badge:"Half dmg",
+    immune_def_badge:"Immune", no_counter_badge:"No counter · tanky", no_counter_banner:"⚠ No counter card for this foe — best by defense & energy",
+    takes:"Takes", resists:"Resists", type_proxy_note:"* Types inferred from Pokémon species — actual damage follows move types on card back",
   },
 };
 
@@ -1099,4 +1154,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260811p
+// v20260816a
