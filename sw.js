@@ -1,5 +1,5 @@
 // MEZASTAR Companion Service Worker
-const CACHE = 'mezastar-v1';
+const CACHE = 'mezastar-v2';
 const CORE = [
   '/',
   '/index.html',

@@ -649,7 +649,10 @@ function recommendTeam(){
             else { badge = T('no_counter_badge'); badgeCls = 'alt-neutral'; }
 
             const atkDesc = ad.bestAtk.mult !== 1 ? `${getTypeName(ad.bestAtk.type)} ${ad.bestAtk.mult}x` : '';
-            const defDesc = ad.enemyDefMult >= 2 ? `${T('takes')} ${ad.enemyDefMult}x(${getTypeName(ad.enemyBestType)})` : ((ad.enemyDefMult <= 0.5 && ad.enemyDefMult > 0) ? `${T('resists')} ${ad.enemyDefMult}x` : '');
+            // 防御信息始终展示：免疫 / 抗性 / 普通 / 被克
+            const defDesc = ad.enemyDefMult === 0 ? `${T('immune_text')} 0x` :
+              (ad.enemyDefMult >= 2 ? `${T('takes')} ${ad.enemyDefMult}x(${getTypeName(ad.enemyBestType)})` :
+              (ad.enemyDefMult <= 0.5 ? `${T('resists')} ${ad.enemyDefMult}x` : `${T('normal_def')} 1x`));
 
             return `
               <div class="alt-card ${badgeCls}">
@@ -674,6 +677,7 @@ function recommendTeam(){
               <div class="pairing-vs">
                 <div class="pairing-enemy">
                   <div class="pairing-label">${T('enemy_slot')} ${i+1}</div>
+                  ${enemy.img ? `<div class="pairing-img"><img src="${enemy.img}" alt="${enemyName}" loading="lazy"></div>` : ''}
                   <div class="pairing-name">${enemyName}</div>
                   <div class="pairing-stars">${enemyStars}</div>
                   <div class="card-types">${enemyTypeBadges}</div>
@@ -955,7 +959,7 @@ var I18N = {
     add_slot:"添加敌方", enemy_slot:"敌方", remove:"移除", select_enemy:"选择敌方宝可梦",
     light:"明亮", dark:"暗色", comfort:"护眼",
     atk_dir:"攻击", def_dir:"防守", pairing_label:"敌方", my_label:"我方", atk_text:"攻", def_text:"被打",
-    res_text:"抗", immune_text:"免疫", load_error:"数据加载失败",
+    res_text:"抗", immune_text:"免疫", normal_def:"普通承伤", load_error:"数据加载失败",
     battle_hint:"选择对方宝可梦（最多3只），根据你的收藏推荐阵容",
     search_enemy_ph:"搜索宝可梦名字...", no_image:"暂无图片", support_move_label:"支援招式", none_label:"无",
     stat_atk:"攻击", stat_def:"防御", stat_spa:"特攻", stat_spd:"特防", stat_spe:"速度",
@@ -982,7 +986,7 @@ var I18N = {
     add_slot:"Add Opponent", enemy_slot:"Enemy", remove:"Remove", select_enemy:"Select Opponent",
     light:"Light", dark:"Dark", comfort:"Eye Care",
     atk_dir:"Attack", def_dir:"Defense", pairing_label:"Enemy", my_label:"Yours", atk_text:"ATK", def_text:"DEF",
-    res_text:"RES", immune_text:"IMM", load_error:"Failed to load data",
+    res_text:"Resists", immune_text:"Immune", normal_def:"Normal damage", load_error:"Failed to load data",
     battle_hint:"Select opponent Pokémon (up to 3) to get team recommendations",
     search_enemy_ph:"Search by name...", no_image:"No image available", support_move_label:"Support Move", none_label:"None",
     stat_atk:"ATK", stat_def:"DEF", stat_spa:"Sp.A", stat_spd:"Sp.D", stat_spe:"SPE",
@@ -1154,4 +1158,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260816b
+// v20260816c
