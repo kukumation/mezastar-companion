@@ -502,12 +502,12 @@ function recommendTeam(){
     return result;
   }
 
-  // 词典序比较：先克制层，次防御层，再数值分（层内微调）
+  // 降序比较器：a 排在 b 前（更优）返回正数
+  // 词典序：先克制层，次防御层，再数值分
   function cmpVS(a, b){
-    if(a.offTier !== b.offTier) return b.offTier - a.offTier;
-    if(a.defTier !== b.defTier) return b.defTier - a.defTier;
-    if(a.score !== b.score) return b.score - a.score;
-    return 0;
+    if(a.offTier !== b.offTier) return a.offTier - b.offTier;
+    if(a.defTier !== b.defTier) return a.defTier - b.defTier;
+    return a.score - b.score;
   }
 
   // 为每种敌方排列，贪心选最优可用卡（每张卡只用一次）
@@ -561,7 +561,7 @@ function recommendTeam(){
   for(const e of enemies){
     const sorted = matrix
       .map(m => ({card: m.card, d: m.vs[e.code]}))
-      .sort((x, y) => cmpVS(y.d, x.d));
+      .sort((x, y) => -cmpVS(x.d, y.d));  // cmpVS(a,b)>0 表示 a 更优；sort 需要升序负号
     alternates[e.code] = sorted.slice(0, 3);
   }
 
@@ -1154,4 +1154,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260816a
+// v20260816b
