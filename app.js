@@ -797,6 +797,25 @@ function showCardDetail(code){
     ? `<div class="detail-row"><span class="detail-label">${T('support_move_label')}</span><span class="detail-value">${card.support_move}（${getTypeName(card.support_move_type)}）</span></div>`
     : '';
 
+  // 招式（卡背OCR）
+  const movesInfo = (card.moves && card.moves.length)
+    ? `<div class="detail-section"><h3>${T('moves_title')}</h3><div class="moves-list">${card.moves.map(m => `<span class="move-chip">⚡${m}</span>`).join('')}</div></div>`
+    : '';
+
+  // 街机真实数值（卡背OCR）
+  const mzInfo = card.mezastar_stats ? `
+    <div class="detail-section">
+      <h3>${T('mezastar_stats_title')}</h3>
+      <div class="stats-grid">
+        ${[{'key':'hp','label':T('stat_hp')},{'key':'atk','label':T('stat_atk')},{'key':'def','label':T('stat_def')},{'key':'spa','label':T('stat_spa')},{'key':'spd','label':T('stat_spd')},{'key':'spe','label':T('stat_spe')}].map(s => {
+          const val = card.mezastar_stats[s.key];
+          const pct = Math.min(100, val/250*100);
+          const barClass = val >= 170 ? 'hi' : val <= 80 ? 'lo' : '';
+          return `<div class="stat-row"><span class="stat-row-label">${s.label}</span><span class="stat-row-val">${val}</span><div class="stat-bar ${barClass}" style="width:${pct}%"></div></div>`;
+        }).join('')}
+      </div>
+    </div>` : '';
+
   modal.innerHTML = `
     <div class="detail-content" style="--type-color:${TYPE_COLORS[card.types[0]]||'var(--accent)'}">
       <button class="detail-close" onclick="closeCardDetailPub()">✕</button>
@@ -816,6 +835,8 @@ function showCardDetail(code){
           </div>
         </div>
         ${supportInfo}
+        ${movesInfo}
+        ${mzInfo}
         ${(window.getCardDesc_||getCardDesc)(card) ? `<div class="detail-desc">${(window.getCardDesc_||getCardDesc)(card)}</div>` : ''}
         ${card.base_stats ? `
         <div class="detail-section">
@@ -963,6 +984,7 @@ var I18N = {
     battle_hint:"选择对方宝可梦（最多3只），根据你的收藏推荐阵容",
     search_enemy_ph:"搜索宝可梦名字...", no_image:"暂无图片", support_move_label:"支援招式", none_label:"无",
     stat_atk:"攻击", stat_def:"防御", stat_spa:"特攻", stat_spd:"特防", stat_spe:"速度",
+    stat_hp:"体力", moves_title:"招式", mezastar_stats_title:"街机数值（卡背）",
     enemy_analysis:"敌方阵容分析", no_cards_owned:"你还没有收藏任何卡牌！",
     no_cards_hint:"去「收藏」页勾选你拥有的明耀之星盘。",
     no_2x_weak:"无2x克制", warn_4x:"被4倍克制！", theme_status:"已切换为{theme}主题",
@@ -990,6 +1012,7 @@ var I18N = {
     battle_hint:"Select opponent Pokémon (up to 3) to get team recommendations",
     search_enemy_ph:"Search by name...", no_image:"No image available", support_move_label:"Support Move", none_label:"None",
     stat_atk:"ATK", stat_def:"DEF", stat_spa:"Sp.A", stat_spd:"Sp.D", stat_spe:"SPE",
+    stat_hp:"HP", moves_title:"Moves", mezastar_stats_title:"Arcade Stats (Card Back)",
     enemy_analysis:"Enemy Analysis", no_cards_owned:"You haven't collected any cards yet!",
     no_cards_hint:"Go to Collection to mark your MEZASTAR discs.",
     no_2x_weak:"No 2x weakness", warn_4x:"takes 4x damage!", theme_status:"Switched to {theme} theme",
@@ -1158,4 +1181,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260816c
+// v20260816d

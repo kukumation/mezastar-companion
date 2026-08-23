@@ -1266,3 +1266,11 @@ h3 { font-size: 1.1rem; margin: 16px 0 8px; }
   margin-top: 10px; padding: 6px 10px; font-size: .68rem;
   color: var(--text-secondary); text-align: center; opacity: .8;
 }
+
+/* ===== 招式/街机数值 ===== */
+.moves-list { display: flex; gap: 6px; flex-wrap: wrap; }
+.move-chip {
+  display: inline-block; padding: 4px 10px; border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover, var(--accent)));
+  color: #fff; font-size: .8rem; font-weight: 600;
+}
