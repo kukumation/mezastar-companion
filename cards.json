@@ -734,7 +734,6 @@
           "name_en": "rillaboom",
           "desc_en": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle.",
           "moves": [
-            "轰播金刚猩",
             "鼓击",
             "特次"
           ]
@@ -1212,7 +1211,7 @@
             "虫",
             "电"
           ],
-          "img": "img/s1/0144ce372276401286e99b3fe0e46afa.webp",
+          "img": "img/s1/9b810692046c4dc698176ae3fbfa3135.webp",
           "role": "main",
           "special": [],
           "energy": 94,
@@ -1485,7 +1484,6 @@
           "name_en": "raboot",
           "desc_en": "Its thick and fluffy fur protects it from the cold and enables it to use hotter fire moves.",
           "moves": [
-            "腾滋小将",
             "蓄能焰袭"
           ]
         },
@@ -1680,7 +1678,6 @@
             "weight": 32.5
           },
           "moves": [
-            "伽勒尔直冲熊",
             "大声咆哮"
           ]
         },
@@ -1883,7 +1880,7 @@
           "types": [
             "水"
           ],
-          "img": "img/s1/f8799d8f23ea45e2bc49d27dca4909a1.png",
+          "img": "img/s1/8b4185f89fd348d7ae544e7395fdc5ed.webp",
           "role": "main",
           "special": [],
           "energy": 70,
@@ -6023,7 +6020,6 @@
             "spe": 42
           },
           "moves": [
-            "黑夜魔灵",
             "祸不单行"
           ]
         },
@@ -6521,7 +6517,6 @@
           "name_en": "dusclops",
           "desc_en": "DUSCLOPS’s body is completely hollow - there is nothing at all inside. It is said that its body is like a black hole. This POKéMON will absorb anything into its body, but nothing will ever come back o",
           "moves": [
-            "仿徨夜灵",
             "影子偷袭"
           ]
         },
@@ -10171,7 +10166,6 @@
             "spe": 92
           },
           "moves": [
-            "颤弦蝶螈",
             "破音"
           ]
         },
@@ -10207,7 +10201,6 @@
             "spe": 92
           },
           "moves": [
-            "颤弦蝶螈",
             "污泥波"
           ]
         },
@@ -10280,7 +10273,6 @@
             "spe": 52
           },
           "moves": [
-            "秋农炮虫",
             "十字剪"
           ]
         },
@@ -10354,7 +10346,6 @@
             "spe": 84
           },
           "moves": [
-            "轰播金刚猩",
             "种子机关枪"
           ]
         },
@@ -10751,7 +10742,6 @@
             "spe": 75
           },
           "moves": [
-            "颤弦蝶螈",
             "放电"
           ]
         },
@@ -10786,7 +10776,6 @@
             "spe": 75
           },
           "moves": [
-            "颤弦蝶螈",
             "毒击"
           ]
         },
@@ -11006,7 +10995,6 @@
             "spe": 82
           },
           "moves": [
-            "腾小将",
             "蓄能焰袭"
           ]
         },
@@ -14141,7 +14129,6 @@
           "name_en": "venipede",
           "desc_en": "Its bite injects a potent poison, enough to paralyze large bird Pokémon that try to prey on it.",
           "moves": [
-            "百足蜗蚣",
             "毒针"
           ]
         },
