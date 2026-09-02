@@ -389,8 +389,32 @@ function recommendTeam(){
   }
 
   // ===== 推荐评分常量 =====
-  const SCORE_W = { off: 3.0, def: 1.2, energy: 1.1, rarity: 0.2 };
+  const SCORE_W = { off: 3.0, def: 1.2, energy: 1.1, rarity: 0.2, power: 0.9 };
   const SPECIAL_SCORE = { '极巨化': 0.75, 'Mega进化': 0.70, '超级进化': 0.70, 'Ｚ招式': 0.80, 'Z招式': 0.80, '双重招式': 0.50, '组合招式': 0.55, '太晶化': 0.40 };
+
+  // 预计算攻击力(atk/spa较高值)按星级中位数，供缺失时估算
+  const POWER_MEDIAN = {};
+  {
+    const byR = {};
+    for(const c of allCards){
+      if(c.role === 'support') continue;
+      const ms = c.mezastar_stats;
+      if(!ms || (!Number.isFinite(ms.atk) && !Number.isFinite(ms.spa))) continue;
+      const p = Math.max(ms.atk || 0, ms.spa || 0);
+      if(p <= 0) continue;
+      const r = c.rarity;
+      if(!byR[r]) byR[r] = [];
+      byR[r].push(p);
+    }
+    for(const [r, vals] of Object.entries(byR)){
+      vals.sort((a,b) => a - b);
+      POWER_MEDIAN[r] = vals.length % 2 ? vals[vals.length >> 1] : (vals[vals.length/2-1] + vals[vals.length/2]) / 2;
+    }
+    POWER_MEDIAN._global = (() => {
+      const all = Object.values(byR).flat().sort((a,b) => a - b);
+      return all.length ? (all.length % 2 ? all[all.length >> 1] : (all[all.length/2-1] + all[all.length/2]) / 2) : 100;
+    })();
+  }
 
   // 预计算各星级 energy 中位数
   const ENERGY_MEDIAN = {};
@@ -466,18 +490,33 @@ function recommendTeam(){
     const rarityNorm = (card.rarity >= 2 && card.rarity <= 6) ? clampN((card.rarity - 4) / 2, -1, 1) : 0;
     const rarityScore = SCORE_W.rarity * rarityNorm;
 
-    const score = offScore + defScore + energyScore + specialScore + rarityScore;
+    // 攻击力/特攻（取较高值，代表输出能力，同层内用于区分谁打得更痛）
+    let powerVal = null;
+    let powerSource = 'actual';
+    const ms = card.mezastar_stats;
+    if(ms && (Number.isFinite(ms.atk) || Number.isFinite(ms.spa))){
+      powerVal = Math.max(ms.atk || 0, ms.spa || 0);
+    }
+    if(!powerVal || powerVal <= 0){
+      powerVal = POWER_MEDIAN[card.rarity] || POWER_MEDIAN._global || 100;
+      powerSource = POWER_MEDIAN[card.rarity] ? 'rarityMedian' : 'globalMedian';
+    }
+    const powerNorm = clampN(Math.log2(powerVal / 100), -1.5, 1.1);
+    const powerScore = SCORE_W.power * powerNorm;
+
+    const score = offScore + defScore + energyScore + specialScore + rarityScore + powerScore;
 
     // 词典序分层：先克制层，次防御层，数值分只做层内微调
     const offTier = bestAtk.mult >= 2 ? 2 : (bestAtk.mult >= 1 ? 1 : 0);
     const defTier = enemyDefMult === 0 ? 4 : (enemyDefMult <= 0.5 ? 3 : (enemyDefMult <= 1 ? 2 : (enemyDefMult <= 2 ? 1 : 0)));
 
     return {
-      bestAtk, enemyDefMult, enemyBestType, score, offTier, defTier,
+      bestAtk, enemyDefMult, enemyBestType, score, offTier, defTier, powerVal,
       contributions: {
         offense: {raw: offRaw, weight: SCORE_W.off, score: offScore},
         defense: {raw: defRaw, weight: SCORE_W.def, score: defScore},
         energy: {value: energyVal, source: energySource, normalized: energyNorm, weight: SCORE_W.energy, score: energyScore},
+        power: {value: powerVal, source: powerSource, normalized: powerNorm, weight: SCORE_W.power, score: powerScore},
         special: {items: specialItems, score: specialScore},
         rarity: {value: card.rarity, normalized: rarityNorm, weight: SCORE_W.rarity, score: rarityScore}
       }
@@ -664,6 +703,7 @@ function recommendTeam(){
                   <div class="alt-badge">${badge}</div>
                   ${(atkDesc || defDesc) ? `<div class="alt-detail">${[atkDesc, defDesc].filter(Boolean).join(' · ')}</div>` : ''}
                   ${c.energy ? `<div class="alt-energy">${T('energy')} ${c.energy}</div>` : ''}
+                  ${ad.powerVal ? `<div class="alt-power">${T('stat_atk')}/${T('stat_spa')} ${ad.powerVal}</div>` : ''}
                 </div>
               </div>
             `;
@@ -1181,4 +1221,4 @@ function getSeriesName(sid){
 
   applyLang(document.documentElement.dataset.lang || "zh", false);
 })();
-// v20260816d
+// v20260816e
